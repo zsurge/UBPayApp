@@ -1,0 +1,38 @@
+﻿<Window x:Class="UBPayApp.Refund"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UBPayApp"
+        mc:Ignorable="d"
+        Title="退款" Height="338" Width="291" Loaded="Window_Loaded" >
+    <Grid>
+        <Label Content="订单号：" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="85,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.025,0.577" Width="188"  Name="lab_order_id"/>
+        
+        <Label Content="退款单号：" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" />
+        <Label Content="" HorizontalAlignment="Left" Margin="85,41,0,0" VerticalAlignment="Top" Width="188" Name="lab_refund_order_id"/>
+        
+        <Label Content="总金额：" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" />
+        <Label Content="" HorizontalAlignment="Left" Margin="85,72,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.075,0.077" Width="188" Name="lab_total_amount"/>
+        
+        <Label Content="已退金额：" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" />
+        <Label Content="" HorizontalAlignment="Left" Margin="85,103,0,0" VerticalAlignment="Top" Width="188" Name="lab_retired_amout"/>
+        
+        <Label Content="退款金额：" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Name="lab_refund_amout"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="85,134,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165" Name="tx_refund_amount" KeyDown="tx_refund_amount_KeyDown"/>
+        
+        <Label Content="退款原因：" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.85,0.615" Name="lab_refund_reason"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="85,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165" Name="tx_refund_reason" KeyDown="tx_refund_reason_KeyDown"/>
+        
+        <Label Content="退款结果：" HorizontalAlignment="Left" Margin="10,196,0,0" VerticalAlignment="Top"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="85,196,0,0" VerticalAlignment="Top" Width="165" Name="lab_Refund_Status"/>
+        
+        <Button Content="确认退款" HorizontalAlignment="Left" Margin="85,239,0,0" VerticalAlignment="Top" Width="136" Height="35" Name="btn_refund" Click="btn_refund_Click"/>
+        
+        
+       
+        
+
+    </Grid>
+</Window>

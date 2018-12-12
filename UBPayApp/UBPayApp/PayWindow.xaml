@@ -1,0 +1,18 @@
+﻿<Window x:Class="UBPayApp.PayWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="PayWindow" Height="520" Width="481" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" ShowInTaskbar="False" Closing="Window_Closing" Topmost="True" Loaded="Window_Loaded">
+    <Grid>
+        <Image Height="109" HorizontalAlignment="Left" Margin="56,174,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="316" />
+        <Label Content="总金额(￥)：" Height="28" HorizontalAlignment="Left" Margin="56,39,0,0" Name="label1" VerticalAlignment="Top" HorizontalContentAlignment="Right" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="115,349,0,0" Name="tBoxBarCode" VerticalAlignment="Top" Width="257" KeyDown="tBoxBarCode_KeyDown"/>
+        <Label Content="付款码：" Height="28" HorizontalAlignment="Left" Margin="54,348,0,0" Name="label3" VerticalAlignment="Top" HorizontalContentAlignment="Right" />
+        <!--<Button Content="支付" Height="35" HorizontalAlignment="Left" Margin="126,427,0,0" Name="btPay" VerticalAlignment="Top" Width="199" Click="btPay_Click" />-->
+        <TextBox Height="69" HorizontalAlignment="Left" Margin="56,70,0,0" Name="textBox1" VerticalAlignment="Top" Width="316" FontSize="56" Text="" KeyDown="textBox1_KeyDown" />
+        <Label Content="抓取总金额图片：" Height="28" HorizontalAlignment="Left" Margin="56,145,0,0" Name="label2" VerticalAlignment="Top" />
+        <Label Content="订单号：" Height="28" HorizontalAlignment="Left" Margin="56,304,0,0" Name="label4" VerticalAlignment="Top" />
+        <Label Content="支付状态:" HorizontalAlignment="Left" Margin="56,386,0,0" VerticalAlignment="Top"/>
+        <Label HorizontalAlignment="Left" Margin="115,304,0,0" VerticalAlignment="Top" Width="257" Name="Pay_Order"/>
+        <Label HorizontalAlignment="Left" Margin="126,386,0,0" VerticalAlignment="Top" Width="246" Name="Pay_Status"/>
+    </Grid>
+</Window>

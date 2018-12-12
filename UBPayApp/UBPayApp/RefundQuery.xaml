@@ -1,0 +1,472 @@
+﻿<Page x:Class="UBPayApp.RefundQuery"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      xmlns:TimeTool ="clr-namespace:Loya.Dameer;assembly=Loya.Dameer"      
+      mc:Ignorable="d" 
+      d:DesignHeight="386" d:DesignWidth="870" Loaded="Page_Loaded"
+	Title="RefundQuery">
+    <Page.Resources>
+        <LinearGradientBrush x:Key="CheckRadioFillNormal">
+            <GradientStop Color="#FFD2D4D2" Offset="0"/>
+            <GradientStop Color="#FFFFFFFF" Offset="1"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="CheckRadioStrokeNormal">
+            <GradientStop Color="#FF004C94" Offset="0"/>
+            <GradientStop Color="#FF003C74" Offset="1"/>
+        </LinearGradientBrush>
+        <Style x:Key="CheckRadioFocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="14,0,0,0" SnapsToDevicePixels="true" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="RadioButtonColorStyle" TargetType="{x:Type RadioButton}">
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="Background" Value="{StaticResource CheckRadioFillNormal}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource CheckRadioStrokeNormal}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type RadioButton}">
+                        <Grid>
+                            <!--背景颜色 透明度 边框弧度-->
+                            <Rectangle x:Name="rectangle" Fill="White" Stroke="Black" Opacity="1" RadiusX="3" RadiusY="3" StrokeThickness="1"/>
+                            <!--字体颜色, 字体大小-->
+                            <TextBlock x:Name="textBlock" Margin="8,0" TextWrapping="Wrap" Text="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Top" Height="27.137" FontSize="11" Foreground="Blue"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="GroupName" Value=""/>
+                            <Trigger Property="GroupName" Value=""/>
+                            <!--鼠标点击触发器, 背景颜色-->
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter Property="Fill" TargetName="rectangle" Value="#FF1094FF"/>
+                                <Setter Property="Opacity" TargetName="rectangle" Value="1"/>
+                                <Setter Property="Foreground" TargetName="textBlock">
+                                    <Setter.Value>
+                                        <LinearGradientBrush>
+                                            <!--鼠标点击触发器, 修改字体颜色-->
+                                            <GradientStop Color="#FFFFFF" Offset="0"/>
+                                            <GradientStop Color="#FFFFFF" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <!--鼠标移入移出触发器-->
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Effect" TargetName="rectangle" Value="{x:Null}"/>
+                                <Setter Property="Fill" TargetName="rectangle" Value="#AAAAAA"/>
+                            </Trigger>
+                            <Trigger Property="HasContent" Value="true">
+                                <Setter Property="FocusVisualStyle" Value="{StaticResource CheckRadioFocusVisual}"/>
+                                <Setter Property="Padding" Value="2,0,0,0"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="{x:Type DatePicker}">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Width" Value="335"/>
+            <Setter Property="Height" Value="73"/>
+            <Setter Property="Focusable" Value="False"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="IsTodayHighlighted" Value="True"/>
+            <Setter Property="SelectedDateFormat" Value="Short"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="#D2D6D9"/>
+            <Setter Property="CalendarStyle" Value="{DynamicResource DatePickerCalendar}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type DatePicker}">
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" >
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="PART_DisabledVisual"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Grid x:Name="PART_Root" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+                                <Grid.Resources>
+                                    <SolidColorBrush x:Key="DisabledBrush" Color="#A5FFFFFF"/>
+                                    <ControlTemplate x:Key="DropDownButtonTemplate" TargetType="{x:Type Button}">
+                                        <Grid>
+                                            <VisualStateManager.VisualStateGroups>
+                                                <VisualStateGroup x:Name="CommonStates">
+                                                    <VisualStateGroup.Transitions>
+                                                        <VisualTransition GeneratedDuration="0"/>
+                                                        <VisualTransition GeneratedDuration="0:0:0.1" To="MouseOver"/>
+                                                        <VisualTransition GeneratedDuration="0:0:0.1" To="Pressed"/>
+                                                    </VisualStateGroup.Transitions>
+                                                    <VisualState x:Name="Normal"/>
+                                                    <VisualState x:Name="MouseOver">
+                                                        <Storyboard>
+                                                            <ColorAnimation Duration="0" To="#FF448DCA" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" Storyboard.TargetName="Background"/>
+                                                            <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[3].(GradientStop.Color)" Storyboard.TargetName="BackgroundGradient">
+                                                                <SplineColorKeyFrame KeyTime="0" Value="#7FFFFFFF"/>
+                                                            </ColorAnimationUsingKeyFrames>
+                                                            <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Storyboard.TargetName="BackgroundGradient">
+                                                                <SplineColorKeyFrame KeyTime="0" Value="#CCFFFFFF"/>
+                                                            </ColorAnimationUsingKeyFrames>
+                                                            <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="BackgroundGradient">
+                                                                <SplineColorKeyFrame KeyTime="0" Value="#F2FFFFFF"/>
+                                                            </ColorAnimationUsingKeyFrames>
+                                                        </Storyboard>
+                                                    </VisualState>
+                                                    <VisualState x:Name="Pressed">
+                                                        <Storyboard>
+                                                            <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" Storyboard.TargetName="Background">
+                                                                <SplineColorKeyFrame KeyTime="0" Value="#FF448DCA"/>
+                                                            </ColorAnimationUsingKeyFrames>
+                                                            <DoubleAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Highlight">
+                                                                <SplineDoubleKeyFrame KeyTime="0" Value="1"/>
+                                                            </DoubleAnimationUsingKeyFrames>
+                                                            <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="BackgroundGradient">
+                                                                <SplineColorKeyFrame KeyTime="0" Value="#EAFFFFFF"/>
+                                                            </ColorAnimationUsingKeyFrames>
+                                                            <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Storyboard.TargetName="BackgroundGradient">
+                                                                <SplineColorKeyFrame KeyTime="0" Value="#C6FFFFFF"/>
+                                                            </ColorAnimationUsingKeyFrames>
+                                                            <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[3].(GradientStop.Color)" Storyboard.TargetName="BackgroundGradient">
+                                                                <SplineColorKeyFrame KeyTime="0" Value="#6BFFFFFF"/>
+                                                            </ColorAnimationUsingKeyFrames>
+                                                            <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="BackgroundGradient">
+                                                                <SplineColorKeyFrame KeyTime="0" Value="#F4FFFFFF"/>
+                                                            </ColorAnimationUsingKeyFrames>
+                                                        </Storyboard>
+                                                    </VisualState>
+                                                    <VisualState x:Name="Disabled"/>
+                                                </VisualStateGroup>
+                                            </VisualStateManager.VisualStateGroups>
+                                            <Grid Background="Transparent" FlowDirection="LeftToRight" HorizontalAlignment="Center" Height="18" Margin="0" VerticalAlignment="Center" Width="19">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="20*"/>
+                                                    <ColumnDefinition Width="20*"/>
+                                                    <ColumnDefinition Width="20*"/>
+                                                    <ColumnDefinition Width="20*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="23*"/>
+                                                    <RowDefinition Height="19*"/>
+                                                    <RowDefinition Height="19*"/>
+                                                    <RowDefinition Height="19*"/>
+                                                </Grid.RowDefinitions>
+                                                <Border x:Name="Highlight" Visibility="Hidden" BorderBrush="#FF45D6FA" BorderThickness="0" Grid.ColumnSpan="4" CornerRadius="0,0,1,1" Margin="-1" Opacity="0" Grid.Row="0" Grid.RowSpan="4"/>
+                                                <Border x:Name="Background" Visibility="Hidden" BorderBrush="#FFFFFFFF" BorderThickness="0" Background="#FF1F3B53" Grid.ColumnSpan="4" CornerRadius=".5" Margin="0,-1,0,0" Opacity="1" Grid.Row="1" Grid.RowSpan="3"/>
+                                                <Border x:Name="BackgroundGradient" Visibility="Hidden" BorderBrush="#BF000000" BorderThickness="0" Grid.ColumnSpan="4" CornerRadius=".5" Margin="0,-1,0,0" Opacity="1" Grid.Row="1" Grid.RowSpan="3">
+                                                    <Border.Background>
+                                                        <LinearGradientBrush EndPoint=".7,1" StartPoint=".7,0">
+                                                            <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                                                            <GradientStop Color="#F9FFFFFF" Offset="0.375"/>
+                                                            <GradientStop Color="#E5FFFFFF" Offset="0.625"/>
+                                                            <GradientStop Color="#C6FFFFFF" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </Border.Background>
+                                                </Border>
+                                                <Rectangle Visibility="Hidden" Grid.ColumnSpan="4" Grid.RowSpan="1" StrokeThickness="1">
+                                                    <Rectangle.Fill>
+                                                        <LinearGradientBrush EndPoint="0.3,-1.1" StartPoint="0.46,1.6">
+                                                            <GradientStop Color="#FF4084BD"/>
+                                                            <GradientStop Color="#FFAFCFEA" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </Rectangle.Fill>
+                                                    <Rectangle.Stroke>
+                                                        <LinearGradientBrush EndPoint="0.48,-1" StartPoint="0.48,1.25">
+                                                            <GradientStop Color="#FF494949"/>
+                                                            <GradientStop Color="#FF9F9F9F" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </Rectangle.Stroke>
+                                                </Rectangle>
+                                                <Path Grid.ColumnSpan="4" Grid.Column="0" Data="M 0 0 L 4 6 L 8 0" Stroke="{TemplateBinding BorderBrush}" StrokeThickness="{TemplateBinding BorderThickness}" HorizontalAlignment="Center" Margin="4,3,4,3" Grid.Row="1" Grid.RowSpan="3" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Center"/>
+                                                <Ellipse Visibility="Hidden" Grid.ColumnSpan="4" Fill="#FFFFFFFF" HorizontalAlignment="Center" Height="3" StrokeThickness="0" VerticalAlignment="Center" Width="3"/>
+                                                <Border x:Name="DisabledVisual" Visibility="Hidden" BorderBrush="#B2FFFFFF" BorderThickness="1" Grid.ColumnSpan="4" CornerRadius="0,0,.5,.5" Opacity="0" Grid.Row="0" Grid.RowSpan="4"/>
+                                            </Grid>
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Grid.Resources>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <!--<Button x:Name="PART_Button" Grid.Column="1" Foreground="{TemplateBinding Foreground}" Focusable="False" HorizontalAlignment="Left" Margin="3,0,3,0" Grid.Row="0" Template="{StaticResource DropDownButtonTemplate}" VerticalAlignment="Center" Width="20"/>-->
+                                <Button x:Name="PART_Button" Grid.Column="1" Foreground="{TemplateBinding Foreground}" Focusable="False" HorizontalAlignment="Left" Margin="3,0,3,0" Grid.Row="0"  VerticalAlignment="Center" Width="28" Height="28" Background="Transparent" >
+                                    <Button.Content>
+                                        <Image Source="/UBPayApp;component/bin/Release/pic/rili.png" Height="18"/>
+                                    </Button.Content>
+                                </Button>
+                                <DatePickerTextBox x:Name="PART_TextBox" Text="{TemplateBinding Tag}" Grid.Column="0" IsHitTestVisible="False" Focusable="False" HorizontalContentAlignment="Center" Grid.Row="0" VerticalContentAlignment="Stretch"  FontStyle="Normal" FontSize="11" Foreground="#484C50" Height="73" BorderThickness="0,0,2,0" BorderBrush="#F0F0F0" Background="Transparent" />
+                                <Grid x:Name="PART_DisabledVisual" Grid.ColumnSpan="2" Grid.Column="0" IsHitTestVisible="False" Opacity="0" Grid.Row="0" Height="73">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <!--<Rectangle Grid.Column="0" Fill="#A5FFFFFF" RadiusY="1" Grid.Row="0" RadiusX="1"/>-->
+                                    <!--<Rectangle Grid.Column="1" Fill="#A5FFFFFF" Height="18" Margin="3,0,3,0" RadiusY="1" Grid.Row="0" RadiusX="1" Width="19"/>-->
+                                    <Popup x:Name="PART_Popup" AllowsTransparency="True" Placement="Bottom" PlacementTarget="{Binding ElementName=PART_TextBox}" StaysOpen="False"/>
+                                </Grid>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <DataTrigger Binding="{Binding Source={x:Static SystemParameters.HighContrast}}" Value="false">
+                                <Setter Property="Foreground" TargetName="PART_TextBox" Value="{Binding Foreground, RelativeSource={RelativeSource TemplatedParent}}"/>
+                            </DataTrigger>
+                            <Trigger Property="IsMouseOver"  Value="True">
+                                <Setter Property="Opacity" Value="0.8"/>
+                            </Trigger>
+                            <Trigger Property="IsDropDownOpen" Value="True">
+                                <Setter Property="Opacity" Value="1"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <ControlTemplate x:Key="MyScrollViewerControlTemplate2" TargetType="{x:Type ScrollViewer}">
+            <Grid x:Name="Grid" Background="{TemplateBinding Background}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Rectangle x:Name="Corner" Grid.Column="1" Fill="White" Grid.Row="1"/>
+                <ScrollContentPresenter x:Name="PART_ScrollContentPresenter" CanContentScroll="{TemplateBinding CanContentScroll}" CanHorizontallyScroll="False" CanVerticallyScroll="False" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" Grid.Column="0" Margin="{TemplateBinding Padding}" Grid.Row="0"/>
+                <ScrollBar x:Name="PART_VerticalScrollBar" AutomationProperties.AutomationId="VerticalScrollBar" Cursor="Arrow" Grid.Column="1" Maximum="{TemplateBinding ScrollableHeight}" Minimum="0" Grid.Row="0" Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}" Value="{Binding VerticalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" ViewportSize="{TemplateBinding ViewportHeight}" Style="{DynamicResource MyScrollBarStyle}"/>
+                <ScrollBar x:Name="PART_HorizontalScrollBar" AutomationProperties.AutomationId="HorizontalScrollBar" Cursor="Arrow" Grid.Column="0" Maximum="{TemplateBinding ScrollableWidth}" Minimum="0" Orientation="Horizontal" Grid.Row="1" Visibility="{TemplateBinding ComputedHorizontalScrollBarVisibility}" Value="{Binding HorizontalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" ViewportSize="{TemplateBinding ViewportWidth}"  Style="{DynamicResource MyScrollBarStyle}"/>
+            </Grid>
+        </ControlTemplate>
+
+        <!--<ControlTemplate x:Key="ComboBoxTextBox" TargetType="{x:Type TextBox}">
+            <Border x:Name="PART_ContentHost" Focusable="False" Background="{TemplateBinding Background}" />
+        </ControlTemplate>
+        <ControlTemplate x:Key="ComboBoxToggleButton" TargetType="{x:Type ToggleButton}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="25" />
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="0" CornerRadius="5" BorderThickness="1" BorderBrush="#FF737070" />
+                <Border Grid.Column="1" CornerRadius="5" Background="#e8e8e8" Cursor="Hand"/>
+                <Path x:Name="Arrow" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Data="M 0 0 L 4 4 L 8 0 Z" Margin="12,16,10,10" Stretch="Fill" Fill="White" />
+            </Grid>
+        </ControlTemplate>
+
+        <Style TargetType="{x:Type ComboBox}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ComboBox}">
+                        <Grid>
+                            -->
+        <!-- ToggleButton 已数据绑定到 ComboBox 本身以切换 IsDropDownOpen -->
+        <!--
+                            <ToggleButton Grid.Column="2" Template="{DynamicResource ComboBoxToggleButton}" x:Name="ToggleButton" IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" ClickMode="Press"/>
+                            <ContentPresenter HorizontalAlignment="Left" Margin="3,3,23,3" x:Name="ContentSite" VerticalAlignment="Center" Content="{TemplateBinding SelectionBoxItem}" ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}" ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}" IsHitTestVisible="False"/>
+                            -->
+        <!-- 必须将 TextBox 命名为 PART_EditableTextBox，否则 ComboBox 将无法识别它 -->
+        <!--
+                            <TextBox Visibility="Hidden" Template="{DynamicResource ComboBoxTextBox}" HorizontalAlignment="Left" Margin="3,3,23,3" x:Name="PART_EditableTextBox" Style="{x:Null}" VerticalAlignment="Center" Focusable="True" Background="Transparent" IsReadOnly="{TemplateBinding IsReadOnly}"/>
+                            -->
+        <!-- Popup 可显示 ComboBox 中的项列表。IsOpen 已数据绑定到通过 ComboBoxToggleButton 来切换的 IsDropDownOpen -->
+        <!--
+                            <Popup IsOpen="{TemplateBinding IsDropDownOpen}" Placement="Bottom" x:Name="Popup" Focusable="False" AllowsTransparency="True" PopupAnimation="Slide">
+                                <Grid MaxHeight="{TemplateBinding MaxDropDownHeight}" MinWidth="{TemplateBinding ActualWidth}" x:Name="DropDown" SnapsToDevicePixels="True">
+                                    <Border x:Name="DropDownBorder" Background="{DynamicResource WindowBackgroundBrush}" BorderBrush="{DynamicResource SolidBorderBrush}" BorderThickness="2"/>
+                                    <ScrollViewer Margin="4,6,4,6" Style="{DynamicResource SimpleScrollViewer}" SnapsToDevicePixels="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="True">
+                                        -->
+        <!-- StackPanel 用于显示子级，方法是将 IsItemsHost 设置为 True -->
+        <!--
+                                        <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" Background="White"/>
+                                    </ScrollViewer>
+                                </Grid>
+                            </Popup>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>-->
+
+        <!--自定义颜色-->
+        <LinearGradientBrush x:Key="LinearGradientBlueBackground" EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF377FED" Offset="0" />
+            <GradientStop Color="#FF074CC0" Offset="1" />
+        </LinearGradientBrush>
+        <SolidColorBrush x:Key="MyBtnBorderColor" Color="#FF2D78F4"></SolidColorBrush>
+        <SolidColorBrush x:Key="MyBtnHoverBackgroundColor" Color="#FF317EF3"></SolidColorBrush>
+        <!--END-->
+
+        <Style x:Key="MyWpfButton" TargetType="{x:Type Button}" >
+            <Setter Property="Background" Value="{StaticResource LinearGradientBlueBackground}"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="BorderBrush" Value="{StaticResource MyBtnBorderColor}"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" 
+                                SnapsToDevicePixels="true" CornerRadius="10,10,10,10">
+                            <ContentPresenter x:Name="contentPresenter" 
+                                              Focusable="False" 
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                              Margin="{TemplateBinding Padding}" 
+                                              RecognizesAccessKey="True" 
+                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"  />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource MyBtnHoverBackgroundColor}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="White">
+        <Label Content="退款单查询" FontSize="13" Height="30" HorizontalAlignment="Left" Margin="37,0,0,0" Name="lb__Refund" VerticalAlignment="Top" FontWeight="Bold" />
+        <Grid Height="20" HorizontalAlignment="Left" Margin="29,2,0,0" Name="grid1" VerticalAlignment="Top" Width="4" Background="#FF1970F8" />
+        <Label Content="退款单查询" FontSize="13" Height="30" HorizontalAlignment="Left" Margin="46,146,0,0" Name="label1" VerticalAlignment="Top" FontWeight="Bold" />
+        <Grid Background="#FF1970F8" Height="20" HorizontalAlignment="Left" Margin="30,151,0,0" Name="grid2" VerticalAlignment="Top" Width="4" />
+        <!--<Rectangle Height="196" HorizontalAlignment="Left" Margin="29,182,0,0" Name="rectangle2" Stroke="#FFC7B6B6" VerticalAlignment="Top" Width="829" />-->
+
+        <!--<ScrollViewer Template="{StaticResource MyScrollViewerControlTemplate2}" Margin="29,208,12,12" CanContentScroll="True" PanningMode="HorizontalOnly"  ManipulationBoundaryFeedback="SCManipulationBoundaryFeedback" TouchDown="scrollViewer1_TouchDown" TouchMove="scrollViewer1_TouchMove" TouchUp="scrollViewer1_TouchUp" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Disabled" Name="scrollViewer1" >
+            <Canvas x:Name="inputCanvas" HorizontalAlignment="Left" Height="176" VerticalAlignment="Top" Width="829">
+            </Canvas>
+        </ScrollViewer>-->
+
+
+        <!--<Grid Height="27" HorizontalAlignment="Left" Margin="30,182,0,0" Name="grid3" VerticalAlignment="Top" Width="828" Background="#FFE5E5E5">
+            <Label Content="订单编号" FontSize="12" Height="26" HorizontalAlignment="Left" Margin="49,2,0,0" Name="label2" VerticalAlignment="Top" />
+            <Label Content="支付类型" FontSize="12" Height="26" HorizontalAlignment="Left" Margin="178,2,0,0" Name="label3" VerticalAlignment="Top" />
+            <Label Content="服务商名称" FontSize="12" Height="27" HorizontalAlignment="Right" Margin="0,1,465,0" Name="label4" VerticalAlignment="Top" />
+            <Label Content="订单状态" FontSize="12" Height="26" HorizontalAlignment="Left" Margin="390,2,0,0" Name="label5" VerticalAlignment="Top" />
+            <Label Content="订单金额" FontSize="12" Height="26" HorizontalAlignment="Left" Margin="489,2,0,0" Name="label6" VerticalAlignment="Top" />
+            <Label Content="订单发起时间" FontSize="12" Height="26" HorizontalAlignment="Left" Margin="603,2,0,0" Name="label7" VerticalAlignment="Top" />
+            <Label Content="操作" FontSize="12" Height="26" HorizontalAlignment="Left" Margin="730,2,0,0" Name="label8" VerticalAlignment="Top" />
+        </Grid>-->
+
+        <Grid Name="grid4">
+            <!--<Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>-->
+            <DataGrid AutoGenerateColumns="False" Margin="32,178,12,30" Name="OrderRefundQueryPage"  ScrollViewer.HorizontalScrollBarVisibility="Visible" ItemsSource="{Binding}" CanUserAddRows="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding channel_name}" Header= "支付方式" Width = "100"/>
+                    <DataGridTextColumn Binding="{Binding payment_name}" Header= "交易类型" Width = "100"/>
+                    <DataGridTextColumn Binding="{Binding device_name}" Header= "交易设备名称" Width = "100"/>
+                    <DataGridTextColumn Binding="{Binding operator_name}" Header= "店员名称" Width = "100"/>
+                    <DataGridTextColumn Binding="{Binding operator_id}" Header= "店员ID"  Width = "100"/>
+                    <DataGridTextColumn Binding="{Binding order_id}" Header= "订单号"  Width = "150"/>
+                    <DataGridTextColumn Binding="{Binding refund_order_id}" Header= "退款单号"  Width = "150"/>
+                    <DataGridTextColumn Binding="{Binding amount}" Header= "交易金额(￥)"  Width = "100"/>
+                    <DataGridTextColumn Binding="{Binding refund_amount}" Header= "退款金额(￥)"  Width = "100"/>
+                    <DataGridTextColumn Binding="{Binding time_create}" Header= "创建时间"  Width = "150"/>
+                    <DataGridTextColumn Binding="{Binding time_update}" Header= "完成时间"  Width = "150"/>
+                    <DataGridTextColumn Binding="{Binding _status}" Header= "退款结果"  Width = "150"/>
+                    <DataGridTextColumn Binding="{Binding reason}" Header= "退款原因"  Width = "150"/>
+
+                    <DataGridTemplateColumn Header="操作" Width="40">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Button Content="更新" Width="40"  VerticalAlignment="Center" Name="updateRefundStatus" Click="updateRefundStatus_Click"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                </DataGrid.Columns>
+
+            </DataGrid>
+
+        </Grid>
+        <Grid Margin="29,30,12,254">
+            <Rectangle HorizontalAlignment="Left" Margin="1,0,0,0" Name="rectangle1" Stroke="#FFC7B6B6" Width="828" />
+            <RadioButton Margin="32,12,0,74" Cursor="Hand" Name="today" Style="{DynamicResource RadioButtonColorStyle}" SnapsToDevicePixels="True" Content="今日" Click="today_Click"  HorizontalAlignment="Left" Width="47">
+            </RadioButton>
+
+            <RadioButton Margin="96,12,0,74"  Cursor="Hand" Name="yesterday" Style="{DynamicResource RadioButtonColorStyle}" SnapsToDevicePixels="True" Content="昨日" Click="yesterday_Click" HorizontalAlignment="Left" Width="47">
+            </RadioButton>
+
+            <RadioButton Margin="158,12,0,74" Cursor="Hand" Name="Nearly7days" Style="{DynamicResource RadioButtonColorStyle}" SnapsToDevicePixels="True" Content="近7日" Click="Nearly7days_Click" HorizontalAlignment="Left" Width="47">
+            </RadioButton>
+
+            <RadioButton Margin="219,12,0,74" Cursor="Hand" Name="Nearly30days" Style="{DynamicResource RadioButtonColorStyle}" SnapsToDevicePixels="True" Content="近30日" Click="Nearly30days_Click" HorizontalAlignment="Left" Width="60">
+            </RadioButton>
+            <TimeTool:Dameer  HorizontalAlignment="Left" Height="21" Margin="505,10,0,0" VerticalAlignment="Top" Width="131" Name="datePicker1" Format="Custom" CustomFormat="yyyy-MM-dd HH:mm:ss" ShowCheckBox="False"/>
+            <TimeTool:Dameer  HorizontalAlignment="Left" Height="21" Margin="338,10,0,0" VerticalAlignment="Top" Width="131" Name="datePicker2" Format="Custom" CustomFormat="yyyy-MM-dd HH:mm:ss" ShowCheckBox="False" />
+
+            <!--<DatePicker Height="21" HorizontalAlignment="Left" Margin="505,10,0,0" Name="datePicker1" VerticalAlignment="Top" Width="131" FontSize="18" SelectedDate="{x:Static sys:DateTime.Now}" SelectedDateChanged="datePicker1_SelectedDateChanged" SelectedDateFormat="Short" DisplayDate="8/11/2018" />-->
+            <Label Content="至" FontSize="11" Height="27" HorizontalAlignment="Left" Margin="475,8,0,0" Name="label9" VerticalAlignment="Top" />
+            <!--<DatePicker FontSize="14" Height="20" HorizontalAlignment="Left" Margin="338,10,0,0" Name="datePicker2" SelectedDate="{x:Static sys:DateTime.Now}" VerticalAlignment="Top" Width="131" SelectedDateChanged="datePicker2_SelectedDateChanged" SelectedDateFormat="Short" DisplayDate="9/11/2018" />-->
+            <Label Content="订单号：" FontSize="11" Height="24" HorizontalAlignment="Left" Margin="32,68,0,0" Name="label10" VerticalAlignment="Top" Width="58" />
+            <Border CornerRadius="5" Margin="90,69,553,10" BorderThickness="1" BorderBrush="#FF737070" Name="jm1">
+                <Label Content="请输入退款订单号" Height="32" Name="lbInputID" Foreground="#FFC8C5C5" FontSize="11" FontFamily="Microsoft YaHei,Arial" Margin="-1,-1,1,-10" />
+            </Border>
+
+            <Border CornerRadius="5" Margin="129,38,493,39" BorderThickness="1" BorderBrush="#FF737070" Name="refund">
+                <Label Content="输入订单号退款" Name="lbInputRefundID" Foreground="#FFC8C5C5" FontSize="11" FontFamily="Microsoft YaHei,Arial" Margin="-1,-1,109,-1" />
+            </Border>
+
+            <!--<Border CornerRadius="5" Margin="429,38,193,39" BorderThickness="1" BorderBrush="#FF737070" Name="refundAmount">
+                <Label Content="输入退款金额" Name="lbInputRefundAmount" Foreground="#FFC8C5C5" FontSize="11" FontFamily="Microsoft YaHei,Arial" Margin="-1,-1,109,-1" />
+            </Border>-->
+
+            <Button Content="退款" Height="19" HorizontalAlignment="Right" Margin="0,38,385,0" Name="bt_refund" VerticalAlignment="Top" Width="90" Style="{StaticResource MyWpfButton}" FontSize="11" Click="bt_refund_Click"/>
+            <Label Content="支付方式：" FontSize="11" Height="24" HorizontalAlignment="Left" Margin="293,68,0,0" Name="label11" VerticalAlignment="Top" />
+            <!--<ComboBox Height="22" HorizontalAlignment="Left" Margin="377,69,0,0"  BorderThickness="0"  Name="cmbPaymentType" VerticalAlignment="Top" Width="188" FontSize="11" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" />-->
+            <ComboBox Height="24" HorizontalAlignment="Left" Margin="358,68,0,0" Name="cmb_Payment_Mode" VerticalAlignment="Top" Width="111" FontSize="11" SelectionChanged="cmb_Payment_Mode_SelectionChanged"/>
+            <Button Content="查询" Height="19" HorizontalAlignment="Right" Margin="0,10,90,0" Name="bt__RefundQuery" VerticalAlignment="Top" Width="75" Style="{StaticResource MyWpfButton}" FontSize="11" Click="bt__RefundQuery_Click" />
+            <Button Content="导出" Height="19" HorizontalAlignment="Right" Margin="0,10,10,0" Name="bt__exPortExcel" VerticalAlignment="Top" Width="75" Style="{StaticResource MyWpfButton}" FontSize="11" Click="bt__exPortExcel_Click"/>
+            <TextBox Name="tBoxInputID" BorderThickness="0" FontSize="11" Text="" Foreground="Black" MaxLength="30" Background="{x:Null}" VerticalContentAlignment="Center" TextChanged="tBoxInputID_TextChanged" Margin="90,69,556,10" />
+            <Label Content="输入订单号退款：" FontSize="11" Height="24" HorizontalAlignment="Left" Margin="32,36,0,0" Name="label13" VerticalAlignment="Top" Width="97" />
+            <TextBox Name="tBoxRefundOrder" BorderThickness="0" FontSize="11" Text="" Foreground="Black" MaxLength="30" Background="{x:Null}" VerticalContentAlignment="Center" TextChanged="tBoxRefundOrder_TextChanged"  Margin="129,38,493,39" />
+            <Label Content="交易类型" FontSize="11" Height="24" HorizontalAlignment="Left" Margin="482,68,0,0" x:Name="label11_Copy3" VerticalAlignment="Top" />
+            <ComboBox Height="24" HorizontalAlignment="Left" Margin="541,69,0,0" x:Name="cmbPaymentType" VerticalAlignment="Top" Width="111" FontSize="11" SelectionChanged="cmbPaymentType_SelectionChanged"/>
+            <Label Content="订单状态" FontSize="11" Height="24" HorizontalAlignment="Left" Margin="654,68,0,0" x:Name="label11_Copy4" VerticalAlignment="Top" />
+            <ComboBox Height="24" HorizontalAlignment="Left" Margin="708,69,0,0" x:Name="cmb_Order_Status" VerticalAlignment="Top" Width="111" FontSize="11" SelectionChanged="cmb_Order_Status_SelectionChanged"/>
+            <!--<Label Content="输入退款金额：" FontSize="11" Height="24" HorizontalAlignment="Left" Margin="341,38,0,0" x:Name="label13_Copy" VerticalAlignment="Top" Width="97" />
+            <TextBox Name="tBoxRefundAmount" BorderThickness="0" FontSize="11" Text="" Foreground="Black" MaxLength="30" Background="{x:Null}" VerticalContentAlignment="Center" TextChanged="tBoxRefundAmount_TextChanged"  Margin="429,38,193,39" />-->
+
+
+        </Grid>
+        <Button Content="上一页" FontSize="11" Height="19" HorizontalAlignment="Right" Margin="0,362,396,0" Name="btPreviousPage" Style="{StaticResource MyWpfButton}" VerticalAlignment="Top" Width="86" Click="btPreviousPage_Click" />
+        <Button Content="下一页" FontSize="11" Height="19" HorizontalAlignment="Right" Margin="0,362,7,0" Name="btNextPage" Style="{StaticResource MyWpfButton}" VerticalAlignment="Top" Width="86" Click="btNextPage_Click" />
+        <TextBox Text="0" TextAlignment="Center" Width="30" Name="txTargetPage" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,358,220,0"></TextBox>
+        <Label Content="页" FontSize="11" Height="24" HorizontalAlignment="Right" Margin="0,360,200,0" Name="label12" VerticalAlignment="Top" />
+        <Button Content="GO" FontSize="11" Height="19" HorizontalAlignment="Right" Margin="0,362,100,0" Name="btTargetPage" Style="{StaticResource MyWpfButton}" VerticalAlignment="Top" Width="86" Click="btTargetPage_Click"/>
+        <Grid Name="DisplayRefundPage" Margin="484,362,259,5"  Height="19">
+            <TextBlock HorizontalAlignment="Center">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat="第{0}页/共{1}页 转到第">
+                        <Binding Path="CurrentPage"/>
+                        <Binding Path="TotalPage"/>
+                        <Binding Path="TargetPage"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+            </TextBlock>
+        </Grid>
+    </Grid>
+
+
+</Page>

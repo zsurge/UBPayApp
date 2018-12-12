@@ -1,0 +1,306 @@
+c:\users\yinyuanyuan\documents\visual studio 2015\Projects\CaptureScreenDemo\RisCaptureLib\bin\Debug\RisCaptureLib.exe.config
+c:\users\yinyuanyuan\documents\visual studio 2015\Projects\CaptureScreenDemo\RisCaptureLib\bin\Debug\RisCaptureLib.exe
+c:\users\yinyuanyuan\documents\visual studio 2015\Projects\CaptureScreenDemo\RisCaptureLib\bin\Debug\RisCaptureLib.pdb
+c:\users\yinyuanyuan\documents\visual studio 2015\Projects\CaptureScreenDemo\RisCaptureLib\obj\Debug\App.g.cs
+c:\users\yinyuanyuan\documents\visual studio 2015\Projects\CaptureScreenDemo\RisCaptureLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+c:\users\yinyuanyuan\documents\visual studio 2015\Projects\CaptureScreenDemo\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.cache
+c:\users\yinyuanyuan\documents\visual studio 2015\Projects\CaptureScreenDemo\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.lref
+c:\users\yinyuanyuan\documents\visual studio 2015\Projects\CaptureScreenDemo\RisCaptureLib\obj\Debug\Themes\generic.baml
+c:\users\yinyuanyuan\documents\visual studio 2015\Projects\CaptureScreenDemo\RisCaptureLib\obj\Debug\RisCaptureLib.g.resources
+c:\users\yinyuanyuan\documents\visual studio 2015\Projects\CaptureScreenDemo\RisCaptureLib\obj\Debug\RisCaptureLib.Properties.Resources.resources
+c:\users\yinyuanyuan\documents\visual studio 2015\Projects\CaptureScreenDemo\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateResource.Cache
+c:\users\yinyuanyuan\documents\visual studio 2015\Projects\CaptureScreenDemo\RisCaptureLib\obj\Debug\RisCaptureLib.exe
+c:\users\yinyuanyuan\documents\visual studio 2015\Projects\CaptureScreenDemo\RisCaptureLib\obj\Debug\RisCaptureLib.pdb
+E:\Demo\CaptureScreenDemo\RisCaptureLib\bin\Debug\RisCaptureLib.exe.config
+E:\Demo\CaptureScreenDemo\RisCaptureLib\bin\Debug\RisCaptureLib.exe
+E:\Demo\CaptureScreenDemo\RisCaptureLib\bin\Debug\RisCaptureLib.pdb
+E:\Demo\CaptureScreenDemo\RisCaptureLib\obj\Debug\RisCaptureLib.csprojResolveAssemblyReference.cache
+E:\Demo\CaptureScreenDemo\RisCaptureLib\obj\Debug\App.g.cs
+E:\Demo\CaptureScreenDemo\RisCaptureLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Demo\CaptureScreenDemo\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.cache
+E:\Demo\CaptureScreenDemo\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.lref
+E:\Demo\CaptureScreenDemo\RisCaptureLib\obj\Debug\Themes\generic.baml
+E:\Demo\CaptureScreenDemo\RisCaptureLib\obj\Debug\RisCaptureLib.g.resources
+E:\Demo\CaptureScreenDemo\RisCaptureLib\obj\Debug\RisCaptureLib.Properties.Resources.resources
+E:\Demo\CaptureScreenDemo\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateResource.Cache
+E:\Demo\CaptureScreenDemo\RisCaptureLib\obj\Debug\RisCaptureLib.exe
+E:\Demo\CaptureScreenDemo\RisCaptureLib\obj\Debug\RisCaptureLib.pdb
+E:\Demo\CaptureScreenDemo\RisCaptureLib\obj\Debug\ToolBarControl.g.cs
+E:\Demo\CaptureScreenDemo\RisCaptureLib\obj\Debug\ToolBarControl.baml
+E:\协同会议文件\RisCaptureLib\bin\Debug\RisCaptureLib.exe.config
+E:\协同会议文件\RisCaptureLib\bin\Debug\RisCaptureLib.exe
+E:\协同会议文件\RisCaptureLib\bin\Debug\RisCaptureLib.pdb
+E:\协同会议文件\RisCaptureLib\obj\Debug\RisCaptureLib.csprojResolveAssemblyReference.cache
+E:\协同会议文件\RisCaptureLib\obj\Debug\ToolBarControl.g.cs
+E:\协同会议文件\RisCaptureLib\obj\Debug\App.g.cs
+E:\协同会议文件\RisCaptureLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\协同会议文件\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.cache
+E:\协同会议文件\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.lref
+E:\协同会议文件\RisCaptureLib\obj\Debug\Themes\generic.baml
+E:\协同会议文件\RisCaptureLib\obj\Debug\ToolBarControl.baml
+E:\协同会议文件\RisCaptureLib\obj\Debug\RisCaptureLib.g.resources
+E:\协同会议文件\RisCaptureLib\obj\Debug\RisCaptureLib.Properties.Resources.resources
+E:\协同会议文件\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateResource.Cache
+E:\协同会议文件\RisCaptureLib\obj\Debug\RisCaptureLib.exe
+E:\协同会议文件\RisCaptureLib\obj\Debug\RisCaptureLib.pdb
+E:\协同会议文件\CaptureDemo\RisCaptureLib\bin\Debug\RisCaptureLib.exe.config
+E:\协同会议文件\CaptureDemo\RisCaptureLib\bin\Debug\RisCaptureLib.exe
+E:\协同会议文件\CaptureDemo\RisCaptureLib\bin\Debug\RisCaptureLib.pdb
+E:\协同会议文件\CaptureDemo\RisCaptureLib\obj\Debug\RisCaptureLib.csprojResolveAssemblyReference.cache
+E:\协同会议文件\CaptureDemo\RisCaptureLib\obj\Debug\ToolBarControl.g.cs
+E:\协同会议文件\CaptureDemo\RisCaptureLib\obj\Debug\App.g.cs
+E:\协同会议文件\CaptureDemo\RisCaptureLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\协同会议文件\CaptureDemo\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.cache
+E:\协同会议文件\CaptureDemo\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.lref
+E:\协同会议文件\CaptureDemo\RisCaptureLib\obj\Debug\Themes\generic.baml
+E:\协同会议文件\CaptureDemo\RisCaptureLib\obj\Debug\ToolBarControl.baml
+E:\协同会议文件\CaptureDemo\RisCaptureLib\obj\Debug\RisCaptureLib.g.resources
+E:\协同会议文件\CaptureDemo\RisCaptureLib\obj\Debug\RisCaptureLib.Properties.Resources.resources
+E:\协同会议文件\CaptureDemo\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateResource.Cache
+E:\协同会议文件\CaptureDemo\RisCaptureLib\obj\Debug\RisCaptureLib.exe
+E:\协同会议文件\CaptureDemo\RisCaptureLib\obj\Debug\RisCaptureLib.pdb
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\CaptureDemo\RisCaptureLib\bin\Debug\RisCaptureLib.exe.config
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\CaptureDemo\RisCaptureLib\bin\Debug\RisCaptureLib.exe
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\CaptureDemo\RisCaptureLib\bin\Debug\RisCaptureLib.pdb
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\CaptureDemo\RisCaptureLib\obj\Debug\RisCaptureLib.csprojAssemblyReference.cache
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\CaptureDemo\RisCaptureLib\obj\Debug\ToolBarControl.g.cs
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\CaptureDemo\RisCaptureLib\obj\Debug\App.g.cs
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\CaptureDemo\RisCaptureLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\CaptureDemo\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.cache
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\CaptureDemo\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.lref
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\CaptureDemo\RisCaptureLib\obj\Debug\Themes\generic.baml
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\CaptureDemo\RisCaptureLib\obj\Debug\ToolBarControl.baml
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\CaptureDemo\RisCaptureLib\obj\Debug\RisCaptureLib.g.resources
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\CaptureDemo\RisCaptureLib\obj\Debug\RisCaptureLib.Properties.Resources.resources
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\CaptureDemo\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateResource.cache
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\CaptureDemo\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.CoreCompileInputs.cache
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\CaptureDemo\RisCaptureLib\obj\Debug\RisCaptureLib.exe
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\CaptureDemo\RisCaptureLib\obj\Debug\RisCaptureLib.pdb
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp\RisCaptureLib\bin\Debug\RisCaptureLib.exe.config
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp\RisCaptureLib\bin\Debug\RisCaptureLib.exe
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp\RisCaptureLib\bin\Debug\RisCaptureLib.pdb
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.csprojAssemblyReference.cache
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp\RisCaptureLib\obj\Debug\ToolBarControl.g.cs
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp\RisCaptureLib\obj\Debug\App.g.cs
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp\RisCaptureLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.cache
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.lref
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp\RisCaptureLib\obj\Debug\Themes\generic.baml
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp\RisCaptureLib\obj\Debug\ToolBarControl.baml
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.g.resources
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.Properties.Resources.resources
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateResource.cache
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.CoreCompileInputs.cache
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.exe
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.pdb
+D:\Documents\WeChat Files\WONJIM\Files\UBPayApp0917(1)\UBPayApp\RisCaptureLib\bin\Debug\RisCaptureLib.exe.config
+D:\Documents\WeChat Files\WONJIM\Files\UBPayApp0917(1)\UBPayApp\RisCaptureLib\bin\Debug\RisCaptureLib.exe
+D:\Documents\WeChat Files\WONJIM\Files\UBPayApp0917(1)\UBPayApp\RisCaptureLib\bin\Debug\RisCaptureLib.pdb
+D:\Documents\WeChat Files\WONJIM\Files\UBPayApp0917(1)\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.csprojAssemblyReference.cache
+D:\Documents\WeChat Files\WONJIM\Files\UBPayApp0917(1)\UBPayApp\RisCaptureLib\obj\Debug\ToolBarControl.g.cs
+D:\Documents\WeChat Files\WONJIM\Files\UBPayApp0917(1)\UBPayApp\RisCaptureLib\obj\Debug\App.g.cs
+D:\Documents\WeChat Files\WONJIM\Files\UBPayApp0917(1)\UBPayApp\RisCaptureLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Documents\WeChat Files\WONJIM\Files\UBPayApp0917(1)\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.cache
+D:\Documents\WeChat Files\WONJIM\Files\UBPayApp0917(1)\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.lref
+D:\Documents\WeChat Files\WONJIM\Files\UBPayApp0917(1)\UBPayApp\RisCaptureLib\obj\Debug\Themes\generic.baml
+D:\Documents\WeChat Files\WONJIM\Files\UBPayApp0917(1)\UBPayApp\RisCaptureLib\obj\Debug\ToolBarControl.baml
+D:\Documents\WeChat Files\WONJIM\Files\UBPayApp0917(1)\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.g.resources
+D:\Documents\WeChat Files\WONJIM\Files\UBPayApp0917(1)\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.Properties.Resources.resources
+D:\Documents\WeChat Files\WONJIM\Files\UBPayApp0917(1)\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateResource.cache
+D:\Documents\WeChat Files\WONJIM\Files\UBPayApp0917(1)\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.CoreCompileInputs.cache
+D:\Documents\WeChat Files\WONJIM\Files\UBPayApp0917(1)\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.exe
+D:\Documents\WeChat Files\WONJIM\Files\UBPayApp0917(1)\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.pdb
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp0926\UBPayApp\RisCaptureLib\bin\Debug\RisCaptureLib.exe.config
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp0926\UBPayApp\RisCaptureLib\bin\Debug\RisCaptureLib.exe
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp0926\UBPayApp\RisCaptureLib\bin\Debug\RisCaptureLib.pdb
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp0926\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.csprojAssemblyReference.cache
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp0926\UBPayApp\RisCaptureLib\obj\Debug\ToolBarControl.g.cs
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp0926\UBPayApp\RisCaptureLib\obj\Debug\App.g.cs
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp0926\UBPayApp\RisCaptureLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp0926\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.cache
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp0926\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.lref
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp0926\UBPayApp\RisCaptureLib\obj\Debug\Themes\generic.baml
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp0926\UBPayApp\RisCaptureLib\obj\Debug\ToolBarControl.baml
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp0926\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.g.resources
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp0926\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.Properties.Resources.resources
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp0926\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateResource.cache
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp0926\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.CoreCompileInputs.cache
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp0926\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.exe
+E:\SvnDir\SvnKRFSrc\20-UBPayApp\UBPayApp0926\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.pdb
+H:\surge\UBPayApp_1004001\RisCaptureLib\bin\Debug\RisCaptureLib.exe.config
+H:\surge\UBPayApp_1004001\RisCaptureLib\bin\Debug\RisCaptureLib.exe
+H:\surge\UBPayApp_1004001\RisCaptureLib\bin\Debug\RisCaptureLib.pdb
+H:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\ToolBarControl.g.cs
+H:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\App.g.cs
+H:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+H:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.cache
+H:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.lref
+H:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\Themes\generic.baml
+H:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\ToolBarControl.baml
+H:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.g.resources
+H:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.Properties.Resources.resources
+H:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateResource.Cache
+H:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.CoreCompileInputs.cache
+H:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.exe
+H:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.pdb
+E:\surge\UBPayApp_1004001\RisCaptureLib\bin\Debug\RisCaptureLib.exe.config
+E:\surge\UBPayApp_1004001\RisCaptureLib\bin\Debug\RisCaptureLib.exe
+E:\surge\UBPayApp_1004001\RisCaptureLib\bin\Debug\RisCaptureLib.pdb
+E:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\ToolBarControl.g.cs
+E:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\App.g.cs
+E:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.cache
+E:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.lref
+E:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\Themes\generic.baml
+E:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\ToolBarControl.baml
+E:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.g.resources
+E:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.Properties.Resources.resources
+E:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateResource.Cache
+E:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.CoreCompileInputs.cache
+E:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.exe
+E:\surge\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.pdb
+H:\surge\UB\UBPayApp_1004001\RisCaptureLib\bin\Debug\RisCaptureLib.exe.config
+H:\surge\UB\UBPayApp_1004001\RisCaptureLib\bin\Debug\RisCaptureLib.exe
+H:\surge\UB\UBPayApp_1004001\RisCaptureLib\bin\Debug\RisCaptureLib.pdb
+H:\surge\UB\UBPayApp_1004001\RisCaptureLib\obj\Debug\ToolBarControl.g.cs
+H:\surge\UB\UBPayApp_1004001\RisCaptureLib\obj\Debug\App.g.cs
+H:\surge\UB\UBPayApp_1004001\RisCaptureLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+H:\surge\UB\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.cache
+H:\surge\UB\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.lref
+H:\surge\UB\UBPayApp_1004001\RisCaptureLib\obj\Debug\Themes\generic.baml
+H:\surge\UB\UBPayApp_1004001\RisCaptureLib\obj\Debug\ToolBarControl.baml
+H:\surge\UB\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.g.resources
+H:\surge\UB\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.Properties.Resources.resources
+H:\surge\UB\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateResource.Cache
+H:\surge\UB\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.CoreCompileInputs.cache
+H:\surge\UB\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.exe
+H:\surge\UB\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.pdb
+E:\surge\1124\UBPayApp_1004001\RisCaptureLib\bin\Debug\RisCaptureLib.exe.config
+E:\surge\1124\UBPayApp_1004001\RisCaptureLib\bin\Debug\RisCaptureLib.exe
+E:\surge\1124\UBPayApp_1004001\RisCaptureLib\bin\Debug\RisCaptureLib.pdb
+E:\surge\1124\UBPayApp_1004001\RisCaptureLib\obj\Debug\ToolBarControl.g.cs
+E:\surge\1124\UBPayApp_1004001\RisCaptureLib\obj\Debug\App.g.cs
+E:\surge\1124\UBPayApp_1004001\RisCaptureLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\surge\1124\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.cache
+E:\surge\1124\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.lref
+E:\surge\1124\UBPayApp_1004001\RisCaptureLib\obj\Debug\Themes\generic.baml
+E:\surge\1124\UBPayApp_1004001\RisCaptureLib\obj\Debug\ToolBarControl.baml
+E:\surge\1124\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.g.resources
+E:\surge\1124\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.Properties.Resources.resources
+E:\surge\1124\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateResource.cache
+E:\surge\1124\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.CoreCompileInputs.cache
+E:\surge\1124\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.exe
+E:\surge\1124\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.pdb
+H:\surge\UB\1128\UBPayApp_1004001\RisCaptureLib\bin\Debug\RisCaptureLib.exe.config
+H:\surge\UB\1128\UBPayApp_1004001\RisCaptureLib\bin\Debug\RisCaptureLib.exe
+H:\surge\UB\1128\UBPayApp_1004001\RisCaptureLib\bin\Debug\RisCaptureLib.pdb
+H:\surge\UB\1128\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.csprojResolveAssemblyReference.cache
+H:\surge\UB\1128\UBPayApp_1004001\RisCaptureLib\obj\Debug\ToolBarControl.g.cs
+H:\surge\UB\1128\UBPayApp_1004001\RisCaptureLib\obj\Debug\App.g.cs
+H:\surge\UB\1128\UBPayApp_1004001\RisCaptureLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+H:\surge\UB\1128\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.cache
+H:\surge\UB\1128\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.lref
+H:\surge\UB\1128\UBPayApp_1004001\RisCaptureLib\obj\Debug\Themes\generic.baml
+H:\surge\UB\1128\UBPayApp_1004001\RisCaptureLib\obj\Debug\ToolBarControl.baml
+H:\surge\UB\1128\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.g.resources
+H:\surge\UB\1128\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.Properties.Resources.resources
+H:\surge\UB\1128\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateResource.Cache
+H:\surge\UB\1128\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.CoreCompileInputs.cache
+H:\surge\UB\1128\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.exe
+H:\surge\UB\1128\UBPayApp_1004001\RisCaptureLib\obj\Debug\RisCaptureLib.pdb
+E:\surge\UBPayApp_1128002\RisCaptureLib\bin\Debug\RisCaptureLib.exe.config
+E:\surge\UBPayApp_1128002\RisCaptureLib\bin\Debug\RisCaptureLib.exe
+E:\surge\UBPayApp_1128002\RisCaptureLib\bin\Debug\RisCaptureLib.pdb
+E:\surge\UBPayApp_1128002\RisCaptureLib\obj\Debug\ToolBarControl.g.cs
+E:\surge\UBPayApp_1128002\RisCaptureLib\obj\Debug\App.g.cs
+E:\surge\UBPayApp_1128002\RisCaptureLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\surge\UBPayApp_1128002\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.cache
+E:\surge\UBPayApp_1128002\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.lref
+E:\surge\UBPayApp_1128002\RisCaptureLib\obj\Debug\Themes\generic.baml
+E:\surge\UBPayApp_1128002\RisCaptureLib\obj\Debug\ToolBarControl.baml
+E:\surge\UBPayApp_1128002\RisCaptureLib\obj\Debug\RisCaptureLib.g.resources
+E:\surge\UBPayApp_1128002\RisCaptureLib\obj\Debug\RisCaptureLib.Properties.Resources.resources
+E:\surge\UBPayApp_1128002\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateResource.cache
+E:\surge\UBPayApp_1128002\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.CoreCompileInputs.cache
+E:\surge\UBPayApp_1128002\RisCaptureLib\obj\Debug\RisCaptureLib.exe
+E:\surge\UBPayApp_1128002\RisCaptureLib\obj\Debug\RisCaptureLib.pdb
+H:\surge\UB\UBPayApp_1128003\RisCaptureLib\bin\Debug\RisCaptureLib.exe.config
+H:\surge\UB\UBPayApp_1128003\RisCaptureLib\bin\Debug\RisCaptureLib.exe
+H:\surge\UB\UBPayApp_1128003\RisCaptureLib\bin\Debug\RisCaptureLib.pdb
+H:\surge\UB\UBPayApp_1128003\RisCaptureLib\obj\Debug\ToolBarControl.g.cs
+H:\surge\UB\UBPayApp_1128003\RisCaptureLib\obj\Debug\App.g.cs
+H:\surge\UB\UBPayApp_1128003\RisCaptureLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+H:\surge\UB\UBPayApp_1128003\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.cache
+H:\surge\UB\UBPayApp_1128003\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.lref
+H:\surge\UB\UBPayApp_1128003\RisCaptureLib\obj\Debug\Themes\generic.baml
+H:\surge\UB\UBPayApp_1128003\RisCaptureLib\obj\Debug\ToolBarControl.baml
+H:\surge\UB\UBPayApp_1128003\RisCaptureLib\obj\Debug\RisCaptureLib.g.resources
+H:\surge\UB\UBPayApp_1128003\RisCaptureLib\obj\Debug\RisCaptureLib.Properties.Resources.resources
+H:\surge\UB\UBPayApp_1128003\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateResource.Cache
+H:\surge\UB\UBPayApp_1128003\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.CoreCompileInputs.cache
+H:\surge\UB\UBPayApp_1128003\RisCaptureLib\obj\Debug\RisCaptureLib.exe
+H:\surge\UB\UBPayApp_1128003\RisCaptureLib\obj\Debug\RisCaptureLib.pdb
+E:\surge\UBPayApp_1128004\RisCaptureLib\bin\Debug\RisCaptureLib.exe.config
+E:\surge\UBPayApp_1128004\RisCaptureLib\bin\Debug\RisCaptureLib.exe
+E:\surge\UBPayApp_1128004\RisCaptureLib\bin\Debug\RisCaptureLib.pdb
+E:\surge\UBPayApp_1128004\RisCaptureLib\obj\Debug\ToolBarControl.g.cs
+E:\surge\UBPayApp_1128004\RisCaptureLib\obj\Debug\App.g.cs
+E:\surge\UBPayApp_1128004\RisCaptureLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\surge\UBPayApp_1128004\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.cache
+E:\surge\UBPayApp_1128004\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.lref
+E:\surge\UBPayApp_1128004\RisCaptureLib\obj\Debug\Themes\generic.baml
+E:\surge\UBPayApp_1128004\RisCaptureLib\obj\Debug\ToolBarControl.baml
+E:\surge\UBPayApp_1128004\RisCaptureLib\obj\Debug\RisCaptureLib.g.resources
+E:\surge\UBPayApp_1128004\RisCaptureLib\obj\Debug\RisCaptureLib.Properties.Resources.resources
+E:\surge\UBPayApp_1128004\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateResource.cache
+E:\surge\UBPayApp_1128004\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.CoreCompileInputs.cache
+E:\surge\UBPayApp_1128004\RisCaptureLib\obj\Debug\RisCaptureLib.exe
+E:\surge\UBPayApp_1128004\RisCaptureLib\obj\Debug\RisCaptureLib.pdb
+H:\surge\UB\UBPayApp_1128005\RisCaptureLib\bin\Debug\RisCaptureLib.exe.config
+H:\surge\UB\UBPayApp_1128005\RisCaptureLib\bin\Debug\RisCaptureLib.exe
+H:\surge\UB\UBPayApp_1128005\RisCaptureLib\bin\Debug\RisCaptureLib.pdb
+H:\surge\UB\UBPayApp_1128005\RisCaptureLib\obj\Debug\ToolBarControl.g.cs
+H:\surge\UB\UBPayApp_1128005\RisCaptureLib\obj\Debug\App.g.cs
+H:\surge\UB\UBPayApp_1128005\RisCaptureLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+H:\surge\UB\UBPayApp_1128005\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.cache
+H:\surge\UB\UBPayApp_1128005\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.lref
+H:\surge\UB\UBPayApp_1128005\RisCaptureLib\obj\Debug\Themes\generic.baml
+H:\surge\UB\UBPayApp_1128005\RisCaptureLib\obj\Debug\ToolBarControl.baml
+H:\surge\UB\UBPayApp_1128005\RisCaptureLib\obj\Debug\RisCaptureLib.g.resources
+H:\surge\UB\UBPayApp_1128005\RisCaptureLib\obj\Debug\RisCaptureLib.Properties.Resources.resources
+H:\surge\UB\UBPayApp_1128005\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateResource.Cache
+H:\surge\UB\UBPayApp_1128005\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.CoreCompileInputs.cache
+H:\surge\UB\UBPayApp_1128005\RisCaptureLib\obj\Debug\RisCaptureLib.exe
+H:\surge\UB\UBPayApp_1128005\RisCaptureLib\obj\Debug\RisCaptureLib.pdb
+H:\surge\UB\UBPayApp_1128006\RisCaptureLib\bin\Debug\RisCaptureLib.exe.config
+H:\surge\UB\UBPayApp_1128006\RisCaptureLib\bin\Debug\RisCaptureLib.exe
+H:\surge\UB\UBPayApp_1128006\RisCaptureLib\bin\Debug\RisCaptureLib.pdb
+H:\surge\UB\UBPayApp_1128006\RisCaptureLib\obj\Debug\ToolBarControl.g.cs
+H:\surge\UB\UBPayApp_1128006\RisCaptureLib\obj\Debug\App.g.cs
+H:\surge\UB\UBPayApp_1128006\RisCaptureLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+H:\surge\UB\UBPayApp_1128006\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.cache
+H:\surge\UB\UBPayApp_1128006\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.lref
+H:\surge\UB\UBPayApp_1128006\RisCaptureLib\obj\Debug\Themes\generic.baml
+H:\surge\UB\UBPayApp_1128006\RisCaptureLib\obj\Debug\ToolBarControl.baml
+H:\surge\UB\UBPayApp_1128006\RisCaptureLib\obj\Debug\RisCaptureLib.g.resources
+H:\surge\UB\UBPayApp_1128006\RisCaptureLib\obj\Debug\RisCaptureLib.Properties.Resources.resources
+H:\surge\UB\UBPayApp_1128006\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateResource.Cache
+H:\surge\UB\UBPayApp_1128006\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.CoreCompileInputs.cache
+H:\surge\UB\UBPayApp_1128006\RisCaptureLib\obj\Debug\RisCaptureLib.exe
+H:\surge\UB\UBPayApp_1128006\RisCaptureLib\obj\Debug\RisCaptureLib.pdb
+H:\surge\UB\UBPayApp_20181209\RisCaptureLib\bin\Debug\RisCaptureLib.exe.config
+H:\surge\UB\UBPayApp_20181209\RisCaptureLib\bin\Debug\RisCaptureLib.exe
+H:\surge\UB\UBPayApp_20181209\RisCaptureLib\bin\Debug\RisCaptureLib.pdb
+H:\surge\UB\UBPayApp_20181209\RisCaptureLib\obj\Debug\ToolBarControl.g.cs
+H:\surge\UB\UBPayApp_20181209\RisCaptureLib\obj\Debug\App.g.cs
+H:\surge\UB\UBPayApp_20181209\RisCaptureLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+H:\surge\UB\UBPayApp_20181209\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.cache
+H:\surge\UB\UBPayApp_20181209\RisCaptureLib\obj\Debug\RisCaptureLib_MarkupCompile.lref
+H:\surge\UB\UBPayApp_20181209\RisCaptureLib\obj\Debug\Themes\generic.baml
+H:\surge\UB\UBPayApp_20181209\RisCaptureLib\obj\Debug\ToolBarControl.baml
+H:\surge\UB\UBPayApp_20181209\RisCaptureLib\obj\Debug\RisCaptureLib.g.resources
+H:\surge\UB\UBPayApp_20181209\RisCaptureLib\obj\Debug\RisCaptureLib.Properties.Resources.resources
+H:\surge\UB\UBPayApp_20181209\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.GenerateResource.Cache
+H:\surge\UB\UBPayApp_20181209\RisCaptureLib\obj\Debug\RisCaptureLib.csproj.CoreCompileInputs.cache
+H:\surge\UB\UBPayApp_20181209\RisCaptureLib\obj\Debug\RisCaptureLib.exe
+H:\surge\UB\UBPayApp_20181209\RisCaptureLib\obj\Debug\RisCaptureLib.pdb

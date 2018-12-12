@@ -1,0 +1,81 @@
+﻿<Page x:Class="UBPayApp.Login"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="512" d:DesignWidth="870"
+	Title="Login">
+    <Page.Resources>
+        <!--自定义颜色-->
+        <LinearGradientBrush x:Key="LinearGradientBlueBackground" EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF377FED" Offset="0" />
+            <GradientStop Color="#FF074CC0" Offset="1" />
+        </LinearGradientBrush>
+        <SolidColorBrush x:Key="MyBtnBorderColor" Color="#FF2D78F4"></SolidColorBrush>
+        <SolidColorBrush x:Key="MyBtnHoverBackgroundColor" Color="#FF317EF3"></SolidColorBrush>
+        <!--END-->
+
+        <Style x:Key="MyWpfButton" TargetType="{x:Type Button}" >
+            <Setter Property="Background" Value="{StaticResource LinearGradientBlueBackground}"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="BorderBrush" Value="{StaticResource MyBtnBorderColor}"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" 
+                                SnapsToDevicePixels="true" CornerRadius="10,10,10,10">
+                            <ContentPresenter x:Name="contentPresenter" 
+                                              Focusable="False" 
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                              Margin="{TemplateBinding Padding}" 
+                                              RecognizesAccessKey="True" 
+                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"  />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource MyBtnHoverBackgroundColor}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
+    <Grid Width="870">
+        <Grid.Background>
+            <ImageBrush ImageSource="/UBPayApp;component/bin/Release/pic/login_bg.jpg" />
+        </Grid.Background>
+
+        <Image Height="70" HorizontalAlignment="Left" Margin="287,118,0,0" Name="image1" VerticalAlignment="Top" Width="291" Source="/UBPayApp;component/bin/Release/pic/login_head.png" Stretch="Fill" />
+        <Grid Height="220" HorizontalAlignment="Left" Margin="287,186,0,0" Name="gridlogin" VerticalAlignment="Top" Width="291" Background="WhiteSmoke" >
+            <Label Content="账号登录" Height="31" HorizontalAlignment="Left" Margin="49,17,0,0" Name="lb__IDLogin" VerticalAlignment="Top" FontFamily="SimHei" FontSize="16" Foreground="#FF050000" MouseLeftButtonDown="lb__IDLogin_MouseLeftButtonDown" />
+            <Label Content="扫描登录" FontFamily="SimHei" FontSize="16" Height="31" HorizontalAlignment="Left" Margin="165,17,0,0" Name="lb__BarCodeLogin" VerticalAlignment="Top" Foreground="#FFB1ACAC" MouseLeftButtonDown="lb__BarCodeLogin_MouseLeftButtonDown" />
+        </Grid>
+        <Grid Height="178" HorizontalAlignment="Left" Margin="288,228,0,0" Name="gridIDLogin" VerticalAlignment="Top" Width="290" Visibility="Visible">
+            <Image Height="28" HorizontalAlignment="Left" Margin="52,24,0,0" Name="image3" Stretch="Fill" VerticalAlignment="Top" Width="30" Source="/UBPayApp;component/bin/Release/pic/fuwushangguanli.png" />
+            <Image Height="28" HorizontalAlignment="Left" Margin="52,68,0,0" Name="image4" Source="/UBPayApp;component/bin/Release/pic/password.png" Stretch="Fill" VerticalAlignment="Top" Width="30" />
+            <Image Height="32" HorizontalAlignment="Left" Name="img_Login__Inputframe1" Stretch="Fill" VerticalAlignment="Top" Width="149" Margin="104,24,0,0" Source="/UBPayApp;component/bin/Release/pic/inputframe_hot.png" />
+            <Image Height="32" Margin="104,65,37,0" Name="img_Login__Inputframe2" Stretch="Fill" VerticalAlignment="Top" />
+            <Label Content="请输入账号" Height="31" HorizontalAlignment="Left" Name="lbInputID" VerticalAlignment="Top" Foreground="#FFC8C5C5" FontSize="11" FontFamily="Microsoft YaHei,Arial" Margin="115,25,0,0" />
+            <Border CornerRadius="5" Margin="106,27,40,126" BorderThickness="0" BorderBrush="#FF737070" Name="jm1">
+                <TextBox Name="tBoxInputID" Height="25" Width="138" BorderThickness="0" FontSize="15" Text="user_1_1" Foreground="Black" MaxLength="30" Background="{x:Null}" VerticalContentAlignment="Center" MouseLeftButtonDown="tBoxInputID_MouseLeftButtonDown" GotFocus="tBoxInputID_GotFocus" TextChanged="tBoxInputID_TextChanged" KeyDown="tBoxInputID_KeyDown" />
+            </Border>
+            <Label Content="请输入密码" Height="31" HorizontalAlignment="Left" Name="lbInputPW" VerticalAlignment="Top" Foreground="#FFC8C5C5" FontSize="11" FontFamily="Microsoft YaHei,Arial" Margin="115,67,0,0" />
+            <Border CornerRadius="5" Margin="106,66,40,82" BorderThickness="0" BorderBrush="#FF737070" Name="jm2">
+                <PasswordBox Name="tBoxInputPW" Height="23" Width="142" BorderThickness="0" FontSize="15" Password="1111111" Foreground="Black" MaxLength="30" Background="{x:Null}" VerticalContentAlignment="Center" MouseLeftButtonDown="tBoxInputPW_MouseLeftButtonDown" GotFocus="tBoxInputPW_GotFocus" PasswordChanged="tBoxInputPW_PasswordChanged" KeyDown="tBoxInputPW_KeyDown" />
+            </Border>
+                  <Button Content="登录" Height="31" HorizontalAlignment="Left" Margin="100,114,0,0" Name="bt__login" VerticalAlignment="Top" Width="100" Style="{StaticResource MyWpfButton}" FontSize="11" Click="bt__login_Click" />
+            <Grid Height="85" HorizontalAlignment="Left" Margin="0,12,0,0" Name="gridLoginInfo" VerticalAlignment="Top" Width="291" Background="#FFEBEBEB" Visibility="Visible">
+                <Label Content="正在登录..." Height="41" HorizontalAlignment="Left" Margin="0,27,0,0" Name="label1" VerticalAlignment="Top" Width="291" HorizontalContentAlignment="Center" FontSize="11" Visibility="Visible" />
+            </Grid>
+      </Grid>
+        <Grid Height="166" HorizontalAlignment="Left" Margin="287,240,0,0" Name="gridCoeLogin" VerticalAlignment="Top" Width="291" Visibility="Visible">
+            <Label Content="正在获取登录二维码..." Height="41" HorizontalAlignment="Left" Name="lb__Info" VerticalAlignment="Top" Foreground="#FF241818" FontSize="11" FontFamily="Microsoft YaHei,Arial" Margin="0,26,0,0" Width="291" HorizontalContentAlignment="Center" />
+            <Image Height="96" HorizontalAlignment="Left" Margin="101,8,0,0" Name="img__Code" Stretch="Fill" VerticalAlignment="Top" Width="96" />
+        </Grid>
+        <Label Content="Label" Height="28" HorizontalAlignment="Left" Margin="25,35,0,0" Name="lb_Ver" VerticalAlignment="Top" MouseDoubleClick="lb_Ver_MouseDoubleClick" />
+    </Grid>
+</Page>
