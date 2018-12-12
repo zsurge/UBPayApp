@@ -55,10 +55,10 @@ namespace UBPayApp
             
             Var.g_all_Order_Count = new Var.all_Order_Count();
 
-            if (cmb_summary.SelectedIndex == -1)
-            {
-                SetDefaultTime();
-            }
+            //if (cmb_summary.SelectedIndex == -1)
+            //{
+            //    SetDefaultTime();
+            //}
 
             string time_end = datePicker1.Value.ToString().Replace('/', '-');
             string time_start = datePicker2.Value.ToString().Replace('/', '-');

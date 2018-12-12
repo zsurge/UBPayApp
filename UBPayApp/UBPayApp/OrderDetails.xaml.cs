@@ -29,6 +29,7 @@ namespace UBPayApp
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             dr = Var.gOrderInfo;
+            string str = dr["status"].ToString();           
 
             lable1.Content = dr["order_id"].ToString();
             lable2.Content = dr["out_order_id"].ToString();
@@ -51,7 +52,7 @@ namespace UBPayApp
             lable19.Content = dr["subject"].ToString();
             lable20.Content = dr["time_create"].ToString();
             lable21.Content = dr["time_update"].ToString();
-            lable22.Content = dr["status"].ToString();
+            lable22.Content = Var.g_all_payment_Order_Status.FirstOrDefault(q => q.Value == str).Key;
             lable23.Content = dr["remark"].ToString();
         }
     }

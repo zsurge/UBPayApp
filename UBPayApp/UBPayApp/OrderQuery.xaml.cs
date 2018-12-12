@@ -34,9 +34,9 @@ namespace UBPayApp
 
             cmbPaymentMode_Key = "";
             cmb_Payment_Type_Key = "";
-            store_id_key = "";
-            operator_id_key = "";
-            device_id_key = "";
+            //store_id_key = "";
+            //operator_id_key = "";
+            //device_id_key = "";
             status = "";
 
 
@@ -289,8 +289,8 @@ namespace UBPayApp
             //要改为获取矩形左上角坐标，和宽高，为后面自动截屏使用          
             //screenCaputre.StartCaputre(30);
 
-            //默认是按当天来查询的            
-            SetDefaultTime();
+            //默认是按当天来查询的     //删除，如果在界面上改时间，这里还是会从00开始       
+            //SetDefaultTime();
 
             string time_end = datePicker1.Value.ToString().Replace('/', '-');
             string time_start = datePicker2.Value.ToString().Replace('/', '-');
@@ -642,6 +642,7 @@ namespace UBPayApp
                 }
             }
             cmb_store_id.SelectedIndex = iPos+1;
+            store_id_key = Var.g_StoreList_Info[cmb_store_id.SelectedIndex-1].id;
             store_flag = false;
 
 
@@ -659,6 +660,7 @@ namespace UBPayApp
                 }
             }
             cmb_operator_id.SelectedIndex = iPos+1;
+            operator_id_key = Var.g_UserList_Info[cmb_operator_id.SelectedIndex - 1].id;
             user_flag = false;
 
 
@@ -677,6 +679,7 @@ namespace UBPayApp
                 }
             }
             cmb_device_id.SelectedIndex = iPos+1;
+            device_id_key = Var.g_DeviceList_Info[cmb_device_id.SelectedIndex - 1].id;
             device_flag = false;
 
             //交易类型列表
@@ -718,7 +721,7 @@ namespace UBPayApp
             //modify 20181104 放在设置时查询，不同的门店有不同的用户ID和设备ID
             Var.g_UserList_Info = new Var.UserList_Info[128];
             Var.Get_UserListCount = 0;
-            if (PayApi.ApiGetUserList(Var.store_id, Var.ltoken, out result, out Var.g_UserList_Info, out Var.Get_UserListCount) == false)
+            if (PayApi.ApiGetUserList(store_id_key, Var.ltoken, out result, out Var.g_UserList_Info, out Var.Get_UserListCount) == false)
             {
                 MessageBox.Show("获取店员列表：" + result);
                 return;
@@ -740,7 +743,7 @@ namespace UBPayApp
             string result = string.Empty;
             Var.g_DeviceList_Info = new Var.DeviceList_Info[128];
             Var.Get_DeviceListCount = 0;
-            if (PayApi.ApiGetDeviceList(Var.store_id, Var.ltoken, out result, out Var.g_DeviceList_Info, out Var.Get_DeviceListCount) == false)
+            if (PayApi.ApiGetDeviceList(store_id_key, Var.ltoken, out result, out Var.g_DeviceList_Info, out Var.Get_DeviceListCount) == false)
             {
                 MessageBox.Show("获取设备列表：" + result);
                 return;
@@ -761,7 +764,7 @@ namespace UBPayApp
         {
             if (!store_flag)
             {
-                if (cmb_store_id.SelectedIndex > 0)
+                if (cmb_store_id.SelectedIndex >= 1)
                 {                    
                     store_id_key = Var.g_StoreList_Info[cmb_store_id.SelectedIndex-1].id;
                     GetUserListAndDisplay();
@@ -769,6 +772,7 @@ namespace UBPayApp
                 }
                 else
                 {
+                    store_id_key = "";
                     cmb_operator_id.SelectedIndex = 0;
                     cmb_device_id.SelectedIndex = 0;
                 }
@@ -779,17 +783,15 @@ namespace UBPayApp
         {
             if (!user_flag)
             {
-                if (cmb_operator_id.SelectedIndex == -1)
+                if (cmb_operator_id.SelectedIndex <= 0)
                 {
                     //Var.operator_id = Var.g_UserList_Info[0].id;
+                    operator_id_key = "";
                     return;
                 }
                 else
                 {
-                    if (cmb_operator_id.SelectedIndex > 0)
-                    {
-                        operator_id_key = Var.g_UserList_Info[cmb_operator_id.SelectedIndex -1].id;                        
-                    }
+                    operator_id_key = Var.g_UserList_Info[cmb_operator_id.SelectedIndex - 1].id;  
                 }
             }
         }
@@ -798,17 +800,14 @@ namespace UBPayApp
         {
             if (!device_flag)
             {
-                if (cmb_device_id.SelectedIndex == -1)
+                if (cmb_device_id.SelectedIndex <= 0)
                 {
-                    //Var.device_id = Var.g_DeviceList_Info[0].id;
+                    device_id_key = "";
                     return;
                 }
                 else
                 {
-                    if (cmb_device_id.SelectedIndex > 0)
-                    {
-                        device_id_key = Var.g_DeviceList_Info[cmb_device_id.SelectedIndex -1].id;                        
-                    }
+                    device_id_key = Var.g_DeviceList_Info[cmb_device_id.SelectedIndex - 1].id;   
                 }
             }
         }

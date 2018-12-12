@@ -226,8 +226,8 @@ namespace UBPayApp
             int tmpTotal = 0;
             export = 0;
 
-            //默认是按当天来查询的            
-            SetDefaultTime();
+            ////默认是按当天来查询的            
+            //SetDefaultTime();
 
             string time_end = datePicker1.Value.ToString().Replace('/', '-');
             string time_start = datePicker2.Value.ToString().Replace('/', '-');

@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-H:\surge\UB\UBPayApp_20181209\UBPayApp\obj\x86\Debug\
+F:\Project\UBPayApp\UBPayApp\obj\x86\Debug\
 UBPayApp
 none
 false
 DEBUG;TRACE
-H:\surge\UB\UBPayApp_20181209\UBPayApp\App.xaml
+F:\Project\UBPayApp\UBPayApp\App.xaml
 122038596205
 4-36349382
 342022333295
-27612330137
+27808142252
 Login.xaml;MainPay.xaml;MainWindow.xaml;OrderCount.xaml;OrderDetails.xaml;OrderQuery.xaml;OrderSum.xaml;PayWindow.xaml;Refund.xaml;RefundQuery.xaml;Set.xaml;SetAmountPosition.xaml;
 
 True
