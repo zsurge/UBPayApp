@@ -228,7 +228,7 @@ namespace UBPayApp
             Var.Get_UserListCount = 0;
             if (PayApi.ApiGetUserList(Var.store_id, Var.ltoken, out result, out Var.g_UserList_Info, out Var.Get_UserListCount) == false)
             {
-                MessageBox.Show("获取店员列表：" + result);
+                MessageBox.Show("获取店员列表：" + result, "系统提示", MessageBoxButton.OK, MessageBoxImage.None);
                 return;
             }
             else
@@ -250,7 +250,7 @@ namespace UBPayApp
             Var.Get_DeviceListCount = 0;
             if (PayApi.ApiGetDeviceList(Var.store_id, Var.ltoken, out result, out Var.g_DeviceList_Info, out Var.Get_DeviceListCount) == false)
             {   
-                MessageBox.Show("获取设备列表：" + result);
+                MessageBox.Show("获取设备列表：" + result, "系统提示", MessageBoxButton.OK, MessageBoxImage.None);
                 return;
             }
             else
@@ -271,7 +271,7 @@ namespace UBPayApp
 
             if (tKeyBoxInputID.Text.Length != 32)
             {
-                MessageBox.Show("请输入正确的KEY");
+                MessageBox.Show("请输入正确的KEY", "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
@@ -279,11 +279,11 @@ namespace UBPayApp
 
             if(ret)
             {
-                MessageBox.Show(result);
+                MessageBox.Show(result, "系统提示", MessageBoxButton.OK, MessageBoxImage.Asterisk);
             }
             else
             {
-                MessageBox.Show(result);
+                MessageBox.Show(result, "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

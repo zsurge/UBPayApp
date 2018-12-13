@@ -760,7 +760,7 @@ namespace UBPayApp
             }
             else if (result_json["code"].ToString() == "0")
             {
-                MessageBox.Show(result_json["msg"].ToString());
+                MessageBox.Show(result_json["msg"].ToString(), "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
                 inResult = result_json["msg"].ToString();
                 ret = false;
             }
@@ -875,7 +875,7 @@ namespace UBPayApp
             }
             else if (result_json["code"].ToString() == "0")
             {
-                MessageBox.Show(result_json["msg"].ToString());
+                MessageBox.Show(result_json["msg"].ToString(), "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
                 inResult = result_json["msg"].ToString();
                 ret = false;
             }
@@ -1107,7 +1107,7 @@ namespace UBPayApp
             }
             else if (result_json["code"].ToString() == "0")
             {
-                MessageBox.Show(result_json["msg"].ToString());
+                MessageBox.Show(result_json["msg"].ToString(), "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
                 inResult = result_json["msg"].ToString();
                 ret = false;
             }
@@ -1259,7 +1259,7 @@ namespace UBPayApp
             }
             else if (result_json["code"].ToString() == "0")
             {
-                MessageBox.Show(result_json["msg"].ToString());
+                MessageBox.Show(result_json["msg"].ToString(), "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
                 inResult = result_json["msg"].ToString();
                 ret = false;
             }

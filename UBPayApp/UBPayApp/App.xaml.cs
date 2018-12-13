@@ -22,7 +22,7 @@ namespace UBPayApp
 
             if (!createNew)
             {
-                MessageBox.Show("程序已在运行中");
+                MessageBox.Show("程序已在运行中","系统提示",MessageBoxButton.OK,MessageBoxImage.Exclamation);
                 App.Current.Shutdown();
                 Environment.Exit(0);
             }

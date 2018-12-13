@@ -268,7 +268,7 @@ namespace UBPayApp
         private void close(object sender, EventArgs e)
         {
 
-            if (System.Windows.MessageBox.Show("sure to exit?",
+            if (System.Windows.MessageBox.Show("请确认是否退出？",
                                                "UB云支付平台",
                                                 MessageBoxButton.YesNo,
                                                 MessageBoxImage.Question,

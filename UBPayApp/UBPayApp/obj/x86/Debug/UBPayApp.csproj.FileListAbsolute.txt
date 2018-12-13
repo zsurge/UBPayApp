@@ -683,7 +683,6 @@ H:\surge\UB\UBPayApp_20181209\UBPayApp\obj\x86\Debug\UBPayApp.csproj.GenerateRes
 H:\surge\UB\UBPayApp_20181209\UBPayApp\obj\x86\Debug\UBPayApp.csproj.CoreCompileInputs.cache
 H:\surge\UB\UBPayApp_20181209\UBPayApp\obj\x86\Debug\UBPayApp.exe
 H:\surge\UB\UBPayApp_20181209\UBPayApp\obj\x86\Debug\UBPayApp.pdb
-F:\Project\UBPayApp\UBPayApp\obj\x86\Debug\MainWindow.g.cs
 F:\Project\UBPayApp\UBPayApp\bin\Debug\x64\liblept172.dll
 F:\Project\UBPayApp\UBPayApp\bin\Debug\x64\libtesseract304.dll
 F:\Project\UBPayApp\UBPayApp\bin\Debug\x86\liblept172.dll
@@ -717,6 +716,7 @@ F:\Project\UBPayApp\UBPayApp\obj\x86\Debug\RefundQuery.baml
 F:\Project\UBPayApp\UBPayApp\obj\x86\Debug\Set.baml
 F:\Project\UBPayApp\UBPayApp\obj\x86\Debug\Login.g.cs
 F:\Project\UBPayApp\UBPayApp\obj\x86\Debug\MainPay.g.cs
+F:\Project\UBPayApp\UBPayApp\obj\x86\Debug\MainWindow.g.cs
 F:\Project\UBPayApp\UBPayApp\obj\x86\Debug\OrderCount.g.cs
 F:\Project\UBPayApp\UBPayApp\obj\x86\Debug\OrderDetails.g.cs
 F:\Project\UBPayApp\UBPayApp\obj\x86\Debug\OrderQuery.g.cs

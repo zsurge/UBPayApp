@@ -139,7 +139,7 @@ namespace UBPayApp
             }
             catch (Exception e)
             {
-                MessageBox.Show("Error while generating Excel report");
+                MessageBox.Show("生成excel报表出错","系统提示",MessageBoxButton.OK,MessageBoxImage.Error);
             }
             finally
             {

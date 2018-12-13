@@ -518,9 +518,9 @@ namespace UBPayApp
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("导出失败：" + ex.Message);
+                    MessageBox.Show("导出失败：" + ex.Message, "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
-                MessageBox.Show("导出成功");
+                MessageBox.Show("导出成功", "系统提示", MessageBoxButton.OK, MessageBoxImage.None);
             }
         }
 

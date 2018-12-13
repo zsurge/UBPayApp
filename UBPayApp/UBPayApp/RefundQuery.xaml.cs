@@ -452,9 +452,9 @@ namespace UBPayApp
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("导出失败：" + ex.Message);
+                    MessageBox.Show("导出失败：" + ex.Message, "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
-                MessageBox.Show("导出成功");
+                MessageBox.Show("导出成功", "系统提示", MessageBoxButton.OK, MessageBoxImage.None);
             }
         }
         private void bt__exPortExcel_Click(object sender, RoutedEventArgs e)
@@ -545,7 +545,7 @@ namespace UBPayApp
             bool bret = PayApi.ApiGet_all_RefundStatus(Var.ltoken, out msg, out describe);
             if (!bret)
             {
-                MessageBox.Show("获取状态失败！");
+                MessageBox.Show("获取状态失败！", "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
             if (dr != null)
@@ -563,10 +563,11 @@ namespace UBPayApp
                 describe.TryGetValue(tmp, out status);
                 dr["_status"] = status;
                 //dr["remark"] = remark;
+                MessageBox.Show(remark, "系统提示", MessageBoxButton.OK, MessageBoxImage.None);
             }
             else
             {
-                MessageBox.Show("操作失败");
+                MessageBox.Show("操作失败", "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

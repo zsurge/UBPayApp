@@ -77,7 +77,7 @@ namespace UBPayApp
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show(ex.ToString(),"系统提示",MessageBoxButton.OK,MessageBoxImage.Exclamation);
             }
         }
 
@@ -162,7 +162,7 @@ namespace UBPayApp
                 }
                 else
                 {
-                    MessageBox.Show("未找到截图");
+                    MessageBox.Show("未找到截图","系统提示",MessageBoxButton.OK,MessageBoxImage.Exclamation);
                 }
 
             }
@@ -220,7 +220,7 @@ namespace UBPayApp
             }
             catch (Exception)
             {
-                MessageBox.Show("支付金额有错");
+                MessageBox.Show("支付金额有错","系统提示",MessageBoxButton.OK,MessageBoxImage.Error);
                 return;
             }
 
@@ -267,7 +267,7 @@ namespace UBPayApp
             string msg = string.Empty;
             string tmp = string.Empty;
             string status = string.Empty;
-            int i = 3;
+            //int i = 3;
 
             //Dictionary<string, string> describe = new Dictionary<string, string>();
 
@@ -285,7 +285,7 @@ namespace UBPayApp
 
                 if (payInterface.ApiOrderStatusQuery(order_id, Var.merchant_id, out result) == false)
                 {
-                    MessageBox.Show("查询订单状态失败，请手工查询");
+                    MessageBox.Show("查询订单状态失败，请手工查询", "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
 
@@ -294,12 +294,12 @@ namespace UBPayApp
 
                 Var.g_all_payment_Order_Status.TryGetValue(tmp, out status);
 
-                if (i-- == 0)
-                {
-                    break;
-                }
+                //if (i-- == 0)
+                //{
+                //    break;
+                //}
 
-                Thread.Sleep(2000);
+                Thread.Sleep(5000);
             }
 
             execute_Flag = true;

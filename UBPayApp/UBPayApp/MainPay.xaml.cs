@@ -371,12 +371,12 @@ namespace UBPayApp
 
         private void ReSetting_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("暂无该功能"); 
+            MessageBox.Show("暂无该功能", "系统提示", MessageBoxButton.OK, MessageBoxImage.Exclamation); 
         }
 
         private void Upgrade_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("暂无该功能");
+            MessageBox.Show("暂无该功能", "系统提示", MessageBoxButton.OK, MessageBoxImage.Exclamation);
         }
     }
 }

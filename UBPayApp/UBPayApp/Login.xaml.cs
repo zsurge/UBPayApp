@@ -212,7 +212,7 @@ namespace UBPayApp
                                 gridLoginInfo.Visibility = System.Windows.Visibility.Hidden;
                                 bLogining = false;
                                
-                                MessageBox.Show(result);
+                                MessageBox.Show(result,"系统提示", MessageBoxButton.OK, MessageBoxImage.None);
                                 this.Dispatcher.BeginInvoke(DispatcherPriority.Background,
                                                    (Action)(() => { Keyboard.Focus(tBoxInputID); }));
                                 return;
@@ -227,7 +227,7 @@ namespace UBPayApp
                                 gridLoginInfo.Visibility = System.Windows.Visibility.Hidden;
                                 bLogining = false;
 
-                                MessageBox.Show("获取用户信息：" + result);
+                                MessageBox.Show("获取用户信息：" + result, "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
                                 this.Dispatcher.BeginInvoke(DispatcherPriority.Background,
                                                    (Action)(() => { Keyboard.Focus(tBoxInputID); }));
                                 return;
@@ -249,7 +249,7 @@ namespace UBPayApp
                                 gridLoginInfo.Visibility = System.Windows.Visibility.Hidden;
                                 bLogining = false;
 
-                                MessageBox.Show("获取门店列表：" + result);
+                                MessageBox.Show("获取门店列表：" + result, "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
                                 this.Dispatcher.BeginInvoke(DispatcherPriority.Background,
                                                    (Action)(() => { Keyboard.Focus(tBoxInputID); }));
                                 return;
@@ -263,7 +263,7 @@ namespace UBPayApp
                                 gridLoginInfo.Visibility = System.Windows.Visibility.Hidden;
                                 bLogining = false;
 
-                                MessageBox.Show("获取店员列表：" + result);
+                                MessageBox.Show("获取店员列表：" + result, "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
                                 this.Dispatcher.BeginInvoke(DispatcherPriority.Background,
                                                    (Action)(() => { Keyboard.Focus(tBoxInputID); }));
                                 return;
@@ -276,7 +276,7 @@ namespace UBPayApp
                                 gridLoginInfo.Visibility = System.Windows.Visibility.Hidden;
                                 bLogining = false;
 
-                                MessageBox.Show("获取设备列表：" + result);
+                                MessageBox.Show("获取设备列表：" + result, "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
                                 this.Dispatcher.BeginInvoke(DispatcherPriority.Background,
                                                    (Action)(() => { Keyboard.Focus(tBoxInputID); }));
                                 return;
@@ -297,7 +297,7 @@ namespace UBPayApp
                                 gridLoginInfo.Visibility = System.Windows.Visibility.Hidden;
                                 bLogining = false;
 
-                                MessageBox.Show("获取交易类型列表：" + result);
+                                MessageBox.Show("获取交易类型列表：" + result, "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
                                 this.Dispatcher.BeginInvoke(DispatcherPriority.Background,
                                                    (Action)(() => { Keyboard.Focus(tBoxInputID); }));
                                 return;
@@ -309,7 +309,7 @@ namespace UBPayApp
                                 gridLoginInfo.Visibility = System.Windows.Visibility.Hidden;
                                 bLogining = false;
 
-                                MessageBox.Show("获取交易方式表表：" + result);
+                                MessageBox.Show("获取交易方式表表：" + result, "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
                                 this.Dispatcher.BeginInvoke(DispatcherPriority.Background,
                                                    (Action)(() => { Keyboard.Focus(tBoxInputID); }));
                                 return;
@@ -318,7 +318,7 @@ namespace UBPayApp
                             //获取订单状态 add 1130                            
                             if (PayApi.ApiGet_all_OrderStatus(Var.ltoken, out result, out Var.g_all_payment_Order_Status) == false)                                
                             {
-                                MessageBox.Show("获取订单状态：" + result);
+                                MessageBox.Show("获取订单状态：" + result, "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
                                 this.Dispatcher.BeginInvoke(DispatcherPriority.Background,
                                                   (Action)(() => { Keyboard.Focus(tBoxInputID); }));
                                 return;
@@ -326,7 +326,7 @@ namespace UBPayApp
 
                             if (PayApi.ApiGet_all_RefundStatus(Var.ltoken, out result, out Var.g_all_payment_refund_status) == false)                           
                             {
-                                MessageBox.Show("获取退款订单状态：" + result);
+                                MessageBox.Show("获取退款订单状态：" + result, "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
                                 this.Dispatcher.BeginInvoke(DispatcherPriority.Background,
                                                   (Action)(() => { Keyboard.Focus(tBoxInputID); }));
                                 return;

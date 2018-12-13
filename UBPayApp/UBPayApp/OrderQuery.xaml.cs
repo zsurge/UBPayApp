@@ -203,8 +203,6 @@ namespace UBPayApp
             //dt.Columns.Add(new DataColumn("status", typeof(string)));
 
 
-
-
             for (int i = 0; i < Var.all_tran_list_count; i++)
             {
                 DataRow dr = dt.NewRow();
@@ -526,9 +524,9 @@ namespace UBPayApp
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("导出失败：" + ex.Message);
+                    MessageBox.Show("导出失败：" + ex.Message, "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
-                MessageBox.Show("导出成功");
+                MessageBox.Show("导出成功","系统提示",MessageBoxButton.OK,MessageBoxImage.None);
             }
         }
 
@@ -607,7 +605,7 @@ namespace UBPayApp
 
                 if (payInterface.ApiOrderStatusQuery(order_id, merchant_id, out result) == false)
                 {
-                    MessageBox.Show("查询失败");
+                    MessageBox.Show("查询失败","错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
 
@@ -616,10 +614,12 @@ namespace UBPayApp
                 Var.g_all_payment_Order_Status.TryGetValue(tmp, out status);
                 dr["_status"] = status;
                 dr["remark"] = remark;
+
+                MessageBox.Show(remark,"系统提示",MessageBoxButton.OK,MessageBoxImage.None);
             }
             else
             {
-                MessageBox.Show("操作失败");
+                MessageBox.Show("操作失败", "错误提示",MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -723,7 +723,7 @@ namespace UBPayApp
             Var.Get_UserListCount = 0;
             if (PayApi.ApiGetUserList(store_id_key, Var.ltoken, out result, out Var.g_UserList_Info, out Var.Get_UserListCount) == false)
             {
-                MessageBox.Show("获取店员列表：" + result);
+                MessageBox.Show("获取店员列表：" + result,"提示",MessageBoxButton.OK,MessageBoxImage.None);
                 return;
             }
             else
@@ -745,7 +745,7 @@ namespace UBPayApp
             Var.Get_DeviceListCount = 0;
             if (PayApi.ApiGetDeviceList(store_id_key, Var.ltoken, out result, out Var.g_DeviceList_Info, out Var.Get_DeviceListCount) == false)
             {
-                MessageBox.Show("获取设备列表：" + result);
+                MessageBox.Show("获取设备列表：" + result,"系统提示");
                 return;
             }
             else

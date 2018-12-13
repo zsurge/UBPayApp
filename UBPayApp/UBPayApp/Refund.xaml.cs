@@ -71,7 +71,7 @@ namespace UBPayApp
             }
             else
             {
-                MessageBox.Show("Refund failed");
+                MessageBox.Show("退款失败", "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -84,7 +84,7 @@ namespace UBPayApp
             string tmp = string.Empty;
             string status = string.Empty;
 
-            int i = 3;
+            //int i = 3;
 
             Dictionary<string, string> result = new Dictionary<string, string>();
 
@@ -101,7 +101,7 @@ namespace UBPayApp
 
                 if (payInterface.ApiRefundStatusQuery(refund_order_id, Var.merchant_id, out result) == false)
                 {
-                    MessageBox.Show("查询退款状态失败，请手工查询");
+                    MessageBox.Show("查询退款状态失败，请手工查询", "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
 
@@ -110,12 +110,12 @@ namespace UBPayApp
 
                 Var.g_all_payment_refund_status.TryGetValue(tmp, out status);
 
-                if (i-- == 0)
-                {
-                    break;
-                }
+                //if (i-- == 0)
+                //{
+                //    break;
+                //}
 
-                Thread.Sleep(2000);
+                Thread.Sleep(5000);
             }
 
             execute_Flag = true;
