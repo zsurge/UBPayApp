@@ -1,0 +1,15 @@
+H:\surge\UB\UBAutoUpdate\UBAutoUpdate\bin\Debug\UBAutoUpdate.exe.config
+H:\surge\UB\UBAutoUpdate\UBAutoUpdate\bin\Debug\UBAutoUpdate.exe
+H:\surge\UB\UBAutoUpdate\UBAutoUpdate\bin\Debug\UBAutoUpdate.pdb
+H:\surge\UB\UBAutoUpdate\UBAutoUpdate\bin\Debug\ICSharpCode.SharpZipLib.dll
+H:\surge\UB\UBAutoUpdate\UBAutoUpdate\obj\Debug\MainWindow.g.cs
+H:\surge\UB\UBAutoUpdate\UBAutoUpdate\obj\Debug\App.g.cs
+H:\surge\UB\UBAutoUpdate\UBAutoUpdate\obj\Debug\UBAutoUpdate_MarkupCompile.cache
+H:\surge\UB\UBAutoUpdate\UBAutoUpdate\obj\Debug\UBAutoUpdate_MarkupCompile.lref
+H:\surge\UB\UBAutoUpdate\UBAutoUpdate\obj\Debug\MainWindow.baml
+H:\surge\UB\UBAutoUpdate\UBAutoUpdate\obj\Debug\UBAutoUpdate.g.resources
+H:\surge\UB\UBAutoUpdate\UBAutoUpdate\obj\Debug\UBAutoUpdate.Properties.Resources.resources
+H:\surge\UB\UBAutoUpdate\UBAutoUpdate\obj\Debug\UBAutoUpdate.csproj.GenerateResource.Cache
+H:\surge\UB\UBAutoUpdate\UBAutoUpdate\obj\Debug\UBAutoUpdate.csproj.CoreCompileInputs.cache
+H:\surge\UB\UBAutoUpdate\UBAutoUpdate\obj\Debug\UBAutoUpdate.exe
+H:\surge\UB\UBAutoUpdate\UBAutoUpdate\obj\Debug\UBAutoUpdate.pdb

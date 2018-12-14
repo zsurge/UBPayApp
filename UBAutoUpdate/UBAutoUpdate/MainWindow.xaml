@@ -1,0 +1,26 @@
+﻿<Window x:Class="UBAutoUpdate.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UBAutoUpdate"
+        mc:Ignorable="d"
+        Title="UB Auto update" Height="240" Width="320" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Loaded="Window_Loaded">
+    <Grid Margin="10,32,10,10">
+        <StackPanel>
+            <TextBlock HorizontalAlignment="Center">应用程序正在下载更新，请不要关闭窗口！</TextBlock>
+            <ProgressBar Height="20" Margin="0 10 0 10" Name="probar"></ProgressBar>
+            <StackPanel>
+                <TextBlock Name="textBlockFileInfo"></TextBlock>
+                <Grid Margin="0 5 0 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="80"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Name="textBlockSizeInfo"></TextBlock>
+                    <!--<Button Grid.Column="1" Name="buttonUpdate" Click="buttonUpdate_Click">开始更新</Button>-->
+                </Grid>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
