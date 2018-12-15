@@ -34,6 +34,7 @@ namespace UBPayApp
     {
         bool bRet = false;
         private static bool execute_Flag = false;
+        private static bool close_Flag = false;
 
         private readonly string filePath = AppDomain.CurrentDomain.BaseDirectory + "UBPay.bmp";
 
@@ -68,18 +69,18 @@ namespace UBPayApp
                         
         }
 
-        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            try
-            {
-                Var.bAlreadyOpen = false;
-                //QueryThreadProcess.Abort();//关闭时结束线程
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.ToString(),"系统提示",MessageBoxButton.OK,MessageBoxImage.Exclamation);
-            }
-        }
+        //private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        //{
+        //    try
+        //    {
+        //        Var.bAlreadyOpen = false;
+        //        //QueryThreadProcess.Abort();//关闭时结束线程
+        //    }
+        //    catch(Exception ex)
+        //    {
+        //        MessageBox.Show(ex.ToString(),"系统提示",MessageBoxButton.OK,MessageBoxImage.Exclamation);
+        //    }
+        //}
 
         //string OldMd5str = "";
         BaiduOcr baiduOcr;
@@ -200,6 +201,12 @@ namespace UBPayApp
 
         private void payment()
         {
+            if (close_Flag)
+            {
+                return;
+            }
+            close_Flag = true;
+
             if (execute_Flag)
             {
                 execute_Flag = false;
@@ -275,7 +282,7 @@ namespace UBPayApp
 
             PayInterface payInterface = new PayInterface();
 
-            while (true)
+            while (close_Flag)
             {
                 if (status.Contains("支付成功") || status.Contains("支付失败"))
                 {
@@ -294,15 +301,16 @@ namespace UBPayApp
 
                 Var.g_all_payment_Order_Status.TryGetValue(tmp, out status);
 
-                //if (i-- == 0)
-                //{
-                //    break;
-                //}
+                Dispatcher.Invoke(new Action(() =>
+                {
+                    Pay_Status.Content = status;
+                }));
 
                 Thread.Sleep(5000);
             }
 
             execute_Flag = true;
+            close_Flag = false;
             Dispatcher.Invoke(new Action(() =>
             {
                 Pay_Status.Content = status + msg;
@@ -335,6 +343,19 @@ namespace UBPayApp
             if (e.Key == Key.Enter)
             {
                 this.Dispatcher.BeginInvoke(DispatcherPriority.Background, (Action)(() => { Keyboard.Focus(tBoxBarCode); }));
+            }
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            try
+            {
+                Var.bAlreadyOpen = false;
+                close_Flag = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "系统提示", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
         }
     }

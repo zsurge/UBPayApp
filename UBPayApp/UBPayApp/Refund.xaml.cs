@@ -30,6 +30,7 @@ namespace UBPayApp
         Thread QueryRefundStatusThreadProcess;
 
         private static bool execute_Flag = false;
+        private static bool close_Flag = false;
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
@@ -41,16 +42,23 @@ namespace UBPayApp
 
         private void btn_refund_Click(object sender, RoutedEventArgs e)
         {
+            if (close_Flag)
+            {             
+                return;
+            }
+            close_Flag = true;
+
             if (execute_Flag)
             {
                 execute_Flag = false;
                 this.Close();
                 return;  //有可能关不到，这里退出
-            }
+            }            
 
             PayInterface payInterface = new PayInterface();
             if (tx_refund_amount.Text.Length == 0 && lab_order_id.Content != null)
             {
+                
                 return;
             }
 
@@ -60,7 +68,7 @@ namespace UBPayApp
 
             //状态查询
             if (bRet)
-            {
+            {           
                 string str = string.Empty;
                 result.TryGetValue("refund_order_id", out str);
                 lab_refund_order_id.Content = str;
@@ -71,6 +79,7 @@ namespace UBPayApp
             }
             else
             {
+                
                 MessageBox.Show("退款失败", "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
@@ -91,8 +100,9 @@ namespace UBPayApp
 
             PayInterface payInterface = new PayInterface();
 
-            while (true)
+            while (close_Flag)
             {
+
                 if (status.Contains("退款成功") || status.Contains("退款失败"))
                 {
                     execute_Flag = true;
@@ -101,6 +111,7 @@ namespace UBPayApp
 
                 if (payInterface.ApiRefundStatusQuery(refund_order_id, Var.merchant_id, out result) == false)
                 {
+                    execute_Flag = true;
                     MessageBox.Show("查询退款状态失败，请手工查询", "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
@@ -110,21 +121,23 @@ namespace UBPayApp
 
                 Var.g_all_payment_refund_status.TryGetValue(tmp, out status);
 
-                //if (i-- == 0)
-                //{
-                //    break;
-                //}
+                Dispatcher.Invoke(new Action(() =>
+                {
+                    lab_Refund_Status.Content = status;
+                }));
 
                 Thread.Sleep(5000);
             }
 
             execute_Flag = true;
+            close_Flag = false;
 
             Dispatcher.Invoke(new Action(() =>
             {
                 lab_Refund_Status.Content = status;
             }));
 
+            
             //获取焦点，为支付成功关窗口做准备
             this.Dispatcher.BeginInvoke(DispatcherPriority.Background, (Action)(() => { Keyboard.Focus(btn_refund); }));
 
@@ -146,6 +159,11 @@ namespace UBPayApp
                 //下一个控制获取焦点
                 this.Dispatcher.BeginInvoke(DispatcherPriority.Background, (Action)(() => { Keyboard.Focus(btn_refund); }));
             }
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            close_Flag = false;
         }
     }//end class
 }

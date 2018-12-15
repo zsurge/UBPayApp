@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UBPayApp"
         mc:Ignorable="d"
-        Title="退款" Height="338" Width="291" Loaded="Window_Loaded" >
+        Title="退款" Height="338" Width="291" Loaded="Window_Loaded" WindowStartupLocation ="CenterScreen" Closed="Window_Closed">
     <Grid>
         <Label Content="订单号：" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Label Content="" HorizontalAlignment="Left" Margin="85,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.025,0.577" Width="188"  Name="lab_order_id"/>

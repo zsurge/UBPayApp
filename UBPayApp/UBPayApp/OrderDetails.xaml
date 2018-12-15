@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:UBPayApp"
         mc:Ignorable="d"
         Title="详细订单信息" Height="480" Width="800"
-        Loaded="Window_Loaded"
+        Loaded="Window_Loaded" WindowStartupLocation ="CenterScreen"
         >
     <Grid>
         <Grid.RowDefinitions>

@@ -1,7 +1,7 @@
 ﻿<Window x:Class="UBPayApp.PayWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="PayWindow" Height="520" Width="481" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" ShowInTaskbar="False" Closing="Window_Closing" Topmost="True" Loaded="Window_Loaded">
+        Title="PayWindow" Height="520" Width="481" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" ShowInTaskbar="False" Closed="Window_Closed" Topmost="True" Loaded="Window_Loaded">
     <Grid>
         <Image Height="109" HorizontalAlignment="Left" Margin="56,174,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="316" />
         <Label Content="总金额(￥)：" Height="28" HorizontalAlignment="Left" Margin="56,39,0,0" Name="label1" VerticalAlignment="Top" HorizontalContentAlignment="Right" />
