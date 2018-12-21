@@ -417,9 +417,9 @@
 
             <RadioButton Margin="96,12,0,74"  Cursor="Hand" x:Name="yesterday" Style="{DynamicResource RadioButtonColorStyle}" SnapsToDevicePixels="True" Content="昨日" Click="yesterday_Click" HorizontalAlignment="Left" Width="47"/>
 
-            <RadioButton Margin="158,12,0,74" Cursor="Hand" x:Name="Nearly7days" Style="{DynamicResource RadioButtonColorStyle}" SnapsToDevicePixels="True" Content="近7日" Click="Nearly7days_Click" HorizontalAlignment="Left" Width="47"/>
+            <RadioButton Margin="158,12,0,74" Cursor="Hand" x:Name="Nearly7days" Style="{DynamicResource RadioButtonColorStyle}" SnapsToDevicePixels="True" Content="本周" Click="Nearly7days_Click" HorizontalAlignment="Left" Width="47"/>
 
-            <RadioButton Margin="219,12,0,74" Cursor="Hand" x:Name="Nearly30days" Style="{DynamicResource RadioButtonColorStyle}" SnapsToDevicePixels="True" Content="近30日" Click="Nearly30days_Click" HorizontalAlignment="Left" Width="60"/>
+            <RadioButton Margin="219,12,0,74" Cursor="Hand" x:Name="Nearly30days" Style="{DynamicResource RadioButtonColorStyle}" SnapsToDevicePixels="True" Content="本月" Click="Nearly30days_Click" HorizontalAlignment="Left" Width="60"/>
 
             <TimeTool:Dameer  HorizontalAlignment="Left" Height="21" Margin="505,10,0,0" VerticalAlignment="Top" Width="131" Name="datePicker1" Format="Custom" CustomFormat="yyyy-MM-dd HH:mm:ss" ShowCheckBox="False"/>
             <!--<DatePicker Height="21" HorizontalAlignment="Left" Margin="505,10,0,0" Name="datePicker1" VerticalAlignment="Top" Width="131" FontSize="18" SelectedDate="{x:Static sys:DateTime.Now}" SelectedDateChanged="datePicker1_SelectedDateChanged" SelectedDateFormat="Short" DisplayDate="8/11/2018" />-->

@@ -313,7 +313,7 @@ namespace UBPayApp
             close_Flag = false;
             Dispatcher.Invoke(new Action(() =>
             {
-                Pay_Status.Content = status + msg;
+                Pay_Status.Content = status;
             }));
 
             //获取焦点，为支付成功关窗口做准备
