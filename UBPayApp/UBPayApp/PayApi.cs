@@ -211,7 +211,7 @@ namespace UBPayApp
                 LogManager.WriteLogTran(LogType.Message, "userinfo.phone = ", userinfo.phone.ToString());
                 userinfo.open_id = result_json["data"]["open_id"].ToString();
                 LogManager.WriteLogTran(LogType.Message, "userinfo.open_id = ", userinfo.open_id.ToString());
-                userinfo.type = result_json["data"]["type"].ToString();
+                userinfo.type = result_json["data"]["user_type"].ToString();
                 LogManager.WriteLogTran(LogType.Message, "userinfo.type = ", userinfo.type.ToString());
                 userinfo.status = result_json["data"]["status"].ToString();
                 LogManager.WriteLogTran(LogType.Message, "userinfo.status = ", userinfo.status.ToString());
@@ -280,7 +280,7 @@ namespace UBPayApp
                 LogManager.WriteLogTran(LogType.Message, "storeinfo.address = ", storeinfo.address.ToString());
                 storeinfo.status = result_json["data"]["store"]["status"].ToString();
                 LogManager.WriteLogTran(LogType.Message, "storeinfo.status = ", storeinfo.status.ToString());
-                
+
 
                 ret = true;
             }

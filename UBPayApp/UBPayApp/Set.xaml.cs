@@ -213,8 +213,10 @@ namespace UBPayApp
                 }
                 else
                 {
+                    Var.device_name = Var.g_DeviceList_Info[cmbDevice.SelectedIndex].name;
                     Var.device_id = Var.g_DeviceList_Info[cmbDevice.SelectedIndex].id;
                     ParmIni.IniWriteValue("Init", "device_id", Var.g_DeviceList_Info[cmbDevice.SelectedIndex].id);
+                    ParmIni.IniWriteValue("Init", "device_name", Var.g_DeviceList_Info[cmbDevice.SelectedIndex].name);
                 }
             }
         }

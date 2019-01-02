@@ -38,6 +38,7 @@ namespace UBPayApp
         public static string store_id = "";//Var.g_User_Info.store_id;
         public static string operator_id = "1000000001";// Var.g_User_Info.id;
         public static string device_id = "";
+        public static string device_name = "";
 
         public static string ltoken = null;
 

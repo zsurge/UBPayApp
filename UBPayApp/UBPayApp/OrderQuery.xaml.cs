@@ -641,8 +641,9 @@ namespace UBPayApp
                     iPos = i;
                 }
             }
-            cmb_store_id.SelectedIndex = iPos+1;
-            store_id_key = Var.g_StoreList_Info[cmb_store_id.SelectedIndex-1].id;
+            cmb_store_id.SelectedIndex = iPos + 1;
+            store_id_key = Var.g_StoreList_Info[cmb_store_id.SelectedIndex - 1].id;
+              
             store_flag = false;
 
 
@@ -659,8 +660,9 @@ namespace UBPayApp
                     iPos = i;
                 }
             }
-            cmb_operator_id.SelectedIndex = iPos+1;
+            cmb_operator_id.SelectedIndex = iPos + 1;
             operator_id_key = Var.g_UserList_Info[cmb_operator_id.SelectedIndex - 1].id;
+           
             user_flag = false;
 
 
@@ -678,8 +680,9 @@ namespace UBPayApp
                     iPos = i;
                 }
             }
-            cmb_device_id.SelectedIndex = iPos+1;
+            cmb_device_id.SelectedIndex = iPos + 1;
             device_id_key = Var.g_DeviceList_Info[cmb_device_id.SelectedIndex - 1].id;
+            
             device_flag = false;
 
             //交易类型列表

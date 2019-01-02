@@ -237,51 +237,84 @@ namespace UBPayApp
                             Var.store_id = Var.g_User_Info.store_id;
                             Var.operator_id = Var.g_User_Info.id;
                             Var.device_id = ParmIni.IniReadValue("Init", "device_id");
+                            Var.device_name = ParmIni.IniReadValue("Init", "device_name");
 
                             ParmIni.IniWriteValue("Init", "merchant_id", Var.merchant_id);
                             ParmIni.IniWriteValue("Init", "store_id", Var.store_id);
                             ParmIni.IniWriteValue("Init", "operator_id", Var.operator_id);
 
-                            Var.g_StoreList_Info = new Var.StoreList_Info[128];
-                            Var.Get_StoreListCount = 0;
-                            if (PayApi.ApiGetStoreList(Var.ltoken, out result, out Var.g_StoreList_Info, out Var.Get_StoreListCount) == false)
+                            if (Var.g_User_Info.type == "2")
                             {
-                                gridLoginInfo.Visibility = System.Windows.Visibility.Hidden;
-                                bLogining = false;
+                                Var.g_StoreList_Info = new Var.StoreList_Info[128];
+                                Var.Get_StoreListCount = 0;
+                                if (PayApi.ApiGetStoreList(Var.ltoken, out result, out Var.g_StoreList_Info, out Var.Get_StoreListCount) == false)
+                                {
+                                    gridLoginInfo.Visibility = System.Windows.Visibility.Hidden;
+                                    bLogining = false;
 
-                                MessageBox.Show("获取门店列表：" + result, "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
-                                this.Dispatcher.BeginInvoke(DispatcherPriority.Background,
-                                                   (Action)(() => { Keyboard.Focus(tBoxInputID); }));
-                                return;
+                                    MessageBox.Show("获取门店列表：" + result, "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
+                                    this.Dispatcher.BeginInvoke(DispatcherPriority.Background,
+                                                       (Action)(() => { Keyboard.Focus(tBoxInputID); }));
+                                    return;
+                                }
+
+                                //modify 20181104 放在设置时查询，不同的门店有不同的用户ID和设备ID
+                                Var.g_UserList_Info = new Var.UserList_Info[128];
+                                Var.Get_UserListCount = 0;
+                                if (PayApi.ApiGetUserList(Var.g_Store_Info.id, Var.ltoken, out result, out Var.g_UserList_Info, out Var.Get_UserListCount) == false)
+                                {
+                                    gridLoginInfo.Visibility = System.Windows.Visibility.Hidden;
+                                    bLogining = false;
+
+                                    MessageBox.Show("获取店员列表：" + result, "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
+                                    this.Dispatcher.BeginInvoke(DispatcherPriority.Background,
+                                                       (Action)(() => { Keyboard.Focus(tBoxInputID); }));
+                                    return;
+                                }
+
+                                Var.g_DeviceList_Info = new Var.DeviceList_Info[128];
+                                Var.Get_DeviceListCount = 0;
+                                if (PayApi.ApiGetDeviceList(Var.g_Store_Info.id, Var.ltoken, out result, out Var.g_DeviceList_Info, out Var.Get_DeviceListCount) == false)
+                                {
+                                    gridLoginInfo.Visibility = System.Windows.Visibility.Hidden;
+                                    bLogining = false;
+
+                                    MessageBox.Show("获取设备列表：" + result, "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
+                                    this.Dispatcher.BeginInvoke(DispatcherPriority.Background,
+                                                       (Action)(() => { Keyboard.Focus(tBoxInputID); }));
+                                    return;
+                                }
                             }
-
-                            //modify 20181104 放在设置时查询，不同的门店有不同的用户ID和设备ID
-                            Var.g_UserList_Info = new Var.UserList_Info[128];
-                            Var.Get_UserListCount = 0;
-                            if (PayApi.ApiGetUserList(Var.g_Store_Info.id, Var.ltoken, out result, out Var.g_UserList_Info, out Var.Get_UserListCount) == false)
+                            else
                             {
-                                gridLoginInfo.Visibility = System.Windows.Visibility.Hidden;
-                                bLogining = false;
+                                //复制门店信息
+                                Var.Get_StoreListCount = 1;
+                                Var.g_StoreList_Info = new Var.StoreList_Info[1];
+                                Var.g_StoreList_Info[0].id = Var.g_Store_Info.id;
+                                Var.g_StoreList_Info[0].merchant_id = Var.g_Store_Info.merchant_id;
+                                Var.g_StoreList_Info[0].name = Var.g_Store_Info.name;
+                                Var.g_StoreList_Info[0].number = Var.g_Store_Info.number;
+                                Var.g_StoreList_Info[0].principal_name = Var.g_Store_Info.principal_name;
+                                Var.g_StoreList_Info[0].principal_phone = Var.g_Store_Info.principal_phone;
+                                Var.g_StoreList_Info[0].status = Var.g_Store_Info.status;
+                                Var.g_StoreList_Info[0].time_create = Var.g_Store_Info.time_create;
+                                Var.g_StoreList_Info[0].time_update = Var.g_Store_Info.time_update;
+                                Var.g_StoreList_Info[0].address = Var.g_Store_Info.address;
 
-                                MessageBox.Show("获取店员列表：" + result, "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
-                                this.Dispatcher.BeginInvoke(DispatcherPriority.Background,
-                                                   (Action)(() => { Keyboard.Focus(tBoxInputID); }));
-                                return;
+                                //复制店员信息
+                                Var.g_UserList_Info = new Var.UserList_Info[1];
+                                Var.Get_UserListCount = 1;
+
+                                Var.g_UserList_Info[0].id = Var.g_User_Info.id;
+                                Var.g_UserList_Info[0].phone = Var.g_User_Info.phone;
+                                Var.g_UserList_Info[0].username = Var.g_User_Info.username;
+
+                                //复制设备信息
+                                Var.g_DeviceList_Info = new Var.DeviceList_Info[1];
+                                Var.Get_DeviceListCount = 1;     
+                                Var.g_DeviceList_Info[0].id = ParmIni.IniReadValue("Init", "device_id");
+                                Var.g_DeviceList_Info[0].name = ParmIni.IniReadValue("Init", "device_name");
                             }
-
-                            //Var.g_DeviceList_Info = new Var.DeviceList_Info[128];
-                            Var.Get_DeviceListCount = 0;
-                            if (PayApi.ApiGetDeviceList(Var.g_Store_Info.id, Var.ltoken, out result, out Var.g_DeviceList_Info, out Var.Get_DeviceListCount) == false)
-                            {
-                                gridLoginInfo.Visibility = System.Windows.Visibility.Hidden;
-                                bLogining = false;
-
-                                MessageBox.Show("获取设备列表：" + result, "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
-                                this.Dispatcher.BeginInvoke(DispatcherPriority.Background,
-                                                   (Action)(() => { Keyboard.Focus(tBoxInputID); }));
-                                return;
-                            }
-
                             //if (Var.Get_DeviceListCount >= 1)
                             //{
                             //    Var.device_id = Var.g_DeviceList_Info[0].id;
