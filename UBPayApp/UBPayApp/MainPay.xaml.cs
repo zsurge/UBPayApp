@@ -34,7 +34,7 @@ namespace UBPayApp
             //lb__LoginUserName.Content = Var.g_User_Info.username;
             //lb__LoginUserName1.Content = Var.g_User_Info.username;
 
-            menu_user.Header = Var.g_User_Info.username; ;
+            menu_user.Header = Var.g_User_Info.username; 
 
             img__OrderQuery.Source = BitmapFrame.Create(new Uri(dir + @"pic/dingdan_s.png"), BitmapCreateOptions.IgnoreImageCache, BitmapCacheOption.None);
             img__OrderSum.Source = BitmapFrame.Create(new Uri(dir + @"pic/dingdanchaxun.png"), BitmapCreateOptions.IgnoreImageCache, BitmapCacheOption.None);

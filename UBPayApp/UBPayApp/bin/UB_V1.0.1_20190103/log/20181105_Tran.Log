@@ -1,0 +1,2390 @@
+[2018/11/5 21:30:36 635] [Message] [v1.0.1] ===================用户登陆=================== Start
+[2018/11/5 21:30:36 636] [Message] [v1.0.1] Login Send =  username=user_1_1&password=1111111
+[2018/11/5 21:30:36 811] [Message] [v1.0.1] Result =  {"code":1,"msg":"登录成功","data":{"token":"a1a534753e9a9303c26026c8020d880b","info":{"app_type":"api","id":"1000000001","agent_id":"10000001","store_id":"1000000001","merchant_id":"1000000001","user_type":"2","type":"2","username":"user_1_1","open_id":"","timestamp":1541424638}}}
+[2018/11/5 21:30:36 903] [Message] [v1.0.1] ===================用户登陆=================== End
+[2018/11/5 21:30:36 906] [Message] [v1.0.1] ===================用户信息=================== Start
+[2018/11/5 21:30:36 907] [Message] [v1.0.1] GetUserInfo Send =  key=a1a534753e9a9303c26026c8020d880b
+[2018/11/5 21:30:37 014] [Message] [v1.0.1] Result =  {"code":1,"msg":"用户信息","data":{"id":"1000000001","agent_id":"10000001","merchant_id":"1000000001","store_id":"1000000001","username":"user_1_1","phone":"15153294092","open_id":"","type":"2","time_create":"1527211953","time_update":"1533293063","status":"1","agent":{"id":"10000001","pid":"00000000","name":"代理商1","number":"1111111111111111","address":"代理商地址1","principal_name":"负责人1","principal_phone":"15153294092","contact_name":"联系人1","contact_phone":"111111","contact_email":"youxiang@youxiang.com","time_create":"0","time_update":"1533178664","status":"1"},"merchant":{"id":"1000000001","agent_id":"10000001","name":"测试子商户1","short_name":"子商户1","number":"1000000001","principal_name":null,"principal_phone":null,"contact_name":"联系人1","contact_phone":"15153294092","contact_email":"sdsads@qq.com","address":null,"time_create":"0","time_update":"1533523267","status":"1"},"store":{"id":"1000000001","merchant_id":"1000000001","name":"测试店铺1","number":"0011","principal_name":"负责人1","principal_phone":"15153294092","address":"测试店铺地址1","time_create":"0","time_update":"0","status":"1"}}}
+[2018/11/5 21:30:37 046] [Message] [v1.0.1] data =  {
+  "id": "1000000001",
+  "agent_id": "10000001",
+  "merchant_id": "1000000001",
+  "store_id": "1000000001",
+  "username": "user_1_1",
+  "phone": "15153294092",
+  "open_id": "",
+  "type": "2",
+  "time_create": "1527211953",
+  "time_update": "1533293063",
+  "status": "1",
+  "agent": {
+    "id": "10000001",
+    "pid": "00000000",
+    "name": "代理商1",
+    "number": "1111111111111111",
+    "address": "代理商地址1",
+    "principal_name": "负责人1",
+    "principal_phone": "15153294092",
+    "contact_name": "联系人1",
+    "contact_phone": "111111",
+    "contact_email": "youxiang@youxiang.com",
+    "time_create": "0",
+    "time_update": "1533178664",
+    "status": "1"
+  },
+  "merchant": {
+    "id": "1000000001",
+    "agent_id": "10000001",
+    "name": "测试子商户1",
+    "short_name": "子商户1",
+    "number": "1000000001",
+    "principal_name": null,
+    "principal_phone": null,
+    "contact_name": "联系人1",
+    "contact_phone": "15153294092",
+    "contact_email": "sdsads@qq.com",
+    "address": null,
+    "time_create": "0",
+    "time_update": "1533523267",
+    "status": "1"
+  },
+  "store": {
+    "id": "1000000001",
+    "merchant_id": "1000000001",
+    "name": "测试店铺1",
+    "number": "0011",
+    "principal_name": "负责人1",
+    "principal_phone": "15153294092",
+    "address": "测试店铺地址1",
+    "time_create": "0",
+    "time_update": "0",
+    "status": "1"
+  }
+}
+[2018/11/5 21:30:37 047] [Message] [v1.0.1] agent =  {
+  "id": "10000001",
+  "pid": "00000000",
+  "name": "代理商1",
+  "number": "1111111111111111",
+  "address": "代理商地址1",
+  "principal_name": "负责人1",
+  "principal_phone": "15153294092",
+  "contact_name": "联系人1",
+  "contact_phone": "111111",
+  "contact_email": "youxiang@youxiang.com",
+  "time_create": "0",
+  "time_update": "1533178664",
+  "status": "1"
+}
+[2018/11/5 21:30:37 047] [Message] [v1.0.1] merchant =  {
+  "id": "1000000001",
+  "agent_id": "10000001",
+  "name": "测试子商户1",
+  "short_name": "子商户1",
+  "number": "1000000001",
+  "principal_name": null,
+  "principal_phone": null,
+  "contact_name": "联系人1",
+  "contact_phone": "15153294092",
+  "contact_email": "sdsads@qq.com",
+  "address": null,
+  "time_create": "0",
+  "time_update": "1533523267",
+  "status": "1"
+}
+[2018/11/5 21:30:37 048] [Message] [v1.0.1] store =  {
+  "id": "1000000001",
+  "merchant_id": "1000000001",
+  "name": "测试店铺1",
+  "number": "0011",
+  "principal_name": "负责人1",
+  "principal_phone": "15153294092",
+  "address": "测试店铺地址1",
+  "time_create": "0",
+  "time_update": "0",
+  "status": "1"
+}
+[2018/11/5 21:30:37 049] [Message] [v1.0.1] userinfo.id =  1000000001
+[2018/11/5 21:30:37 050] [Message] [v1.0.1] userinfo.agent_id =  10000001
+[2018/11/5 21:30:37 051] [Message] [v1.0.1] userinfo.merchant_id =  1000000001
+[2018/11/5 21:30:37 051] [Message] [v1.0.1] userinfo.store_id =  1000000001
+[2018/11/5 21:30:37 052] [Message] [v1.0.1] userinfo.username =  user_1_1
+[2018/11/5 21:30:37 053] [Message] [v1.0.1] userinfo.phone =  15153294092
+[2018/11/5 21:30:37 054] [Message] [v1.0.1] userinfo.open_id =  
+[2018/11/5 21:30:37 055] [Message] [v1.0.1] userinfo.type =  2
+[2018/11/5 21:30:37 055] [Message] [v1.0.1] userinfo.status =  1
+[2018/11/5 21:30:37 056] [Message] [v1.0.1] agentinfo.id =  10000001
+[2018/11/5 21:30:37 057] [Message] [v1.0.1] agentinfo.pid =  00000000
+[2018/11/5 21:30:37 058] [Message] [v1.0.1] agentinfo.name =  代理商1
+[2018/11/5 21:30:37 059] [Message] [v1.0.1] agentinfo.number =  1111111111111111
+[2018/11/5 21:30:37 059] [Message] [v1.0.1] agentinfo.address =  代理商地址1
+[2018/11/5 21:30:37 060] [Message] [v1.0.1] agentinfo.principal_name =  负责人1
+[2018/11/5 21:30:37 061] [Message] [v1.0.1] agentinfo.principal_phone =  15153294092
+[2018/11/5 21:30:37 062] [Message] [v1.0.1] agentinfo.contact_name =  联系人1
+[2018/11/5 21:30:37 063] [Message] [v1.0.1] agentinfo.contact_phone =  111111
+[2018/11/5 21:30:37 063] [Message] [v1.0.1] agentinfo.contact_email =  youxiang@youxiang.com
+[2018/11/5 21:30:37 064] [Message] [v1.0.1] agentinfo.status =  1
+[2018/11/5 21:30:37 070] [Message] [v1.0.1] merchantinfo.id =  1000000001
+[2018/11/5 21:30:37 071] [Message] [v1.0.1] merchantinfo.agent_id =  10000001
+[2018/11/5 21:30:37 071] [Message] [v1.0.1] merchantinfo.name =  测试子商户1
+[2018/11/5 21:30:37 072] [Message] [v1.0.1] merchantinfo.short_name =  子商户1
+[2018/11/5 21:30:37 073] [Message] [v1.0.1] merchantinfo.number =  1000000001
+[2018/11/5 21:30:37 074] [Message] [v1.0.1] merchantinfo.principal_name =  
+[2018/11/5 21:30:37 075] [Message] [v1.0.1] merchantinfo.principal_phone =  
+[2018/11/5 21:30:37 075] [Message] [v1.0.1] merchantinfo.contact_name =  联系人1
+[2018/11/5 21:30:37 076] [Message] [v1.0.1] merchantinfo.contact_phone =  15153294092
+[2018/11/5 21:30:37 077] [Message] [v1.0.1] merchantinfo.contact_email =  sdsads@qq.com
+[2018/11/5 21:30:37 078] [Message] [v1.0.1] merchantinfo.address =  
+[2018/11/5 21:30:37 078] [Message] [v1.0.1] merchantinfo.status =  1
+[2018/11/5 21:30:37 079] [Message] [v1.0.1] storeinfo.id =  1000000001
+[2018/11/5 21:30:37 080] [Message] [v1.0.1] storeinfo.merchant_id =  1000000001
+[2018/11/5 21:30:37 081] [Message] [v1.0.1] storeinfo.name =  测试店铺1
+[2018/11/5 21:30:37 082] [Message] [v1.0.1] storeinfo.number =  0011
+[2018/11/5 21:30:37 083] [Message] [v1.0.1] storeinfo.principal_name =  负责人1
+[2018/11/5 21:30:37 083] [Message] [v1.0.1] storeinfo.principal_phone =  15153294092
+[2018/11/5 21:30:37 084] [Message] [v1.0.1] storeinfo.address =  测试店铺地址1
+[2018/11/5 21:30:37 085] [Message] [v1.0.1] storeinfo.status =  1
+[2018/11/5 21:30:37 086] [Message] [v1.0.1] ===================用户信息=================== End
+[2018/11/5 21:30:37 094] [Message] [v1.0.1] ===================门店列表=================== Start
+[2018/11/5 21:30:37 095] [Message] [v1.0.1] GetStoreList Send =  key=a1a534753e9a9303c26026c8020d880b
+[2018/11/5 21:30:37 197] [Message] [v1.0.1] Result =  {"code":1,"msg":"店铺列表","data":{"list":[{"id":"1000000003","merchant_id":"1000000001","name":"门店3","number":"3333333333","principal_name":"负责人3","principal_phone":"15153294092","address":"青岛市市北区华阳路112号","time_create":"1532659891","time_update":"1532660479","status":"1"},{"id":"1000000002","merchant_id":"1000000001","name":"测试店铺2","number":"0012","principal_name":"负责人2","principal_phone":"15153294093","address":"测试店铺地址2","time_create":"0","time_update":"0","status":"1"},{"id":"1000000001","merchant_id":"1000000001","name":"测试店铺1","number":"0011","principal_name":"负责人1","principal_phone":"15153294092","address":"测试店铺地址1","time_create":"0","time_update":"0","status":"1"}]}}
+[2018/11/5 21:30:37 201] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000003",
+    "merchant_id": "1000000001",
+    "name": "门店3",
+    "number": "3333333333",
+    "principal_name": "负责人3",
+    "principal_phone": "15153294092",
+    "address": "青岛市市北区华阳路112号",
+    "time_create": "1532659891",
+    "time_update": "1532660479",
+    "status": "1"
+  },
+  {
+    "id": "1000000002",
+    "merchant_id": "1000000001",
+    "name": "测试店铺2",
+    "number": "0012",
+    "principal_name": "负责人2",
+    "principal_phone": "15153294093",
+    "address": "测试店铺地址2",
+    "time_create": "0",
+    "time_update": "0",
+    "status": "1"
+  },
+  {
+    "id": "1000000001",
+    "merchant_id": "1000000001",
+    "name": "测试店铺1",
+    "number": "0011",
+    "principal_name": "负责人1",
+    "principal_phone": "15153294092",
+    "address": "测试店铺地址1",
+    "time_create": "0",
+    "time_update": "0",
+    "status": "1"
+  }
+]
+[2018/11/5 21:30:37 212] [Message] [v1.0.1] storelist[1].id =  1000000003
+[2018/11/5 21:30:37 214] [Message] [v1.0.1] storelist[1].merchant_id =  1000000001
+[2018/11/5 21:30:37 216] [Message] [v1.0.1] storelist[1].name =  门店3
+[2018/11/5 21:30:37 218] [Message] [v1.0.1] storelist[1].number =  3333333333
+[2018/11/5 21:30:37 220] [Message] [v1.0.1] storelist[1].principal_name =  负责人3
+[2018/11/5 21:30:37 222] [Message] [v1.0.1] storelist[1].principal_phone =  15153294092
+[2018/11/5 21:30:37 224] [Message] [v1.0.1] storelist[1].address =  青岛市市北区华阳路112号
+[2018/11/5 21:30:37 225] [Message] [v1.0.1] storelist[1].status =  1
+[2018/11/5 21:30:37 226] [Message] [v1.0.1] storelist[2].id =  1000000002
+[2018/11/5 21:30:37 227] [Message] [v1.0.1] storelist[2].merchant_id =  1000000001
+[2018/11/5 21:30:37 228] [Message] [v1.0.1] storelist[2].name =  测试店铺2
+[2018/11/5 21:30:37 228] [Message] [v1.0.1] storelist[2].number =  0012
+[2018/11/5 21:30:37 229] [Message] [v1.0.1] storelist[2].principal_name =  负责人2
+[2018/11/5 21:30:37 230] [Message] [v1.0.1] storelist[2].principal_phone =  15153294093
+[2018/11/5 21:30:37 231] [Message] [v1.0.1] storelist[2].address =  测试店铺地址2
+[2018/11/5 21:30:37 232] [Message] [v1.0.1] storelist[2].status =  1
+[2018/11/5 21:30:37 232] [Message] [v1.0.1] storelist[3].id =  1000000001
+[2018/11/5 21:30:37 233] [Message] [v1.0.1] storelist[3].merchant_id =  1000000001
+[2018/11/5 21:30:37 234] [Message] [v1.0.1] storelist[3].name =  测试店铺1
+[2018/11/5 21:30:37 235] [Message] [v1.0.1] storelist[3].number =  0011
+[2018/11/5 21:30:37 236] [Message] [v1.0.1] storelist[3].principal_name =  负责人1
+[2018/11/5 21:30:37 236] [Message] [v1.0.1] storelist[3].principal_phone =  15153294092
+[2018/11/5 21:30:37 237] [Message] [v1.0.1] storelist[3].address =  测试店铺地址1
+[2018/11/5 21:30:37 238] [Message] [v1.0.1] storelist[3].status =  1
+[2018/11/5 21:30:37 255] [Message] [v1.0.1] ===================门店列表=================== End
+[2018/11/5 21:30:37 257] [Message] [v1.0.1] ===================店员列表=================== Start
+[2018/11/5 21:30:37 258] [Message] [v1.0.1] GetUserList Send =  key=a1a534753e9a9303c26026c8020d880b&store_id=1000000001
+[2018/11/5 21:30:37 360] [Message] [v1.0.1] Result =  {"code":1,"msg":"店员列表","data":{"list":[{"id":"1000000003","username":"user_1_2","phone":"15153294092"},{"id":"1000000001","username":"user_1_1","phone":"15153294092"}]}}
+[2018/11/5 21:30:37 362] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000003",
+    "username": "user_1_2",
+    "phone": "15153294092"
+  },
+  {
+    "id": "1000000001",
+    "username": "user_1_1",
+    "phone": "15153294092"
+  }
+]
+[2018/11/5 21:30:37 365] [Message] [v1.0.1] userlist[1].id =  1000000003
+[2018/11/5 21:30:37 367] [Message] [v1.0.1] userlist[1].username =  user_1_2
+[2018/11/5 21:30:37 369] [Message] [v1.0.1] userlist[1].phone =  15153294092
+[2018/11/5 21:30:37 371] [Message] [v1.0.1] userlist[2].id =  1000000001
+[2018/11/5 21:30:37 373] [Message] [v1.0.1] userlist[2].username =  user_1_1
+[2018/11/5 21:30:37 375] [Message] [v1.0.1] userlist[2].phone =  15153294092
+[2018/11/5 21:30:37 377] [Message] [v1.0.1] ===================店员列表=================== End
+[2018/11/5 21:30:37 384] [Message] [v1.0.1] ===================设备列表=================== Start
+[2018/11/5 21:30:37 386] [Message] [v1.0.1] GetDeviceList Send =  key=a1a534753e9a9303c26026c8020d880b&store_id=1000000001
+[2018/11/5 21:30:37 494] [Message] [v1.0.1] Result =  {"code":1,"msg":"设备列表","data":{"list":[{"id":"1000000002","name":"设备4","number":"002","type":"1"},{"id":"1000000001","name":"设备1","number":"001","type":"2"}]}}
+[2018/11/5 21:30:37 496] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000002",
+    "name": "设备4",
+    "number": "002",
+    "type": "1"
+  },
+  {
+    "id": "1000000001",
+    "name": "设备1",
+    "number": "001",
+    "type": "2"
+  }
+]
+[2018/11/5 21:30:37 498] [Message] [v1.0.1] devicelist[1].id =  1000000002
+[2018/11/5 21:30:37 500] [Message] [v1.0.1] devicelist[1].name =  设备4
+[2018/11/5 21:30:37 502] [Message] [v1.0.1] devicelist[1].number =  002
+[2018/11/5 21:30:37 504] [Message] [v1.0.1] devicelist[1].type =  1
+[2018/11/5 21:30:37 506] [Message] [v1.0.1] devicelist[2].id =  1000000001
+[2018/11/5 21:30:37 509] [Message] [v1.0.1] devicelist[2].name =  设备1
+[2018/11/5 21:30:37 511] [Message] [v1.0.1] devicelist[2].number =  001
+[2018/11/5 21:30:37 513] [Message] [v1.0.1] devicelist[2].type =  2
+[2018/11/5 21:30:37 514] [Message] [v1.0.1] ===================设备列表=================== End
+[2018/11/5 21:30:37 518] [Message] [v1.0.1] ===================交易类型列表=================== Start
+[2018/11/5 21:30:37 521] [Message] [v1.0.1] Get_all_paymentList Send =  key=a1a534753e9a9303c26026c8020d880b
+[2018/11/5 21:30:37 626] [Message] [v1.0.1] Result =  {"code":1,"msg":"交易类型","data":{"qrcode":"扫码支付","barcode":"条码支付","weixin_public":"微信公众号支付"}}
+[2018/11/5 21:30:37 628] [Message] [v1.0.1] data =  {
+  "qrcode": "扫码支付",
+  "barcode": "条码支付",
+  "weixin_public": "微信公众号支付"
+}
+[2018/11/5 21:30:37 630] [Message] [v1.0.1] paymentList[0].paymentType =  扫码支付
+[2018/11/5 21:30:37 632] [Message] [v1.0.1] paymentList[1].paymentType =  条码支付
+[2018/11/5 21:30:37 634] [Message] [v1.0.1] ===================交易类型列表=================== End
+[2018/11/5 21:30:37 638] [Message] [v1.0.1] ===================交易方式列表=================== Start
+[2018/11/5 21:30:37 640] [Message] [v1.0.1] Get_all_payment_channel =  key=a1a534753e9a9303c26026c8020d880b
+[2018/11/5 21:30:37 744] [Message] [v1.0.1] Result =  {"code":1,"msg":"支付方式","data":{"weixin":"微信","alipay":"支付宝","unionpay":"银联","xt":"新天","xz_weixin":"现在微信","xz_alipay":"现在支付宝","sf_weixin":"上福微信","sf_alipay":"上福支付宝"}}
+[2018/11/5 21:30:37 745] [Message] [v1.0.1] data =  {
+  "weixin": "微信",
+  "alipay": "支付宝",
+  "unionpay": "银联",
+  "xt": "新天",
+  "xz_weixin": "现在微信",
+  "xz_alipay": "现在支付宝",
+  "sf_weixin": "上福微信",
+  "sf_alipay": "上福支付宝"
+}
+[2018/11/5 21:30:37 818] [Message] [v1.0.1] ===================交易方式列表=================== End
+[2018/11/5 21:30:42 948] [Message] [v1.0.1] ===================交易查询=================== Start
+[2018/11/5 21:30:42 950] [Message] [v1.0.1] GetOrder_List Send =  key=a1a534753e9a9303c26026c8020d880b&page=5&current=1&&merchant_id=1000000001&export=0
+[2018/11/5 21:30:43 061] [Message] [v1.0.1] Result =  {"code":1,"msg":"订单列表","data":{"list":[{"id":"704","order_id":"770594768511995004001","out_order_id":"200701201811052128321425455","out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"xz_weixin","payment":"barcode","store_id":"1000000002","store_name":"测试店铺2","operator_id":"1000000004","operator_name":"user_2_2","device_id":"1000000005","device_name":"刷卡001","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:28:31","time_update":"2018-11-05 21:28:33","status":"4","profit_status":"1","remark":"支付失败:[A001]E000#成功[成功]","_status":"支付失败","payment_name":"条码支付","channel_name":"现在微信"},{"id":"703","order_id":"100594766723938001001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"unionpay","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000001","operator_name":"user_1_1","device_id":"1000000001","device_name":"设备1","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 20:58:43","time_update":"2018-11-05 20:58:44","status":"2","profit_status":"1","remark":"下单成功","_status":"处理中","payment_name":"条码支付","channel_name":"银联"},{"id":"702","order_id":"470594766350830003001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"unionpay","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000003","operator_name":"user_1_2","device_id":"1000000002","device_name":"设备4","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 20:52:30","time_update":"2018-11-05 20:52:31","status":"2","profit_status":"1","remark":"下单成功","_status":"处理中","payment_name":"条码支付","channel_name":"银联"},{"id":"701","order_id":"500594766256843003001","out_order_id":"200701201811052050561430068","out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"xz_weixin","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000003","operator_name":"user_1_2","device_id":"1000000001","device_name":"设备1","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 20:50:56","time_update":"2018-11-05 20:50:58","status":"4","profit_status":"1","remark":"支付失败:[A001]E000#成功[成功]","_status":"支付失败","payment_name":"条码支付","channel_name":"现在微信"},{"id":"700","order_id":"770594766096848001001","out_order_id":"200701201811052048171425330","out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"xz_weixin","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000001","operator_name":"user_1_1","device_id":"1000000001","device_name":"设备1","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 20:48:16","time_update":"2018-11-05 20:48:18","status":"4","profit_status":"1","remark":"支付失败:[A001]E000#成功[成功]","_status":"支付失败","payment_name":"条码支付","channel_name":"现在微信"}],"total":"694","sum_amount":"7832785.43","sum_actual_amount":"7830564.20","sum_refund_amount":"0.52"}}
+[2018/11/5 21:30:43 064] [Message] [v1.0.1] data =  {
+  "list": [
+    {
+      "id": "704",
+      "order_id": "770594768511995004001",
+      "out_order_id": "200701201811052128321425455",
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "xz_weixin",
+      "payment": "barcode",
+      "store_id": "1000000002",
+      "store_name": "测试店铺2",
+      "operator_id": "1000000004",
+      "operator_name": "user_2_2",
+      "device_id": "1000000005",
+      "device_name": "刷卡001",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:28:31",
+      "time_update": "2018-11-05 21:28:33",
+      "status": "4",
+      "profit_status": "1",
+      "remark": "支付失败:[A001]E000#成功[成功]",
+      "_status": "支付失败",
+      "payment_name": "条码支付",
+      "channel_name": "现在微信"
+    },
+    {
+      "id": "703",
+      "order_id": "100594766723938001001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "unionpay",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000001",
+      "operator_name": "user_1_1",
+      "device_id": "1000000001",
+      "device_name": "设备1",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 20:58:43",
+      "time_update": "2018-11-05 20:58:44",
+      "status": "2",
+      "profit_status": "1",
+      "remark": "下单成功",
+      "_status": "处理中",
+      "payment_name": "条码支付",
+      "channel_name": "银联"
+    },
+    {
+      "id": "702",
+      "order_id": "470594766350830003001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "unionpay",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000003",
+      "operator_name": "user_1_2",
+      "device_id": "1000000002",
+      "device_name": "设备4",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 20:52:30",
+      "time_update": "2018-11-05 20:52:31",
+      "status": "2",
+      "profit_status": "1",
+      "remark": "下单成功",
+      "_status": "处理中",
+      "payment_name": "条码支付",
+      "channel_name": "银联"
+    },
+    {
+      "id": "701",
+      "order_id": "500594766256843003001",
+      "out_order_id": "200701201811052050561430068",
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "xz_weixin",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000003",
+      "operator_name": "user_1_2",
+      "device_id": "1000000001",
+      "device_name": "设备1",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 20:50:56",
+      "time_update": "2018-11-05 20:50:58",
+      "status": "4",
+      "profit_status": "1",
+      "remark": "支付失败:[A001]E000#成功[成功]",
+      "_status": "支付失败",
+      "payment_name": "条码支付",
+      "channel_name": "现在微信"
+    },
+    {
+      "id": "700",
+      "order_id": "770594766096848001001",
+      "out_order_id": "200701201811052048171425330",
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "xz_weixin",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000001",
+      "operator_name": "user_1_1",
+      "device_id": "1000000001",
+      "device_name": "设备1",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 20:48:16",
+      "time_update": "2018-11-05 20:48:18",
+      "status": "4",
+      "profit_status": "1",
+      "remark": "支付失败:[A001]E000#成功[成功]",
+      "_status": "支付失败",
+      "payment_name": "条码支付",
+      "channel_name": "现在微信"
+    }
+  ],
+  "total": "694",
+  "sum_amount": "7832785.43",
+  "sum_actual_amount": "7830564.20",
+  "sum_refund_amount": "0.52"
+}
+[2018/11/5 21:30:43 087] [Message] [v1.0.1] ===================交易查询=================== End
+[2018/11/5 21:30:43 617] [Message] [v1.0.1] ===================交易查询=================== Start
+[2018/11/5 21:30:43 619] [Message] [v1.0.1] GetOrder_List Send =  key=a1a534753e9a9303c26026c8020d880b&page=5&current=1&&merchant_id=1000000001&export=0
+[2018/11/5 21:30:43 741] [Message] [v1.0.1] Result =  {"code":1,"msg":"订单列表","data":{"list":[{"id":"704","order_id":"770594768511995004001","out_order_id":"200701201811052128321425455","out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"xz_weixin","payment":"barcode","store_id":"1000000002","store_name":"测试店铺2","operator_id":"1000000004","operator_name":"user_2_2","device_id":"1000000005","device_name":"刷卡001","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:28:31","time_update":"2018-11-05 21:28:33","status":"4","profit_status":"1","remark":"支付失败:[A001]E000#成功[成功]","_status":"支付失败","payment_name":"条码支付","channel_name":"现在微信"},{"id":"703","order_id":"100594766723938001001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"unionpay","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000001","operator_name":"user_1_1","device_id":"1000000001","device_name":"设备1","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 20:58:43","time_update":"2018-11-05 20:58:44","status":"2","profit_status":"1","remark":"下单成功","_status":"处理中","payment_name":"条码支付","channel_name":"银联"},{"id":"702","order_id":"470594766350830003001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"unionpay","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000003","operator_name":"user_1_2","device_id":"1000000002","device_name":"设备4","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 20:52:30","time_update":"2018-11-05 20:52:31","status":"2","profit_status":"1","remark":"下单成功","_status":"处理中","payment_name":"条码支付","channel_name":"银联"},{"id":"701","order_id":"500594766256843003001","out_order_id":"200701201811052050561430068","out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"xz_weixin","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000003","operator_name":"user_1_2","device_id":"1000000001","device_name":"设备1","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 20:50:56","time_update":"2018-11-05 20:50:58","status":"4","profit_status":"1","remark":"支付失败:[A001]E000#成功[成功]","_status":"支付失败","payment_name":"条码支付","channel_name":"现在微信"},{"id":"700","order_id":"770594766096848001001","out_order_id":"200701201811052048171425330","out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"xz_weixin","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000001","operator_name":"user_1_1","device_id":"1000000001","device_name":"设备1","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 20:48:16","time_update":"2018-11-05 20:48:18","status":"4","profit_status":"1","remark":"支付失败:[A001]E000#成功[成功]","_status":"支付失败","payment_name":"条码支付","channel_name":"现在微信"}],"total":"694","sum_amount":"7832785.43","sum_actual_amount":"7830564.20","sum_refund_amount":"0.52"}}
+[2018/11/5 21:30:43 743] [Message] [v1.0.1] data =  {
+  "list": [
+    {
+      "id": "704",
+      "order_id": "770594768511995004001",
+      "out_order_id": "200701201811052128321425455",
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "xz_weixin",
+      "payment": "barcode",
+      "store_id": "1000000002",
+      "store_name": "测试店铺2",
+      "operator_id": "1000000004",
+      "operator_name": "user_2_2",
+      "device_id": "1000000005",
+      "device_name": "刷卡001",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:28:31",
+      "time_update": "2018-11-05 21:28:33",
+      "status": "4",
+      "profit_status": "1",
+      "remark": "支付失败:[A001]E000#成功[成功]",
+      "_status": "支付失败",
+      "payment_name": "条码支付",
+      "channel_name": "现在微信"
+    },
+    {
+      "id": "703",
+      "order_id": "100594766723938001001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "unionpay",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000001",
+      "operator_name": "user_1_1",
+      "device_id": "1000000001",
+      "device_name": "设备1",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 20:58:43",
+      "time_update": "2018-11-05 20:58:44",
+      "status": "2",
+      "profit_status": "1",
+      "remark": "下单成功",
+      "_status": "处理中",
+      "payment_name": "条码支付",
+      "channel_name": "银联"
+    },
+    {
+      "id": "702",
+      "order_id": "470594766350830003001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "unionpay",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000003",
+      "operator_name": "user_1_2",
+      "device_id": "1000000002",
+      "device_name": "设备4",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 20:52:30",
+      "time_update": "2018-11-05 20:52:31",
+      "status": "2",
+      "profit_status": "1",
+      "remark": "下单成功",
+      "_status": "处理中",
+      "payment_name": "条码支付",
+      "channel_name": "银联"
+    },
+    {
+      "id": "701",
+      "order_id": "500594766256843003001",
+      "out_order_id": "200701201811052050561430068",
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "xz_weixin",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000003",
+      "operator_name": "user_1_2",
+      "device_id": "1000000001",
+      "device_name": "设备1",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 20:50:56",
+      "time_update": "2018-11-05 20:50:58",
+      "status": "4",
+      "profit_status": "1",
+      "remark": "支付失败:[A001]E000#成功[成功]",
+      "_status": "支付失败",
+      "payment_name": "条码支付",
+      "channel_name": "现在微信"
+    },
+    {
+      "id": "700",
+      "order_id": "770594766096848001001",
+      "out_order_id": "200701201811052048171425330",
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "xz_weixin",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000001",
+      "operator_name": "user_1_1",
+      "device_id": "1000000001",
+      "device_name": "设备1",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 20:48:16",
+      "time_update": "2018-11-05 20:48:18",
+      "status": "4",
+      "profit_status": "1",
+      "remark": "支付失败:[A001]E000#成功[成功]",
+      "_status": "支付失败",
+      "payment_name": "条码支付",
+      "channel_name": "现在微信"
+    }
+  ],
+  "total": "694",
+  "sum_amount": "7832785.43",
+  "sum_actual_amount": "7830564.20",
+  "sum_refund_amount": "0.52"
+}
+[2018/11/5 21:30:43 747] [Message] [v1.0.1] ===================交易查询=================== End
+[2018/11/5 21:30:54 968] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"770594768511995004001","timestamp":"1541424655"}
+[2018/11/5 21:30:54 970] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000001&data=f0cc201a386ab101f6e625b6b3d112cd9de9ada00d7bad3201cf96e8335eaea46bdd7174d17ce95597c547108c1df2eb21f3d21b0b413dbe9a5d899ab3fed57b
+[2018/11/5 21:30:55 092] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"f0cc201a386ab101f6e625b6b3d112cd9de9ada00d7bad3201cf96e8335eaea44db287a826c5b74d48c36485a1da6cc7e2160b211c474445008f12c9d2bf821926c4a82e3490cb1f59d8d0e4b9d81414"}
+[2018/11/5 21:30:55 094] [Message] [v1.0.1] inResult=  查询成功
+[2018/11/5 21:30:56 105] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"100594766723938001001","timestamp":"1541424656"}
+[2018/11/5 21:30:56 108] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000001&data=36e096911f7ba6cd81ab2f2b0b749e99e1f025f7b8884733d90370c2ea8f0c696bdd7174d17ce95597c547108c1df2ebdec6763cefb55f35adc3f8ec2dd5ba7c
+[2018/11/5 21:30:56 384] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"36e096911f7ba6cd81ab2f2b0b749e99e1f025f7b8884733d90370c2ea8f0c69c5ccd6d7d7dbdcfe4a44706bbf4056ff8945a95efffe26f776e690b84f651d2b5bc8578a8b483cc8e8f74f637ac89736"}
+[2018/11/5 21:30:56 387] [Message] [v1.0.1] inResult=  查询成功
+[2018/11/5 21:30:57 623] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"470594766350830003001","timestamp":"1541424658"}
+[2018/11/5 21:30:57 626] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000001&data=a29f462b84c7f9a53d27e6877c696e3506c4278dcc04d461f013ac481378673d6bdd7174d17ce95597c547108c1df2eb651c3db83dedca1f5157f4d5e9bd8137
+[2018/11/5 21:30:57 909] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"a29f462b84c7f9a53d27e6877c696e3506c4278dcc04d461f013ac481378673dc5ccd6d7d7dbdcfe4a44706bbf4056ff8945a95efffe26f776e690b84f651d2b5bc8578a8b483cc8e8f74f637ac89736"}
+[2018/11/5 21:30:57 911] [Message] [v1.0.1] inResult=  查询成功
+[2018/11/5 21:31:01 599] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"470594766350830003001","timestamp":"1541424662"}
+[2018/11/5 21:31:01 602] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000001&data=a29f462b84c7f9a53d27e6877c696e3506c4278dcc04d461f013ac481378673d6bdd7174d17ce95597c547108c1df2eb328e7844e4c76e2713fc53e536b7d046
+[2018/11/5 21:31:01 863] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"a29f462b84c7f9a53d27e6877c696e3506c4278dcc04d461f013ac481378673dc5ccd6d7d7dbdcfe4a44706bbf4056ff8945a95efffe26f776e690b84f651d2b5bc8578a8b483cc8e8f74f637ac89736"}
+[2018/11/5 21:31:01 865] [Message] [v1.0.1] inResult=  查询成功
+[2018/11/5 21:31:02 673] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"500594766256843003001","timestamp":"1541424663"}
+[2018/11/5 21:31:02 676] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000001&data=2ccd767aaf189fdf8042c126907f81091cfe278843d618159446efa3ca4787aa6bdd7174d17ce95597c547108c1df2eb72f460d82780e706e805284a03acd54d
+[2018/11/5 21:31:02 779] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"2ccd767aaf189fdf8042c126907f81091cfe278843d618159446efa3ca4787aa4db287a826c5b74d48c36485a1da6cc7e2160b211c474445008f12c9d2bf821926c4a82e3490cb1f59d8d0e4b9d81414"}
+[2018/11/5 21:31:02 782] [Message] [v1.0.1] inResult=  查询成功
+[2018/11/5 21:31:03 353] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"770594766096848001001","timestamp":"1541424663"}
+[2018/11/5 21:31:03 356] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000001&data=f0cc201a386ab101f6e625b6b3d112cdd1f59c7f224a0caf910731833eb96d6b6bdd7174d17ce95597c547108c1df2eb72f460d82780e706e805284a03acd54d
+[2018/11/5 21:31:03 471] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"f0cc201a386ab101f6e625b6b3d112cdd1f59c7f224a0caf910731833eb96d6b4db287a826c5b74d48c36485a1da6cc7e2160b211c474445008f12c9d2bf821926c4a82e3490cb1f59d8d0e4b9d81414"}
+[2018/11/5 21:31:03 473] [Message] [v1.0.1] inResult=  查询成功
+[2018/11/5 21:31:27 354] [Message] [v1.0.1] InterfaceAddOrder jsonData=  {"channel":"","payment":"barcode","order_id":"","amount":"0.01","auth_code":"11111111111111111111111111","subject":"test","body":"testbody","store_id":"1000000001","operator_id":"1000000001","device_id":"1000000004","timestamp":"1541424687"}
+[2018/11/5 21:31:27 357] [Message] [v1.0.1] InterfaceAddOrder httppara=  merchant_id=1000000001&data=070063ebd557ec5fb29bea179b7beb164d3aa364c1b5f9d8721bd85a23297c37b963ff92173ee33ae0b3f4802b0f8360f72ee4f53bf4f60b929ca56d905bf90f688bd5cf7daea7af089c0a4c139402e572a3b9f4c8c1748faa3e1f08de9fb457cbe462ab51e67b4d063db8fdc9dd31dbc23a312aff6fab1985e39caf0a108a54f23c741aacc7fe734f0aa12d9364172aaa488fa2f53a9e321b32c1c86b86478f9fb4d2eabadb2bd5c8ef9fcc3ac0d17e91cc0e74e60d1c2220a7a93a14f388f99cb8e6ef2c320d464acb003187211ed9c817c79f6603592bd1862656223b50f893d60756b949c52e384d53855123d3e793b22e9a947e6b5fba37e0417ee4f210
+[2018/11/5 21:31:27 462] [Message] [v1.0.1] InterfaceAddOrder Result=  {"code":0,"msg":"设备不存在","data":[]}
+[2018/11/5 21:31:48 617] [Message] [v1.0.1] InterfaceAddOrder jsonData=  {"channel":"","payment":"barcode","order_id":"","amount":"0.01","auth_code":"222222222222222222222","subject":"test","body":"testbody","store_id":"1000000001","operator_id":"1000000001","device_id":"1000000004","timestamp":"1541424709"}
+[2018/11/5 21:31:48 620] [Message] [v1.0.1] InterfaceAddOrder httppara=  merchant_id=1000000001&data=070063ebd557ec5fb29bea179b7beb164d3aa364c1b5f9d8721bd85a23297c37b963ff92173ee33ae0b3f4802b0f8360f72ee4f53bf4f60b929ca56d905bf90f0390154bc4ce6dc9875fbbb04f6022b73853d26b514cf2290b659222822544f23e1c50ca37632043442834f0f9ecab66bb1999c16b93650415e2f0a24b5a64006ace6cd87f11e13788a42913989a30cf91cc0e74e60d1c2220a7a93a14f388f9426df4987915cb299d5e5f08c802d2615760eb96eddd262e68fc7f8be80379827641c67bd0beb094ca203c2d84c174dc6a6476466b38304587da51ba6ee8f8d136c6cdb6aabe3993c4ade9656f2e63ae
+[2018/11/5 21:31:48 736] [Message] [v1.0.1] InterfaceAddOrder Result=  {"code":0,"msg":"设备不存在","data":[]}
+[2018/11/5 21:31:55 051] [Message] [v1.0.1] ===================交易查询=================== Start
+[2018/11/5 21:31:55 054] [Message] [v1.0.1] GetOrder_List Send =  key=a1a534753e9a9303c26026c8020d880b&page=5&current=1&&merchant_id=1000000001&export=0
+[2018/11/5 21:31:55 165] [Message] [v1.0.1] Result =  {"code":1,"msg":"订单列表","data":{"list":[{"id":"704","order_id":"770594768511995004001","out_order_id":"200701201811052128321425455","out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"xz_weixin","payment":"barcode","store_id":"1000000002","store_name":"测试店铺2","operator_id":"1000000004","operator_name":"user_2_2","device_id":"1000000005","device_name":"刷卡001","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:28:31","time_update":"2018-11-05 21:28:33","status":"4","profit_status":"1","remark":"支付失败:[A001]E000#成功[成功]","_status":"支付失败","payment_name":"条码支付","channel_name":"现在微信"},{"id":"703","order_id":"100594766723938001001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"unionpay","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000001","operator_name":"user_1_1","device_id":"1000000001","device_name":"设备1","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 20:58:43","time_update":"2018-11-05 21:30:57","status":"2","profit_status":"1","remark":"支付处理中","_status":"处理中","payment_name":"条码支付","channel_name":"银联"},{"id":"702","order_id":"470594766350830003001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"unionpay","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000003","operator_name":"user_1_2","device_id":"1000000002","device_name":"设备4","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 20:52:30","time_update":"2018-11-05 21:31:03","status":"2","profit_status":"1","remark":"支付处理中","_status":"处理中","payment_name":"条码支付","channel_name":"银联"},{"id":"701","order_id":"500594766256843003001","out_order_id":"200701201811052050561430068","out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"xz_weixin","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000003","operator_name":"user_1_2","device_id":"1000000001","device_name":"设备1","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 20:50:56","time_update":"2018-11-05 20:50:58","status":"4","profit_status":"1","remark":"支付失败:[A001]E000#成功[成功]","_status":"支付失败","payment_name":"条码支付","channel_name":"现在微信"},{"id":"700","order_id":"770594766096848001001","out_order_id":"200701201811052048171425330","out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"xz_weixin","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000001","operator_name":"user_1_1","device_id":"1000000001","device_name":"设备1","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 20:48:16","time_update":"2018-11-05 20:48:18","status":"4","profit_status":"1","remark":"支付失败:[A001]E000#成功[成功]","_status":"支付失败","payment_name":"条码支付","channel_name":"现在微信"}],"total":"694","sum_amount":"7832785.43","sum_actual_amount":"7830564.20","sum_refund_amount":"0.52"}}
+[2018/11/5 21:31:55 167] [Message] [v1.0.1] data =  {
+  "list": [
+    {
+      "id": "704",
+      "order_id": "770594768511995004001",
+      "out_order_id": "200701201811052128321425455",
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "xz_weixin",
+      "payment": "barcode",
+      "store_id": "1000000002",
+      "store_name": "测试店铺2",
+      "operator_id": "1000000004",
+      "operator_name": "user_2_2",
+      "device_id": "1000000005",
+      "device_name": "刷卡001",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:28:31",
+      "time_update": "2018-11-05 21:28:33",
+      "status": "4",
+      "profit_status": "1",
+      "remark": "支付失败:[A001]E000#成功[成功]",
+      "_status": "支付失败",
+      "payment_name": "条码支付",
+      "channel_name": "现在微信"
+    },
+    {
+      "id": "703",
+      "order_id": "100594766723938001001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "unionpay",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000001",
+      "operator_name": "user_1_1",
+      "device_id": "1000000001",
+      "device_name": "设备1",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 20:58:43",
+      "time_update": "2018-11-05 21:30:57",
+      "status": "2",
+      "profit_status": "1",
+      "remark": "支付处理中",
+      "_status": "处理中",
+      "payment_name": "条码支付",
+      "channel_name": "银联"
+    },
+    {
+      "id": "702",
+      "order_id": "470594766350830003001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "unionpay",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000003",
+      "operator_name": "user_1_2",
+      "device_id": "1000000002",
+      "device_name": "设备4",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 20:52:30",
+      "time_update": "2018-11-05 21:31:03",
+      "status": "2",
+      "profit_status": "1",
+      "remark": "支付处理中",
+      "_status": "处理中",
+      "payment_name": "条码支付",
+      "channel_name": "银联"
+    },
+    {
+      "id": "701",
+      "order_id": "500594766256843003001",
+      "out_order_id": "200701201811052050561430068",
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "xz_weixin",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000003",
+      "operator_name": "user_1_2",
+      "device_id": "1000000001",
+      "device_name": "设备1",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 20:50:56",
+      "time_update": "2018-11-05 20:50:58",
+      "status": "4",
+      "profit_status": "1",
+      "remark": "支付失败:[A001]E000#成功[成功]",
+      "_status": "支付失败",
+      "payment_name": "条码支付",
+      "channel_name": "现在微信"
+    },
+    {
+      "id": "700",
+      "order_id": "770594766096848001001",
+      "out_order_id": "200701201811052048171425330",
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "xz_weixin",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000001",
+      "operator_name": "user_1_1",
+      "device_id": "1000000001",
+      "device_name": "设备1",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 20:48:16",
+      "time_update": "2018-11-05 20:48:18",
+      "status": "4",
+      "profit_status": "1",
+      "remark": "支付失败:[A001]E000#成功[成功]",
+      "_status": "支付失败",
+      "payment_name": "条码支付",
+      "channel_name": "现在微信"
+    }
+  ],
+  "total": "694",
+  "sum_amount": "7832785.43",
+  "sum_actual_amount": "7830564.20",
+  "sum_refund_amount": "0.52"
+}
+[2018/11/5 21:31:55 169] [Message] [v1.0.1] ===================交易查询=================== End
+[2018/11/5 21:32:21 310] [Message] [v1.0.1] ===================交易查询=================== Start
+[2018/11/5 21:32:21 312] [Message] [v1.0.1] GetOrder_List Send =  key=a1a534753e9a9303c26026c8020d880b&page=5&current=1&&merchant_id=1000000001&export=0
+[2018/11/5 21:32:21 431] [Message] [v1.0.1] Result =  {"code":1,"msg":"订单列表","data":{"list":[{"id":"704","order_id":"770594768511995004001","out_order_id":"200701201811052128321425455","out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"xz_weixin","payment":"barcode","store_id":"1000000002","store_name":"测试店铺2","operator_id":"1000000004","operator_name":"user_2_2","device_id":"1000000005","device_name":"刷卡001","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:28:31","time_update":"2018-11-05 21:28:33","status":"4","profit_status":"1","remark":"支付失败:[A001]E000#成功[成功]","_status":"支付失败","payment_name":"条码支付","channel_name":"现在微信"},{"id":"703","order_id":"100594766723938001001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"unionpay","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000001","operator_name":"user_1_1","device_id":"1000000001","device_name":"设备1","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 20:58:43","time_update":"2018-11-05 21:30:57","status":"2","profit_status":"1","remark":"支付处理中","_status":"处理中","payment_name":"条码支付","channel_name":"银联"},{"id":"702","order_id":"470594766350830003001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"unionpay","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000003","operator_name":"user_1_2","device_id":"1000000002","device_name":"设备4","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 20:52:30","time_update":"2018-11-05 21:31:03","status":"2","profit_status":"1","remark":"支付处理中","_status":"处理中","payment_name":"条码支付","channel_name":"银联"},{"id":"701","order_id":"500594766256843003001","out_order_id":"200701201811052050561430068","out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"xz_weixin","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000003","operator_name":"user_1_2","device_id":"1000000001","device_name":"设备1","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 20:50:56","time_update":"2018-11-05 20:50:58","status":"4","profit_status":"1","remark":"支付失败:[A001]E000#成功[成功]","_status":"支付失败","payment_name":"条码支付","channel_name":"现在微信"},{"id":"700","order_id":"770594766096848001001","out_order_id":"200701201811052048171425330","out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"xz_weixin","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000001","operator_name":"user_1_1","device_id":"1000000001","device_name":"设备1","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 20:48:16","time_update":"2018-11-05 20:48:18","status":"4","profit_status":"1","remark":"支付失败:[A001]E000#成功[成功]","_status":"支付失败","payment_name":"条码支付","channel_name":"现在微信"}],"total":"694","sum_amount":"7832785.43","sum_actual_amount":"7830564.20","sum_refund_amount":"0.52"}}
+[2018/11/5 21:32:21 434] [Message] [v1.0.1] data =  {
+  "list": [
+    {
+      "id": "704",
+      "order_id": "770594768511995004001",
+      "out_order_id": "200701201811052128321425455",
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "xz_weixin",
+      "payment": "barcode",
+      "store_id": "1000000002",
+      "store_name": "测试店铺2",
+      "operator_id": "1000000004",
+      "operator_name": "user_2_2",
+      "device_id": "1000000005",
+      "device_name": "刷卡001",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:28:31",
+      "time_update": "2018-11-05 21:28:33",
+      "status": "4",
+      "profit_status": "1",
+      "remark": "支付失败:[A001]E000#成功[成功]",
+      "_status": "支付失败",
+      "payment_name": "条码支付",
+      "channel_name": "现在微信"
+    },
+    {
+      "id": "703",
+      "order_id": "100594766723938001001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "unionpay",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000001",
+      "operator_name": "user_1_1",
+      "device_id": "1000000001",
+      "device_name": "设备1",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 20:58:43",
+      "time_update": "2018-11-05 21:30:57",
+      "status": "2",
+      "profit_status": "1",
+      "remark": "支付处理中",
+      "_status": "处理中",
+      "payment_name": "条码支付",
+      "channel_name": "银联"
+    },
+    {
+      "id": "702",
+      "order_id": "470594766350830003001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "unionpay",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000003",
+      "operator_name": "user_1_2",
+      "device_id": "1000000002",
+      "device_name": "设备4",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 20:52:30",
+      "time_update": "2018-11-05 21:31:03",
+      "status": "2",
+      "profit_status": "1",
+      "remark": "支付处理中",
+      "_status": "处理中",
+      "payment_name": "条码支付",
+      "channel_name": "银联"
+    },
+    {
+      "id": "701",
+      "order_id": "500594766256843003001",
+      "out_order_id": "200701201811052050561430068",
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "xz_weixin",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000003",
+      "operator_name": "user_1_2",
+      "device_id": "1000000001",
+      "device_name": "设备1",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 20:50:56",
+      "time_update": "2018-11-05 20:50:58",
+      "status": "4",
+      "profit_status": "1",
+      "remark": "支付失败:[A001]E000#成功[成功]",
+      "_status": "支付失败",
+      "payment_name": "条码支付",
+      "channel_name": "现在微信"
+    },
+    {
+      "id": "700",
+      "order_id": "770594766096848001001",
+      "out_order_id": "200701201811052048171425330",
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "xz_weixin",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000001",
+      "operator_name": "user_1_1",
+      "device_id": "1000000001",
+      "device_name": "设备1",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 20:48:16",
+      "time_update": "2018-11-05 20:48:18",
+      "status": "4",
+      "profit_status": "1",
+      "remark": "支付失败:[A001]E000#成功[成功]",
+      "_status": "支付失败",
+      "payment_name": "条码支付",
+      "channel_name": "现在微信"
+    }
+  ],
+  "total": "694",
+  "sum_amount": "7832785.43",
+  "sum_actual_amount": "7830564.20",
+  "sum_refund_amount": "0.52"
+}
+[2018/11/5 21:32:21 436] [Message] [v1.0.1] ===================交易查询=================== End
+[2018/11/5 21:32:35 073] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"770594768511995004001","timestamp":"1541424755"}
+[2018/11/5 21:32:35 076] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000001&data=f0cc201a386ab101f6e625b6b3d112cd9de9ada00d7bad3201cf96e8335eaea46bdd7174d17ce95597c547108c1df2ebcdbf4cf29ee4df0e19cb235f7a1400a0
+[2018/11/5 21:32:35 189] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"f0cc201a386ab101f6e625b6b3d112cd9de9ada00d7bad3201cf96e8335eaea44db287a826c5b74d48c36485a1da6cc7e2160b211c474445008f12c9d2bf821926c4a82e3490cb1f59d8d0e4b9d81414"}
+[2018/11/5 21:32:35 191] [Message] [v1.0.1] inResult=  查询成功
+[2018/11/5 21:32:37 094] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"770594768511995004001","timestamp":"1541424757"}
+[2018/11/5 21:32:37 097] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000001&data=f0cc201a386ab101f6e625b6b3d112cd9de9ada00d7bad3201cf96e8335eaea46bdd7174d17ce95597c547108c1df2ebe1527b451fb6806b3c7c0869d7c0ad24
+[2018/11/5 21:32:37 201] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"f0cc201a386ab101f6e625b6b3d112cd9de9ada00d7bad3201cf96e8335eaea44db287a826c5b74d48c36485a1da6cc7e2160b211c474445008f12c9d2bf821926c4a82e3490cb1f59d8d0e4b9d81414"}
+[2018/11/5 21:32:37 204] [Message] [v1.0.1] inResult=  查询成功
+[2018/11/5 21:32:37 675] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"100594766723938001001","timestamp":"1541424758"}
+[2018/11/5 21:32:37 677] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000001&data=36e096911f7ba6cd81ab2f2b0b749e99e1f025f7b8884733d90370c2ea8f0c696bdd7174d17ce95597c547108c1df2ebee1f5ee9942cfbeb2f73205a2cd5b7fe
+[2018/11/5 21:32:38 026] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"36e096911f7ba6cd81ab2f2b0b749e99e1f025f7b8884733d90370c2ea8f0c69c5ccd6d7d7dbdcfe4a44706bbf4056ff8945a95efffe26f776e690b84f651d2b5bc8578a8b483cc8e8f74f637ac89736"}
+[2018/11/5 21:32:38 028] [Message] [v1.0.1] inResult=  查询成功
+[2018/11/5 21:32:38 911] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"470594766350830003001","timestamp":"1541424759"}
+[2018/11/5 21:32:38 913] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000001&data=a29f462b84c7f9a53d27e6877c696e3506c4278dcc04d461f013ac481378673d6bdd7174d17ce95597c547108c1df2eb777aaa131f548db3885b9cdef4339610
+[2018/11/5 21:32:39 179] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"a29f462b84c7f9a53d27e6877c696e3506c4278dcc04d461f013ac481378673dc5ccd6d7d7dbdcfe4a44706bbf4056ff8945a95efffe26f776e690b84f651d2b5bc8578a8b483cc8e8f74f637ac89736"}
+[2018/11/5 21:32:39 182] [Message] [v1.0.1] inResult=  查询成功
+[2018/11/5 21:32:40 046] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"500594766256843003001","timestamp":"1541424760"}
+[2018/11/5 21:32:40 048] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000001&data=2ccd767aaf189fdf8042c126907f81091cfe278843d618159446efa3ca4787aa6bdd7174d17ce95597c547108c1df2eba27b251b5da4b7bf020adcde7c9fd370
+[2018/11/5 21:32:40 152] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"2ccd767aaf189fdf8042c126907f81091cfe278843d618159446efa3ca4787aa4db287a826c5b74d48c36485a1da6cc7e2160b211c474445008f12c9d2bf821926c4a82e3490cb1f59d8d0e4b9d81414"}
+[2018/11/5 21:32:40 154] [Message] [v1.0.1] inResult=  查询成功
+[2018/11/5 21:32:40 734] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"770594766096848001001","timestamp":"1541424761"}
+[2018/11/5 21:32:40 737] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000001&data=f0cc201a386ab101f6e625b6b3d112cdd1f59c7f224a0caf910731833eb96d6b6bdd7174d17ce95597c547108c1df2eb9ffcf7d8d193e400bc12a6328b3a498f
+[2018/11/5 21:32:40 843] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"f0cc201a386ab101f6e625b6b3d112cdd1f59c7f224a0caf910731833eb96d6b4db287a826c5b74d48c36485a1da6cc7e2160b211c474445008f12c9d2bf821926c4a82e3490cb1f59d8d0e4b9d81414"}
+[2018/11/5 21:32:40 846] [Message] [v1.0.1] inResult=  查询成功
+[2018/11/5 21:33:03 508] [Message] [v1.0.1] InterfaceAddOrder jsonData=  {"channel":"","payment":"barcode","order_id":"","amount":"0.01","auth_code":"11111111111111111111111111","subject":"test","body":"testbody","store_id":"1000000001","operator_id":"1000000001","device_id":"1000000004","timestamp":"1541424784"}
+[2018/11/5 21:33:03 510] [Message] [v1.0.1] InterfaceAddOrder httppara=  merchant_id=1000000001&data=070063ebd557ec5fb29bea179b7beb164d3aa364c1b5f9d8721bd85a23297c37b963ff92173ee33ae0b3f4802b0f8360f72ee4f53bf4f60b929ca56d905bf90f688bd5cf7daea7af089c0a4c139402e572a3b9f4c8c1748faa3e1f08de9fb457cbe462ab51e67b4d063db8fdc9dd31dbc23a312aff6fab1985e39caf0a108a54f23c741aacc7fe734f0aa12d9364172aaa488fa2f53a9e321b32c1c86b86478f9fb4d2eabadb2bd5c8ef9fcc3ac0d17e91cc0e74e60d1c2220a7a93a14f388f99cb8e6ef2c320d464acb003187211ed9c817c79f6603592bd1862656223b50f880462b10c1fb42c3e5e91943345975fc93b22e9a947e6b5fba37e0417ee4f210
+[2018/11/5 21:33:03 618] [Message] [v1.0.1] InterfaceAddOrder Result=  {"code":0,"msg":"设备不存在","data":[]}
+[2018/11/5 21:44:56 167] [Message] [v1.0.1] ===================用户登陆=================== Start
+[2018/11/5 21:44:56 168] [Message] [v1.0.1] Login Send =  username=user_1_1&password=1111111
+[2018/11/5 21:44:56 413] [Message] [v1.0.1] Result =  {"code":1,"msg":"登录成功","data":{"token":"ffb96c8683500ecbdd5efefa5e71bc6c","info":{"app_type":"api","id":"1000000001","agent_id":"10000001","store_id":"1000000001","merchant_id":"1000000001","user_type":"2","type":"2","username":"user_1_1","open_id":"","timestamp":1541425497}}}
+[2018/11/5 21:44:56 517] [Message] [v1.0.1] ===================用户登陆=================== End
+[2018/11/5 21:44:56 521] [Message] [v1.0.1] ===================用户信息=================== Start
+[2018/11/5 21:44:56 521] [Message] [v1.0.1] GetUserInfo Send =  key=ffb96c8683500ecbdd5efefa5e71bc6c
+[2018/11/5 21:44:56 645] [Message] [v1.0.1] Result =  {"code":1,"msg":"用户信息","data":{"id":"1000000001","agent_id":"10000001","merchant_id":"1000000001","store_id":"1000000001","username":"user_1_1","phone":"15153294092","open_id":"","type":"2","time_create":"1527211953","time_update":"1533293063","status":"1","agent":{"id":"10000001","pid":"00000000","name":"代理商1","number":"1111111111111111","address":"代理商地址1","principal_name":"负责人1","principal_phone":"15153294092","contact_name":"联系人1","contact_phone":"111111","contact_email":"youxiang@youxiang.com","time_create":"0","time_update":"1533178664","status":"1"},"merchant":{"id":"1000000001","agent_id":"10000001","name":"测试子商户1","short_name":"子商户1","number":"1000000001","principal_name":null,"principal_phone":null,"contact_name":"联系人1","contact_phone":"15153294092","contact_email":"sdsads@qq.com","address":null,"time_create":"0","time_update":"1533523267","status":"1"},"store":{"id":"1000000001","merchant_id":"1000000001","name":"测试店铺1","number":"0011","principal_name":"负责人1","principal_phone":"15153294092","address":"测试店铺地址1","time_create":"0","time_update":"0","status":"1"}}}
+[2018/11/5 21:44:56 670] [Message] [v1.0.1] data =  {
+  "id": "1000000001",
+  "agent_id": "10000001",
+  "merchant_id": "1000000001",
+  "store_id": "1000000001",
+  "username": "user_1_1",
+  "phone": "15153294092",
+  "open_id": "",
+  "type": "2",
+  "time_create": "1527211953",
+  "time_update": "1533293063",
+  "status": "1",
+  "agent": {
+    "id": "10000001",
+    "pid": "00000000",
+    "name": "代理商1",
+    "number": "1111111111111111",
+    "address": "代理商地址1",
+    "principal_name": "负责人1",
+    "principal_phone": "15153294092",
+    "contact_name": "联系人1",
+    "contact_phone": "111111",
+    "contact_email": "youxiang@youxiang.com",
+    "time_create": "0",
+    "time_update": "1533178664",
+    "status": "1"
+  },
+  "merchant": {
+    "id": "1000000001",
+    "agent_id": "10000001",
+    "name": "测试子商户1",
+    "short_name": "子商户1",
+    "number": "1000000001",
+    "principal_name": null,
+    "principal_phone": null,
+    "contact_name": "联系人1",
+    "contact_phone": "15153294092",
+    "contact_email": "sdsads@qq.com",
+    "address": null,
+    "time_create": "0",
+    "time_update": "1533523267",
+    "status": "1"
+  },
+  "store": {
+    "id": "1000000001",
+    "merchant_id": "1000000001",
+    "name": "测试店铺1",
+    "number": "0011",
+    "principal_name": "负责人1",
+    "principal_phone": "15153294092",
+    "address": "测试店铺地址1",
+    "time_create": "0",
+    "time_update": "0",
+    "status": "1"
+  }
+}
+[2018/11/5 21:44:56 671] [Message] [v1.0.1] agent =  {
+  "id": "10000001",
+  "pid": "00000000",
+  "name": "代理商1",
+  "number": "1111111111111111",
+  "address": "代理商地址1",
+  "principal_name": "负责人1",
+  "principal_phone": "15153294092",
+  "contact_name": "联系人1",
+  "contact_phone": "111111",
+  "contact_email": "youxiang@youxiang.com",
+  "time_create": "0",
+  "time_update": "1533178664",
+  "status": "1"
+}
+[2018/11/5 21:44:56 672] [Message] [v1.0.1] merchant =  {
+  "id": "1000000001",
+  "agent_id": "10000001",
+  "name": "测试子商户1",
+  "short_name": "子商户1",
+  "number": "1000000001",
+  "principal_name": null,
+  "principal_phone": null,
+  "contact_name": "联系人1",
+  "contact_phone": "15153294092",
+  "contact_email": "sdsads@qq.com",
+  "address": null,
+  "time_create": "0",
+  "time_update": "1533523267",
+  "status": "1"
+}
+[2018/11/5 21:44:56 673] [Message] [v1.0.1] store =  {
+  "id": "1000000001",
+  "merchant_id": "1000000001",
+  "name": "测试店铺1",
+  "number": "0011",
+  "principal_name": "负责人1",
+  "principal_phone": "15153294092",
+  "address": "测试店铺地址1",
+  "time_create": "0",
+  "time_update": "0",
+  "status": "1"
+}
+[2018/11/5 21:44:56 673] [Message] [v1.0.1] userinfo.id =  1000000001
+[2018/11/5 21:44:56 674] [Message] [v1.0.1] userinfo.agent_id =  10000001
+[2018/11/5 21:44:56 675] [Message] [v1.0.1] userinfo.merchant_id =  1000000001
+[2018/11/5 21:44:56 676] [Message] [v1.0.1] userinfo.store_id =  1000000001
+[2018/11/5 21:44:56 677] [Message] [v1.0.1] userinfo.username =  user_1_1
+[2018/11/5 21:44:56 677] [Message] [v1.0.1] userinfo.phone =  15153294092
+[2018/11/5 21:44:56 678] [Message] [v1.0.1] userinfo.open_id =  
+[2018/11/5 21:44:56 679] [Message] [v1.0.1] userinfo.type =  2
+[2018/11/5 21:44:56 680] [Message] [v1.0.1] userinfo.status =  1
+[2018/11/5 21:44:56 681] [Message] [v1.0.1] agentinfo.id =  10000001
+[2018/11/5 21:44:56 681] [Message] [v1.0.1] agentinfo.pid =  00000000
+[2018/11/5 21:44:56 682] [Message] [v1.0.1] agentinfo.name =  代理商1
+[2018/11/5 21:44:56 683] [Message] [v1.0.1] agentinfo.number =  1111111111111111
+[2018/11/5 21:44:56 684] [Message] [v1.0.1] agentinfo.address =  代理商地址1
+[2018/11/5 21:44:56 685] [Message] [v1.0.1] agentinfo.principal_name =  负责人1
+[2018/11/5 21:44:56 685] [Message] [v1.0.1] agentinfo.principal_phone =  15153294092
+[2018/11/5 21:44:56 686] [Message] [v1.0.1] agentinfo.contact_name =  联系人1
+[2018/11/5 21:44:56 687] [Message] [v1.0.1] agentinfo.contact_phone =  111111
+[2018/11/5 21:44:56 688] [Message] [v1.0.1] agentinfo.contact_email =  youxiang@youxiang.com
+[2018/11/5 21:44:56 689] [Message] [v1.0.1] agentinfo.status =  1
+[2018/11/5 21:44:56 689] [Message] [v1.0.1] merchantinfo.id =  1000000001
+[2018/11/5 21:44:56 690] [Message] [v1.0.1] merchantinfo.agent_id =  10000001
+[2018/11/5 21:44:56 691] [Message] [v1.0.1] merchantinfo.name =  测试子商户1
+[2018/11/5 21:44:56 692] [Message] [v1.0.1] merchantinfo.short_name =  子商户1
+[2018/11/5 21:44:56 693] [Message] [v1.0.1] merchantinfo.number =  1000000001
+[2018/11/5 21:44:56 693] [Message] [v1.0.1] merchantinfo.principal_name =  
+[2018/11/5 21:44:56 694] [Message] [v1.0.1] merchantinfo.principal_phone =  
+[2018/11/5 21:44:56 695] [Message] [v1.0.1] merchantinfo.contact_name =  联系人1
+[2018/11/5 21:44:56 696] [Message] [v1.0.1] merchantinfo.contact_phone =  15153294092
+[2018/11/5 21:44:56 696] [Message] [v1.0.1] merchantinfo.contact_email =  sdsads@qq.com
+[2018/11/5 21:44:56 697] [Message] [v1.0.1] merchantinfo.address =  
+[2018/11/5 21:44:56 697] [Message] [v1.0.1] merchantinfo.status =  1
+[2018/11/5 21:44:56 698] [Message] [v1.0.1] storeinfo.id =  1000000001
+[2018/11/5 21:44:56 699] [Message] [v1.0.1] storeinfo.merchant_id =  1000000001
+[2018/11/5 21:44:56 699] [Message] [v1.0.1] storeinfo.name =  测试店铺1
+[2018/11/5 21:44:56 700] [Message] [v1.0.1] storeinfo.number =  0011
+[2018/11/5 21:44:56 700] [Message] [v1.0.1] storeinfo.principal_name =  负责人1
+[2018/11/5 21:44:56 701] [Message] [v1.0.1] storeinfo.principal_phone =  15153294092
+[2018/11/5 21:44:56 702] [Message] [v1.0.1] storeinfo.address =  测试店铺地址1
+[2018/11/5 21:44:56 702] [Message] [v1.0.1] storeinfo.status =  1
+[2018/11/5 21:44:56 703] [Message] [v1.0.1] ===================用户信息=================== End
+[2018/11/5 21:44:56 712] [Message] [v1.0.1] ===================门店列表=================== Start
+[2018/11/5 21:44:56 713] [Message] [v1.0.1] GetStoreList Send =  key=ffb96c8683500ecbdd5efefa5e71bc6c
+[2018/11/5 21:44:56 835] [Message] [v1.0.1] Result =  {"code":1,"msg":"店铺列表","data":{"list":[{"id":"1000000003","merchant_id":"1000000001","name":"门店3","number":"3333333333","principal_name":"负责人3","principal_phone":"15153294092","address":"青岛市市北区华阳路112号","time_create":"1532659891","time_update":"1532660479","status":"1"},{"id":"1000000002","merchant_id":"1000000001","name":"测试店铺2","number":"0012","principal_name":"负责人2","principal_phone":"15153294093","address":"测试店铺地址2","time_create":"0","time_update":"0","status":"1"},{"id":"1000000001","merchant_id":"1000000001","name":"测试店铺1","number":"0011","principal_name":"负责人1","principal_phone":"15153294092","address":"测试店铺地址1","time_create":"0","time_update":"0","status":"1"}]}}
+[2018/11/5 21:44:56 840] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000003",
+    "merchant_id": "1000000001",
+    "name": "门店3",
+    "number": "3333333333",
+    "principal_name": "负责人3",
+    "principal_phone": "15153294092",
+    "address": "青岛市市北区华阳路112号",
+    "time_create": "1532659891",
+    "time_update": "1532660479",
+    "status": "1"
+  },
+  {
+    "id": "1000000002",
+    "merchant_id": "1000000001",
+    "name": "测试店铺2",
+    "number": "0012",
+    "principal_name": "负责人2",
+    "principal_phone": "15153294093",
+    "address": "测试店铺地址2",
+    "time_create": "0",
+    "time_update": "0",
+    "status": "1"
+  },
+  {
+    "id": "1000000001",
+    "merchant_id": "1000000001",
+    "name": "测试店铺1",
+    "number": "0011",
+    "principal_name": "负责人1",
+    "principal_phone": "15153294092",
+    "address": "测试店铺地址1",
+    "time_create": "0",
+    "time_update": "0",
+    "status": "1"
+  }
+]
+[2018/11/5 21:44:56 851] [Message] [v1.0.1] storelist[1].id =  1000000003
+[2018/11/5 21:44:56 853] [Message] [v1.0.1] storelist[1].merchant_id =  1000000001
+[2018/11/5 21:44:56 855] [Message] [v1.0.1] storelist[1].name =  门店3
+[2018/11/5 21:44:56 857] [Message] [v1.0.1] storelist[1].number =  3333333333
+[2018/11/5 21:44:56 860] [Message] [v1.0.1] storelist[1].principal_name =  负责人3
+[2018/11/5 21:44:56 862] [Message] [v1.0.1] storelist[1].principal_phone =  15153294092
+[2018/11/5 21:44:56 864] [Message] [v1.0.1] storelist[1].address =  青岛市市北区华阳路112号
+[2018/11/5 21:44:56 866] [Message] [v1.0.1] storelist[1].status =  1
+[2018/11/5 21:44:56 868] [Message] [v1.0.1] storelist[2].id =  1000000002
+[2018/11/5 21:44:56 870] [Message] [v1.0.1] storelist[2].merchant_id =  1000000001
+[2018/11/5 21:44:56 872] [Message] [v1.0.1] storelist[2].name =  测试店铺2
+[2018/11/5 21:44:56 874] [Message] [v1.0.1] storelist[2].number =  0012
+[2018/11/5 21:44:56 876] [Message] [v1.0.1] storelist[2].principal_name =  负责人2
+[2018/11/5 21:44:56 878] [Message] [v1.0.1] storelist[2].principal_phone =  15153294093
+[2018/11/5 21:44:56 881] [Message] [v1.0.1] storelist[2].address =  测试店铺地址2
+[2018/11/5 21:44:56 883] [Message] [v1.0.1] storelist[2].status =  1
+[2018/11/5 21:44:56 885] [Message] [v1.0.1] storelist[3].id =  1000000001
+[2018/11/5 21:44:56 887] [Message] [v1.0.1] storelist[3].merchant_id =  1000000001
+[2018/11/5 21:44:56 889] [Message] [v1.0.1] storelist[3].name =  测试店铺1
+[2018/11/5 21:44:56 891] [Message] [v1.0.1] storelist[3].number =  0011
+[2018/11/5 21:44:56 893] [Message] [v1.0.1] storelist[3].principal_name =  负责人1
+[2018/11/5 21:44:56 895] [Message] [v1.0.1] storelist[3].principal_phone =  15153294092
+[2018/11/5 21:44:56 897] [Message] [v1.0.1] storelist[3].address =  测试店铺地址1
+[2018/11/5 21:44:56 899] [Message] [v1.0.1] storelist[3].status =  1
+[2018/11/5 21:44:56 920] [Message] [v1.0.1] ===================门店列表=================== End
+[2018/11/5 21:44:56 922] [Message] [v1.0.1] ===================店员列表=================== Start
+[2018/11/5 21:44:56 923] [Message] [v1.0.1] GetUserList Send =  key=ffb96c8683500ecbdd5efefa5e71bc6c&store_id=1000000001
+[2018/11/5 21:44:57 047] [Message] [v1.0.1] Result =  {"code":1,"msg":"店员列表","data":{"list":[{"id":"1000000003","username":"user_1_2","phone":"15153294092"},{"id":"1000000001","username":"user_1_1","phone":"15153294092"}]}}
+[2018/11/5 21:44:57 049] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000003",
+    "username": "user_1_2",
+    "phone": "15153294092"
+  },
+  {
+    "id": "1000000001",
+    "username": "user_1_1",
+    "phone": "15153294092"
+  }
+]
+[2018/11/5 21:44:57 051] [Message] [v1.0.1] userlist[1].id =  1000000003
+[2018/11/5 21:44:57 053] [Message] [v1.0.1] userlist[1].username =  user_1_2
+[2018/11/5 21:44:57 055] [Message] [v1.0.1] userlist[1].phone =  15153294092
+[2018/11/5 21:44:57 057] [Message] [v1.0.1] userlist[2].id =  1000000001
+[2018/11/5 21:44:57 059] [Message] [v1.0.1] userlist[2].username =  user_1_1
+[2018/11/5 21:44:57 061] [Message] [v1.0.1] userlist[2].phone =  15153294092
+[2018/11/5 21:44:57 064] [Message] [v1.0.1] ===================店员列表=================== End
+[2018/11/5 21:44:57 071] [Message] [v1.0.1] ===================设备列表=================== Start
+[2018/11/5 21:44:57 073] [Message] [v1.0.1] GetDeviceList Send =  key=ffb96c8683500ecbdd5efefa5e71bc6c&store_id=1000000001
+[2018/11/5 21:44:57 199] [Message] [v1.0.1] Result =  {"code":1,"msg":"设备列表","data":{"list":[{"id":"1000000002","name":"设备4","number":"002","type":"1"},{"id":"1000000001","name":"设备1","number":"001","type":"2"}]}}
+[2018/11/5 21:44:57 201] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000002",
+    "name": "设备4",
+    "number": "002",
+    "type": "1"
+  },
+  {
+    "id": "1000000001",
+    "name": "设备1",
+    "number": "001",
+    "type": "2"
+  }
+]
+[2018/11/5 21:44:57 203] [Message] [v1.0.1] devicelist[1].id =  1000000002
+[2018/11/5 21:44:57 205] [Message] [v1.0.1] devicelist[1].name =  设备4
+[2018/11/5 21:44:57 207] [Message] [v1.0.1] devicelist[1].number =  002
+[2018/11/5 21:44:57 209] [Message] [v1.0.1] devicelist[1].type =  1
+[2018/11/5 21:44:57 211] [Message] [v1.0.1] devicelist[2].id =  1000000001
+[2018/11/5 21:44:57 214] [Message] [v1.0.1] devicelist[2].name =  设备1
+[2018/11/5 21:44:57 216] [Message] [v1.0.1] devicelist[2].number =  001
+[2018/11/5 21:44:57 218] [Message] [v1.0.1] devicelist[2].type =  2
+[2018/11/5 21:44:57 220] [Message] [v1.0.1] ===================设备列表=================== End
+[2018/11/5 21:44:57 226] [Message] [v1.0.1] ===================交易类型列表=================== Start
+[2018/11/5 21:44:57 228] [Message] [v1.0.1] Get_all_paymentList Send =  key=ffb96c8683500ecbdd5efefa5e71bc6c
+[2018/11/5 21:44:57 382] [Message] [v1.0.1] Result =  {"code":1,"msg":"交易类型","data":{"qrcode":"扫码支付","barcode":"条码支付","weixin_public":"微信公众号支付"}}
+[2018/11/5 21:44:57 384] [Message] [v1.0.1] data =  {
+  "qrcode": "扫码支付",
+  "barcode": "条码支付",
+  "weixin_public": "微信公众号支付"
+}
+[2018/11/5 21:44:57 386] [Message] [v1.0.1] paymentList[0].paymentType =  扫码支付
+[2018/11/5 21:44:57 388] [Message] [v1.0.1] paymentList[1].paymentType =  条码支付
+[2018/11/5 21:44:57 390] [Message] [v1.0.1] ===================交易类型列表=================== End
+[2018/11/5 21:44:57 394] [Message] [v1.0.1] ===================交易方式列表=================== Start
+[2018/11/5 21:44:57 396] [Message] [v1.0.1] Get_all_payment_channel =  key=ffb96c8683500ecbdd5efefa5e71bc6c
+[2018/11/5 21:44:57 516] [Message] [v1.0.1] Result =  {"code":1,"msg":"支付方式","data":{"weixin":"微信","alipay":"支付宝","unionpay":"银联","xt":"新天","xz_weixin":"现在微信","xz_alipay":"现在支付宝","sf_weixin":"上福微信","sf_alipay":"上福支付宝"}}
+[2018/11/5 21:44:57 519] [Message] [v1.0.1] data =  {
+  "weixin": "微信",
+  "alipay": "支付宝",
+  "unionpay": "银联",
+  "xt": "新天",
+  "xz_weixin": "现在微信",
+  "xz_alipay": "现在支付宝",
+  "sf_weixin": "上福微信",
+  "sf_alipay": "上福支付宝"
+}
+[2018/11/5 21:44:57 606] [Message] [v1.0.1] ===================交易方式列表=================== End
+[2018/11/5 21:45:14 261] [Message] [v1.0.1] InterfaceAddOrder jsonData=  {"channel":"","payment":"barcode","order_id":"","amount":"0.01","auth_code":"222222222222222222222","subject":"test","body":"testbody","store_id":"1000000001","operator_id":"1000000001","device_id":"1000000002","timestamp":"1541425514"}
+[2018/11/5 21:45:14 263] [Message] [v1.0.1] InterfaceAddOrder httppara=  merchant_id=1000000001&data=070063ebd557ec5fb29bea179b7beb164d3aa364c1b5f9d8721bd85a23297c37b963ff92173ee33ae0b3f4802b0f8360f72ee4f53bf4f60b929ca56d905bf90f0390154bc4ce6dc9875fbbb04f6022b73853d26b514cf2290b659222822544f23e1c50ca37632043442834f0f9ecab66bb1999c16b93650415e2f0a24b5a64006ace6cd87f11e13788a42913989a30cf91cc0e74e60d1c2220a7a93a14f388f9426df4987915cb299d5e5f08c802d2615760eb96eddd262e68fc7f8be80379827641c67bd0beb094ca203c2d84c174dc241f33e0980c22ee657a2f7ae05c947dbaae895bdbde770c8e9c98d9cdf81b35
+[2018/11/5 21:45:14 635] [Message] [v1.0.1] InterfaceAddOrder Result=  {"code":1,"msg":"下单成功","data":"86dac36d9ddafbe3832002dd4be67787c6f4b965bde45d6e53a83ba7bde21609c5ccd6d7d7dbdcfe4a44706bbf4056ff88f23b149565048eb6c944d1a6d90c52fb41c379a0b133ec00cddaee1e628ec2"}
+[2018/11/5 21:45:14 637] [Message] [v1.0.1] inResult=  下单成功
+[2018/11/5 21:45:25 284] [Message] [v1.0.1] ===================店员列表=================== Start
+[2018/11/5 21:45:25 286] [Message] [v1.0.1] GetUserList Send =  key=ffb96c8683500ecbdd5efefa5e71bc6c&store_id=1000000002
+[2018/11/5 21:45:25 411] [Message] [v1.0.1] Result =  {"code":1,"msg":"店员列表","data":{"list":[{"id":"1000000004","username":"user_2_2","phone":"15153294093"},{"id":"1000000002","username":"user_2_1","phone":"15153294093"}]}}
+[2018/11/5 21:45:25 413] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000004",
+    "username": "user_2_2",
+    "phone": "15153294093"
+  },
+  {
+    "id": "1000000002",
+    "username": "user_2_1",
+    "phone": "15153294093"
+  }
+]
+[2018/11/5 21:45:25 415] [Message] [v1.0.1] userlist[1].id =  1000000004
+[2018/11/5 21:45:25 418] [Message] [v1.0.1] userlist[1].username =  user_2_2
+[2018/11/5 21:45:25 420] [Message] [v1.0.1] userlist[1].phone =  15153294093
+[2018/11/5 21:45:25 422] [Message] [v1.0.1] userlist[2].id =  1000000002
+[2018/11/5 21:45:25 424] [Message] [v1.0.1] userlist[2].username =  user_2_1
+[2018/11/5 21:45:25 426] [Message] [v1.0.1] userlist[2].phone =  15153294093
+[2018/11/5 21:45:25 428] [Message] [v1.0.1] ===================店员列表=================== End
+[2018/11/5 21:45:25 434] [Message] [v1.0.1] ===================设备列表=================== Start
+[2018/11/5 21:45:25 436] [Message] [v1.0.1] GetDeviceList Send =  key=ffb96c8683500ecbdd5efefa5e71bc6c&store_id=1000000002
+[2018/11/5 21:45:25 571] [Message] [v1.0.1] Result =  {"code":1,"msg":"设备列表","data":{"list":[{"id":"1000000005","name":"刷卡001","number":"00001","type":"1"},{"id":"1000000004","name":"设备3","number":"002","type":"2"},{"id":"1000000003","name":"设备1","number":"001","type":"2"}]}}
+[2018/11/5 21:45:25 574] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000005",
+    "name": "刷卡001",
+    "number": "00001",
+    "type": "1"
+  },
+  {
+    "id": "1000000004",
+    "name": "设备3",
+    "number": "002",
+    "type": "2"
+  },
+  {
+    "id": "1000000003",
+    "name": "设备1",
+    "number": "001",
+    "type": "2"
+  }
+]
+[2018/11/5 21:45:25 576] [Message] [v1.0.1] devicelist[1].id =  1000000005
+[2018/11/5 21:45:25 578] [Message] [v1.0.1] devicelist[1].name =  刷卡001
+[2018/11/5 21:45:25 580] [Message] [v1.0.1] devicelist[1].number =  00001
+[2018/11/5 21:45:25 582] [Message] [v1.0.1] devicelist[1].type =  1
+[2018/11/5 21:45:25 585] [Message] [v1.0.1] devicelist[2].id =  1000000004
+[2018/11/5 21:45:25 587] [Message] [v1.0.1] devicelist[2].name =  设备3
+[2018/11/5 21:45:25 589] [Message] [v1.0.1] devicelist[2].number =  002
+[2018/11/5 21:45:25 591] [Message] [v1.0.1] devicelist[2].type =  2
+[2018/11/5 21:45:25 593] [Message] [v1.0.1] devicelist[3].id =  1000000003
+[2018/11/5 21:45:25 595] [Message] [v1.0.1] devicelist[3].name =  设备1
+[2018/11/5 21:45:25 597] [Message] [v1.0.1] devicelist[3].number =  001
+[2018/11/5 21:45:25 599] [Message] [v1.0.1] devicelist[3].type =  2
+[2018/11/5 21:45:25 601] [Message] [v1.0.1] ===================设备列表=================== End
+[2018/11/5 21:45:37 010] [Message] [v1.0.1] InterfaceAddOrder jsonData=  {"channel":"","payment":"barcode","order_id":"","amount":"0.02","auth_code":"3333333333333333333333333","subject":"test","body":"testbody","store_id":"1000000002","operator_id":"1000000004","device_id":"1000000005","timestamp":"1541425537"}
+[2018/11/5 21:45:37 013] [Message] [v1.0.1] InterfaceAddOrder httppara=  merchant_id=1000000001&data=070063ebd557ec5fb29bea179b7beb164d3aa364c1b5f9d8721bd85a23297c37b963ff92173ee33ae0b3f4802b0f8360d388cc8abfff2b6e573be03a5ba1b8d54ba1ef64c5674302a6339eb1ec78c6ad2a6069e9f17e767bf30f1b48d58d9d80501e13957b35e28653ea6c131ce2392b978f7b4145edd58f20327a63a1d5326a0d2075666be2fc17306aededdc8d4eb47641c67bd0beb094ca203c2d84c174dc09084986ee67e094b7a7151f825612dcadde32c3dbcf501e90c3bc22e52dc45f110050b9447ebee4141d0433e064810d6327bc0b9a5a2353672a81765bcec86b1f8166bce531dd8a7a1399cae1628f91dd93dbde5c44019e6589efe70b1e40ea
+[2018/11/5 21:45:37 355] [Message] [v1.0.1] InterfaceAddOrder Result=  {"code":1,"msg":"下单成功","data":"ff332926f4bf397562b3b445a13872d38c1ecab4ae4d04d5302ec1a247e6d9c1c5ccd6d7d7dbdcfe4a44706bbf4056ff88f23b149565048eb6c944d1a6d90c52fb41c379a0b133ec00cddaee1e628ec2"}
+[2018/11/5 21:45:37 357] [Message] [v1.0.1] inResult=  下单成功
+[2018/11/5 21:45:43 151] [Message] [v1.0.1] ===================交易查询=================== Start
+[2018/11/5 21:45:43 152] [Message] [v1.0.1] GetOrder_List Send =  key=ffb96c8683500ecbdd5efefa5e71bc6c&page=5&current=1&&merchant_id=1000000001&export=0
+[2018/11/5 21:45:43 278] [Message] [v1.0.1] Result =  {"code":1,"msg":"订单列表","data":{"list":[{"id":"707","order_id":"440594769538475004001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"unionpay","payment":"barcode","store_id":"1000000002","store_name":"测试店铺2","operator_id":"1000000004","operator_name":"user_2_2","device_id":"1000000005","device_name":"刷卡001","amount":"0.02","actual_amount":"0.02","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:45:38","time_update":"2018-11-05 21:45:38","status":"2","profit_status":"1","remark":"下单成功","_status":"处理中","payment_name":"条码支付","channel_name":"银联"},{"id":"706","order_id":"800594769515763001001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"unionpay","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000001","operator_name":"user_1_1","device_id":"1000000002","device_name":"设备4","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:45:15","time_update":"2018-11-05 21:45:15","status":"2","profit_status":"1","remark":"下单成功","_status":"处理中","payment_name":"条码支付","channel_name":"银联"},{"id":"705","order_id":"220594769472706001001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"weixin","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000001","operator_name":"user_1_1","device_id":"1000000001","device_name":"设备1","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:44:32","time_update":"2018-11-05 21:44:32","status":"4","profit_status":"1","remark":"支付失败:请扫描微信支付授权码（以10\/11\/12\/13\/14\/15为前缀的18位数字）OK","_status":"支付失败","payment_name":"条码支付","channel_name":"微信"},{"id":"704","order_id":"770594768511995004001","out_order_id":"200701201811052128321425455","out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"xz_weixin","payment":"barcode","store_id":"1000000002","store_name":"测试店铺2","operator_id":"1000000004","operator_name":"user_2_2","device_id":"1000000005","device_name":"刷卡001","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:28:31","time_update":"2018-11-05 21:28:33","status":"4","profit_status":"1","remark":"支付失败:[A001]E000#成功[成功]","_status":"支付失败","payment_name":"条码支付","channel_name":"现在微信"},{"id":"703","order_id":"100594766723938001001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"unionpay","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000001","operator_name":"user_1_1","device_id":"1000000001","device_name":"设备1","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 20:58:43","time_update":"2018-11-05 21:32:39","status":"2","profit_status":"1","remark":"支付处理中","_status":"处理中","payment_name":"条码支付","channel_name":"银联"}],"total":"697","sum_amount":"7832785.47","sum_actual_amount":"7830564.24","sum_refund_amount":"0.52"}}
+[2018/11/5 21:45:43 281] [Message] [v1.0.1] data =  {
+  "list": [
+    {
+      "id": "707",
+      "order_id": "440594769538475004001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "unionpay",
+      "payment": "barcode",
+      "store_id": "1000000002",
+      "store_name": "测试店铺2",
+      "operator_id": "1000000004",
+      "operator_name": "user_2_2",
+      "device_id": "1000000005",
+      "device_name": "刷卡001",
+      "amount": "0.02",
+      "actual_amount": "0.02",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:45:38",
+      "time_update": "2018-11-05 21:45:38",
+      "status": "2",
+      "profit_status": "1",
+      "remark": "下单成功",
+      "_status": "处理中",
+      "payment_name": "条码支付",
+      "channel_name": "银联"
+    },
+    {
+      "id": "706",
+      "order_id": "800594769515763001001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "unionpay",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000001",
+      "operator_name": "user_1_1",
+      "device_id": "1000000002",
+      "device_name": "设备4",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:45:15",
+      "time_update": "2018-11-05 21:45:15",
+      "status": "2",
+      "profit_status": "1",
+      "remark": "下单成功",
+      "_status": "处理中",
+      "payment_name": "条码支付",
+      "channel_name": "银联"
+    },
+    {
+      "id": "705",
+      "order_id": "220594769472706001001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "weixin",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000001",
+      "operator_name": "user_1_1",
+      "device_id": "1000000001",
+      "device_name": "设备1",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:44:32",
+      "time_update": "2018-11-05 21:44:32",
+      "status": "4",
+      "profit_status": "1",
+      "remark": "支付失败:请扫描微信支付授权码（以10/11/12/13/14/15为前缀的18位数字）OK",
+      "_status": "支付失败",
+      "payment_name": "条码支付",
+      "channel_name": "微信"
+    },
+    {
+      "id": "704",
+      "order_id": "770594768511995004001",
+      "out_order_id": "200701201811052128321425455",
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "xz_weixin",
+      "payment": "barcode",
+      "store_id": "1000000002",
+      "store_name": "测试店铺2",
+      "operator_id": "1000000004",
+      "operator_name": "user_2_2",
+      "device_id": "1000000005",
+      "device_name": "刷卡001",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:28:31",
+      "time_update": "2018-11-05 21:28:33",
+      "status": "4",
+      "profit_status": "1",
+      "remark": "支付失败:[A001]E000#成功[成功]",
+      "_status": "支付失败",
+      "payment_name": "条码支付",
+      "channel_name": "现在微信"
+    },
+    {
+      "id": "703",
+      "order_id": "100594766723938001001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "unionpay",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000001",
+      "operator_name": "user_1_1",
+      "device_id": "1000000001",
+      "device_name": "设备1",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 20:58:43",
+      "time_update": "2018-11-05 21:32:39",
+      "status": "2",
+      "profit_status": "1",
+      "remark": "支付处理中",
+      "_status": "处理中",
+      "payment_name": "条码支付",
+      "channel_name": "银联"
+    }
+  ],
+  "total": "697",
+  "sum_amount": "7832785.47",
+  "sum_actual_amount": "7830564.24",
+  "sum_refund_amount": "0.52"
+}
+[2018/11/5 21:45:43 304] [Message] [v1.0.1] ===================交易查询=================== End
+[2018/11/5 21:46:11 344] [Message] [v1.0.1] ===================用户登陆=================== Start
+[2018/11/5 21:46:11 345] [Message] [v1.0.1] Login Send =  username=user_1_1&password=1111111
+[2018/11/5 21:46:11 547] [Message] [v1.0.1] Result =  {"code":1,"msg":"登录成功","data":{"token":"db047879aa9277d693bf47095661de16","info":{"app_type":"api","id":"1000000001","agent_id":"10000001","store_id":"1000000001","merchant_id":"1000000001","user_type":"2","type":"2","username":"user_1_1","open_id":"","timestamp":1541425572}}}
+[2018/11/5 21:46:11 640] [Message] [v1.0.1] ===================用户登陆=================== End
+[2018/11/5 21:46:11 643] [Message] [v1.0.1] ===================用户信息=================== Start
+[2018/11/5 21:46:11 644] [Message] [v1.0.1] GetUserInfo Send =  key=db047879aa9277d693bf47095661de16
+[2018/11/5 21:46:11 770] [Message] [v1.0.1] Result =  {"code":1,"msg":"用户信息","data":{"id":"1000000001","agent_id":"10000001","merchant_id":"1000000001","store_id":"1000000001","username":"user_1_1","phone":"15153294092","open_id":"","type":"2","time_create":"1527211953","time_update":"1533293063","status":"1","agent":{"id":"10000001","pid":"00000000","name":"代理商1","number":"1111111111111111","address":"代理商地址1","principal_name":"负责人1","principal_phone":"15153294092","contact_name":"联系人1","contact_phone":"111111","contact_email":"youxiang@youxiang.com","time_create":"0","time_update":"1533178664","status":"1"},"merchant":{"id":"1000000001","agent_id":"10000001","name":"测试子商户1","short_name":"子商户1","number":"1000000001","principal_name":null,"principal_phone":null,"contact_name":"联系人1","contact_phone":"15153294092","contact_email":"sdsads@qq.com","address":null,"time_create":"0","time_update":"1533523267","status":"1"},"store":{"id":"1000000001","merchant_id":"1000000001","name":"测试店铺1","number":"0011","principal_name":"负责人1","principal_phone":"15153294092","address":"测试店铺地址1","time_create":"0","time_update":"0","status":"1"}}}
+[2018/11/5 21:46:11 803] [Message] [v1.0.1] data =  {
+  "id": "1000000001",
+  "agent_id": "10000001",
+  "merchant_id": "1000000001",
+  "store_id": "1000000001",
+  "username": "user_1_1",
+  "phone": "15153294092",
+  "open_id": "",
+  "type": "2",
+  "time_create": "1527211953",
+  "time_update": "1533293063",
+  "status": "1",
+  "agent": {
+    "id": "10000001",
+    "pid": "00000000",
+    "name": "代理商1",
+    "number": "1111111111111111",
+    "address": "代理商地址1",
+    "principal_name": "负责人1",
+    "principal_phone": "15153294092",
+    "contact_name": "联系人1",
+    "contact_phone": "111111",
+    "contact_email": "youxiang@youxiang.com",
+    "time_create": "0",
+    "time_update": "1533178664",
+    "status": "1"
+  },
+  "merchant": {
+    "id": "1000000001",
+    "agent_id": "10000001",
+    "name": "测试子商户1",
+    "short_name": "子商户1",
+    "number": "1000000001",
+    "principal_name": null,
+    "principal_phone": null,
+    "contact_name": "联系人1",
+    "contact_phone": "15153294092",
+    "contact_email": "sdsads@qq.com",
+    "address": null,
+    "time_create": "0",
+    "time_update": "1533523267",
+    "status": "1"
+  },
+  "store": {
+    "id": "1000000001",
+    "merchant_id": "1000000001",
+    "name": "测试店铺1",
+    "number": "0011",
+    "principal_name": "负责人1",
+    "principal_phone": "15153294092",
+    "address": "测试店铺地址1",
+    "time_create": "0",
+    "time_update": "0",
+    "status": "1"
+  }
+}
+[2018/11/5 21:46:11 805] [Message] [v1.0.1] agent =  {
+  "id": "10000001",
+  "pid": "00000000",
+  "name": "代理商1",
+  "number": "1111111111111111",
+  "address": "代理商地址1",
+  "principal_name": "负责人1",
+  "principal_phone": "15153294092",
+  "contact_name": "联系人1",
+  "contact_phone": "111111",
+  "contact_email": "youxiang@youxiang.com",
+  "time_create": "0",
+  "time_update": "1533178664",
+  "status": "1"
+}
+[2018/11/5 21:46:11 807] [Message] [v1.0.1] merchant =  {
+  "id": "1000000001",
+  "agent_id": "10000001",
+  "name": "测试子商户1",
+  "short_name": "子商户1",
+  "number": "1000000001",
+  "principal_name": null,
+  "principal_phone": null,
+  "contact_name": "联系人1",
+  "contact_phone": "15153294092",
+  "contact_email": "sdsads@qq.com",
+  "address": null,
+  "time_create": "0",
+  "time_update": "1533523267",
+  "status": "1"
+}
+[2018/11/5 21:46:11 809] [Message] [v1.0.1] store =  {
+  "id": "1000000001",
+  "merchant_id": "1000000001",
+  "name": "测试店铺1",
+  "number": "0011",
+  "principal_name": "负责人1",
+  "principal_phone": "15153294092",
+  "address": "测试店铺地址1",
+  "time_create": "0",
+  "time_update": "0",
+  "status": "1"
+}
+[2018/11/5 21:46:11 812] [Message] [v1.0.1] userinfo.id =  1000000001
+[2018/11/5 21:46:11 814] [Message] [v1.0.1] userinfo.agent_id =  10000001
+[2018/11/5 21:46:11 815] [Message] [v1.0.1] userinfo.merchant_id =  1000000001
+[2018/11/5 21:46:11 815] [Message] [v1.0.1] userinfo.store_id =  1000000001
+[2018/11/5 21:46:11 816] [Message] [v1.0.1] userinfo.username =  user_1_1
+[2018/11/5 21:46:11 817] [Message] [v1.0.1] userinfo.phone =  15153294092
+[2018/11/5 21:46:11 818] [Message] [v1.0.1] userinfo.open_id =  
+[2018/11/5 21:46:11 819] [Message] [v1.0.1] userinfo.type =  2
+[2018/11/5 21:46:11 820] [Message] [v1.0.1] userinfo.status =  1
+[2018/11/5 21:46:11 820] [Message] [v1.0.1] agentinfo.id =  10000001
+[2018/11/5 21:46:11 821] [Message] [v1.0.1] agentinfo.pid =  00000000
+[2018/11/5 21:46:11 822] [Message] [v1.0.1] agentinfo.name =  代理商1
+[2018/11/5 21:46:11 823] [Message] [v1.0.1] agentinfo.number =  1111111111111111
+[2018/11/5 21:46:11 823] [Message] [v1.0.1] agentinfo.address =  代理商地址1
+[2018/11/5 21:46:11 824] [Message] [v1.0.1] agentinfo.principal_name =  负责人1
+[2018/11/5 21:46:11 825] [Message] [v1.0.1] agentinfo.principal_phone =  15153294092
+[2018/11/5 21:46:11 826] [Message] [v1.0.1] agentinfo.contact_name =  联系人1
+[2018/11/5 21:46:11 827] [Message] [v1.0.1] agentinfo.contact_phone =  111111
+[2018/11/5 21:46:11 827] [Message] [v1.0.1] agentinfo.contact_email =  youxiang@youxiang.com
+[2018/11/5 21:46:11 828] [Message] [v1.0.1] agentinfo.status =  1
+[2018/11/5 21:46:11 829] [Message] [v1.0.1] merchantinfo.id =  1000000001
+[2018/11/5 21:46:11 830] [Message] [v1.0.1] merchantinfo.agent_id =  10000001
+[2018/11/5 21:46:11 831] [Message] [v1.0.1] merchantinfo.name =  测试子商户1
+[2018/11/5 21:46:11 832] [Message] [v1.0.1] merchantinfo.short_name =  子商户1
+[2018/11/5 21:46:11 832] [Message] [v1.0.1] merchantinfo.number =  1000000001
+[2018/11/5 21:46:11 833] [Message] [v1.0.1] merchantinfo.principal_name =  
+[2018/11/5 21:46:11 834] [Message] [v1.0.1] merchantinfo.principal_phone =  
+[2018/11/5 21:46:11 835] [Message] [v1.0.1] merchantinfo.contact_name =  联系人1
+[2018/11/5 21:46:11 835] [Message] [v1.0.1] merchantinfo.contact_phone =  15153294092
+[2018/11/5 21:46:11 836] [Message] [v1.0.1] merchantinfo.contact_email =  sdsads@qq.com
+[2018/11/5 21:46:11 837] [Message] [v1.0.1] merchantinfo.address =  
+[2018/11/5 21:46:11 838] [Message] [v1.0.1] merchantinfo.status =  1
+[2018/11/5 21:46:11 839] [Message] [v1.0.1] storeinfo.id =  1000000001
+[2018/11/5 21:46:11 839] [Message] [v1.0.1] storeinfo.merchant_id =  1000000001
+[2018/11/5 21:46:11 840] [Message] [v1.0.1] storeinfo.name =  测试店铺1
+[2018/11/5 21:46:11 841] [Message] [v1.0.1] storeinfo.number =  0011
+[2018/11/5 21:46:11 842] [Message] [v1.0.1] storeinfo.principal_name =  负责人1
+[2018/11/5 21:46:11 843] [Message] [v1.0.1] storeinfo.principal_phone =  15153294092
+[2018/11/5 21:46:11 843] [Message] [v1.0.1] storeinfo.address =  测试店铺地址1
+[2018/11/5 21:46:11 848] [Message] [v1.0.1] storeinfo.status =  1
+[2018/11/5 21:46:11 848] [Message] [v1.0.1] ===================用户信息=================== End
+[2018/11/5 21:46:11 854] [Message] [v1.0.1] ===================门店列表=================== Start
+[2018/11/5 21:46:11 855] [Message] [v1.0.1] GetStoreList Send =  key=db047879aa9277d693bf47095661de16
+[2018/11/5 21:46:11 976] [Message] [v1.0.1] Result =  {"code":1,"msg":"店铺列表","data":{"list":[{"id":"1000000003","merchant_id":"1000000001","name":"门店3","number":"3333333333","principal_name":"负责人3","principal_phone":"15153294092","address":"青岛市市北区华阳路112号","time_create":"1532659891","time_update":"1532660479","status":"1"},{"id":"1000000002","merchant_id":"1000000001","name":"测试店铺2","number":"0012","principal_name":"负责人2","principal_phone":"15153294093","address":"测试店铺地址2","time_create":"0","time_update":"0","status":"1"},{"id":"1000000001","merchant_id":"1000000001","name":"测试店铺1","number":"0011","principal_name":"负责人1","principal_phone":"15153294092","address":"测试店铺地址1","time_create":"0","time_update":"0","status":"1"}]}}
+[2018/11/5 21:46:11 981] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000003",
+    "merchant_id": "1000000001",
+    "name": "门店3",
+    "number": "3333333333",
+    "principal_name": "负责人3",
+    "principal_phone": "15153294092",
+    "address": "青岛市市北区华阳路112号",
+    "time_create": "1532659891",
+    "time_update": "1532660479",
+    "status": "1"
+  },
+  {
+    "id": "1000000002",
+    "merchant_id": "1000000001",
+    "name": "测试店铺2",
+    "number": "0012",
+    "principal_name": "负责人2",
+    "principal_phone": "15153294093",
+    "address": "测试店铺地址2",
+    "time_create": "0",
+    "time_update": "0",
+    "status": "1"
+  },
+  {
+    "id": "1000000001",
+    "merchant_id": "1000000001",
+    "name": "测试店铺1",
+    "number": "0011",
+    "principal_name": "负责人1",
+    "principal_phone": "15153294092",
+    "address": "测试店铺地址1",
+    "time_create": "0",
+    "time_update": "0",
+    "status": "1"
+  }
+]
+[2018/11/5 21:46:11 991] [Message] [v1.0.1] storelist[1].id =  1000000003
+[2018/11/5 21:46:11 993] [Message] [v1.0.1] storelist[1].merchant_id =  1000000001
+[2018/11/5 21:46:11 995] [Message] [v1.0.1] storelist[1].name =  门店3
+[2018/11/5 21:46:11 997] [Message] [v1.0.1] storelist[1].number =  3333333333
+[2018/11/5 21:46:12 000] [Message] [v1.0.1] storelist[1].principal_name =  负责人3
+[2018/11/5 21:46:12 002] [Message] [v1.0.1] storelist[1].principal_phone =  15153294092
+[2018/11/5 21:46:12 004] [Message] [v1.0.1] storelist[1].address =  青岛市市北区华阳路112号
+[2018/11/5 21:46:12 006] [Message] [v1.0.1] storelist[1].status =  1
+[2018/11/5 21:46:12 008] [Message] [v1.0.1] storelist[2].id =  1000000002
+[2018/11/5 21:46:12 010] [Message] [v1.0.1] storelist[2].merchant_id =  1000000001
+[2018/11/5 21:46:12 012] [Message] [v1.0.1] storelist[2].name =  测试店铺2
+[2018/11/5 21:46:12 014] [Message] [v1.0.1] storelist[2].number =  0012
+[2018/11/5 21:46:12 016] [Message] [v1.0.1] storelist[2].principal_name =  负责人2
+[2018/11/5 21:46:12 018] [Message] [v1.0.1] storelist[2].principal_phone =  15153294093
+[2018/11/5 21:46:12 020] [Message] [v1.0.1] storelist[2].address =  测试店铺地址2
+[2018/11/5 21:46:12 023] [Message] [v1.0.1] storelist[2].status =  1
+[2018/11/5 21:46:12 024] [Message] [v1.0.1] storelist[3].id =  1000000001
+[2018/11/5 21:46:12 025] [Message] [v1.0.1] storelist[3].merchant_id =  1000000001
+[2018/11/5 21:46:12 026] [Message] [v1.0.1] storelist[3].name =  测试店铺1
+[2018/11/5 21:46:12 027] [Message] [v1.0.1] storelist[3].number =  0011
+[2018/11/5 21:46:12 027] [Message] [v1.0.1] storelist[3].principal_name =  负责人1
+[2018/11/5 21:46:12 028] [Message] [v1.0.1] storelist[3].principal_phone =  15153294092
+[2018/11/5 21:46:12 029] [Message] [v1.0.1] storelist[3].address =  测试店铺地址1
+[2018/11/5 21:46:12 030] [Message] [v1.0.1] storelist[3].status =  1
+[2018/11/5 21:46:12 047] [Message] [v1.0.1] ===================门店列表=================== End
+[2018/11/5 21:46:12 049] [Message] [v1.0.1] ===================店员列表=================== Start
+[2018/11/5 21:46:12 050] [Message] [v1.0.1] GetUserList Send =  key=db047879aa9277d693bf47095661de16&store_id=1000000001
+[2018/11/5 21:46:12 167] [Message] [v1.0.1] Result =  {"code":1,"msg":"店员列表","data":{"list":[{"id":"1000000003","username":"user_1_2","phone":"15153294092"},{"id":"1000000001","username":"user_1_1","phone":"15153294092"}]}}
+[2018/11/5 21:46:12 169] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000003",
+    "username": "user_1_2",
+    "phone": "15153294092"
+  },
+  {
+    "id": "1000000001",
+    "username": "user_1_1",
+    "phone": "15153294092"
+  }
+]
+[2018/11/5 21:46:12 172] [Message] [v1.0.1] userlist[1].id =  1000000003
+[2018/11/5 21:46:12 174] [Message] [v1.0.1] userlist[1].username =  user_1_2
+[2018/11/5 21:46:12 176] [Message] [v1.0.1] userlist[1].phone =  15153294092
+[2018/11/5 21:46:12 178] [Message] [v1.0.1] userlist[2].id =  1000000001
+[2018/11/5 21:46:12 180] [Message] [v1.0.1] userlist[2].username =  user_1_1
+[2018/11/5 21:46:12 182] [Message] [v1.0.1] userlist[2].phone =  15153294092
+[2018/11/5 21:46:12 184] [Message] [v1.0.1] ===================店员列表=================== End
+[2018/11/5 21:46:12 191] [Message] [v1.0.1] ===================设备列表=================== Start
+[2018/11/5 21:46:12 194] [Message] [v1.0.1] GetDeviceList Send =  key=db047879aa9277d693bf47095661de16&store_id=1000000001
+[2018/11/5 21:46:12 315] [Message] [v1.0.1] Result =  {"code":1,"msg":"设备列表","data":{"list":[{"id":"1000000002","name":"设备4","number":"002","type":"1"},{"id":"1000000001","name":"设备1","number":"001","type":"2"}]}}
+[2018/11/5 21:46:12 317] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000002",
+    "name": "设备4",
+    "number": "002",
+    "type": "1"
+  },
+  {
+    "id": "1000000001",
+    "name": "设备1",
+    "number": "001",
+    "type": "2"
+  }
+]
+[2018/11/5 21:46:12 319] [Message] [v1.0.1] devicelist[1].id =  1000000002
+[2018/11/5 21:46:12 322] [Message] [v1.0.1] devicelist[1].name =  设备4
+[2018/11/5 21:46:12 324] [Message] [v1.0.1] devicelist[1].number =  002
+[2018/11/5 21:46:12 326] [Message] [v1.0.1] devicelist[1].type =  1
+[2018/11/5 21:46:12 328] [Message] [v1.0.1] devicelist[2].id =  1000000001
+[2018/11/5 21:46:12 330] [Message] [v1.0.1] devicelist[2].name =  设备1
+[2018/11/5 21:46:12 332] [Message] [v1.0.1] devicelist[2].number =  001
+[2018/11/5 21:46:12 334] [Message] [v1.0.1] devicelist[2].type =  2
+[2018/11/5 21:46:12 336] [Message] [v1.0.1] ===================设备列表=================== End
+[2018/11/5 21:46:12 342] [Message] [v1.0.1] ===================交易类型列表=================== Start
+[2018/11/5 21:46:12 344] [Message] [v1.0.1] Get_all_paymentList Send =  key=db047879aa9277d693bf47095661de16
+[2018/11/5 21:46:12 462] [Message] [v1.0.1] Result =  {"code":1,"msg":"交易类型","data":{"qrcode":"扫码支付","barcode":"条码支付","weixin_public":"微信公众号支付"}}
+[2018/11/5 21:46:12 464] [Message] [v1.0.1] data =  {
+  "qrcode": "扫码支付",
+  "barcode": "条码支付",
+  "weixin_public": "微信公众号支付"
+}
+[2018/11/5 21:46:12 467] [Message] [v1.0.1] paymentList[0].paymentType =  扫码支付
+[2018/11/5 21:46:12 469] [Message] [v1.0.1] paymentList[1].paymentType =  条码支付
+[2018/11/5 21:46:12 471] [Message] [v1.0.1] ===================交易类型列表=================== End
+[2018/11/5 21:46:12 475] [Message] [v1.0.1] ===================交易方式列表=================== Start
+[2018/11/5 21:46:12 477] [Message] [v1.0.1] Get_all_payment_channel =  key=db047879aa9277d693bf47095661de16
+[2018/11/5 21:46:12 598] [Message] [v1.0.1] Result =  {"code":1,"msg":"支付方式","data":{"weixin":"微信","alipay":"支付宝","unionpay":"银联","xt":"新天","xz_weixin":"现在微信","xz_alipay":"现在支付宝","sf_weixin":"上福微信","sf_alipay":"上福支付宝"}}
+[2018/11/5 21:46:12 600] [Message] [v1.0.1] data =  {
+  "weixin": "微信",
+  "alipay": "支付宝",
+  "unionpay": "银联",
+  "xt": "新天",
+  "xz_weixin": "现在微信",
+  "xz_alipay": "现在支付宝",
+  "sf_weixin": "上福微信",
+  "sf_alipay": "上福支付宝"
+}
+[2018/11/5 21:46:12 692] [Message] [v1.0.1] ===================交易方式列表=================== End
+[2018/11/5 21:46:18 647] [Message] [v1.0.1] InterfaceAddOrder jsonData=  {"channel":"","payment":"barcode","order_id":"","amount":"0.03","auth_code":"3333333333333333333333333","subject":"test","body":"testbody","store_id":"1000000001","operator_id":"1000000001","device_id":"1000000002","timestamp":"1541425579"}
+[2018/11/5 21:46:18 649] [Message] [v1.0.1] InterfaceAddOrder httppara=  merchant_id=1000000001&data=070063ebd557ec5fb29bea179b7beb164d3aa364c1b5f9d8721bd85a23297c37b963ff92173ee33ae0b3f4802b0f8360e7a96a444903859186e2e949ca29b4924ba1ef64c5674302a6339eb1ec78c6ad2a6069e9f17e767bf30f1b48d58d9d80501e13957b35e28653ea6c131ce2392b978f7b4145edd58f20327a63a1d5326a0d2075666be2fc17306aededdc8d4eb47641c67bd0beb094ca203c2d84c174dca556b99b712b5aff0a02fd2a62e3376f17e6ba2e8e92bc259a6c08c8ecfb5676110050b9447ebee4141d0433e064810d407817b657d2407a5a19e640c01773ee2b32e5994994417ac9b77d06be5653e6dd93dbde5c44019e6589efe70b1e40ea
+[2018/11/5 21:46:18 928] [Message] [v1.0.1] InterfaceAddOrder Result=  {"code":1,"msg":"下单成功","data":"17d9fb3e6fbe64a907d1bb221655658d185439083553b6e4f62aca79023122d8c5ccd6d7d7dbdcfe4a44706bbf4056ff88f23b149565048eb6c944d1a6d90c52fb41c379a0b133ec00cddaee1e628ec2"}
+[2018/11/5 21:46:18 931] [Message] [v1.0.1] inResult=  下单成功
+[2018/11/5 21:46:21 451] [Message] [v1.0.1] ===================交易查询=================== Start
+[2018/11/5 21:46:21 452] [Message] [v1.0.1] GetOrder_List Send =  key=db047879aa9277d693bf47095661de16&page=5&current=1&&merchant_id=1000000001&export=0
+[2018/11/5 21:46:21 588] [Message] [v1.0.1] Result =  {"code":1,"msg":"订单列表","data":{"list":[{"id":"708","order_id":"420594769580073001001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"unionpay","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000001","operator_name":"user_1_1","device_id":"1000000002","device_name":"设备4","amount":"0.03","actual_amount":"0.03","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:46:20","time_update":"2018-11-05 21:46:20","status":"2","profit_status":"1","remark":"下单成功","_status":"处理中","payment_name":"条码支付","channel_name":"银联"},{"id":"707","order_id":"440594769538475004001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"unionpay","payment":"barcode","store_id":"1000000002","store_name":"测试店铺2","operator_id":"1000000004","operator_name":"user_2_2","device_id":"1000000005","device_name":"刷卡001","amount":"0.02","actual_amount":"0.02","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:45:38","time_update":"2018-11-05 21:45:38","status":"2","profit_status":"1","remark":"下单成功","_status":"处理中","payment_name":"条码支付","channel_name":"银联"},{"id":"706","order_id":"800594769515763001001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"unionpay","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000001","operator_name":"user_1_1","device_id":"1000000002","device_name":"设备4","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:45:15","time_update":"2018-11-05 21:45:15","status":"2","profit_status":"1","remark":"下单成功","_status":"处理中","payment_name":"条码支付","channel_name":"银联"},{"id":"705","order_id":"220594769472706001001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"weixin","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000001","operator_name":"user_1_1","device_id":"1000000001","device_name":"设备1","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:44:32","time_update":"2018-11-05 21:44:32","status":"4","profit_status":"1","remark":"支付失败:请扫描微信支付授权码（以10\/11\/12\/13\/14\/15为前缀的18位数字）OK","_status":"支付失败","payment_name":"条码支付","channel_name":"微信"},{"id":"704","order_id":"770594768511995004001","out_order_id":"200701201811052128321425455","out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"xz_weixin","payment":"barcode","store_id":"1000000002","store_name":"测试店铺2","operator_id":"1000000004","operator_name":"user_2_2","device_id":"1000000005","device_name":"刷卡001","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:28:31","time_update":"2018-11-05 21:28:33","status":"4","profit_status":"1","remark":"支付失败:[A001]E000#成功[成功]","_status":"支付失败","payment_name":"条码支付","channel_name":"现在微信"}],"total":"698","sum_amount":"7832785.50","sum_actual_amount":"7830564.27","sum_refund_amount":"0.52"}}
+[2018/11/5 21:46:21 590] [Message] [v1.0.1] data =  {
+  "list": [
+    {
+      "id": "708",
+      "order_id": "420594769580073001001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "unionpay",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000001",
+      "operator_name": "user_1_1",
+      "device_id": "1000000002",
+      "device_name": "设备4",
+      "amount": "0.03",
+      "actual_amount": "0.03",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:46:20",
+      "time_update": "2018-11-05 21:46:20",
+      "status": "2",
+      "profit_status": "1",
+      "remark": "下单成功",
+      "_status": "处理中",
+      "payment_name": "条码支付",
+      "channel_name": "银联"
+    },
+    {
+      "id": "707",
+      "order_id": "440594769538475004001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "unionpay",
+      "payment": "barcode",
+      "store_id": "1000000002",
+      "store_name": "测试店铺2",
+      "operator_id": "1000000004",
+      "operator_name": "user_2_2",
+      "device_id": "1000000005",
+      "device_name": "刷卡001",
+      "amount": "0.02",
+      "actual_amount": "0.02",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:45:38",
+      "time_update": "2018-11-05 21:45:38",
+      "status": "2",
+      "profit_status": "1",
+      "remark": "下单成功",
+      "_status": "处理中",
+      "payment_name": "条码支付",
+      "channel_name": "银联"
+    },
+    {
+      "id": "706",
+      "order_id": "800594769515763001001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "unionpay",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000001",
+      "operator_name": "user_1_1",
+      "device_id": "1000000002",
+      "device_name": "设备4",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:45:15",
+      "time_update": "2018-11-05 21:45:15",
+      "status": "2",
+      "profit_status": "1",
+      "remark": "下单成功",
+      "_status": "处理中",
+      "payment_name": "条码支付",
+      "channel_name": "银联"
+    },
+    {
+      "id": "705",
+      "order_id": "220594769472706001001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "weixin",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000001",
+      "operator_name": "user_1_1",
+      "device_id": "1000000001",
+      "device_name": "设备1",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:44:32",
+      "time_update": "2018-11-05 21:44:32",
+      "status": "4",
+      "profit_status": "1",
+      "remark": "支付失败:请扫描微信支付授权码（以10/11/12/13/14/15为前缀的18位数字）OK",
+      "_status": "支付失败",
+      "payment_name": "条码支付",
+      "channel_name": "微信"
+    },
+    {
+      "id": "704",
+      "order_id": "770594768511995004001",
+      "out_order_id": "200701201811052128321425455",
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "xz_weixin",
+      "payment": "barcode",
+      "store_id": "1000000002",
+      "store_name": "测试店铺2",
+      "operator_id": "1000000004",
+      "operator_name": "user_2_2",
+      "device_id": "1000000005",
+      "device_name": "刷卡001",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:28:31",
+      "time_update": "2018-11-05 21:28:33",
+      "status": "4",
+      "profit_status": "1",
+      "remark": "支付失败:[A001]E000#成功[成功]",
+      "_status": "支付失败",
+      "payment_name": "条码支付",
+      "channel_name": "现在微信"
+    }
+  ],
+  "total": "698",
+  "sum_amount": "7832785.50",
+  "sum_actual_amount": "7830564.27",
+  "sum_refund_amount": "0.52"
+}
+[2018/11/5 21:46:21 613] [Message] [v1.0.1] ===================交易查询=================== End
+[2018/11/5 21:46:40 324] [Message] [v1.0.1] ===================店员列表=================== Start
+[2018/11/5 21:46:40 326] [Message] [v1.0.1] GetUserList Send =  key=db047879aa9277d693bf47095661de16&store_id=1000000003
+[2018/11/5 21:46:40 446] [Message] [v1.0.1] Result =  {"code":1,"msg":"店员列表","data":{"list":[{"id":"1000000005","username":"user_2_3","phone":"1515329094"}]}}
+[2018/11/5 21:46:40 448] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000005",
+    "username": "user_2_3",
+    "phone": "1515329094"
+  }
+]
+[2018/11/5 21:46:40 451] [Message] [v1.0.1] userlist[1].id =  1000000005
+[2018/11/5 21:46:40 453] [Message] [v1.0.1] userlist[1].username =  user_2_3
+[2018/11/5 21:46:40 455] [Message] [v1.0.1] userlist[1].phone =  1515329094
+[2018/11/5 21:46:40 457] [Message] [v1.0.1] ===================店员列表=================== End
+[2018/11/5 21:46:40 463] [Message] [v1.0.1] ===================设备列表=================== Start
+[2018/11/5 21:46:40 465] [Message] [v1.0.1] GetDeviceList Send =  key=db047879aa9277d693bf47095661de16&store_id=1000000003
+[2018/11/5 21:46:40 587] [Message] [v1.0.1] Result =  {"code":1,"msg":"设备列表","data":{"list":[]}}
+[2018/11/5 21:46:40 590] [Message] [v1.0.1] list =  []
+[2018/11/5 21:46:40 592] [Message] [v1.0.1] ===================设备列表=================== End
+[2018/11/5 21:46:47 565] [Message] [v1.0.1] ===================店员列表=================== Start
+[2018/11/5 21:46:47 568] [Message] [v1.0.1] GetUserList Send =  key=db047879aa9277d693bf47095661de16&store_id=1000000002
+[2018/11/5 21:46:47 689] [Message] [v1.0.1] Result =  {"code":1,"msg":"店员列表","data":{"list":[{"id":"1000000004","username":"user_2_2","phone":"15153294093"},{"id":"1000000002","username":"user_2_1","phone":"15153294093"}]}}
+[2018/11/5 21:46:47 692] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000004",
+    "username": "user_2_2",
+    "phone": "15153294093"
+  },
+  {
+    "id": "1000000002",
+    "username": "user_2_1",
+    "phone": "15153294093"
+  }
+]
+[2018/11/5 21:46:47 694] [Message] [v1.0.1] userlist[1].id =  1000000004
+[2018/11/5 21:46:47 697] [Message] [v1.0.1] userlist[1].username =  user_2_2
+[2018/11/5 21:46:47 699] [Message] [v1.0.1] userlist[1].phone =  15153294093
+[2018/11/5 21:46:47 701] [Message] [v1.0.1] userlist[2].id =  1000000002
+[2018/11/5 21:46:47 703] [Message] [v1.0.1] userlist[2].username =  user_2_1
+[2018/11/5 21:46:47 705] [Message] [v1.0.1] userlist[2].phone =  15153294093
+[2018/11/5 21:46:47 707] [Message] [v1.0.1] ===================店员列表=================== End
+[2018/11/5 21:46:47 711] [Message] [v1.0.1] ===================设备列表=================== Start
+[2018/11/5 21:46:47 713] [Message] [v1.0.1] GetDeviceList Send =  key=db047879aa9277d693bf47095661de16&store_id=1000000002
+[2018/11/5 21:46:47 838] [Message] [v1.0.1] Result =  {"code":1,"msg":"设备列表","data":{"list":[{"id":"1000000005","name":"刷卡001","number":"00001","type":"1"},{"id":"1000000004","name":"设备3","number":"002","type":"2"},{"id":"1000000003","name":"设备1","number":"001","type":"2"}]}}
+[2018/11/5 21:46:47 840] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000005",
+    "name": "刷卡001",
+    "number": "00001",
+    "type": "1"
+  },
+  {
+    "id": "1000000004",
+    "name": "设备3",
+    "number": "002",
+    "type": "2"
+  },
+  {
+    "id": "1000000003",
+    "name": "设备1",
+    "number": "001",
+    "type": "2"
+  }
+]
+[2018/11/5 21:46:47 842] [Message] [v1.0.1] devicelist[1].id =  1000000005
+[2018/11/5 21:46:47 845] [Message] [v1.0.1] devicelist[1].name =  刷卡001
+[2018/11/5 21:46:47 847] [Message] [v1.0.1] devicelist[1].number =  00001
+[2018/11/5 21:46:47 849] [Message] [v1.0.1] devicelist[1].type =  1
+[2018/11/5 21:46:47 862] [Message] [v1.0.1] devicelist[2].id =  1000000004
+[2018/11/5 21:46:47 864] [Message] [v1.0.1] devicelist[2].name =  设备3
+[2018/11/5 21:46:47 866] [Message] [v1.0.1] devicelist[2].number =  002
+[2018/11/5 21:46:47 868] [Message] [v1.0.1] devicelist[2].type =  2
+[2018/11/5 21:46:47 871] [Message] [v1.0.1] devicelist[3].id =  1000000003
+[2018/11/5 21:46:47 873] [Message] [v1.0.1] devicelist[3].name =  设备1
+[2018/11/5 21:46:47 874] [Message] [v1.0.1] devicelist[3].number =  001
+[2018/11/5 21:46:47 875] [Message] [v1.0.1] devicelist[3].type =  2
+[2018/11/5 21:46:47 876] [Message] [v1.0.1] ===================设备列表=================== End
+[2018/11/5 21:47:01 235] [Message] [v1.0.1] InterfaceAddOrder jsonData=  {"channel":"","payment":"barcode","order_id":"","amount":"0.04","auth_code":"1111111111111111111111111","subject":"test","body":"testbody","store_id":"1000000002","operator_id":"1000000004","device_id":"1000000005","timestamp":"1541425621"}
+[2018/11/5 21:47:01 237] [Message] [v1.0.1] InterfaceAddOrder httppara=  merchant_id=1000000001&data=070063ebd557ec5fb29bea179b7beb164d3aa364c1b5f9d8721bd85a23297c37b963ff92173ee33ae0b3f4802b0f8360e06b746a87c7d275f618e0d0544aa41c688bd5cf7daea7af089c0a4c139402e572a3b9f4c8c1748faa3e1f08de9fb4576b2d8e57f715a1a6974af9125f5a78ba978f7b4145edd58f20327a63a1d5326a0d2075666be2fc17306aededdc8d4eb47641c67bd0beb094ca203c2d84c174dc09084986ee67e094b7a7151f825612dcadde32c3dbcf501e90c3bc22e52dc45f110050b9447ebee4141d0433e064810d6327bc0b9a5a2353672a81765bcec86b2860c717c1e381a1e179347948769b46dd93dbde5c44019e6589efe70b1e40ea
+[2018/11/5 21:47:02 857] [Message] [v1.0.1] InterfaceAddOrder Result=  {"code":1,"msg":"下单成功","data":"b3de85a1769edf662345d718b27b1fcd9d9de7e37ae42f5072956d07f3d1bf7c4db287a826c5b74d48c36485a1da6cc7e2160b211c474445008f12c9d2bf8219053505d9c036796f26f850f59be5c48ef9c078480d262fe8a5984ffee0a2a88b"}
+[2018/11/5 21:47:02 859] [Message] [v1.0.1] inResult=  下单成功
+[2018/11/5 21:47:05 775] [Message] [v1.0.1] ===================交易查询=================== Start
+[2018/11/5 21:47:05 778] [Message] [v1.0.1] GetOrder_List Send =  key=db047879aa9277d693bf47095661de16&page=5&current=1&&merchant_id=1000000001&export=0
+[2018/11/5 21:47:05 904] [Message] [v1.0.1] Result =  {"code":1,"msg":"订单列表","data":{"list":[{"id":"709","order_id":"270594769622664004001","out_order_id":"200701201811052147021430214","out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"xz_weixin","payment":"barcode","store_id":"1000000002","store_name":"测试店铺2","operator_id":"1000000004","operator_name":"user_2_2","device_id":"1000000005","device_name":"刷卡001","amount":"0.04","actual_amount":"0.04","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:47:02","time_update":"2018-11-05 21:47:04","status":"4","profit_status":"1","remark":"支付失败:[A001]E000#成功[成功]","_status":"支付失败","payment_name":"条码支付","channel_name":"现在微信"},{"id":"708","order_id":"420594769580073001001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"unionpay","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000001","operator_name":"user_1_1","device_id":"1000000002","device_name":"设备4","amount":"0.03","actual_amount":"0.03","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:46:20","time_update":"2018-11-05 21:46:20","status":"2","profit_status":"1","remark":"下单成功","_status":"处理中","payment_name":"条码支付","channel_name":"银联"},{"id":"707","order_id":"440594769538475004001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"unionpay","payment":"barcode","store_id":"1000000002","store_name":"测试店铺2","operator_id":"1000000004","operator_name":"user_2_2","device_id":"1000000005","device_name":"刷卡001","amount":"0.02","actual_amount":"0.02","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:45:38","time_update":"2018-11-05 21:45:38","status":"2","profit_status":"1","remark":"下单成功","_status":"处理中","payment_name":"条码支付","channel_name":"银联"},{"id":"706","order_id":"800594769515763001001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"unionpay","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000001","operator_name":"user_1_1","device_id":"1000000002","device_name":"设备4","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:45:15","time_update":"2018-11-05 21:45:15","status":"2","profit_status":"1","remark":"下单成功","_status":"处理中","payment_name":"条码支付","channel_name":"银联"},{"id":"705","order_id":"220594769472706001001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"weixin","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000001","operator_name":"user_1_1","device_id":"1000000001","device_name":"设备1","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:44:32","time_update":"2018-11-05 21:44:32","status":"4","profit_status":"1","remark":"支付失败:请扫描微信支付授权码（以10\/11\/12\/13\/14\/15为前缀的18位数字）OK","_status":"支付失败","payment_name":"条码支付","channel_name":"微信"}],"total":"699","sum_amount":"7832785.54","sum_actual_amount":"7830564.31","sum_refund_amount":"0.52"}}
+[2018/11/5 21:47:05 906] [Message] [v1.0.1] data =  {
+  "list": [
+    {
+      "id": "709",
+      "order_id": "270594769622664004001",
+      "out_order_id": "200701201811052147021430214",
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "xz_weixin",
+      "payment": "barcode",
+      "store_id": "1000000002",
+      "store_name": "测试店铺2",
+      "operator_id": "1000000004",
+      "operator_name": "user_2_2",
+      "device_id": "1000000005",
+      "device_name": "刷卡001",
+      "amount": "0.04",
+      "actual_amount": "0.04",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:47:02",
+      "time_update": "2018-11-05 21:47:04",
+      "status": "4",
+      "profit_status": "1",
+      "remark": "支付失败:[A001]E000#成功[成功]",
+      "_status": "支付失败",
+      "payment_name": "条码支付",
+      "channel_name": "现在微信"
+    },
+    {
+      "id": "708",
+      "order_id": "420594769580073001001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "unionpay",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000001",
+      "operator_name": "user_1_1",
+      "device_id": "1000000002",
+      "device_name": "设备4",
+      "amount": "0.03",
+      "actual_amount": "0.03",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:46:20",
+      "time_update": "2018-11-05 21:46:20",
+      "status": "2",
+      "profit_status": "1",
+      "remark": "下单成功",
+      "_status": "处理中",
+      "payment_name": "条码支付",
+      "channel_name": "银联"
+    },
+    {
+      "id": "707",
+      "order_id": "440594769538475004001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "unionpay",
+      "payment": "barcode",
+      "store_id": "1000000002",
+      "store_name": "测试店铺2",
+      "operator_id": "1000000004",
+      "operator_name": "user_2_2",
+      "device_id": "1000000005",
+      "device_name": "刷卡001",
+      "amount": "0.02",
+      "actual_amount": "0.02",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:45:38",
+      "time_update": "2018-11-05 21:45:38",
+      "status": "2",
+      "profit_status": "1",
+      "remark": "下单成功",
+      "_status": "处理中",
+      "payment_name": "条码支付",
+      "channel_name": "银联"
+    },
+    {
+      "id": "706",
+      "order_id": "800594769515763001001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "unionpay",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000001",
+      "operator_name": "user_1_1",
+      "device_id": "1000000002",
+      "device_name": "设备4",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:45:15",
+      "time_update": "2018-11-05 21:45:15",
+      "status": "2",
+      "profit_status": "1",
+      "remark": "下单成功",
+      "_status": "处理中",
+      "payment_name": "条码支付",
+      "channel_name": "银联"
+    },
+    {
+      "id": "705",
+      "order_id": "220594769472706001001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "weixin",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000001",
+      "operator_name": "user_1_1",
+      "device_id": "1000000001",
+      "device_name": "设备1",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:44:32",
+      "time_update": "2018-11-05 21:44:32",
+      "status": "4",
+      "profit_status": "1",
+      "remark": "支付失败:请扫描微信支付授权码（以10/11/12/13/14/15为前缀的18位数字）OK",
+      "_status": "支付失败",
+      "payment_name": "条码支付",
+      "channel_name": "微信"
+    }
+  ],
+  "total": "699",
+  "sum_amount": "7832785.54",
+  "sum_actual_amount": "7830564.31",
+  "sum_refund_amount": "0.52"
+}
+[2018/11/5 21:47:05 909] [Message] [v1.0.1] ===================交易查询=================== End
+[2018/11/5 21:47:19 049] [Message] [v1.0.1] InterfaceAddOrder jsonData=  {"channel":"","payment":"barcode","order_id":"","amount":"0.01","auth_code":"333333333333333333333333333","subject":"test","body":"testbody","store_id":"1000000002","operator_id":"1000000002","device_id":"1000000005","timestamp":"1541425639"}
+[2018/11/5 21:47:19 051] [Message] [v1.0.1] InterfaceAddOrder httppara=  merchant_id=1000000001&data=070063ebd557ec5fb29bea179b7beb164d3aa364c1b5f9d8721bd85a23297c37b963ff92173ee33ae0b3f4802b0f8360f72ee4f53bf4f60b929ca56d905bf90f4ba1ef64c5674302a6339eb1ec78c6ad2a6069e9f17e767bf30f1b48d58d9d808df32234772593c929d86dbdbd50ef101f58f63834865ceace7c36d802c741dd6c71c14c5cc6483a29022b635914bbccc60fbfea4667e19de903684a9348412e5e6da0b5a070af3d0310be43bf88f66b723b4c0819ebc40d2d409248e611250800ea1aa8d7c2004a4527fd8d88d51510dadc068d0a58a33839161ce37709a7f0be4abf441e075c27df123808e5c75204f1cae5f6511a48f1494d2a0d8c98e576
+[2018/11/5 21:47:19 395] [Message] [v1.0.1] InterfaceAddOrder Result=  {"code":1,"msg":"下单成功","data":"01e8ab8b8f2016749bfe9eeefe0714513bd9b5669249defb770831f0468eec61c5ccd6d7d7dbdcfe4a44706bbf4056ff88f23b149565048eb6c944d1a6d90c52fb41c379a0b133ec00cddaee1e628ec2"}
+[2018/11/5 21:47:19 397] [Message] [v1.0.1] inResult=  下单成功
+[2018/11/5 21:47:22 235] [Message] [v1.0.1] ===================交易查询=================== Start
+[2018/11/5 21:47:22 237] [Message] [v1.0.1] GetOrder_List Send =  key=db047879aa9277d693bf47095661de16&page=5&current=1&&merchant_id=1000000001&export=0
+[2018/11/5 21:47:22 366] [Message] [v1.0.1] Result =  {"code":1,"msg":"订单列表","data":{"list":[{"id":"710","order_id":"190594769640474002001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"unionpay","payment":"barcode","store_id":"1000000002","store_name":"测试店铺2","operator_id":"1000000002","operator_name":"user_2_1","device_id":"1000000005","device_name":"刷卡001","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:47:20","time_update":"2018-11-05 21:47:20","status":"2","profit_status":"1","remark":"下单成功","_status":"处理中","payment_name":"条码支付","channel_name":"银联"},{"id":"709","order_id":"270594769622664004001","out_order_id":"200701201811052147021430214","out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"xz_weixin","payment":"barcode","store_id":"1000000002","store_name":"测试店铺2","operator_id":"1000000004","operator_name":"user_2_2","device_id":"1000000005","device_name":"刷卡001","amount":"0.04","actual_amount":"0.04","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:47:02","time_update":"2018-11-05 21:47:04","status":"4","profit_status":"1","remark":"支付失败:[A001]E000#成功[成功]","_status":"支付失败","payment_name":"条码支付","channel_name":"现在微信"},{"id":"708","order_id":"420594769580073001001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"unionpay","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000001","operator_name":"user_1_1","device_id":"1000000002","device_name":"设备4","amount":"0.03","actual_amount":"0.03","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:46:20","time_update":"2018-11-05 21:46:20","status":"2","profit_status":"1","remark":"下单成功","_status":"处理中","payment_name":"条码支付","channel_name":"银联"},{"id":"707","order_id":"440594769538475004001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"unionpay","payment":"barcode","store_id":"1000000002","store_name":"测试店铺2","operator_id":"1000000004","operator_name":"user_2_2","device_id":"1000000005","device_name":"刷卡001","amount":"0.02","actual_amount":"0.02","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:45:38","time_update":"2018-11-05 21:45:38","status":"2","profit_status":"1","remark":"下单成功","_status":"处理中","payment_name":"条码支付","channel_name":"银联"},{"id":"706","order_id":"800594769515763001001","out_order_id":null,"out_username":null,"out_user_id":null,"agent_id":"10000001","merchant_id":"1000000001","channel":"unionpay","payment":"barcode","store_id":"1000000001","store_name":"测试店铺1","operator_id":"1000000001","operator_name":"user_1_1","device_id":"1000000002","device_name":"设备4","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"testbody","subject":"test","time_create":"2018-11-05 21:45:15","time_update":"2018-11-05 21:45:15","status":"2","profit_status":"1","remark":"下单成功","_status":"处理中","payment_name":"条码支付","channel_name":"银联"}],"total":"700","sum_amount":"7832785.55","sum_actual_amount":"7830564.32","sum_refund_amount":"0.52"}}
+[2018/11/5 21:47:22 368] [Message] [v1.0.1] data =  {
+  "list": [
+    {
+      "id": "710",
+      "order_id": "190594769640474002001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "unionpay",
+      "payment": "barcode",
+      "store_id": "1000000002",
+      "store_name": "测试店铺2",
+      "operator_id": "1000000002",
+      "operator_name": "user_2_1",
+      "device_id": "1000000005",
+      "device_name": "刷卡001",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:47:20",
+      "time_update": "2018-11-05 21:47:20",
+      "status": "2",
+      "profit_status": "1",
+      "remark": "下单成功",
+      "_status": "处理中",
+      "payment_name": "条码支付",
+      "channel_name": "银联"
+    },
+    {
+      "id": "709",
+      "order_id": "270594769622664004001",
+      "out_order_id": "200701201811052147021430214",
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "xz_weixin",
+      "payment": "barcode",
+      "store_id": "1000000002",
+      "store_name": "测试店铺2",
+      "operator_id": "1000000004",
+      "operator_name": "user_2_2",
+      "device_id": "1000000005",
+      "device_name": "刷卡001",
+      "amount": "0.04",
+      "actual_amount": "0.04",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:47:02",
+      "time_update": "2018-11-05 21:47:04",
+      "status": "4",
+      "profit_status": "1",
+      "remark": "支付失败:[A001]E000#成功[成功]",
+      "_status": "支付失败",
+      "payment_name": "条码支付",
+      "channel_name": "现在微信"
+    },
+    {
+      "id": "708",
+      "order_id": "420594769580073001001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "unionpay",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000001",
+      "operator_name": "user_1_1",
+      "device_id": "1000000002",
+      "device_name": "设备4",
+      "amount": "0.03",
+      "actual_amount": "0.03",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:46:20",
+      "time_update": "2018-11-05 21:46:20",
+      "status": "2",
+      "profit_status": "1",
+      "remark": "下单成功",
+      "_status": "处理中",
+      "payment_name": "条码支付",
+      "channel_name": "银联"
+    },
+    {
+      "id": "707",
+      "order_id": "440594769538475004001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "unionpay",
+      "payment": "barcode",
+      "store_id": "1000000002",
+      "store_name": "测试店铺2",
+      "operator_id": "1000000004",
+      "operator_name": "user_2_2",
+      "device_id": "1000000005",
+      "device_name": "刷卡001",
+      "amount": "0.02",
+      "actual_amount": "0.02",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:45:38",
+      "time_update": "2018-11-05 21:45:38",
+      "status": "2",
+      "profit_status": "1",
+      "remark": "下单成功",
+      "_status": "处理中",
+      "payment_name": "条码支付",
+      "channel_name": "银联"
+    },
+    {
+      "id": "706",
+      "order_id": "800594769515763001001",
+      "out_order_id": null,
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000001",
+      "merchant_id": "1000000001",
+      "channel": "unionpay",
+      "payment": "barcode",
+      "store_id": "1000000001",
+      "store_name": "测试店铺1",
+      "operator_id": "1000000001",
+      "operator_name": "user_1_1",
+      "device_id": "1000000002",
+      "device_name": "设备4",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "testbody",
+      "subject": "test",
+      "time_create": "2018-11-05 21:45:15",
+      "time_update": "2018-11-05 21:45:15",
+      "status": "2",
+      "profit_status": "1",
+      "remark": "下单成功",
+      "_status": "处理中",
+      "payment_name": "条码支付",
+      "channel_name": "银联"
+    }
+  ],
+  "total": "700",
+  "sum_amount": "7832785.55",
+  "sum_actual_amount": "7830564.32",
+  "sum_refund_amount": "0.52"
+}
+[2018/11/5 21:47:22 371] [Message] [v1.0.1] ===================交易查询=================== End
+[2018/11/5 21:47:34 909] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"440594769538475004001","timestamp":"1541425655"}
+[2018/11/5 21:47:34 911] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000001&data=ff332926f4bf397562b3b445a13872d38c1ecab4ae4d04d5302ec1a247e6d9c16bdd7174d17ce95597c547108c1df2eb24346645d73b5b62df7e2a0631125724
+[2018/11/5 21:47:35 199] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"ff332926f4bf397562b3b445a13872d38c1ecab4ae4d04d5302ec1a247e6d9c1c5ccd6d7d7dbdcfe4a44706bbf4056ff8945a95efffe26f776e690b84f651d2b5bc8578a8b483cc8e8f74f637ac89736"}
+[2018/11/5 21:47:35 201] [Message] [v1.0.1] inResult=  查询成功
+[2018/11/5 21:47:35 317] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"420594769580073001001","timestamp":"1541425655"}
+[2018/11/5 21:47:35 319] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000001&data=17d9fb3e6fbe64a907d1bb221655658d185439083553b6e4f62aca79023122d86bdd7174d17ce95597c547108c1df2eb24346645d73b5b62df7e2a0631125724
+[2018/11/5 21:47:35 611] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"17d9fb3e6fbe64a907d1bb221655658d185439083553b6e4f62aca79023122d8c5ccd6d7d7dbdcfe4a44706bbf4056ff8945a95efffe26f776e690b84f651d2b5bc8578a8b483cc8e8f74f637ac89736"}
+[2018/11/5 21:47:35 613] [Message] [v1.0.1] inResult=  查询成功
+[2018/11/5 21:47:35 913] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"270594769622664004001","timestamp":"1541425656"}
+[2018/11/5 21:47:35 916] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000001&data=b3de85a1769edf662345d718b27b1fcd9d9de7e37ae42f5072956d07f3d1bf7c6bdd7174d17ce95597c547108c1df2ebbab94104a2a7e03bd9da98687efcd559
+[2018/11/5 21:47:36 039] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"b3de85a1769edf662345d718b27b1fcd9d9de7e37ae42f5072956d07f3d1bf7c4db287a826c5b74d48c36485a1da6cc7e2160b211c474445008f12c9d2bf821926c4a82e3490cb1f59d8d0e4b9d81414"}
+[2018/11/5 21:47:36 041] [Message] [v1.0.1] inResult=  查询成功
+[2018/11/5 21:47:36 499] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"190594769640474002001","timestamp":"1541425656"}
+[2018/11/5 21:47:36 502] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000001&data=01e8ab8b8f2016749bfe9eeefe0714513bd9b5669249defb770831f0468eec616bdd7174d17ce95597c547108c1df2ebbab94104a2a7e03bd9da98687efcd559
+[2018/11/5 21:47:36 789] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"01e8ab8b8f2016749bfe9eeefe0714513bd9b5669249defb770831f0468eec61c5ccd6d7d7dbdcfe4a44706bbf4056ff8945a95efffe26f776e690b84f651d2b5bc8578a8b483cc8e8f74f637ac89736"}
+[2018/11/5 21:47:36 791] [Message] [v1.0.1] inResult=  查询成功
+[2018/11/5 21:47:36 970] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"440594769538475004001","timestamp":"1541425657"}
+[2018/11/5 21:47:36 973] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000001&data=ff332926f4bf397562b3b445a13872d38c1ecab4ae4d04d5302ec1a247e6d9c16bdd7174d17ce95597c547108c1df2eba4d88ad450a44d9dfb9a2962e3482a32
+[2018/11/5 21:47:37 339] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"ff332926f4bf397562b3b445a13872d38c1ecab4ae4d04d5302ec1a247e6d9c1c5ccd6d7d7dbdcfe4a44706bbf4056ff8945a95efffe26f776e690b84f651d2b5bc8578a8b483cc8e8f74f637ac89736"}
+[2018/11/5 21:47:37 342] [Message] [v1.0.1] inResult=  查询成功
+[2018/11/5 21:47:37 377] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"800594769515763001001","timestamp":"1541425657"}
+[2018/11/5 21:47:37 378] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000001&data=86dac36d9ddafbe3832002dd4be67787c6f4b965bde45d6e53a83ba7bde216096bdd7174d17ce95597c547108c1df2eba4d88ad450a44d9dfb9a2962e3482a32
+[2018/11/5 21:47:37 683] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"86dac36d9ddafbe3832002dd4be67787c6f4b965bde45d6e53a83ba7bde21609c5ccd6d7d7dbdcfe4a44706bbf4056ff8945a95efffe26f776e690b84f651d2b5bc8578a8b483cc8e8f74f637ac89736"}
+[2018/11/5 21:47:37 685] [Message] [v1.0.1] inResult=  查询成功

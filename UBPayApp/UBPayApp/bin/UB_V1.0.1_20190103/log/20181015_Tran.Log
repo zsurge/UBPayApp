@@ -1,0 +1,816 @@
+[2018/10/15 21:16:12 033] [Message] [v1.0.1] ===================用户登陆=================== Start
+[2018/10/15 21:16:12 034] [Message] [v1.0.1] Login Send =  username=user_1_1&password=1111111
+[2018/10/15 21:16:12 225] [Message] [v1.0.1] Result =  {"code":1,"msg":"登录成功","data":{"token":"f209b9f42edbc6ac22c3ed1c17004ed9","info":{"app_type":"api","id":"1000000001","agent_id":"10000001","store_id":"1000000001","merchant_id":"1000000001","type":"2","username":"user_1_1","open_id":"","timestamp":1539609372}}}
+[2018/10/15 21:16:12 340] [Message] [v1.0.1] ===================用户登陆=================== End
+[2018/10/15 21:16:12 346] [Message] [v1.0.1] ===================用户信息=================== Start
+[2018/10/15 21:16:12 346] [Message] [v1.0.1] GetUserInfo Send =  key=f209b9f42edbc6ac22c3ed1c17004ed9
+[2018/10/15 21:16:12 451] [Message] [v1.0.1] Result =  {"code":1,"msg":"用户信息","data":{"id":"1000000001","agent_id":"10000001","merchant_id":"1000000001","store_id":"1000000001","username":"user_1_1","phone":"15153294092","open_id":"","type":"2","time_create":"1527211953","time_update":"1533293063","status":"1","agent":{"id":"10000001","pid":"00000000","name":"代理商1","number":"1111111111111111","address":"代理商地址1","principal_name":"负责人1","principal_phone":"15153294092","contact_name":"联系人1","contact_phone":"111111","contact_email":"youxiang@youxiang.com","time_create":"0","time_update":"1533178664","status":"1"},"merchant":{"id":"1000000001","agent_id":"10000001","name":"测试子商户1","short_name":"子商户1","number":"1000000001","principal_name":null,"principal_phone":null,"contact_name":"联系人1","contact_phone":"15153294092","contact_email":"sdsads@qq.com","address":null,"time_create":"0","time_update":"1533523267","status":"1"},"store":{"id":"1000000001","merchant_id":"1000000001","name":"测试店铺1","number":"0011","principal_name":"负责人1","principal_phone":"15153294092","address":"测试店铺地址1","time_create":"0","time_update":"0","status":"1"}}}
+[2018/10/15 21:16:12 485] [Message] [v1.0.1] data =  {
+  "id": "1000000001",
+  "agent_id": "10000001",
+  "merchant_id": "1000000001",
+  "store_id": "1000000001",
+  "username": "user_1_1",
+  "phone": "15153294092",
+  "open_id": "",
+  "type": "2",
+  "time_create": "1527211953",
+  "time_update": "1533293063",
+  "status": "1",
+  "agent": {
+    "id": "10000001",
+    "pid": "00000000",
+    "name": "代理商1",
+    "number": "1111111111111111",
+    "address": "代理商地址1",
+    "principal_name": "负责人1",
+    "principal_phone": "15153294092",
+    "contact_name": "联系人1",
+    "contact_phone": "111111",
+    "contact_email": "youxiang@youxiang.com",
+    "time_create": "0",
+    "time_update": "1533178664",
+    "status": "1"
+  },
+  "merchant": {
+    "id": "1000000001",
+    "agent_id": "10000001",
+    "name": "测试子商户1",
+    "short_name": "子商户1",
+    "number": "1000000001",
+    "principal_name": null,
+    "principal_phone": null,
+    "contact_name": "联系人1",
+    "contact_phone": "15153294092",
+    "contact_email": "sdsads@qq.com",
+    "address": null,
+    "time_create": "0",
+    "time_update": "1533523267",
+    "status": "1"
+  },
+  "store": {
+    "id": "1000000001",
+    "merchant_id": "1000000001",
+    "name": "测试店铺1",
+    "number": "0011",
+    "principal_name": "负责人1",
+    "principal_phone": "15153294092",
+    "address": "测试店铺地址1",
+    "time_create": "0",
+    "time_update": "0",
+    "status": "1"
+  }
+}
+[2018/10/15 21:16:12 487] [Message] [v1.0.1] agent =  {
+  "id": "10000001",
+  "pid": "00000000",
+  "name": "代理商1",
+  "number": "1111111111111111",
+  "address": "代理商地址1",
+  "principal_name": "负责人1",
+  "principal_phone": "15153294092",
+  "contact_name": "联系人1",
+  "contact_phone": "111111",
+  "contact_email": "youxiang@youxiang.com",
+  "time_create": "0",
+  "time_update": "1533178664",
+  "status": "1"
+}
+[2018/10/15 21:16:12 489] [Message] [v1.0.1] merchant =  {
+  "id": "1000000001",
+  "agent_id": "10000001",
+  "name": "测试子商户1",
+  "short_name": "子商户1",
+  "number": "1000000001",
+  "principal_name": null,
+  "principal_phone": null,
+  "contact_name": "联系人1",
+  "contact_phone": "15153294092",
+  "contact_email": "sdsads@qq.com",
+  "address": null,
+  "time_create": "0",
+  "time_update": "1533523267",
+  "status": "1"
+}
+[2018/10/15 21:16:12 491] [Message] [v1.0.1] store =  {
+  "id": "1000000001",
+  "merchant_id": "1000000001",
+  "name": "测试店铺1",
+  "number": "0011",
+  "principal_name": "负责人1",
+  "principal_phone": "15153294092",
+  "address": "测试店铺地址1",
+  "time_create": "0",
+  "time_update": "0",
+  "status": "1"
+}
+[2018/10/15 21:16:12 493] [Message] [v1.0.1] userinfo.id =  1000000001
+[2018/10/15 21:16:12 495] [Message] [v1.0.1] userinfo.agent_id =  10000001
+[2018/10/15 21:16:12 497] [Message] [v1.0.1] userinfo.merchant_id =  1000000001
+[2018/10/15 21:16:12 500] [Message] [v1.0.1] userinfo.store_id =  1000000001
+[2018/10/15 21:16:12 502] [Message] [v1.0.1] userinfo.username =  user_1_1
+[2018/10/15 21:16:12 504] [Message] [v1.0.1] userinfo.phone =  15153294092
+[2018/10/15 21:16:12 506] [Message] [v1.0.1] userinfo.open_id =  
+[2018/10/15 21:16:12 508] [Message] [v1.0.1] userinfo.type =  2
+[2018/10/15 21:16:12 510] [Message] [v1.0.1] userinfo.status =  1
+[2018/10/15 21:16:12 513] [Message] [v1.0.1] agentinfo.id =  10000001
+[2018/10/15 21:16:12 515] [Message] [v1.0.1] agentinfo.pid =  00000000
+[2018/10/15 21:16:12 517] [Message] [v1.0.1] agentinfo.name =  代理商1
+[2018/10/15 21:16:12 519] [Message] [v1.0.1] agentinfo.number =  1111111111111111
+[2018/10/15 21:16:12 521] [Message] [v1.0.1] agentinfo.address =  代理商地址1
+[2018/10/15 21:16:12 523] [Message] [v1.0.1] agentinfo.principal_name =  负责人1
+[2018/10/15 21:16:12 525] [Message] [v1.0.1] agentinfo.principal_phone =  15153294092
+[2018/10/15 21:16:12 527] [Message] [v1.0.1] agentinfo.contact_name =  联系人1
+[2018/10/15 21:16:12 529] [Message] [v1.0.1] agentinfo.contact_phone =  111111
+[2018/10/15 21:16:12 532] [Message] [v1.0.1] agentinfo.contact_email =  youxiang@youxiang.com
+[2018/10/15 21:16:12 534] [Message] [v1.0.1] agentinfo.status =  1
+[2018/10/15 21:16:12 536] [Message] [v1.0.1] merchantinfo.id =  1000000001
+[2018/10/15 21:16:12 538] [Message] [v1.0.1] merchantinfo.agent_id =  10000001
+[2018/10/15 21:16:12 540] [Message] [v1.0.1] merchantinfo.name =  测试子商户1
+[2018/10/15 21:16:12 542] [Message] [v1.0.1] merchantinfo.short_name =  子商户1
+[2018/10/15 21:16:12 544] [Message] [v1.0.1] merchantinfo.number =  1000000001
+[2018/10/15 21:16:12 546] [Message] [v1.0.1] merchantinfo.principal_name =  
+[2018/10/15 21:16:12 548] [Message] [v1.0.1] merchantinfo.principal_phone =  
+[2018/10/15 21:16:12 550] [Message] [v1.0.1] merchantinfo.contact_name =  联系人1
+[2018/10/15 21:16:12 553] [Message] [v1.0.1] merchantinfo.contact_phone =  15153294092
+[2018/10/15 21:16:12 555] [Message] [v1.0.1] merchantinfo.contact_email =  sdsads@qq.com
+[2018/10/15 21:16:12 557] [Message] [v1.0.1] merchantinfo.address =  
+[2018/10/15 21:16:12 559] [Message] [v1.0.1] merchantinfo.status =  1
+[2018/10/15 21:16:12 573] [Message] [v1.0.1] storeinfo.id =  1000000001
+[2018/10/15 21:16:12 575] [Message] [v1.0.1] storeinfo.merchant_id =  1000000001
+[2018/10/15 21:16:12 578] [Message] [v1.0.1] storeinfo.name =  测试店铺1
+[2018/10/15 21:16:12 580] [Message] [v1.0.1] storeinfo.number =  0011
+[2018/10/15 21:16:12 582] [Message] [v1.0.1] storeinfo.principal_name =  负责人1
+[2018/10/15 21:16:12 584] [Message] [v1.0.1] storeinfo.principal_phone =  15153294092
+[2018/10/15 21:16:12 586] [Message] [v1.0.1] storeinfo.address =  测试店铺地址1
+[2018/10/15 21:16:12 587] [Message] [v1.0.1] storeinfo.status =  1
+[2018/10/15 21:16:12 588] [Message] [v1.0.1] ===================用户信息=================== End
+[2018/10/15 21:16:12 596] [Message] [v1.0.1] ===================门店列表=================== Start
+[2018/10/15 21:16:12 597] [Message] [v1.0.1] GetStoreList Send =  key=f209b9f42edbc6ac22c3ed1c17004ed9
+[2018/10/15 21:16:12 706] [Message] [v1.0.1] Result =  {"code":1,"msg":"店铺列表","data":{"list":[{"id":"1000000003","merchant_id":"1000000001","name":"门店3","number":"3333333333","principal_name":"负责人3","principal_phone":"15153294092","address":"青岛市市北区华阳路112号","time_create":"1532659891","time_update":"1532660479","status":"1"},{"id":"1000000002","merchant_id":"1000000001","name":"测试店铺2","number":"0012","principal_name":"负责人2","principal_phone":"15153294093","address":"测试店铺地址2","time_create":"0","time_update":"0","status":"1"},{"id":"1000000001","merchant_id":"1000000001","name":"测试店铺1","number":"0011","principal_name":"负责人1","principal_phone":"15153294092","address":"测试店铺地址1","time_create":"0","time_update":"0","status":"1"}]}}
+[2018/10/15 21:16:12 710] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000003",
+    "merchant_id": "1000000001",
+    "name": "门店3",
+    "number": "3333333333",
+    "principal_name": "负责人3",
+    "principal_phone": "15153294092",
+    "address": "青岛市市北区华阳路112号",
+    "time_create": "1532659891",
+    "time_update": "1532660479",
+    "status": "1"
+  },
+  {
+    "id": "1000000002",
+    "merchant_id": "1000000001",
+    "name": "测试店铺2",
+    "number": "0012",
+    "principal_name": "负责人2",
+    "principal_phone": "15153294093",
+    "address": "测试店铺地址2",
+    "time_create": "0",
+    "time_update": "0",
+    "status": "1"
+  },
+  {
+    "id": "1000000001",
+    "merchant_id": "1000000001",
+    "name": "测试店铺1",
+    "number": "0011",
+    "principal_name": "负责人1",
+    "principal_phone": "15153294092",
+    "address": "测试店铺地址1",
+    "time_create": "0",
+    "time_update": "0",
+    "status": "1"
+  }
+]
+[2018/10/15 21:16:12 721] [Message] [v1.0.1] storelist[1].id =  1000000003
+[2018/10/15 21:16:12 723] [Message] [v1.0.1] storelist[1].merchant_id =  1000000001
+[2018/10/15 21:16:12 725] [Message] [v1.0.1] storelist[1].name =  门店3
+[2018/10/15 21:16:12 727] [Message] [v1.0.1] storelist[1].number =  3333333333
+[2018/10/15 21:16:12 730] [Message] [v1.0.1] storelist[1].principal_name =  负责人3
+[2018/10/15 21:16:12 732] [Message] [v1.0.1] storelist[1].principal_phone =  15153294092
+[2018/10/15 21:16:12 734] [Message] [v1.0.1] storelist[1].address =  青岛市市北区华阳路112号
+[2018/10/15 21:16:12 736] [Message] [v1.0.1] storelist[1].status =  1
+[2018/10/15 21:16:12 738] [Message] [v1.0.1] storelist[2].id =  1000000002
+[2018/10/15 21:16:12 740] [Message] [v1.0.1] storelist[2].merchant_id =  1000000001
+[2018/10/15 21:16:12 742] [Message] [v1.0.1] storelist[2].name =  测试店铺2
+[2018/10/15 21:16:12 744] [Message] [v1.0.1] storelist[2].number =  0012
+[2018/10/15 21:16:12 747] [Message] [v1.0.1] storelist[2].principal_name =  负责人2
+[2018/10/15 21:16:12 749] [Message] [v1.0.1] storelist[2].principal_phone =  15153294093
+[2018/10/15 21:16:12 751] [Message] [v1.0.1] storelist[2].address =  测试店铺地址2
+[2018/10/15 21:16:12 753] [Message] [v1.0.1] storelist[2].status =  1
+[2018/10/15 21:16:12 755] [Message] [v1.0.1] storelist[3].id =  1000000001
+[2018/10/15 21:16:12 757] [Message] [v1.0.1] storelist[3].merchant_id =  1000000001
+[2018/10/15 21:16:12 759] [Message] [v1.0.1] storelist[3].name =  测试店铺1
+[2018/10/15 21:16:12 761] [Message] [v1.0.1] storelist[3].number =  0011
+[2018/10/15 21:16:12 764] [Message] [v1.0.1] storelist[3].principal_name =  负责人1
+[2018/10/15 21:16:12 766] [Message] [v1.0.1] storelist[3].principal_phone =  15153294092
+[2018/10/15 21:16:12 768] [Message] [v1.0.1] storelist[3].address =  测试店铺地址1
+[2018/10/15 21:16:12 770] [Message] [v1.0.1] storelist[3].status =  1
+[2018/10/15 21:16:12 804] [Message] [v1.0.1] ===================门店列表=================== End
+[2018/10/15 21:16:12 807] [Message] [v1.0.1] ===================店员列表=================== Start
+[2018/10/15 21:16:12 807] [Message] [v1.0.1] GetUserList Send =  key=f209b9f42edbc6ac22c3ed1c17004ed9&store_id=1000000001
+[2018/10/15 21:16:12 914] [Message] [v1.0.1] Result =  {"code":1,"msg":"店员列表","data":{"list":[{"id":"1000000003","username":"user_1_2","phone":"15153294092"},{"id":"1000000001","username":"user_1_1","phone":"15153294092"}]}}
+[2018/10/15 21:16:12 916] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000003",
+    "username": "user_1_2",
+    "phone": "15153294092"
+  },
+  {
+    "id": "1000000001",
+    "username": "user_1_1",
+    "phone": "15153294092"
+  }
+]
+[2018/10/15 21:16:12 919] [Message] [v1.0.1] userlist[1].id =  1000000003
+[2018/10/15 21:16:12 921] [Message] [v1.0.1] userlist[1].username =  user_1_2
+[2018/10/15 21:16:12 923] [Message] [v1.0.1] userlist[1].phone =  15153294092
+[2018/10/15 21:16:12 925] [Message] [v1.0.1] userlist[2].id =  1000000001
+[2018/10/15 21:16:12 927] [Message] [v1.0.1] userlist[2].username =  user_1_1
+[2018/10/15 21:16:12 929] [Message] [v1.0.1] userlist[2].phone =  15153294092
+[2018/10/15 21:16:12 931] [Message] [v1.0.1] ===================店员列表=================== End
+[2018/10/15 21:16:12 938] [Message] [v1.0.1] ===================设备列表=================== Start
+[2018/10/15 21:16:12 940] [Message] [v1.0.1] GetDeviceList Send =  key=f209b9f42edbc6ac22c3ed1c17004ed9&store_id=1000000001
+[2018/10/15 21:16:13 052] [Message] [v1.0.1] Result =  {"code":1,"msg":"设备列表","data":{"list":[{"id":"1000000002","name":"设备4","number":"002","type":"1"},{"id":"1000000001","name":"设备1","number":"001","type":"2"}]}}
+[2018/10/15 21:16:13 054] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000002",
+    "name": "设备4",
+    "number": "002",
+    "type": "1"
+  },
+  {
+    "id": "1000000001",
+    "name": "设备1",
+    "number": "001",
+    "type": "2"
+  }
+]
+[2018/10/15 21:16:13 056] [Message] [v1.0.1] devicelist[1].id =  1000000002
+[2018/10/15 21:16:13 058] [Message] [v1.0.1] devicelist[1].name =  设备4
+[2018/10/15 21:16:13 060] [Message] [v1.0.1] devicelist[1].number =  002
+[2018/10/15 21:16:13 063] [Message] [v1.0.1] devicelist[1].type =  1
+[2018/10/15 21:16:13 065] [Message] [v1.0.1] devicelist[2].id =  1000000001
+[2018/10/15 21:16:13 067] [Message] [v1.0.1] devicelist[2].name =  设备1
+[2018/10/15 21:16:13 069] [Message] [v1.0.1] devicelist[2].number =  001
+[2018/10/15 21:16:13 071] [Message] [v1.0.1] devicelist[2].type =  2
+[2018/10/15 21:16:13 073] [Message] [v1.0.1] ===================设备列表=================== End
+[2018/10/15 21:16:13 078] [Message] [v1.0.1] ===================交易类型列表=================== Start
+[2018/10/15 21:16:13 080] [Message] [v1.0.1] Get_all_paymentList Send =  key=f209b9f42edbc6ac22c3ed1c17004ed9
+[2018/10/15 21:16:13 182] [Message] [v1.0.1] Result =  {"code":1,"msg":"交易类型","data":{"qrcode":"扫码支付","barcode":"条码支付","weixin_public":"微信公众号支付"}}
+[2018/10/15 21:16:13 185] [Message] [v1.0.1] data =  {
+  "qrcode": "扫码支付",
+  "barcode": "条码支付",
+  "weixin_public": "微信公众号支付"
+}
+[2018/10/15 21:16:13 187] [Message] [v1.0.1] paymentList[0].paymentType =  扫码支付
+[2018/10/15 21:16:13 189] [Message] [v1.0.1] paymentList[1].paymentType =  条码支付
+[2018/10/15 21:16:13 191] [Message] [v1.0.1] ===================交易类型列表=================== End
+[2018/10/15 21:45:05 988] [Message] [v1.0.1] ===================用户登陆=================== Start
+[2018/10/15 21:45:05 988] [Message] [v1.0.1] Login Send =  username=user_1_1&password=1111111
+[2018/10/15 21:45:06 176] [Message] [v1.0.1] Result =  {"code":1,"msg":"登录成功","data":{"token":"405d5f4d23bd07edb2d41b45c47ce43d","info":{"app_type":"api","id":"1000000001","agent_id":"10000001","store_id":"1000000001","merchant_id":"1000000001","type":"2","username":"user_1_1","open_id":"","timestamp":1539611106}}}
+[2018/10/15 21:45:06 264] [Message] [v1.0.1] ===================用户登陆=================== End
+[2018/10/15 21:45:06 268] [Message] [v1.0.1] ===================用户信息=================== Start
+[2018/10/15 21:45:06 269] [Message] [v1.0.1] GetUserInfo Send =  key=405d5f4d23bd07edb2d41b45c47ce43d
+[2018/10/15 21:45:06 375] [Message] [v1.0.1] Result =  {"code":1,"msg":"用户信息","data":{"id":"1000000001","agent_id":"10000001","merchant_id":"1000000001","store_id":"1000000001","username":"user_1_1","phone":"15153294092","open_id":"","type":"2","time_create":"1527211953","time_update":"1533293063","status":"1","agent":{"id":"10000001","pid":"00000000","name":"代理商1","number":"1111111111111111","address":"代理商地址1","principal_name":"负责人1","principal_phone":"15153294092","contact_name":"联系人1","contact_phone":"111111","contact_email":"youxiang@youxiang.com","time_create":"0","time_update":"1533178664","status":"1"},"merchant":{"id":"1000000001","agent_id":"10000001","name":"测试子商户1","short_name":"子商户1","number":"1000000001","principal_name":null,"principal_phone":null,"contact_name":"联系人1","contact_phone":"15153294092","contact_email":"sdsads@qq.com","address":null,"time_create":"0","time_update":"1533523267","status":"1"},"store":{"id":"1000000001","merchant_id":"1000000001","name":"测试店铺1","number":"0011","principal_name":"负责人1","principal_phone":"15153294092","address":"测试店铺地址1","time_create":"0","time_update":"0","status":"1"}}}
+[2018/10/15 21:45:06 407] [Message] [v1.0.1] data =  {
+  "id": "1000000001",
+  "agent_id": "10000001",
+  "merchant_id": "1000000001",
+  "store_id": "1000000001",
+  "username": "user_1_1",
+  "phone": "15153294092",
+  "open_id": "",
+  "type": "2",
+  "time_create": "1527211953",
+  "time_update": "1533293063",
+  "status": "1",
+  "agent": {
+    "id": "10000001",
+    "pid": "00000000",
+    "name": "代理商1",
+    "number": "1111111111111111",
+    "address": "代理商地址1",
+    "principal_name": "负责人1",
+    "principal_phone": "15153294092",
+    "contact_name": "联系人1",
+    "contact_phone": "111111",
+    "contact_email": "youxiang@youxiang.com",
+    "time_create": "0",
+    "time_update": "1533178664",
+    "status": "1"
+  },
+  "merchant": {
+    "id": "1000000001",
+    "agent_id": "10000001",
+    "name": "测试子商户1",
+    "short_name": "子商户1",
+    "number": "1000000001",
+    "principal_name": null,
+    "principal_phone": null,
+    "contact_name": "联系人1",
+    "contact_phone": "15153294092",
+    "contact_email": "sdsads@qq.com",
+    "address": null,
+    "time_create": "0",
+    "time_update": "1533523267",
+    "status": "1"
+  },
+  "store": {
+    "id": "1000000001",
+    "merchant_id": "1000000001",
+    "name": "测试店铺1",
+    "number": "0011",
+    "principal_name": "负责人1",
+    "principal_phone": "15153294092",
+    "address": "测试店铺地址1",
+    "time_create": "0",
+    "time_update": "0",
+    "status": "1"
+  }
+}
+[2018/10/15 21:45:06 408] [Message] [v1.0.1] agent =  {
+  "id": "10000001",
+  "pid": "00000000",
+  "name": "代理商1",
+  "number": "1111111111111111",
+  "address": "代理商地址1",
+  "principal_name": "负责人1",
+  "principal_phone": "15153294092",
+  "contact_name": "联系人1",
+  "contact_phone": "111111",
+  "contact_email": "youxiang@youxiang.com",
+  "time_create": "0",
+  "time_update": "1533178664",
+  "status": "1"
+}
+[2018/10/15 21:45:06 409] [Message] [v1.0.1] merchant =  {
+  "id": "1000000001",
+  "agent_id": "10000001",
+  "name": "测试子商户1",
+  "short_name": "子商户1",
+  "number": "1000000001",
+  "principal_name": null,
+  "principal_phone": null,
+  "contact_name": "联系人1",
+  "contact_phone": "15153294092",
+  "contact_email": "sdsads@qq.com",
+  "address": null,
+  "time_create": "0",
+  "time_update": "1533523267",
+  "status": "1"
+}
+[2018/10/15 21:45:06 410] [Message] [v1.0.1] store =  {
+  "id": "1000000001",
+  "merchant_id": "1000000001",
+  "name": "测试店铺1",
+  "number": "0011",
+  "principal_name": "负责人1",
+  "principal_phone": "15153294092",
+  "address": "测试店铺地址1",
+  "time_create": "0",
+  "time_update": "0",
+  "status": "1"
+}
+[2018/10/15 21:45:06 411] [Message] [v1.0.1] userinfo.id =  1000000001
+[2018/10/15 21:45:06 411] [Message] [v1.0.1] userinfo.agent_id =  10000001
+[2018/10/15 21:45:06 412] [Message] [v1.0.1] userinfo.merchant_id =  1000000001
+[2018/10/15 21:45:06 413] [Message] [v1.0.1] userinfo.store_id =  1000000001
+[2018/10/15 21:45:06 414] [Message] [v1.0.1] userinfo.username =  user_1_1
+[2018/10/15 21:45:06 415] [Message] [v1.0.1] userinfo.phone =  15153294092
+[2018/10/15 21:45:06 416] [Message] [v1.0.1] userinfo.open_id =  
+[2018/10/15 21:45:06 416] [Message] [v1.0.1] userinfo.type =  2
+[2018/10/15 21:45:06 417] [Message] [v1.0.1] userinfo.status =  1
+[2018/10/15 21:45:06 418] [Message] [v1.0.1] agentinfo.id =  10000001
+[2018/10/15 21:45:06 419] [Message] [v1.0.1] agentinfo.pid =  00000000
+[2018/10/15 21:45:06 420] [Message] [v1.0.1] agentinfo.name =  代理商1
+[2018/10/15 21:45:06 421] [Message] [v1.0.1] agentinfo.number =  1111111111111111
+[2018/10/15 21:45:06 421] [Message] [v1.0.1] agentinfo.address =  代理商地址1
+[2018/10/15 21:45:06 422] [Message] [v1.0.1] agentinfo.principal_name =  负责人1
+[2018/10/15 21:45:06 423] [Message] [v1.0.1] agentinfo.principal_phone =  15153294092
+[2018/10/15 21:45:06 424] [Message] [v1.0.1] agentinfo.contact_name =  联系人1
+[2018/10/15 21:45:06 425] [Message] [v1.0.1] agentinfo.contact_phone =  111111
+[2018/10/15 21:45:06 426] [Message] [v1.0.1] agentinfo.contact_email =  youxiang@youxiang.com
+[2018/10/15 21:45:06 426] [Message] [v1.0.1] agentinfo.status =  1
+[2018/10/15 21:45:06 427] [Message] [v1.0.1] merchantinfo.id =  1000000001
+[2018/10/15 21:45:06 428] [Message] [v1.0.1] merchantinfo.agent_id =  10000001
+[2018/10/15 21:45:06 429] [Message] [v1.0.1] merchantinfo.name =  测试子商户1
+[2018/10/15 21:45:06 430] [Message] [v1.0.1] merchantinfo.short_name =  子商户1
+[2018/10/15 21:45:06 431] [Message] [v1.0.1] merchantinfo.number =  1000000001
+[2018/10/15 21:45:06 432] [Message] [v1.0.1] merchantinfo.principal_name =  
+[2018/10/15 21:45:06 432] [Message] [v1.0.1] merchantinfo.principal_phone =  
+[2018/10/15 21:45:06 433] [Message] [v1.0.1] merchantinfo.contact_name =  联系人1
+[2018/10/15 21:45:06 434] [Message] [v1.0.1] merchantinfo.contact_phone =  15153294092
+[2018/10/15 21:45:06 435] [Message] [v1.0.1] merchantinfo.contact_email =  sdsads@qq.com
+[2018/10/15 21:45:06 436] [Message] [v1.0.1] merchantinfo.address =  
+[2018/10/15 21:45:06 436] [Message] [v1.0.1] merchantinfo.status =  1
+[2018/10/15 21:45:06 437] [Message] [v1.0.1] storeinfo.id =  1000000001
+[2018/10/15 21:45:06 438] [Message] [v1.0.1] storeinfo.merchant_id =  1000000001
+[2018/10/15 21:45:06 439] [Message] [v1.0.1] storeinfo.name =  测试店铺1
+[2018/10/15 21:45:06 440] [Message] [v1.0.1] storeinfo.number =  0011
+[2018/10/15 21:45:06 441] [Message] [v1.0.1] storeinfo.principal_name =  负责人1
+[2018/10/15 21:45:06 441] [Message] [v1.0.1] storeinfo.principal_phone =  15153294092
+[2018/10/15 21:45:06 442] [Message] [v1.0.1] storeinfo.address =  测试店铺地址1
+[2018/10/15 21:45:06 443] [Message] [v1.0.1] storeinfo.status =  1
+[2018/10/15 21:45:06 449] [Message] [v1.0.1] ===================用户信息=================== End
+[2018/10/15 21:45:06 458] [Message] [v1.0.1] ===================门店列表=================== Start
+[2018/10/15 21:45:06 458] [Message] [v1.0.1] GetStoreList Send =  key=405d5f4d23bd07edb2d41b45c47ce43d
+[2018/10/15 21:45:06 577] [Message] [v1.0.1] Result =  {"code":1,"msg":"店铺列表","data":{"list":[{"id":"1000000003","merchant_id":"1000000001","name":"门店3","number":"3333333333","principal_name":"负责人3","principal_phone":"15153294092","address":"青岛市市北区华阳路112号","time_create":"1532659891","time_update":"1532660479","status":"1"},{"id":"1000000002","merchant_id":"1000000001","name":"测试店铺2","number":"0012","principal_name":"负责人2","principal_phone":"15153294093","address":"测试店铺地址2","time_create":"0","time_update":"0","status":"1"},{"id":"1000000001","merchant_id":"1000000001","name":"测试店铺1","number":"0011","principal_name":"负责人1","principal_phone":"15153294092","address":"测试店铺地址1","time_create":"0","time_update":"0","status":"1"}]}}
+[2018/10/15 21:45:06 582] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000003",
+    "merchant_id": "1000000001",
+    "name": "门店3",
+    "number": "3333333333",
+    "principal_name": "负责人3",
+    "principal_phone": "15153294092",
+    "address": "青岛市市北区华阳路112号",
+    "time_create": "1532659891",
+    "time_update": "1532660479",
+    "status": "1"
+  },
+  {
+    "id": "1000000002",
+    "merchant_id": "1000000001",
+    "name": "测试店铺2",
+    "number": "0012",
+    "principal_name": "负责人2",
+    "principal_phone": "15153294093",
+    "address": "测试店铺地址2",
+    "time_create": "0",
+    "time_update": "0",
+    "status": "1"
+  },
+  {
+    "id": "1000000001",
+    "merchant_id": "1000000001",
+    "name": "测试店铺1",
+    "number": "0011",
+    "principal_name": "负责人1",
+    "principal_phone": "15153294092",
+    "address": "测试店铺地址1",
+    "time_create": "0",
+    "time_update": "0",
+    "status": "1"
+  }
+]
+[2018/10/15 21:45:06 589] [Message] [v1.0.1] storelist[1].id =  1000000003
+[2018/10/15 21:45:06 589] [Message] [v1.0.1] storelist[1].merchant_id =  1000000001
+[2018/10/15 21:45:06 590] [Message] [v1.0.1] storelist[1].name =  门店3
+[2018/10/15 21:45:06 591] [Message] [v1.0.1] storelist[1].number =  3333333333
+[2018/10/15 21:45:06 592] [Message] [v1.0.1] storelist[1].principal_name =  负责人3
+[2018/10/15 21:45:06 593] [Message] [v1.0.1] storelist[1].principal_phone =  15153294092
+[2018/10/15 21:45:06 593] [Message] [v1.0.1] storelist[1].address =  青岛市市北区华阳路112号
+[2018/10/15 21:45:06 594] [Message] [v1.0.1] storelist[1].status =  1
+[2018/10/15 21:45:06 595] [Message] [v1.0.1] storelist[2].id =  1000000002
+[2018/10/15 21:45:06 596] [Message] [v1.0.1] storelist[2].merchant_id =  1000000001
+[2018/10/15 21:45:06 596] [Message] [v1.0.1] storelist[2].name =  测试店铺2
+[2018/10/15 21:45:06 597] [Message] [v1.0.1] storelist[2].number =  0012
+[2018/10/15 21:45:06 598] [Message] [v1.0.1] storelist[2].principal_name =  负责人2
+[2018/10/15 21:45:06 599] [Message] [v1.0.1] storelist[2].principal_phone =  15153294093
+[2018/10/15 21:45:06 600] [Message] [v1.0.1] storelist[2].address =  测试店铺地址2
+[2018/10/15 21:45:06 601] [Message] [v1.0.1] storelist[2].status =  1
+[2018/10/15 21:45:06 601] [Message] [v1.0.1] storelist[3].id =  1000000001
+[2018/10/15 21:45:06 602] [Message] [v1.0.1] storelist[3].merchant_id =  1000000001
+[2018/10/15 21:45:06 603] [Message] [v1.0.1] storelist[3].name =  测试店铺1
+[2018/10/15 21:45:06 604] [Message] [v1.0.1] storelist[3].number =  0011
+[2018/10/15 21:45:06 605] [Message] [v1.0.1] storelist[3].principal_name =  负责人1
+[2018/10/15 21:45:06 606] [Message] [v1.0.1] storelist[3].principal_phone =  15153294092
+[2018/10/15 21:45:06 606] [Message] [v1.0.1] storelist[3].address =  测试店铺地址1
+[2018/10/15 21:45:06 607] [Message] [v1.0.1] storelist[3].status =  1
+[2018/10/15 21:45:06 623] [Message] [v1.0.1] ===================门店列表=================== End
+[2018/10/15 21:45:06 625] [Message] [v1.0.1] ===================店员列表=================== Start
+[2018/10/15 21:45:06 626] [Message] [v1.0.1] GetUserList Send =  key=405d5f4d23bd07edb2d41b45c47ce43d&store_id=1000000001
+[2018/10/15 21:45:06 728] [Message] [v1.0.1] Result =  {"code":1,"msg":"店员列表","data":{"list":[{"id":"1000000003","username":"user_1_2","phone":"15153294092"},{"id":"1000000001","username":"user_1_1","phone":"15153294092"}]}}
+[2018/10/15 21:45:06 730] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000003",
+    "username": "user_1_2",
+    "phone": "15153294092"
+  },
+  {
+    "id": "1000000001",
+    "username": "user_1_1",
+    "phone": "15153294092"
+  }
+]
+[2018/10/15 21:45:06 733] [Message] [v1.0.1] userlist[1].id =  1000000003
+[2018/10/15 21:45:06 735] [Message] [v1.0.1] userlist[1].username =  user_1_2
+[2018/10/15 21:45:06 737] [Message] [v1.0.1] userlist[1].phone =  15153294092
+[2018/10/15 21:45:06 739] [Message] [v1.0.1] userlist[2].id =  1000000001
+[2018/10/15 21:45:06 742] [Message] [v1.0.1] userlist[2].username =  user_1_1
+[2018/10/15 21:45:06 744] [Message] [v1.0.1] userlist[2].phone =  15153294092
+[2018/10/15 21:45:06 746] [Message] [v1.0.1] ===================店员列表=================== End
+[2018/10/15 21:45:06 753] [Message] [v1.0.1] ===================设备列表=================== Start
+[2018/10/15 21:45:06 755] [Message] [v1.0.1] GetDeviceList Send =  key=405d5f4d23bd07edb2d41b45c47ce43d&store_id=1000000001
+[2018/10/15 21:45:06 863] [Message] [v1.0.1] Result =  {"code":1,"msg":"设备列表","data":{"list":[{"id":"1000000002","name":"设备4","number":"002","type":"1"},{"id":"1000000001","name":"设备1","number":"001","type":"2"}]}}
+[2018/10/15 21:45:06 865] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000002",
+    "name": "设备4",
+    "number": "002",
+    "type": "1"
+  },
+  {
+    "id": "1000000001",
+    "name": "设备1",
+    "number": "001",
+    "type": "2"
+  }
+]
+[2018/10/15 21:45:06 868] [Message] [v1.0.1] devicelist[1].id =  1000000002
+[2018/10/15 21:45:06 870] [Message] [v1.0.1] devicelist[1].name =  设备4
+[2018/10/15 21:45:06 872] [Message] [v1.0.1] devicelist[1].number =  002
+[2018/10/15 21:45:06 874] [Message] [v1.0.1] devicelist[1].type =  1
+[2018/10/15 21:45:06 876] [Message] [v1.0.1] devicelist[2].id =  1000000001
+[2018/10/15 21:45:06 879] [Message] [v1.0.1] devicelist[2].name =  设备1
+[2018/10/15 21:45:06 881] [Message] [v1.0.1] devicelist[2].number =  001
+[2018/10/15 21:45:06 883] [Message] [v1.0.1] devicelist[2].type =  2
+[2018/10/15 21:45:06 885] [Message] [v1.0.1] ===================设备列表=================== End
+[2018/10/15 21:45:06 889] [Message] [v1.0.1] ===================交易类型列表=================== Start
+[2018/10/15 21:45:06 892] [Message] [v1.0.1] Get_all_paymentList Send =  key=405d5f4d23bd07edb2d41b45c47ce43d
+[2018/10/15 21:45:06 996] [Message] [v1.0.1] Result =  {"code":1,"msg":"交易类型","data":{"qrcode":"扫码支付","barcode":"条码支付","weixin_public":"微信公众号支付"}}
+[2018/10/15 21:45:06 999] [Message] [v1.0.1] data =  {
+  "qrcode": "扫码支付",
+  "barcode": "条码支付",
+  "weixin_public": "微信公众号支付"
+}
+[2018/10/15 21:45:07 001] [Message] [v1.0.1] paymentList[0].paymentType =  扫码支付
+[2018/10/15 21:45:07 003] [Message] [v1.0.1] paymentList[1].paymentType =  条码支付
+[2018/10/15 21:45:07 005] [Message] [v1.0.1] ===================交易类型列表=================== End
+[2018/10/15 21:45:13 108] [Message] [v1.0.1] ===================用户登陆=================== Start
+[2018/10/15 21:45:13 150] [Message] [v1.0.1] Login Send =  username=user_1_1&password=1111111
+[2018/10/15 21:45:13 264] [Message] [v1.0.1] Result =  {"code":1,"msg":"登录成功","data":{"token":"23a02506ec020e5770451800a241263b","info":{"app_type":"api","id":"1000000001","agent_id":"10000001","store_id":"1000000001","merchant_id":"1000000001","type":"2","username":"user_1_1","open_id":"","timestamp":1539611113}}}
+[2018/10/15 21:45:13 266] [Message] [v1.0.1] ===================用户登陆=================== End
+[2018/10/15 21:45:13 269] [Message] [v1.0.1] ===================用户信息=================== Start
+[2018/10/15 21:45:13 271] [Message] [v1.0.1] GetUserInfo Send =  key=23a02506ec020e5770451800a241263b
+[2018/10/15 21:45:13 382] [Message] [v1.0.1] Result =  {"code":1,"msg":"用户信息","data":{"id":"1000000001","agent_id":"10000001","merchant_id":"1000000001","store_id":"1000000001","username":"user_1_1","phone":"15153294092","open_id":"","type":"2","time_create":"1527211953","time_update":"1533293063","status":"1","agent":{"id":"10000001","pid":"00000000","name":"代理商1","number":"1111111111111111","address":"代理商地址1","principal_name":"负责人1","principal_phone":"15153294092","contact_name":"联系人1","contact_phone":"111111","contact_email":"youxiang@youxiang.com","time_create":"0","time_update":"1533178664","status":"1"},"merchant":{"id":"1000000001","agent_id":"10000001","name":"测试子商户1","short_name":"子商户1","number":"1000000001","principal_name":null,"principal_phone":null,"contact_name":"联系人1","contact_phone":"15153294092","contact_email":"sdsads@qq.com","address":null,"time_create":"0","time_update":"1533523267","status":"1"},"store":{"id":"1000000001","merchant_id":"1000000001","name":"测试店铺1","number":"0011","principal_name":"负责人1","principal_phone":"15153294092","address":"测试店铺地址1","time_create":"0","time_update":"0","status":"1"}}}
+[2018/10/15 21:45:13 384] [Message] [v1.0.1] data =  {
+  "id": "1000000001",
+  "agent_id": "10000001",
+  "merchant_id": "1000000001",
+  "store_id": "1000000001",
+  "username": "user_1_1",
+  "phone": "15153294092",
+  "open_id": "",
+  "type": "2",
+  "time_create": "1527211953",
+  "time_update": "1533293063",
+  "status": "1",
+  "agent": {
+    "id": "10000001",
+    "pid": "00000000",
+    "name": "代理商1",
+    "number": "1111111111111111",
+    "address": "代理商地址1",
+    "principal_name": "负责人1",
+    "principal_phone": "15153294092",
+    "contact_name": "联系人1",
+    "contact_phone": "111111",
+    "contact_email": "youxiang@youxiang.com",
+    "time_create": "0",
+    "time_update": "1533178664",
+    "status": "1"
+  },
+  "merchant": {
+    "id": "1000000001",
+    "agent_id": "10000001",
+    "name": "测试子商户1",
+    "short_name": "子商户1",
+    "number": "1000000001",
+    "principal_name": null,
+    "principal_phone": null,
+    "contact_name": "联系人1",
+    "contact_phone": "15153294092",
+    "contact_email": "sdsads@qq.com",
+    "address": null,
+    "time_create": "0",
+    "time_update": "1533523267",
+    "status": "1"
+  },
+  "store": {
+    "id": "1000000001",
+    "merchant_id": "1000000001",
+    "name": "测试店铺1",
+    "number": "0011",
+    "principal_name": "负责人1",
+    "principal_phone": "15153294092",
+    "address": "测试店铺地址1",
+    "time_create": "0",
+    "time_update": "0",
+    "status": "1"
+  }
+}
+[2018/10/15 21:45:13 387] [Message] [v1.0.1] agent =  {
+  "id": "10000001",
+  "pid": "00000000",
+  "name": "代理商1",
+  "number": "1111111111111111",
+  "address": "代理商地址1",
+  "principal_name": "负责人1",
+  "principal_phone": "15153294092",
+  "contact_name": "联系人1",
+  "contact_phone": "111111",
+  "contact_email": "youxiang@youxiang.com",
+  "time_create": "0",
+  "time_update": "1533178664",
+  "status": "1"
+}
+[2018/10/15 21:45:13 389] [Message] [v1.0.1] merchant =  {
+  "id": "1000000001",
+  "agent_id": "10000001",
+  "name": "测试子商户1",
+  "short_name": "子商户1",
+  "number": "1000000001",
+  "principal_name": null,
+  "principal_phone": null,
+  "contact_name": "联系人1",
+  "contact_phone": "15153294092",
+  "contact_email": "sdsads@qq.com",
+  "address": null,
+  "time_create": "0",
+  "time_update": "1533523267",
+  "status": "1"
+}
+[2018/10/15 21:45:13 391] [Message] [v1.0.1] store =  {
+  "id": "1000000001",
+  "merchant_id": "1000000001",
+  "name": "测试店铺1",
+  "number": "0011",
+  "principal_name": "负责人1",
+  "principal_phone": "15153294092",
+  "address": "测试店铺地址1",
+  "time_create": "0",
+  "time_update": "0",
+  "status": "1"
+}
+[2018/10/15 21:45:13 393] [Message] [v1.0.1] userinfo.id =  1000000001
+[2018/10/15 21:45:13 395] [Message] [v1.0.1] userinfo.agent_id =  10000001
+[2018/10/15 21:45:13 398] [Message] [v1.0.1] userinfo.merchant_id =  1000000001
+[2018/10/15 21:45:13 400] [Message] [v1.0.1] userinfo.store_id =  1000000001
+[2018/10/15 21:45:13 402] [Message] [v1.0.1] userinfo.username =  user_1_1
+[2018/10/15 21:45:13 404] [Message] [v1.0.1] userinfo.phone =  15153294092
+[2018/10/15 21:45:13 406] [Message] [v1.0.1] userinfo.open_id =  
+[2018/10/15 21:45:13 408] [Message] [v1.0.1] userinfo.type =  2
+[2018/10/15 21:45:13 410] [Message] [v1.0.1] userinfo.status =  1
+[2018/10/15 21:45:13 413] [Message] [v1.0.1] agentinfo.id =  10000001
+[2018/10/15 21:45:13 415] [Message] [v1.0.1] agentinfo.pid =  00000000
+[2018/10/15 21:45:13 417] [Message] [v1.0.1] agentinfo.name =  代理商1
+[2018/10/15 21:45:13 419] [Message] [v1.0.1] agentinfo.number =  1111111111111111
+[2018/10/15 21:45:13 421] [Message] [v1.0.1] agentinfo.address =  代理商地址1
+[2018/10/15 21:45:13 423] [Message] [v1.0.1] agentinfo.principal_name =  负责人1
+[2018/10/15 21:45:13 425] [Message] [v1.0.1] agentinfo.principal_phone =  15153294092
+[2018/10/15 21:45:13 427] [Message] [v1.0.1] agentinfo.contact_name =  联系人1
+[2018/10/15 21:45:13 428] [Message] [v1.0.1] agentinfo.contact_phone =  111111
+[2018/10/15 21:45:13 429] [Message] [v1.0.1] agentinfo.contact_email =  youxiang@youxiang.com
+[2018/10/15 21:45:13 429] [Message] [v1.0.1] agentinfo.status =  1
+[2018/10/15 21:45:13 430] [Message] [v1.0.1] merchantinfo.id =  1000000001
+[2018/10/15 21:45:13 431] [Message] [v1.0.1] merchantinfo.agent_id =  10000001
+[2018/10/15 21:45:13 432] [Message] [v1.0.1] merchantinfo.name =  测试子商户1
+[2018/10/15 21:45:13 433] [Message] [v1.0.1] merchantinfo.short_name =  子商户1
+[2018/10/15 21:45:13 433] [Message] [v1.0.1] merchantinfo.number =  1000000001
+[2018/10/15 21:45:13 434] [Message] [v1.0.1] merchantinfo.principal_name =  
+[2018/10/15 21:45:13 435] [Message] [v1.0.1] merchantinfo.principal_phone =  
+[2018/10/15 21:45:13 436] [Message] [v1.0.1] merchantinfo.contact_name =  联系人1
+[2018/10/15 21:45:13 437] [Message] [v1.0.1] merchantinfo.contact_phone =  15153294092
+[2018/10/15 21:45:13 437] [Message] [v1.0.1] merchantinfo.contact_email =  sdsads@qq.com
+[2018/10/15 21:45:13 438] [Message] [v1.0.1] merchantinfo.address =  
+[2018/10/15 21:45:13 439] [Message] [v1.0.1] merchantinfo.status =  1
+[2018/10/15 21:45:13 440] [Message] [v1.0.1] storeinfo.id =  1000000001
+[2018/10/15 21:45:13 441] [Message] [v1.0.1] storeinfo.merchant_id =  1000000001
+[2018/10/15 21:45:13 442] [Message] [v1.0.1] storeinfo.name =  测试店铺1
+[2018/10/15 21:45:13 442] [Message] [v1.0.1] storeinfo.number =  0011
+[2018/10/15 21:45:13 443] [Message] [v1.0.1] storeinfo.principal_name =  负责人1
+[2018/10/15 21:45:13 444] [Message] [v1.0.1] storeinfo.principal_phone =  15153294092
+[2018/10/15 21:45:13 445] [Message] [v1.0.1] storeinfo.address =  测试店铺地址1
+[2018/10/15 21:45:13 446] [Message] [v1.0.1] storeinfo.status =  1
+[2018/10/15 21:45:13 447] [Message] [v1.0.1] ===================用户信息=================== End
+[2018/10/15 21:45:13 450] [Message] [v1.0.1] ===================门店列表=================== Start
+[2018/10/15 21:45:13 451] [Message] [v1.0.1] GetStoreList Send =  key=23a02506ec020e5770451800a241263b
+[2018/10/15 21:45:13 555] [Message] [v1.0.1] Result =  {"code":1,"msg":"店铺列表","data":{"list":[{"id":"1000000003","merchant_id":"1000000001","name":"门店3","number":"3333333333","principal_name":"负责人3","principal_phone":"15153294092","address":"青岛市市北区华阳路112号","time_create":"1532659891","time_update":"1532660479","status":"1"},{"id":"1000000002","merchant_id":"1000000001","name":"测试店铺2","number":"0012","principal_name":"负责人2","principal_phone":"15153294093","address":"测试店铺地址2","time_create":"0","time_update":"0","status":"1"},{"id":"1000000001","merchant_id":"1000000001","name":"测试店铺1","number":"0011","principal_name":"负责人1","principal_phone":"15153294092","address":"测试店铺地址1","time_create":"0","time_update":"0","status":"1"}]}}
+[2018/10/15 21:45:13 557] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000003",
+    "merchant_id": "1000000001",
+    "name": "门店3",
+    "number": "3333333333",
+    "principal_name": "负责人3",
+    "principal_phone": "15153294092",
+    "address": "青岛市市北区华阳路112号",
+    "time_create": "1532659891",
+    "time_update": "1532660479",
+    "status": "1"
+  },
+  {
+    "id": "1000000002",
+    "merchant_id": "1000000001",
+    "name": "测试店铺2",
+    "number": "0012",
+    "principal_name": "负责人2",
+    "principal_phone": "15153294093",
+    "address": "测试店铺地址2",
+    "time_create": "0",
+    "time_update": "0",
+    "status": "1"
+  },
+  {
+    "id": "1000000001",
+    "merchant_id": "1000000001",
+    "name": "测试店铺1",
+    "number": "0011",
+    "principal_name": "负责人1",
+    "principal_phone": "15153294092",
+    "address": "测试店铺地址1",
+    "time_create": "0",
+    "time_update": "0",
+    "status": "1"
+  }
+]
+[2018/10/15 21:45:13 560] [Message] [v1.0.1] storelist[1].id =  1000000003
+[2018/10/15 21:45:13 562] [Message] [v1.0.1] storelist[1].merchant_id =  1000000001
+[2018/10/15 21:45:13 564] [Message] [v1.0.1] storelist[1].name =  门店3
+[2018/10/15 21:45:13 566] [Message] [v1.0.1] storelist[1].number =  3333333333
+[2018/10/15 21:45:13 569] [Message] [v1.0.1] storelist[1].principal_name =  负责人3
+[2018/10/15 21:45:13 571] [Message] [v1.0.1] storelist[1].principal_phone =  15153294092
+[2018/10/15 21:45:13 573] [Message] [v1.0.1] storelist[1].address =  青岛市市北区华阳路112号
+[2018/10/15 21:45:13 575] [Message] [v1.0.1] storelist[1].status =  1
+[2018/10/15 21:45:13 577] [Message] [v1.0.1] storelist[2].id =  1000000002
+[2018/10/15 21:45:13 579] [Message] [v1.0.1] storelist[2].merchant_id =  1000000001
+[2018/10/15 21:45:13 582] [Message] [v1.0.1] storelist[2].name =  测试店铺2
+[2018/10/15 21:45:13 584] [Message] [v1.0.1] storelist[2].number =  0012
+[2018/10/15 21:45:13 586] [Message] [v1.0.1] storelist[2].principal_name =  负责人2
+[2018/10/15 21:45:13 588] [Message] [v1.0.1] storelist[2].principal_phone =  15153294093
+[2018/10/15 21:45:13 590] [Message] [v1.0.1] storelist[2].address =  测试店铺地址2
+[2018/10/15 21:45:13 592] [Message] [v1.0.1] storelist[2].status =  1
+[2018/10/15 21:45:13 595] [Message] [v1.0.1] storelist[3].id =  1000000001
+[2018/10/15 21:45:13 597] [Message] [v1.0.1] storelist[3].merchant_id =  1000000001
+[2018/10/15 21:45:13 599] [Message] [v1.0.1] storelist[3].name =  测试店铺1
+[2018/10/15 21:45:13 601] [Message] [v1.0.1] storelist[3].number =  0011
+[2018/10/15 21:45:13 603] [Message] [v1.0.1] storelist[3].principal_name =  负责人1
+[2018/10/15 21:45:13 605] [Message] [v1.0.1] storelist[3].principal_phone =  15153294092
+[2018/10/15 21:45:13 608] [Message] [v1.0.1] storelist[3].address =  测试店铺地址1
+[2018/10/15 21:45:13 610] [Message] [v1.0.1] storelist[3].status =  1
+[2018/10/15 21:45:13 612] [Message] [v1.0.1] ===================门店列表=================== End
+[2018/10/15 21:45:13 614] [Message] [v1.0.1] ===================店员列表=================== Start
+[2018/10/15 21:45:13 616] [Message] [v1.0.1] GetUserList Send =  key=23a02506ec020e5770451800a241263b&store_id=1000000001
+[2018/10/15 21:45:13 719] [Message] [v1.0.1] Result =  {"code":1,"msg":"店员列表","data":{"list":[{"id":"1000000003","username":"user_1_2","phone":"15153294092"},{"id":"1000000001","username":"user_1_1","phone":"15153294092"}]}}
+[2018/10/15 21:45:13 721] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000003",
+    "username": "user_1_2",
+    "phone": "15153294092"
+  },
+  {
+    "id": "1000000001",
+    "username": "user_1_1",
+    "phone": "15153294092"
+  }
+]
+[2018/10/15 21:45:13 723] [Message] [v1.0.1] userlist[1].id =  1000000003
+[2018/10/15 21:45:13 725] [Message] [v1.0.1] userlist[1].username =  user_1_2
+[2018/10/15 21:45:13 727] [Message] [v1.0.1] userlist[1].phone =  15153294092
+[2018/10/15 21:45:13 729] [Message] [v1.0.1] userlist[2].id =  1000000001
+[2018/10/15 21:45:13 732] [Message] [v1.0.1] userlist[2].username =  user_1_1
+[2018/10/15 21:45:13 734] [Message] [v1.0.1] userlist[2].phone =  15153294092
+[2018/10/15 21:45:13 736] [Message] [v1.0.1] ===================店员列表=================== End
+[2018/10/15 21:45:13 738] [Message] [v1.0.1] ===================设备列表=================== Start
+[2018/10/15 21:45:13 740] [Message] [v1.0.1] GetDeviceList Send =  key=23a02506ec020e5770451800a241263b&store_id=1000000001
+[2018/10/15 21:45:13 845] [Message] [v1.0.1] Result =  {"code":1,"msg":"设备列表","data":{"list":[{"id":"1000000002","name":"设备4","number":"002","type":"1"},{"id":"1000000001","name":"设备1","number":"001","type":"2"}]}}
+[2018/10/15 21:45:13 848] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000002",
+    "name": "设备4",
+    "number": "002",
+    "type": "1"
+  },
+  {
+    "id": "1000000001",
+    "name": "设备1",
+    "number": "001",
+    "type": "2"
+  }
+]
+[2018/10/15 21:45:13 850] [Message] [v1.0.1] devicelist[1].id =  1000000002
+[2018/10/15 21:45:13 852] [Message] [v1.0.1] devicelist[1].name =  设备4
+[2018/10/15 21:45:13 854] [Message] [v1.0.1] devicelist[1].number =  002
+[2018/10/15 21:45:13 857] [Message] [v1.0.1] devicelist[1].type =  1
+[2018/10/15 21:45:13 859] [Message] [v1.0.1] devicelist[2].id =  1000000001
+[2018/10/15 21:45:13 861] [Message] [v1.0.1] devicelist[2].name =  设备1
+[2018/10/15 21:45:13 863] [Message] [v1.0.1] devicelist[2].number =  001
+[2018/10/15 21:45:13 865] [Message] [v1.0.1] devicelist[2].type =  2
+[2018/10/15 21:45:13 867] [Message] [v1.0.1] ===================设备列表=================== End
+[2018/10/15 21:45:13 869] [Message] [v1.0.1] ===================交易类型列表=================== Start
+[2018/10/15 21:45:13 871] [Message] [v1.0.1] Get_all_paymentList Send =  key=23a02506ec020e5770451800a241263b
+[2018/10/15 21:45:13 981] [Message] [v1.0.1] Result =  {"code":1,"msg":"交易类型","data":{"qrcode":"扫码支付","barcode":"条码支付","weixin_public":"微信公众号支付"}}
+[2018/10/15 21:45:13 983] [Message] [v1.0.1] data =  {
+  "qrcode": "扫码支付",
+  "barcode": "条码支付",
+  "weixin_public": "微信公众号支付"
+}
+[2018/10/15 21:45:13 985] [Message] [v1.0.1] paymentList[0].paymentType =  扫码支付
+[2018/10/15 21:45:13 987] [Message] [v1.0.1] paymentList[1].paymentType =  条码支付
+[2018/10/15 21:45:13 989] [Message] [v1.0.1] ===================交易类型列表=================== End

@@ -409,7 +409,7 @@
             <Grid Background="#FF1970F8" Height="20" HorizontalAlignment="Left" Margin="10,152,0,0" Name="grid7" VerticalAlignment="Top" Width="4" />
             <Rectangle Height="186" HorizontalAlignment="Left" Margin="18,186,0,0" Name="rectangle2" Stroke="#FF9D8B8B" VerticalAlignment="Top" Width="753" />
             <Label Content="认证密钥：" FontSize="13" FontWeight="Normal" Height="30" HorizontalAlignment="Left" Margin="35,199,0,0" Name="label8" VerticalAlignment="Top" />
-            <TextBox Text="bf0ac37accfb6ed19d4676a54d6aaaf0" Background="{x:Null}" BorderThickness="0" FontSize="11" Foreground="Black" Margin="111,202,193,161" MaxLength="32" Name="tKeyBoxInputID" VerticalContentAlignment="Center" />
+            <TextBox Background="{x:Null}" BorderThickness="0" FontSize="11" Foreground="Black" Margin="111,202,193,161" MaxLength="32" Name="tKeyBoxInputID" VerticalContentAlignment="Center" />
             <Border BorderBrush="#FF737070" BorderThickness="1" CornerRadius="5" Margin="106,200,185,163" Name="jm1"></Border>
             <Button Content="验证密钥" FontSize="11" Height="19" HorizontalAlignment="Right" Margin="0,200,49,0" Style="{StaticResource MyWpfButton}" VerticalAlignment="Top" Width="123" Name="btCheckPW" Click="btCheckPW_Click"/>
         </Grid>

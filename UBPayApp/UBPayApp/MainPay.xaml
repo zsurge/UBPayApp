@@ -218,8 +218,8 @@
                     <!--<Image Height="40" HorizontalAlignment="Left" Margin="406,9,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="42" Source="/UBPayApp;component/bin/Release/pic/user.png" />-->
                     <!--<Label Content="admin" FontSize="16" Height="30" HorizontalAlignment="Left" Margin="454,16,0,0" Name="lb__LoginUserName" VerticalAlignment="Top" Width="96" Foreground="White" />-->
                     <!--<DockPanel>-->
-                    <Menu  HorizontalContentAlignment="Left" Height="32" Margin="771,14,0,0" VerticalAlignment="Top" Width="79" Background="#FF000079">
-                        <MenuItem Foreground="White" Name="menu_user" Height="32" Width="79" FontSize="18" >
+                    <Menu  HorizontalContentAlignment="Center" Height="32" Margin="724,14,10,0" VerticalAlignment="Top" Background="#FF000079">
+                        <MenuItem Foreground="White" Name="menu_user" Height="32" Width="136" FontSize="18" >
                             <MenuItem Foreground="Black" Name="CheckUpgrade" Header="检查更新" Click="CheckUpgrade_Click"/>
                             <!--<MenuItem Foreground="Black" Name="ReSetting" Header="重新设置" Click="ReSetting_Click"/>
                             <MenuItem Foreground="Black" Name="LoginOut" Header="重新登录" Click="LoginOut_Click"/>-->

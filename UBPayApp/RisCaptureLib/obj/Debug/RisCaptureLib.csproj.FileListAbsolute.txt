@@ -323,6 +323,7 @@ F:\Project\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.pdb
 E:\surge\1.UBPayApp\UBPayApp\UBPayApp\RisCaptureLib\bin\Debug\RisCaptureLib.exe.config
 E:\surge\1.UBPayApp\UBPayApp\UBPayApp\RisCaptureLib\bin\Debug\RisCaptureLib.exe
 E:\surge\1.UBPayApp\UBPayApp\UBPayApp\RisCaptureLib\bin\Debug\RisCaptureLib.pdb
+E:\surge\1.UBPayApp\UBPayApp\UBPayApp\RisCaptureLib\obj\Debug\RisCaptureLib.csprojAssemblyReference.cache
 E:\surge\1.UBPayApp\UBPayApp\UBPayApp\RisCaptureLib\obj\Debug\ToolBarControl.g.cs
 E:\surge\1.UBPayApp\UBPayApp\UBPayApp\RisCaptureLib\obj\Debug\App.g.cs
 E:\surge\1.UBPayApp\UBPayApp\UBPayApp\RisCaptureLib\obj\Debug\GeneratedInternalTypeHelper.g.cs

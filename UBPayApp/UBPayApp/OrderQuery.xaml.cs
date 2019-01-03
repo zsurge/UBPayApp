@@ -645,6 +645,7 @@ namespace UBPayApp
             store_id_key = Var.g_StoreList_Info[cmb_store_id.SelectedIndex - 1].id;
               
             store_flag = false;
+            iPos = 0;
 
 
             ////modify 20181104 在选择相应门店的时候，才列出相应店员
@@ -664,7 +665,7 @@ namespace UBPayApp
             operator_id_key = Var.g_UserList_Info[cmb_operator_id.SelectedIndex - 1].id;
            
             user_flag = false;
-
+            iPos = 0;
 
 
             //modify 20181104 在选择相应门店时，列出所有设备ID
@@ -684,7 +685,7 @@ namespace UBPayApp
             device_id_key = Var.g_DeviceList_Info[cmb_device_id.SelectedIndex - 1].id;
             
             device_flag = false;
-
+            iPos = 0;
             //交易类型列表
             //for (int i = 0; i < Var.all_payment_list_count; i++)
             //{

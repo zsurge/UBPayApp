@@ -292,6 +292,9 @@ namespace UBPayApp
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             ParmIni = new IniFile(System.AppDomain.CurrentDomain.BaseDirectory + @"/Parm.ini");
+
+            tKeyBoxInputID.Text = ParmIni.IniReadValue("UserKey", "key");
+
             string stemp = ParmIni.IniReadValue("Init", "store_id");
             int iPos = 0;
 
@@ -307,7 +310,7 @@ namespace UBPayApp
             cmbStore.SelectedIndex = iPos;
 
             store_flag = false;
-
+            iPos = 0;
 
             ////modify 20181104 在选择相应门店的时候，才列出相应店员
             //// 店员
@@ -323,24 +326,37 @@ namespace UBPayApp
             }
             cmbUser.SelectedIndex = iPos;
             user_flag = false;
-
+            iPos = 0;
 
 
             //modify 20181104 在选择相应门店时，列出所有设备ID
             //// 设备
             cmbDevice.Items.Clear();
-            stemp = ParmIni.IniReadValue("Init", "device_id");
-            for (int i = 0; i < Var.Get_DeviceListCount; i++)
+            if (Var.Get_DeviceListCount != 0)
             {
-                cmbDevice.Items.Add(Var.g_DeviceList_Info[i].name);
-                if (stemp.Trim() == Var.g_DeviceList_Info[i].id)
+                stemp = ParmIni.IniReadValue("Init", "device_id");
+                for (int i = 0; i < Var.Get_DeviceListCount; i++)
                 {
-                    iPos = i;
+                    cmbDevice.Items.Add(Var.g_DeviceList_Info[i].name);
+                    if (stemp.Trim() == Var.g_DeviceList_Info[i].id)
+                    {
+                        iPos = i;
+                    }
                 }
+                cmbDevice.SelectedIndex = iPos;
+                device_flag = false;
+                iPos = 0;
             }
-            cmbDevice.SelectedIndex = iPos;
-            device_flag = false;
-
+            else
+            {
+                Var.device_id = ParmIni.IniReadValue("Init", "device_id");
+                Var.device_name = ParmIni.IniReadValue("Init", "device_name");
+                cmbDevice.Items.Add(Var.device_name);
+                cmbDevice.SelectedIndex = 0;
+                device_flag = false;
+                iPos = 0;
+            }
+            
 
             grid2.Visibility = System.Windows.Visibility.Visible;
             grid8.Visibility = System.Windows.Visibility.Hidden;
