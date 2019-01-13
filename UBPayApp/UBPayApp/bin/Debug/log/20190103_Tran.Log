@@ -2615,3 +2615,1387 @@
 [2019/1/3 16:09:05 246] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000011&data=3a76d1cacb6a9a124cf92b45e8e530050adedfc4f12ba907302bd6f6d9af619e7191353ef3233c6b2fc1c93e358e638782864a1df44b07da33a4d9e138b32597
 [2019/1/3 16:09:05 353] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"3a76d1cacb6a9a124cf92b45e8e530050adedfc4f12ba907302bd6f6d9af619ed2b8643dcb3cbe41ff2f2de3e7feeabbf53b04be4b3e37e9b815edc83729a44020192af597637d1dc5795af6c7dfd980"}
 [2019/1/3 16:09:05 354] [Message] [v1.0.1] inResult=  查询成功
+[2019/1/3 22:54:24 378] [Message] [v1.0.1] ===================用户登陆=================== Start
+[2019/1/3 22:54:24 379] [Message] [v1.0.1] Login Send =  username=gongweiwei&password=flying123456
+[2019/1/3 22:54:24 589] [Message] [v1.0.1] Result =  {"code":1,"msg":"登录成功","data":{"token":"cdd58f8a641da56b9fb85bb79f34ccb2","info":{"app_type":"api","id":"1000000006","agent_id":"10000006","store_id":"1000000004","merchant_id":"1000000011","user_type":"2","type":"2","username":"gongweiwei","open_id":"","timestamp":1546527269}}}
+[2019/1/3 22:54:24 660] [Message] [v1.0.1] ===================用户登陆=================== End
+[2019/1/3 22:54:24 663] [Message] [v1.0.1] ===================用户信息=================== Start
+[2019/1/3 22:54:24 664] [Message] [v1.0.1] GetUserInfo Send =  key=cdd58f8a641da56b9fb85bb79f34ccb2
+[2019/1/3 22:54:24 775] [Message] [v1.0.1] Result =  {"code":1,"msg":"用户信息","data":{"id":"1000000006","agent_id":"10000006","merchant_id":"1000000011","store_id":"1000000004","username":"gongweiwei","phone":"18698865001","open_id":"","type":"2","time_create":"1545978861","time_update":"1545984048","status":"1","user_type":"2","agent":{"id":"10000006","pid":"00000000","name":"坤银润和","number":"100100100","address":"沈阳市长江街17号801","principal_name":"贡伟伟","principal_phone":"18698865001","contact_name":"贡伟伟","contact_phone":"2147483647","contact_email":"116053030@qq.com","time_create":"1545972935","time_update":"0","status":"1"},"merchant":{"id":"1000000011","agent_id":"10000006","name":"测试","short_name":"","number":"110110110","principal_name":"贡伟伟","principal_phone":"18698865001","contact_name":"测试","contact_phone":"18698865001","contact_email":"116053030@qq.com","address":"沈阳市","time_create":"1545977701","time_update":"0","status":"1"},"store":{"id":"1000000004","merchant_id":"1000000011","name":"001","number":"001001","principal_name":"贡伟伟","principal_phone":"贡伟伟","address":"皇姑","time_create":"1545978805","time_update":"0","status":"1"}}}
+[2019/1/3 22:54:24 798] [Message] [v1.0.1] data =  {
+  "id": "1000000006",
+  "agent_id": "10000006",
+  "merchant_id": "1000000011",
+  "store_id": "1000000004",
+  "username": "gongweiwei",
+  "phone": "18698865001",
+  "open_id": "",
+  "type": "2",
+  "time_create": "1545978861",
+  "time_update": "1545984048",
+  "status": "1",
+  "user_type": "2",
+  "agent": {
+    "id": "10000006",
+    "pid": "00000000",
+    "name": "坤银润和",
+    "number": "100100100",
+    "address": "沈阳市长江街17号801",
+    "principal_name": "贡伟伟",
+    "principal_phone": "18698865001",
+    "contact_name": "贡伟伟",
+    "contact_phone": "2147483647",
+    "contact_email": "116053030@qq.com",
+    "time_create": "1545972935",
+    "time_update": "0",
+    "status": "1"
+  },
+  "merchant": {
+    "id": "1000000011",
+    "agent_id": "10000006",
+    "name": "测试",
+    "short_name": "",
+    "number": "110110110",
+    "principal_name": "贡伟伟",
+    "principal_phone": "18698865001",
+    "contact_name": "测试",
+    "contact_phone": "18698865001",
+    "contact_email": "116053030@qq.com",
+    "address": "沈阳市",
+    "time_create": "1545977701",
+    "time_update": "0",
+    "status": "1"
+  },
+  "store": {
+    "id": "1000000004",
+    "merchant_id": "1000000011",
+    "name": "001",
+    "number": "001001",
+    "principal_name": "贡伟伟",
+    "principal_phone": "贡伟伟",
+    "address": "皇姑",
+    "time_create": "1545978805",
+    "time_update": "0",
+    "status": "1"
+  }
+}
+[2019/1/3 22:54:24 799] [Message] [v1.0.1] agent =  {
+  "id": "10000006",
+  "pid": "00000000",
+  "name": "坤银润和",
+  "number": "100100100",
+  "address": "沈阳市长江街17号801",
+  "principal_name": "贡伟伟",
+  "principal_phone": "18698865001",
+  "contact_name": "贡伟伟",
+  "contact_phone": "2147483647",
+  "contact_email": "116053030@qq.com",
+  "time_create": "1545972935",
+  "time_update": "0",
+  "status": "1"
+}
+[2019/1/3 22:54:24 799] [Message] [v1.0.1] merchant =  {
+  "id": "1000000011",
+  "agent_id": "10000006",
+  "name": "测试",
+  "short_name": "",
+  "number": "110110110",
+  "principal_name": "贡伟伟",
+  "principal_phone": "18698865001",
+  "contact_name": "测试",
+  "contact_phone": "18698865001",
+  "contact_email": "116053030@qq.com",
+  "address": "沈阳市",
+  "time_create": "1545977701",
+  "time_update": "0",
+  "status": "1"
+}
+[2019/1/3 22:54:24 800] [Message] [v1.0.1] store =  {
+  "id": "1000000004",
+  "merchant_id": "1000000011",
+  "name": "001",
+  "number": "001001",
+  "principal_name": "贡伟伟",
+  "principal_phone": "贡伟伟",
+  "address": "皇姑",
+  "time_create": "1545978805",
+  "time_update": "0",
+  "status": "1"
+}
+[2019/1/3 22:54:24 801] [Message] [v1.0.1] userinfo.id =  1000000006
+[2019/1/3 22:54:24 802] [Message] [v1.0.1] userinfo.agent_id =  10000006
+[2019/1/3 22:54:24 803] [Message] [v1.0.1] userinfo.merchant_id =  1000000011
+[2019/1/3 22:54:24 804] [Message] [v1.0.1] userinfo.store_id =  1000000004
+[2019/1/3 22:54:24 805] [Message] [v1.0.1] userinfo.username =  gongweiwei
+[2019/1/3 22:54:24 805] [Message] [v1.0.1] userinfo.phone =  18698865001
+[2019/1/3 22:54:24 806] [Message] [v1.0.1] userinfo.open_id =  
+[2019/1/3 22:54:24 807] [Message] [v1.0.1] userinfo.type =  2
+[2019/1/3 22:54:24 808] [Message] [v1.0.1] userinfo.status =  1
+[2019/1/3 22:54:24 809] [Message] [v1.0.1] agentinfo.id =  10000006
+[2019/1/3 22:54:24 809] [Message] [v1.0.1] agentinfo.pid =  00000000
+[2019/1/3 22:54:24 810] [Message] [v1.0.1] agentinfo.name =  坤银润和
+[2019/1/3 22:54:24 811] [Message] [v1.0.1] agentinfo.number =  100100100
+[2019/1/3 22:54:24 812] [Message] [v1.0.1] agentinfo.address =  沈阳市长江街17号801
+[2019/1/3 22:54:24 813] [Message] [v1.0.1] agentinfo.principal_name =  贡伟伟
+[2019/1/3 22:54:24 813] [Message] [v1.0.1] agentinfo.principal_phone =  18698865001
+[2019/1/3 22:54:24 814] [Message] [v1.0.1] agentinfo.contact_name =  贡伟伟
+[2019/1/3 22:54:24 815] [Message] [v1.0.1] agentinfo.contact_phone =  2147483647
+[2019/1/3 22:54:24 816] [Message] [v1.0.1] agentinfo.contact_email =  116053030@qq.com
+[2019/1/3 22:54:24 817] [Message] [v1.0.1] agentinfo.status =  1
+[2019/1/3 22:54:24 817] [Message] [v1.0.1] merchantinfo.id =  1000000011
+[2019/1/3 22:54:24 818] [Message] [v1.0.1] merchantinfo.agent_id =  10000006
+[2019/1/3 22:54:24 819] [Message] [v1.0.1] merchantinfo.name =  测试
+[2019/1/3 22:54:24 820] [Message] [v1.0.1] merchantinfo.short_name =  
+[2019/1/3 22:54:24 821] [Message] [v1.0.1] merchantinfo.number =  110110110
+[2019/1/3 22:54:24 822] [Message] [v1.0.1] merchantinfo.principal_name =  贡伟伟
+[2019/1/3 22:54:24 823] [Message] [v1.0.1] merchantinfo.principal_phone =  18698865001
+[2019/1/3 22:54:24 823] [Message] [v1.0.1] merchantinfo.contact_name =  测试
+[2019/1/3 22:54:24 824] [Message] [v1.0.1] merchantinfo.contact_phone =  18698865001
+[2019/1/3 22:54:24 825] [Message] [v1.0.1] merchantinfo.contact_email =  116053030@qq.com
+[2019/1/3 22:54:24 825] [Message] [v1.0.1] merchantinfo.address =  沈阳市
+[2019/1/3 22:54:24 826] [Message] [v1.0.1] merchantinfo.status =  1
+[2019/1/3 22:54:24 827] [Message] [v1.0.1] storeinfo.id =  1000000004
+[2019/1/3 22:54:24 827] [Message] [v1.0.1] storeinfo.merchant_id =  1000000011
+[2019/1/3 22:54:24 828] [Message] [v1.0.1] storeinfo.name =  001
+[2019/1/3 22:54:24 828] [Message] [v1.0.1] storeinfo.number =  001001
+[2019/1/3 22:54:24 829] [Message] [v1.0.1] storeinfo.principal_name =  贡伟伟
+[2019/1/3 22:54:24 830] [Message] [v1.0.1] storeinfo.principal_phone =  贡伟伟
+[2019/1/3 22:54:24 830] [Message] [v1.0.1] storeinfo.address =  皇姑
+[2019/1/3 22:54:24 831] [Message] [v1.0.1] storeinfo.status =  1
+[2019/1/3 22:54:24 831] [Message] [v1.0.1] ===================用户信息=================== End
+[2019/1/3 22:54:24 837] [Message] [v1.0.1] ===================门店列表=================== Start
+[2019/1/3 22:54:24 838] [Message] [v1.0.1] GetStoreList Send =  key=cdd58f8a641da56b9fb85bb79f34ccb2
+[2019/1/3 22:54:24 941] [Message] [v1.0.1] Result =  {"code":1,"msg":"店铺列表","data":{"list":[{"id":"1000000004","merchant_id":"1000000011","name":"001","number":"001001","principal_name":"贡伟伟","principal_phone":"贡伟伟","address":"皇姑","time_create":"1545978805","time_update":"0","status":"1"}]}}
+[2019/1/3 22:54:24 946] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000004",
+    "merchant_id": "1000000011",
+    "name": "001",
+    "number": "001001",
+    "principal_name": "贡伟伟",
+    "principal_phone": "贡伟伟",
+    "address": "皇姑",
+    "time_create": "1545978805",
+    "time_update": "0",
+    "status": "1"
+  }
+]
+[2019/1/3 22:54:24 957] [Message] [v1.0.1] storelist[1].id =  1000000004
+[2019/1/3 22:54:24 959] [Message] [v1.0.1] storelist[1].merchant_id =  1000000011
+[2019/1/3 22:54:24 961] [Message] [v1.0.1] storelist[1].name =  001
+[2019/1/3 22:54:24 963] [Message] [v1.0.1] storelist[1].number =  001001
+[2019/1/3 22:54:24 966] [Message] [v1.0.1] storelist[1].principal_name =  贡伟伟
+[2019/1/3 22:54:24 968] [Message] [v1.0.1] storelist[1].principal_phone =  贡伟伟
+[2019/1/3 22:54:24 970] [Message] [v1.0.1] storelist[1].address =  皇姑
+[2019/1/3 22:54:24 972] [Message] [v1.0.1] storelist[1].status =  1
+[2019/1/3 22:54:25 008] [Message] [v1.0.1] ===================门店列表=================== End
+[2019/1/3 22:54:25 009] [Message] [v1.0.1] ===================店员列表=================== Start
+[2019/1/3 22:54:25 010] [Message] [v1.0.1] GetUserList Send =  key=cdd58f8a641da56b9fb85bb79f34ccb2&store_id=1000000004
+[2019/1/3 22:54:25 115] [Message] [v1.0.1] Result =  {"code":1,"msg":"店员列表","data":{"list":[{"id":"1000000009","username":"lxj","phone":"18642002258"},{"id":"1000000008","username":"text","phone":"18698865001"},{"id":"1000000007","username":"gongxue","phone":"18698865001"},{"id":"1000000006","username":"gongweiwei","phone":"18698865001"}]}}
+[2019/1/3 22:54:25 117] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000009",
+    "username": "lxj",
+    "phone": "18642002258"
+  },
+  {
+    "id": "1000000008",
+    "username": "text",
+    "phone": "18698865001"
+  },
+  {
+    "id": "1000000007",
+    "username": "gongxue",
+    "phone": "18698865001"
+  },
+  {
+    "id": "1000000006",
+    "username": "gongweiwei",
+    "phone": "18698865001"
+  }
+]
+[2019/1/3 22:54:25 119] [Message] [v1.0.1] userlist[1].id =  1000000009
+[2019/1/3 22:54:25 122] [Message] [v1.0.1] userlist[1].username =  lxj
+[2019/1/3 22:54:25 124] [Message] [v1.0.1] userlist[1].phone =  18642002258
+[2019/1/3 22:54:25 126] [Message] [v1.0.1] userlist[2].id =  1000000008
+[2019/1/3 22:54:25 128] [Message] [v1.0.1] userlist[2].username =  text
+[2019/1/3 22:54:25 130] [Message] [v1.0.1] userlist[2].phone =  18698865001
+[2019/1/3 22:54:25 132] [Message] [v1.0.1] userlist[3].id =  1000000007
+[2019/1/3 22:54:25 134] [Message] [v1.0.1] userlist[3].username =  gongxue
+[2019/1/3 22:54:25 136] [Message] [v1.0.1] userlist[3].phone =  18698865001
+[2019/1/3 22:54:25 138] [Message] [v1.0.1] userlist[4].id =  1000000006
+[2019/1/3 22:54:25 140] [Message] [v1.0.1] userlist[4].username =  gongweiwei
+[2019/1/3 22:54:25 148] [Message] [v1.0.1] userlist[4].phone =  18698865001
+[2019/1/3 22:54:25 180] [Message] [v1.0.1] ===================店员列表=================== End
+[2019/1/3 22:54:25 182] [Message] [v1.0.1] ===================设备列表=================== Start
+[2019/1/3 22:54:25 183] [Message] [v1.0.1] GetDeviceList Send =  key=cdd58f8a641da56b9fb85bb79f34ccb2&store_id=1000000004
+[2019/1/3 22:54:25 294] [Message] [v1.0.1] Result =  {"code":1,"msg":"设备列表","data":{"list":[{"id":"1000000008","name":"00100103","number":"01010103","type":"2"},{"id":"1000000007","name":"00100102","number":"01010102","type":"1"},{"id":"1000000006","name":"00100101","number":"01010101","type":"2"}]}}
+[2019/1/3 22:54:25 296] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000008",
+    "name": "00100103",
+    "number": "01010103",
+    "type": "2"
+  },
+  {
+    "id": "1000000007",
+    "name": "00100102",
+    "number": "01010102",
+    "type": "1"
+  },
+  {
+    "id": "1000000006",
+    "name": "00100101",
+    "number": "01010101",
+    "type": "2"
+  }
+]
+[2019/1/3 22:54:25 298] [Message] [v1.0.1] devicelist[1].id =  1000000008
+[2019/1/3 22:54:25 300] [Message] [v1.0.1] devicelist[1].name =  00100103
+[2019/1/3 22:54:25 302] [Message] [v1.0.1] devicelist[1].number =  01010103
+[2019/1/3 22:54:25 304] [Message] [v1.0.1] devicelist[1].type =  2
+[2019/1/3 22:54:25 306] [Message] [v1.0.1] devicelist[2].id =  1000000007
+[2019/1/3 22:54:25 309] [Message] [v1.0.1] devicelist[2].name =  00100102
+[2019/1/3 22:54:25 311] [Message] [v1.0.1] devicelist[2].number =  01010102
+[2019/1/3 22:54:25 313] [Message] [v1.0.1] devicelist[2].type =  1
+[2019/1/3 22:54:25 315] [Message] [v1.0.1] devicelist[3].id =  1000000006
+[2019/1/3 22:54:25 317] [Message] [v1.0.1] devicelist[3].name =  00100101
+[2019/1/3 22:54:25 319] [Message] [v1.0.1] devicelist[3].number =  01010101
+[2019/1/3 22:54:25 321] [Message] [v1.0.1] devicelist[3].type =  2
+[2019/1/3 22:54:25 373] [Message] [v1.0.1] ===================设备列表=================== End
+[2019/1/3 22:54:25 374] [Message] [v1.0.1] ===================交易类型列表=================== Start
+[2019/1/3 22:54:25 375] [Message] [v1.0.1] Get_all_paymentList Send =  key=cdd58f8a641da56b9fb85bb79f34ccb2
+[2019/1/3 22:54:25 478] [Message] [v1.0.1] Result =  {"code":1,"msg":"交易类型","data":{"qrcode":"扫码支付","barcode":"条码支付","weixin_public":"微信公众号支付"}}
+[2019/1/3 22:54:25 480] [Message] [v1.0.1] data =  {
+  "qrcode": "扫码支付",
+  "barcode": "条码支付",
+  "weixin_public": "微信公众号支付"
+}
+[2019/1/3 22:54:25 588] [Message] [v1.0.1] ===================交易类型列表=================== End
+[2019/1/3 22:54:25 591] [Message] [v1.0.1] ===================交易方式列表=================== Start
+[2019/1/3 22:54:25 591] [Message] [v1.0.1] Get_all_payment_channel =  key=cdd58f8a641da56b9fb85bb79f34ccb2
+[2019/1/3 22:54:25 692] [Message] [v1.0.1] Result =  {"code":1,"msg":"支付方式","data":{"weixin":"微信","alipay":"支付宝","unionpay":"银联","xt":"新天","xz_weixin":"现在微信","xz_alipay":"现在支付宝","sf_weixin":"上福微信","sf_alipay":"上福支付宝"}}
+[2019/1/3 22:54:25 693] [Message] [v1.0.1] data =  {
+  "weixin": "微信",
+  "alipay": "支付宝",
+  "unionpay": "银联",
+  "xt": "新天",
+  "xz_weixin": "现在微信",
+  "xz_alipay": "现在支付宝",
+  "sf_weixin": "上福微信",
+  "sf_alipay": "上福支付宝"
+}
+[2019/1/3 22:54:25 693] [Message] [v1.0.1] ===================交易方式列表=================== End
+[2019/1/3 22:54:25 695] [Message] [v1.0.1] ===================订单状态=================== Start
+[2019/1/3 22:54:25 695] [Message] [v1.0.1] ApiGet_all_OrderStatus Send =  key=cdd58f8a641da56b9fb85bb79f34ccb2
+[2019/1/3 22:54:25 799] [Message] [v1.0.1] Result =  {"code":1,"msg":"订单状态","data":{"1":"待支付","2":"处理中","3":"支付成功","4":"支付失败","5":"交易撤销","6":"交易关闭","7":"转入退款"}}
+[2019/1/3 22:54:25 801] [Message] [v1.0.1] inResult=  订单状态
+[2019/1/3 22:54:25 806] [Message] [v1.0.1] ===================订单状态=================== End
+[2019/1/3 22:54:25 809] [Message] [v1.0.1] ===================退款状态=================== Start
+[2019/1/3 22:54:25 811] [Message] [v1.0.1] ApiGet_all_RefundStatus Send =  key=cdd58f8a641da56b9fb85bb79f34ccb2
+[2019/1/3 22:54:25 919] [Message] [v1.0.1] Result =  {"code":1,"msg":"退款状态","data":{"1":"待处理","2":"处理中","3":"退款成功","4":"退款失败"}}
+[2019/1/3 22:54:25 920] [Message] [v1.0.1] inResult=  退款状态
+[2019/1/3 22:54:25 921] [Message] [v1.0.1] ===================退款状态=================== End
+[2019/1/3 22:54:44 348] [Message] [v1.0.1] ===================交易查询=================== Start
+[2019/1/3 22:54:44 350] [Message] [v1.0.1] GetOrder_List Send =  key=cdd58f8a641da56b9fb85bb79f34ccb2&page=5&current=1&time_type=1&time_start=2019-1-3 0:00:00&time_end=2019-1-3 23:59:59&channel=&payment=&order_id=&store_id=1000000004&operator_id=1000000008&device_id=1000000006&merchant_id=1000000011&status=&export=0
+[2019/1/3 22:54:44 474] [Message] [v1.0.1] Result =  {"code":1,"msg":"订单列表","data":{"list":[{"id":"831","order_id":"300599847534623008001","out_order_id":"4200000225201901037675950470","out_username":null,"out_user_id":"oTTz7wVpdTJew9ICg9Um","agent_id":"10000006","merchant_id":"1000000011","channel":"weixin","payment":"barcode","store_id":"1000000004","store_name":"001","operator_id":"1000000008","operator_name":"text","device_id":"1000000006","device_name":"00100101","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"300599847534623008001","subject":"300599847534623008001","time_create":"2019-01-03 16:18:54","time_update":"2019-01-03 16:18:56","status":"3","profit_status":"1","remark":"支付成功","_status":"支付成功","payment_name":"条码支付","channel_name":"微信"},{"id":"830","order_id":"140599846945693008001","out_order_id":"4200000224201901036408253664","out_username":null,"out_user_id":"oTTz7wVpdTJew9ICg9Um","agent_id":"10000006","merchant_id":"1000000011","channel":"weixin","payment":"barcode","store_id":"1000000004","store_name":"001","operator_id":"1000000008","operator_name":"text","device_id":"1000000006","device_name":"00100101","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"140599846945693008001","subject":"140599846945693008001","time_create":"2019-01-03 16:09:05","time_update":"2019-01-03 16:09:07","status":"3","profit_status":"1","remark":"支付成功","_status":"支付成功","payment_name":"条码支付","channel_name":"微信"},{"id":"829","order_id":"820599842973724008001","out_order_id":"2019010322001445950586435335","out_username":"zdh***@126.com","out_user_id":"2088122971845959","agent_id":"10000006","merchant_id":"1000000011","channel":"alipay","payment":"barcode","store_id":"1000000004","store_name":"001","operator_id":"1000000008","operator_name":"text","device_id":"1000000006","device_name":"00100101","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"820599842973724008001","subject":"820599842973724008001","time_create":"2019-01-03 15:02:53","time_update":"2019-01-03 15:02:56","status":"3","profit_status":"1","remark":"支付成功","_status":"支付成功","payment_name":"条码支付","channel_name":"支付宝"},{"id":"828","order_id":"430599835671422008001","out_order_id":"4200000221201901033922868458","out_username":null,"out_user_id":"oTTz7wVpdTJew9ICg9Um","agent_id":"10000006","merchant_id":"1000000011","channel":"weixin","payment":"barcode","store_id":"1000000004","store_name":"001","operator_id":"1000000008","operator_name":"text","device_id":"1000000006","device_name":"00100101","amount":"0.02","actual_amount":"0.02","refund_amount":"0.00","body":"430599835671422008001","subject":"430599835671422008001","time_create":"2019-01-03 13:01:11","time_update":"2019-01-03 13:01:13","status":"3","profit_status":"1","remark":"支付成功","_status":"支付成功","payment_name":"条码支付","channel_name":"微信"},{"id":"827","order_id":"560599835518164008001","out_order_id":"4200000236201901033322427770","out_username":null,"out_user_id":"oTTz7wVpdTJew9ICg9Um","agent_id":"10000006","merchant_id":"1000000011","channel":"weixin","payment":"barcode","store_id":"1000000004","store_name":"001","operator_id":"1000000008","operator_name":"text","device_id":"1000000006","device_name":"00100101","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"560599835518164008001","subject":"560599835518164008001","time_create":"2019-01-03 12:58:38","time_update":"2019-01-03 12:58:40","status":"3","profit_status":"1","remark":"支付成功","_status":"支付成功","payment_name":"条码支付","channel_name":"微信"}],"total":"5","sum_amount":"0.06","sum_actual_amount":"0.06","sum_refund_amount":"0.00"}}
+[2019/1/3 22:54:44 476] [Message] [v1.0.1] data =  {
+  "list": [
+    {
+      "id": "831",
+      "order_id": "300599847534623008001",
+      "out_order_id": "4200000225201901037675950470",
+      "out_username": null,
+      "out_user_id": "oTTz7wVpdTJew9ICg9Um",
+      "agent_id": "10000006",
+      "merchant_id": "1000000011",
+      "channel": "weixin",
+      "payment": "barcode",
+      "store_id": "1000000004",
+      "store_name": "001",
+      "operator_id": "1000000008",
+      "operator_name": "text",
+      "device_id": "1000000006",
+      "device_name": "00100101",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "300599847534623008001",
+      "subject": "300599847534623008001",
+      "time_create": "2019-01-03 16:18:54",
+      "time_update": "2019-01-03 16:18:56",
+      "status": "3",
+      "profit_status": "1",
+      "remark": "支付成功",
+      "_status": "支付成功",
+      "payment_name": "条码支付",
+      "channel_name": "微信"
+    },
+    {
+      "id": "830",
+      "order_id": "140599846945693008001",
+      "out_order_id": "4200000224201901036408253664",
+      "out_username": null,
+      "out_user_id": "oTTz7wVpdTJew9ICg9Um",
+      "agent_id": "10000006",
+      "merchant_id": "1000000011",
+      "channel": "weixin",
+      "payment": "barcode",
+      "store_id": "1000000004",
+      "store_name": "001",
+      "operator_id": "1000000008",
+      "operator_name": "text",
+      "device_id": "1000000006",
+      "device_name": "00100101",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "140599846945693008001",
+      "subject": "140599846945693008001",
+      "time_create": "2019-01-03 16:09:05",
+      "time_update": "2019-01-03 16:09:07",
+      "status": "3",
+      "profit_status": "1",
+      "remark": "支付成功",
+      "_status": "支付成功",
+      "payment_name": "条码支付",
+      "channel_name": "微信"
+    },
+    {
+      "id": "829",
+      "order_id": "820599842973724008001",
+      "out_order_id": "2019010322001445950586435335",
+      "out_username": "zdh***@126.com",
+      "out_user_id": "2088122971845959",
+      "agent_id": "10000006",
+      "merchant_id": "1000000011",
+      "channel": "alipay",
+      "payment": "barcode",
+      "store_id": "1000000004",
+      "store_name": "001",
+      "operator_id": "1000000008",
+      "operator_name": "text",
+      "device_id": "1000000006",
+      "device_name": "00100101",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "820599842973724008001",
+      "subject": "820599842973724008001",
+      "time_create": "2019-01-03 15:02:53",
+      "time_update": "2019-01-03 15:02:56",
+      "status": "3",
+      "profit_status": "1",
+      "remark": "支付成功",
+      "_status": "支付成功",
+      "payment_name": "条码支付",
+      "channel_name": "支付宝"
+    },
+    {
+      "id": "828",
+      "order_id": "430599835671422008001",
+      "out_order_id": "4200000221201901033922868458",
+      "out_username": null,
+      "out_user_id": "oTTz7wVpdTJew9ICg9Um",
+      "agent_id": "10000006",
+      "merchant_id": "1000000011",
+      "channel": "weixin",
+      "payment": "barcode",
+      "store_id": "1000000004",
+      "store_name": "001",
+      "operator_id": "1000000008",
+      "operator_name": "text",
+      "device_id": "1000000006",
+      "device_name": "00100101",
+      "amount": "0.02",
+      "actual_amount": "0.02",
+      "refund_amount": "0.00",
+      "body": "430599835671422008001",
+      "subject": "430599835671422008001",
+      "time_create": "2019-01-03 13:01:11",
+      "time_update": "2019-01-03 13:01:13",
+      "status": "3",
+      "profit_status": "1",
+      "remark": "支付成功",
+      "_status": "支付成功",
+      "payment_name": "条码支付",
+      "channel_name": "微信"
+    },
+    {
+      "id": "827",
+      "order_id": "560599835518164008001",
+      "out_order_id": "4200000236201901033322427770",
+      "out_username": null,
+      "out_user_id": "oTTz7wVpdTJew9ICg9Um",
+      "agent_id": "10000006",
+      "merchant_id": "1000000011",
+      "channel": "weixin",
+      "payment": "barcode",
+      "store_id": "1000000004",
+      "store_name": "001",
+      "operator_id": "1000000008",
+      "operator_name": "text",
+      "device_id": "1000000006",
+      "device_name": "00100101",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "560599835518164008001",
+      "subject": "560599835518164008001",
+      "time_create": "2019-01-03 12:58:38",
+      "time_update": "2019-01-03 12:58:40",
+      "status": "3",
+      "profit_status": "1",
+      "remark": "支付成功",
+      "_status": "支付成功",
+      "payment_name": "条码支付",
+      "channel_name": "微信"
+    }
+  ],
+  "total": "5",
+  "sum_amount": "0.06",
+  "sum_actual_amount": "0.06",
+  "sum_refund_amount": "0.00"
+}
+[2019/1/3 22:54:44 482] [Message] [v1.0.1] ===================交易查询=================== End
+[2019/1/3 22:55:51 303] [Message] [v1.0.1] Exception = 输入字符串的格式不正确。
+[2019/1/3 22:55:51 308] [Message] [v1.0.1] Exception = mscorlib
+[2019/1/3 22:55:51 308] [Message] [v1.0.1] Exception =    在 System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToDouble(String value)
+   在 UBPayApp.PayWindow.GetNum(Double& Money) 位置 F:\Project\UBPayApp\UBPayApp\PayWindow.xaml.cs:行号 161
+[2019/1/3 22:56:14 467] [Message] [v1.0.1] InterfaceAddOrder jsonData=  {"payment":"barcode","channel":"","order_id":"","amount":"0.01","auth_code":"134538694134664989","subject":"","body":"","store_id":"1000000004","operator_id":"1000000008","device_id":"1000000006","timestamp":"1546527374"}
+[2019/1/3 22:56:14 476] [Message] [v1.0.1] InterfaceAddOrder httppara=  merchant_id=1000000011&data=4d386ab2d6d007c29f701c79ded75c9f0f25dafd1af7cc284aa2228deb410dfd94a2a4825dcf29c60b171cad6337d0c172e27f3c378d69386fec548ef2d67bd4f416089ad7264f28dce8fc6687203326f9b4dc4d22e5180fa8e5ec1042f5db8ddd7ac6ef95b6aaa87d1efddcbf8a7c758235ffe7a8e6b2b57e50d70483195787c22afe3768a9291181bb74c912d9bda9fe3b0e5133ab47170641684a4576135cf4fc4a12b8ec94bf80528c0aa4ddc2c5bf04b65feaf2e55a71d6c7bfb72ac40ae9d961cd330f9428d8313020865082135ea6690097a0c8e138ac0e2625d01600
+[2019/1/3 22:56:15 268] [Message] [v1.0.1] InterfaceAddOrder Result=  {"code":1,"msg":"下单成功","data":"b57fe084284b62c3ab999f0026f4df12c2282a610475035e6fbb9ed2bb89653fe32b32239d5e6c71c60dbfbe1491983a34e8f651c400f29caf2e2624665086c38f17bd66c9f2bbb5a3c5349616fbc2255925cb6084aca06d3e3afb86ee3ea4a2169b9ac89ed9b056b7bde75dfad8b52d"}
+[2019/1/3 22:56:15 270] [Message] [v1.0.1] inResult=  下单成功
+[2019/1/3 22:56:15 286] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"430599871379882008001","timestamp":"1546527375"}
+[2019/1/3 22:56:15 289] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000011&data=b57fe084284b62c3ab999f0026f4df12c2282a610475035e6fbb9ed2bb89653f7191353ef3233c6b2fc1c93e358e6387178e7d95bc7c8f48938d4c86a373d83f
+[2019/1/3 22:56:15 597] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"b57fe084284b62c3ab999f0026f4df12c2282a610475035e6fbb9ed2bb89653fe32b32239d5e6c71c60dbfbe1491983a34e8f651c400f29caf2e2624665086c382043543e85c72ff9d2cd36477a6296d"}
+[2019/1/3 22:56:15 598] [Message] [v1.0.1] inResult=  查询成功
+[2019/1/3 22:56:20 599] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"430599871379882008001","timestamp":"1546527381"}
+[2019/1/3 22:56:20 602] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000011&data=b57fe084284b62c3ab999f0026f4df12c2282a610475035e6fbb9ed2bb89653f7191353ef3233c6b2fc1c93e358e638716e3d7e7a6857a2ffac86bda55ef916f
+[2019/1/3 22:56:20 919] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"b57fe084284b62c3ab999f0026f4df12c2282a610475035e6fbb9ed2bb89653fe32b32239d5e6c71c60dbfbe1491983a34e8f651c400f29caf2e2624665086c382043543e85c72ff9d2cd36477a6296d"}
+[2019/1/3 22:56:20 921] [Message] [v1.0.1] inResult=  查询成功
+[2019/1/3 22:56:25 922] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"430599871379882008001","timestamp":"1546527386"}
+[2019/1/3 22:56:25 924] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000011&data=b57fe084284b62c3ab999f0026f4df12c2282a610475035e6fbb9ed2bb89653f7191353ef3233c6b2fc1c93e358e6387d6a46dafd2ae4cc6d0e9957f66456272
+[2019/1/3 22:56:26 251] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"b57fe084284b62c3ab999f0026f4df12c2282a610475035e6fbb9ed2bb89653fd2b8643dcb3cbe41ff2f2de3e7feeabbf53b04be4b3e37e9b815edc83729a44020192af597637d1dc5795af6c7dfd980"}
+[2019/1/3 22:56:26 253] [Message] [v1.0.1] inResult=  查询成功
+[2019/1/3 22:56:51 596] [Message] [v1.0.1] Exception = 输入字符串的格式不正确。
+[2019/1/3 22:56:51 597] [Message] [v1.0.1] Exception = mscorlib
+[2019/1/3 22:56:51 598] [Message] [v1.0.1] Exception =    在 System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToDouble(String value)
+   在 UBPayApp.PayWindow.GetNum(Double& Money) 位置 F:\Project\UBPayApp\UBPayApp\PayWindow.xaml.cs:行号 161
+[2019/1/3 22:57:12 187] [Message] [v1.0.1] InterfaceAddOrder jsonData=  {"payment":"barcode","channel":"","order_id":"","amount":"0.02","auth_code":"134662033493156771","subject":"","body":"","store_id":"1000000004","operator_id":"1000000007","device_id":"1000000006","timestamp":"1546527432"}
+[2019/1/3 22:57:12 190] [Message] [v1.0.1] InterfaceAddOrder httppara=  merchant_id=1000000011&data=4d386ab2d6d007c29f701c79ded75c9f0f25dafd1af7cc284aa2228deb410dfd94a2a4825dcf29c60b171cad6337d0c186dcc1d845ef2fe39771625d29e75ebaf416089ad7264f28dce8fc6687203326c3a4d3179c1728710e110f02aa1fbdc5dd7ac6ef95b6aaa87d1efddcbf8a7c758235ffe7a8e6b2b57e50d70483195787c22afe3768a9291181bb74c912d9bda9fe3b0e5133ab47170641684a4576135c186ede1aa705b1bb3ee9e4848f7a54dabf04b65feaf2e55a71d6c7bfb72ac40ae9d961cd330f9428d83130208650821307a96ee36bbdbf55205e621258f6af65
+[2019/1/3 22:57:12 872] [Message] [v1.0.1] InterfaceAddOrder Result=  {"code":1,"msg":"下单成功","data":"1f03a3d946146c2dd2cd64231a86615600f037e1d7ecb6f95a8033d09b37fb9ee32b32239d5e6c71c60dbfbe1491983a34e8f651c400f29caf2e2624665086c38f17bd66c9f2bbb5a3c5349616fbc2255925cb6084aca06d3e3afb86ee3ea4a2169b9ac89ed9b056b7bde75dfad8b52d"}
+[2019/1/3 22:57:12 873] [Message] [v1.0.1] inResult=  下单成功
+[2019/1/3 22:57:12 876] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"490599871437555007001","timestamp":"1546527433"}
+[2019/1/3 22:57:12 877] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000011&data=1f03a3d946146c2dd2cd64231a86615600f037e1d7ecb6f95a8033d09b37fb9e7191353ef3233c6b2fc1c93e358e63875429ad96d51e7f4e0ec1ff8b7c387b57
+[2019/1/3 22:57:13 174] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"1f03a3d946146c2dd2cd64231a86615600f037e1d7ecb6f95a8033d09b37fb9ee32b32239d5e6c71c60dbfbe1491983a34e8f651c400f29caf2e2624665086c382043543e85c72ff9d2cd36477a6296d"}
+[2019/1/3 22:57:13 177] [Message] [v1.0.1] inResult=  查询成功
+[2019/1/3 22:57:18 178] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"490599871437555007001","timestamp":"1546527438"}
+[2019/1/3 22:57:18 181] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000011&data=1f03a3d946146c2dd2cd64231a86615600f037e1d7ecb6f95a8033d09b37fb9e7191353ef3233c6b2fc1c93e358e638729d47ca5c18a2eb76ef93c1abf7c4ad5
+[2019/1/3 22:57:18 495] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"1f03a3d946146c2dd2cd64231a86615600f037e1d7ecb6f95a8033d09b37fb9ed2b8643dcb3cbe41ff2f2de3e7feeabbf53b04be4b3e37e9b815edc83729a44020192af597637d1dc5795af6c7dfd980"}
+[2019/1/3 22:57:18 497] [Message] [v1.0.1] inResult=  查询成功
+[2019/1/3 22:57:29 323] [Message] [v1.0.1] Exception = 输入字符串的格式不正确。
+[2019/1/3 22:57:29 324] [Message] [v1.0.1] Exception = mscorlib
+[2019/1/3 22:57:29 325] [Message] [v1.0.1] Exception =    在 System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToDouble(String value)
+   在 UBPayApp.PayWindow.GetNum(Double& Money) 位置 F:\Project\UBPayApp\UBPayApp\PayWindow.xaml.cs:行号 161
+[2019/1/3 22:57:47 294] [Message] [v1.0.1] InterfaceAddOrder jsonData=  {"payment":"barcode","channel":"","order_id":"","amount":"0.03","auth_code":"134639376615916634","subject":"","body":"","store_id":"1000000004","operator_id":"1000000007","device_id":"1000000006","timestamp":"1546527467"}
+[2019/1/3 22:57:47 296] [Message] [v1.0.1] InterfaceAddOrder httppara=  merchant_id=1000000011&data=4d386ab2d6d007c29f701c79ded75c9f0f25dafd1af7cc284aa2228deb410dfd94a2a4825dcf29c60b171cad6337d0c1f9cb535dc32c0e6757445e3e11899cd8f416089ad7264f28dce8fc6687203326ecd4b3ffd74fd839cb37d786856b14efdd7ac6ef95b6aaa87d1efddcbf8a7c758235ffe7a8e6b2b57e50d70483195787c22afe3768a9291181bb74c912d9bda9fe3b0e5133ab47170641684a4576135c186ede1aa705b1bb3ee9e4848f7a54dabf04b65feaf2e55a71d6c7bfb72ac40ae9d961cd330f9428d83130208650821385fdd02f37e23f83daf6e8f2f5bcf0c2
+[2019/1/3 22:57:47 984] [Message] [v1.0.1] InterfaceAddOrder Result=  {"code":1,"msg":"下单成功","data":"d829f128e692cf4d7b2126f4d6e1d73131c0553d2b91d39635258f0aeaeb8270e32b32239d5e6c71c60dbfbe1491983a34e8f651c400f29caf2e2624665086c38f17bd66c9f2bbb5a3c5349616fbc2255925cb6084aca06d3e3afb86ee3ea4a2169b9ac89ed9b056b7bde75dfad8b52d"}
+[2019/1/3 22:57:47 985] [Message] [v1.0.1] inResult=  下单成功
+[2019/1/3 22:57:47 989] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"700599871472654007001","timestamp":"1546527468"}
+[2019/1/3 22:57:47 990] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000011&data=d829f128e692cf4d7b2126f4d6e1d73131c0553d2b91d39635258f0aeaeb82707191353ef3233c6b2fc1c93e358e63874770b65beca90091326fd6237ea14e77
+[2019/1/3 22:57:48 280] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"d829f128e692cf4d7b2126f4d6e1d73131c0553d2b91d39635258f0aeaeb8270e32b32239d5e6c71c60dbfbe1491983a34e8f651c400f29caf2e2624665086c382043543e85c72ff9d2cd36477a6296d"}
+[2019/1/3 22:57:48 283] [Message] [v1.0.1] inResult=  查询成功
+[2019/1/3 22:57:53 284] [Message] [v1.0.1] ApiOrderStatusQuery jsonData=  {"order_id":"700599871472654007001","timestamp":"1546527473"}
+[2019/1/3 22:57:53 287] [Message] [v1.0.1] ApiOrderStatusQuery httppara=  merchant_id=1000000011&data=d829f128e692cf4d7b2126f4d6e1d73131c0553d2b91d39635258f0aeaeb82707191353ef3233c6b2fc1c93e358e6387064fdc2d0eb9d789dcd83058137b2f20
+[2019/1/3 22:57:53 560] [Message] [v1.0.1] ApiOrderStatusQuery Result=  {"code":1,"msg":"查询成功","data":"d829f128e692cf4d7b2126f4d6e1d73131c0553d2b91d39635258f0aeaeb8270d2b8643dcb3cbe41ff2f2de3e7feeabbf53b04be4b3e37e9b815edc83729a44020192af597637d1dc5795af6c7dfd980"}
+[2019/1/3 22:57:53 563] [Message] [v1.0.1] inResult=  查询成功
+[2019/1/3 22:58:02 739] [Message] [v1.0.1] ===================交易查询=================== Start
+[2019/1/3 22:58:02 740] [Message] [v1.0.1] GetOrder_List Send =  key=cdd58f8a641da56b9fb85bb79f34ccb2&page=5&current=1&time_type=1&time_start=2019-1-3 0:00:00&time_end=2019-1-3 23:59:59&channel=&payment=&order_id=&store_id=1000000004&operator_id=1000000007&device_id=1000000006&merchant_id=1000000011&status=&export=0
+[2019/1/3 22:58:02 867] [Message] [v1.0.1] Result =  {"code":1,"msg":"订单列表","data":{"list":[{"id":"854","order_id":"700599871472654007001","out_order_id":"4200000231201901032943500213","out_username":null,"out_user_id":"oTTz7wVpdTJew9ICg9Um","agent_id":"10000006","merchant_id":"1000000011","channel":"weixin","payment":"barcode","store_id":"1000000004","store_name":"001","operator_id":"1000000007","operator_name":"gongxue","device_id":"1000000006","device_name":"00100101","amount":"0.03","actual_amount":"0.03","refund_amount":"0.00","body":"700599871472654007001","subject":"700599871472654007001","time_create":"2019-01-03 22:57:52","time_update":"2019-01-03 22:57:58","status":"3","profit_status":"1","remark":"支付成功","_status":"支付成功","payment_name":"条码支付","channel_name":"微信"},{"id":"853","order_id":"490599871437555007001","out_order_id":"4200000218201901032122461781","out_username":null,"out_user_id":"oTTz7wVpdTJew9ICg9Um","agent_id":"10000006","merchant_id":"1000000011","channel":"weixin","payment":"barcode","store_id":"1000000004","store_name":"001","operator_id":"1000000007","operator_name":"gongxue","device_id":"1000000006","device_name":"00100101","amount":"0.02","actual_amount":"0.02","refund_amount":"0.00","body":"490599871437555007001","subject":"490599871437555007001","time_create":"2019-01-03 22:57:17","time_update":"2019-01-03 22:57:23","status":"3","profit_status":"1","remark":"支付成功","_status":"支付成功","payment_name":"条码支付","channel_name":"微信"}],"total":"2","sum_amount":"0.05","sum_actual_amount":"0.05","sum_refund_amount":"0.00"}}
+[2019/1/3 22:58:02 868] [Message] [v1.0.1] data =  {
+  "list": [
+    {
+      "id": "854",
+      "order_id": "700599871472654007001",
+      "out_order_id": "4200000231201901032943500213",
+      "out_username": null,
+      "out_user_id": "oTTz7wVpdTJew9ICg9Um",
+      "agent_id": "10000006",
+      "merchant_id": "1000000011",
+      "channel": "weixin",
+      "payment": "barcode",
+      "store_id": "1000000004",
+      "store_name": "001",
+      "operator_id": "1000000007",
+      "operator_name": "gongxue",
+      "device_id": "1000000006",
+      "device_name": "00100101",
+      "amount": "0.03",
+      "actual_amount": "0.03",
+      "refund_amount": "0.00",
+      "body": "700599871472654007001",
+      "subject": "700599871472654007001",
+      "time_create": "2019-01-03 22:57:52",
+      "time_update": "2019-01-03 22:57:58",
+      "status": "3",
+      "profit_status": "1",
+      "remark": "支付成功",
+      "_status": "支付成功",
+      "payment_name": "条码支付",
+      "channel_name": "微信"
+    },
+    {
+      "id": "853",
+      "order_id": "490599871437555007001",
+      "out_order_id": "4200000218201901032122461781",
+      "out_username": null,
+      "out_user_id": "oTTz7wVpdTJew9ICg9Um",
+      "agent_id": "10000006",
+      "merchant_id": "1000000011",
+      "channel": "weixin",
+      "payment": "barcode",
+      "store_id": "1000000004",
+      "store_name": "001",
+      "operator_id": "1000000007",
+      "operator_name": "gongxue",
+      "device_id": "1000000006",
+      "device_name": "00100101",
+      "amount": "0.02",
+      "actual_amount": "0.02",
+      "refund_amount": "0.00",
+      "body": "490599871437555007001",
+      "subject": "490599871437555007001",
+      "time_create": "2019-01-03 22:57:17",
+      "time_update": "2019-01-03 22:57:23",
+      "status": "3",
+      "profit_status": "1",
+      "remark": "支付成功",
+      "_status": "支付成功",
+      "payment_name": "条码支付",
+      "channel_name": "微信"
+    }
+  ],
+  "total": "2",
+  "sum_amount": "0.05",
+  "sum_actual_amount": "0.05",
+  "sum_refund_amount": "0.00"
+}
+[2019/1/3 22:58:02 868] [Message] [v1.0.1] ===================交易查询=================== End
+[2019/1/3 22:58:11 339] [Message] [v1.0.1] ===================交易查询=================== Start
+[2019/1/3 22:58:11 341] [Message] [v1.0.1] GetOrder_List Send =  key=cdd58f8a641da56b9fb85bb79f34ccb2&page=5&current=1&time_type=1&time_start=2019-1-3 0:00:00&time_end=2019-1-3 23:59:59&channel=&payment=&order_id=&store_id=1000000004&operator_id=&device_id=1000000006&merchant_id=1000000011&status=&export=0
+[2019/1/3 22:58:11 477] [Message] [v1.0.1] Result =  {"code":1,"msg":"订单列表","data":{"list":[{"id":"854","order_id":"700599871472654007001","out_order_id":"4200000231201901032943500213","out_username":null,"out_user_id":"oTTz7wVpdTJew9ICg9Um","agent_id":"10000006","merchant_id":"1000000011","channel":"weixin","payment":"barcode","store_id":"1000000004","store_name":"001","operator_id":"1000000007","operator_name":"gongxue","device_id":"1000000006","device_name":"00100101","amount":"0.03","actual_amount":"0.03","refund_amount":"0.00","body":"700599871472654007001","subject":"700599871472654007001","time_create":"2019-01-03 22:57:52","time_update":"2019-01-03 22:57:58","status":"3","profit_status":"1","remark":"支付成功","_status":"支付成功","payment_name":"条码支付","channel_name":"微信"},{"id":"853","order_id":"490599871437555007001","out_order_id":"4200000218201901032122461781","out_username":null,"out_user_id":"oTTz7wVpdTJew9ICg9Um","agent_id":"10000006","merchant_id":"1000000011","channel":"weixin","payment":"barcode","store_id":"1000000004","store_name":"001","operator_id":"1000000007","operator_name":"gongxue","device_id":"1000000006","device_name":"00100101","amount":"0.02","actual_amount":"0.02","refund_amount":"0.00","body":"490599871437555007001","subject":"490599871437555007001","time_create":"2019-01-03 22:57:17","time_update":"2019-01-03 22:57:23","status":"3","profit_status":"1","remark":"支付成功","_status":"支付成功","payment_name":"条码支付","channel_name":"微信"},{"id":"852","order_id":"430599871379882008001","out_order_id":"4200000236201901031694337249","out_username":null,"out_user_id":"oTTz7wVpdTJew9ICg9Um","agent_id":"10000006","merchant_id":"1000000011","channel":"weixin","payment":"barcode","store_id":"1000000004","store_name":"001","operator_id":"1000000008","operator_name":"text","device_id":"1000000006","device_name":"00100101","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"430599871379882008001","subject":"430599871379882008001","time_create":"2019-01-03 22:56:19","time_update":"2019-01-03 22:56:31","status":"3","profit_status":"1","remark":"支付成功","_status":"支付成功","payment_name":"条码支付","channel_name":"微信"},{"id":"850","order_id":"150599852413169006001","out_order_id":"2019010317401302816513","out_username":null,"out_user_id":null,"agent_id":"10000006","merchant_id":"1000000011","channel":"xt","payment":"barcode","store_id":"1000000004","store_name":"001","operator_id":"1000000006","operator_name":"gongweiwei","device_id":"1000000006","device_name":"00100101","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"150599852413169006001","subject":"150599852413169006001","time_create":"2019-01-03 17:40:13","time_update":"2019-01-03 17:40:13","status":"3","profit_status":"1","remark":"支付成功","_status":"支付成功","payment_name":"条码支付","channel_name":"新天"},{"id":"840","order_id":"990599850644019006001","out_order_id":"4200000215201901038658772251","out_username":null,"out_user_id":"oTTz7wddJAg5Jege3uOd","agent_id":"10000006","merchant_id":"1000000011","channel":"weixin","payment":"barcode","store_id":"1000000004","store_name":"001","operator_id":"1000000006","operator_name":"gongweiwei","device_id":"1000000006","device_name":"00100101","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"990599850644019006001","subject":"990599850644019006001","time_create":"2019-01-03 17:10:44","time_update":"2019-01-03 17:10:45","status":"3","profit_status":"1","remark":"支付成功","_status":"支付成功","payment_name":"条码支付","channel_name":"微信"}],"total":"17","sum_amount":"0.21","sum_actual_amount":"0.21","sum_refund_amount":"0.00"}}
+[2019/1/3 22:58:11 478] [Message] [v1.0.1] data =  {
+  "list": [
+    {
+      "id": "854",
+      "order_id": "700599871472654007001",
+      "out_order_id": "4200000231201901032943500213",
+      "out_username": null,
+      "out_user_id": "oTTz7wVpdTJew9ICg9Um",
+      "agent_id": "10000006",
+      "merchant_id": "1000000011",
+      "channel": "weixin",
+      "payment": "barcode",
+      "store_id": "1000000004",
+      "store_name": "001",
+      "operator_id": "1000000007",
+      "operator_name": "gongxue",
+      "device_id": "1000000006",
+      "device_name": "00100101",
+      "amount": "0.03",
+      "actual_amount": "0.03",
+      "refund_amount": "0.00",
+      "body": "700599871472654007001",
+      "subject": "700599871472654007001",
+      "time_create": "2019-01-03 22:57:52",
+      "time_update": "2019-01-03 22:57:58",
+      "status": "3",
+      "profit_status": "1",
+      "remark": "支付成功",
+      "_status": "支付成功",
+      "payment_name": "条码支付",
+      "channel_name": "微信"
+    },
+    {
+      "id": "853",
+      "order_id": "490599871437555007001",
+      "out_order_id": "4200000218201901032122461781",
+      "out_username": null,
+      "out_user_id": "oTTz7wVpdTJew9ICg9Um",
+      "agent_id": "10000006",
+      "merchant_id": "1000000011",
+      "channel": "weixin",
+      "payment": "barcode",
+      "store_id": "1000000004",
+      "store_name": "001",
+      "operator_id": "1000000007",
+      "operator_name": "gongxue",
+      "device_id": "1000000006",
+      "device_name": "00100101",
+      "amount": "0.02",
+      "actual_amount": "0.02",
+      "refund_amount": "0.00",
+      "body": "490599871437555007001",
+      "subject": "490599871437555007001",
+      "time_create": "2019-01-03 22:57:17",
+      "time_update": "2019-01-03 22:57:23",
+      "status": "3",
+      "profit_status": "1",
+      "remark": "支付成功",
+      "_status": "支付成功",
+      "payment_name": "条码支付",
+      "channel_name": "微信"
+    },
+    {
+      "id": "852",
+      "order_id": "430599871379882008001",
+      "out_order_id": "4200000236201901031694337249",
+      "out_username": null,
+      "out_user_id": "oTTz7wVpdTJew9ICg9Um",
+      "agent_id": "10000006",
+      "merchant_id": "1000000011",
+      "channel": "weixin",
+      "payment": "barcode",
+      "store_id": "1000000004",
+      "store_name": "001",
+      "operator_id": "1000000008",
+      "operator_name": "text",
+      "device_id": "1000000006",
+      "device_name": "00100101",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "430599871379882008001",
+      "subject": "430599871379882008001",
+      "time_create": "2019-01-03 22:56:19",
+      "time_update": "2019-01-03 22:56:31",
+      "status": "3",
+      "profit_status": "1",
+      "remark": "支付成功",
+      "_status": "支付成功",
+      "payment_name": "条码支付",
+      "channel_name": "微信"
+    },
+    {
+      "id": "850",
+      "order_id": "150599852413169006001",
+      "out_order_id": "2019010317401302816513",
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000006",
+      "merchant_id": "1000000011",
+      "channel": "xt",
+      "payment": "barcode",
+      "store_id": "1000000004",
+      "store_name": "001",
+      "operator_id": "1000000006",
+      "operator_name": "gongweiwei",
+      "device_id": "1000000006",
+      "device_name": "00100101",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "150599852413169006001",
+      "subject": "150599852413169006001",
+      "time_create": "2019-01-03 17:40:13",
+      "time_update": "2019-01-03 17:40:13",
+      "status": "3",
+      "profit_status": "1",
+      "remark": "支付成功",
+      "_status": "支付成功",
+      "payment_name": "条码支付",
+      "channel_name": "新天"
+    },
+    {
+      "id": "840",
+      "order_id": "990599850644019006001",
+      "out_order_id": "4200000215201901038658772251",
+      "out_username": null,
+      "out_user_id": "oTTz7wddJAg5Jege3uOd",
+      "agent_id": "10000006",
+      "merchant_id": "1000000011",
+      "channel": "weixin",
+      "payment": "barcode",
+      "store_id": "1000000004",
+      "store_name": "001",
+      "operator_id": "1000000006",
+      "operator_name": "gongweiwei",
+      "device_id": "1000000006",
+      "device_name": "00100101",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "990599850644019006001",
+      "subject": "990599850644019006001",
+      "time_create": "2019-01-03 17:10:44",
+      "time_update": "2019-01-03 17:10:45",
+      "status": "3",
+      "profit_status": "1",
+      "remark": "支付成功",
+      "_status": "支付成功",
+      "payment_name": "条码支付",
+      "channel_name": "微信"
+    }
+  ],
+  "total": "17",
+  "sum_amount": "0.21",
+  "sum_actual_amount": "0.21",
+  "sum_refund_amount": "0.00"
+}
+[2019/1/3 22:58:11 479] [Message] [v1.0.1] ===================交易查询=================== End
+[2019/1/3 22:58:16 278] [Message] [v1.0.1] ===================交易查询=================== Start
+[2019/1/3 22:58:16 279] [Message] [v1.0.1] GetOrder_List Send =  key=cdd58f8a641da56b9fb85bb79f34ccb2&page=5&current=1&time_type=1&time_start=2019-1-3 0:00:00&time_end=2019-1-3 23:59:59&channel=&payment=&order_id=&store_id=1000000004&operator_id=1000000007&device_id=1000000006&merchant_id=1000000011&status=&export=0
+[2019/1/3 22:58:16 402] [Message] [v1.0.1] Result =  {"code":1,"msg":"订单列表","data":{"list":[{"id":"854","order_id":"700599871472654007001","out_order_id":"4200000231201901032943500213","out_username":null,"out_user_id":"oTTz7wVpdTJew9ICg9Um","agent_id":"10000006","merchant_id":"1000000011","channel":"weixin","payment":"barcode","store_id":"1000000004","store_name":"001","operator_id":"1000000007","operator_name":"gongxue","device_id":"1000000006","device_name":"00100101","amount":"0.03","actual_amount":"0.03","refund_amount":"0.00","body":"700599871472654007001","subject":"700599871472654007001","time_create":"2019-01-03 22:57:52","time_update":"2019-01-03 22:57:58","status":"3","profit_status":"1","remark":"支付成功","_status":"支付成功","payment_name":"条码支付","channel_name":"微信"},{"id":"853","order_id":"490599871437555007001","out_order_id":"4200000218201901032122461781","out_username":null,"out_user_id":"oTTz7wVpdTJew9ICg9Um","agent_id":"10000006","merchant_id":"1000000011","channel":"weixin","payment":"barcode","store_id":"1000000004","store_name":"001","operator_id":"1000000007","operator_name":"gongxue","device_id":"1000000006","device_name":"00100101","amount":"0.02","actual_amount":"0.02","refund_amount":"0.00","body":"490599871437555007001","subject":"490599871437555007001","time_create":"2019-01-03 22:57:17","time_update":"2019-01-03 22:57:23","status":"3","profit_status":"1","remark":"支付成功","_status":"支付成功","payment_name":"条码支付","channel_name":"微信"}],"total":"2","sum_amount":"0.05","sum_actual_amount":"0.05","sum_refund_amount":"0.00"}}
+[2019/1/3 22:58:16 402] [Message] [v1.0.1] data =  {
+  "list": [
+    {
+      "id": "854",
+      "order_id": "700599871472654007001",
+      "out_order_id": "4200000231201901032943500213",
+      "out_username": null,
+      "out_user_id": "oTTz7wVpdTJew9ICg9Um",
+      "agent_id": "10000006",
+      "merchant_id": "1000000011",
+      "channel": "weixin",
+      "payment": "barcode",
+      "store_id": "1000000004",
+      "store_name": "001",
+      "operator_id": "1000000007",
+      "operator_name": "gongxue",
+      "device_id": "1000000006",
+      "device_name": "00100101",
+      "amount": "0.03",
+      "actual_amount": "0.03",
+      "refund_amount": "0.00",
+      "body": "700599871472654007001",
+      "subject": "700599871472654007001",
+      "time_create": "2019-01-03 22:57:52",
+      "time_update": "2019-01-03 22:57:58",
+      "status": "3",
+      "profit_status": "1",
+      "remark": "支付成功",
+      "_status": "支付成功",
+      "payment_name": "条码支付",
+      "channel_name": "微信"
+    },
+    {
+      "id": "853",
+      "order_id": "490599871437555007001",
+      "out_order_id": "4200000218201901032122461781",
+      "out_username": null,
+      "out_user_id": "oTTz7wVpdTJew9ICg9Um",
+      "agent_id": "10000006",
+      "merchant_id": "1000000011",
+      "channel": "weixin",
+      "payment": "barcode",
+      "store_id": "1000000004",
+      "store_name": "001",
+      "operator_id": "1000000007",
+      "operator_name": "gongxue",
+      "device_id": "1000000006",
+      "device_name": "00100101",
+      "amount": "0.02",
+      "actual_amount": "0.02",
+      "refund_amount": "0.00",
+      "body": "490599871437555007001",
+      "subject": "490599871437555007001",
+      "time_create": "2019-01-03 22:57:17",
+      "time_update": "2019-01-03 22:57:23",
+      "status": "3",
+      "profit_status": "1",
+      "remark": "支付成功",
+      "_status": "支付成功",
+      "payment_name": "条码支付",
+      "channel_name": "微信"
+    }
+  ],
+  "total": "2",
+  "sum_amount": "0.05",
+  "sum_actual_amount": "0.05",
+  "sum_refund_amount": "0.00"
+}
+[2019/1/3 22:58:16 403] [Message] [v1.0.1] ===================交易查询=================== End
+[2019/1/3 22:58:41 085] [Message] [v1.0.1] ApiAddRefund jsonData=  {"order_id":"490599871437555007001","refund_amount":"0.02","operator_id":"1000000007","timestamp":"1546527521"}
+[2019/1/3 22:58:41 087] [Message] [v1.0.1] ApiAddRefund httppara=  merchant_id=1000000011&data=1f03a3d946146c2dd2cd64231a86615600f037e1d7ecb6f95a8033d09b37fb9e46d755a0a1239687b1f783e22ee27d5e75d31a567aaf38da5a6a9b83ff4170e47b2417c4fdb44b6f165239bacc310fc602a9a3b028fa7da06213cc77adbaa4366c3a2b7996595326166100e8d8d6e4f5
+[2019/1/3 22:58:41 278] [Message] [v1.0.1] ApiAddRefund Result=  
+[2019/1/3 22:58:58 910] [Message] [v1.0.1] ===================退款查询=================== Start
+[2019/1/3 22:58:58 914] [Message] [v1.0.1] GetRefund_QueryList Send =  key=cdd58f8a641da56b9fb85bb79f34ccb2&page=5&current=1&time_type=1&time_start=2019-1-3 0:00:00&time_end=2019-1-3 23:59:59&channel=&payment=&order_id=&refund_order_id=&store_id=1000000004&operator_id=1000000007&device_id=1000000006&merchant_id=1000000011&status=&export=0
+[2019/1/3 22:58:59 024] [Message] [v1.0.1] Result =  {"code":1,"msg":"退款列表","data":{"list":[{"id":"207","order_id":"490599871437555007001","refund_order_id":"150599871526439007001","refund_amount":"0.02","operator_id":"1000000007","operator_name":"","time_create":"2019-01-03 22:58:46","time_update":"","status":"1","reason":"退款","remark":null,"out_order_id":"4200000218201901032122461781","out_user_id":"oTTz7wVpdTJew9ICg9Um","agent_id":"10000006","amount":"0.02","merchant_id":"1000000011","channel":"weixin","payment":"barcode","store_id":"1000000004","store_name":"001","device_id":"1000000006","device_name":"00100101","subject":"490599871437555007001","body":"490599871437555007001","_status":"待处理","payment_name":"条码支付","channel_name":"微信"}],"total":"1","sum_refund_amount":"0.02","total_success":"0","sum_refund_amount_success":null}}
+[2019/1/3 22:58:59 025] [Message] [v1.0.1] data =  {
+  "list": [
+    {
+      "id": "207",
+      "order_id": "490599871437555007001",
+      "refund_order_id": "150599871526439007001",
+      "refund_amount": "0.02",
+      "operator_id": "1000000007",
+      "operator_name": "",
+      "time_create": "2019-01-03 22:58:46",
+      "time_update": "",
+      "status": "1",
+      "reason": "退款",
+      "remark": null,
+      "out_order_id": "4200000218201901032122461781",
+      "out_user_id": "oTTz7wVpdTJew9ICg9Um",
+      "agent_id": "10000006",
+      "amount": "0.02",
+      "merchant_id": "1000000011",
+      "channel": "weixin",
+      "payment": "barcode",
+      "store_id": "1000000004",
+      "store_name": "001",
+      "device_id": "1000000006",
+      "device_name": "00100101",
+      "subject": "490599871437555007001",
+      "body": "490599871437555007001",
+      "_status": "待处理",
+      "payment_name": "条码支付",
+      "channel_name": "微信"
+    }
+  ],
+  "total": "1",
+  "sum_refund_amount": "0.02",
+  "total_success": "0",
+  "sum_refund_amount_success": null
+}
+[2019/1/3 22:58:59 026] [Message] [v1.0.1] ===================退款查询=================== End
+[2019/1/3 22:59:04 539] [Message] [v1.0.1] ===================退款状态=================== Start
+[2019/1/3 22:59:04 541] [Message] [v1.0.1] ApiGet_all_RefundStatus Send =  key=cdd58f8a641da56b9fb85bb79f34ccb2
+[2019/1/3 22:59:04 646] [Message] [v1.0.1] Result =  {"code":1,"msg":"退款状态","data":{"1":"待处理","2":"处理中","3":"退款成功","4":"退款失败"}}
+[2019/1/3 22:59:04 647] [Message] [v1.0.1] inResult=  退款状态
+[2019/1/3 22:59:04 647] [Message] [v1.0.1] ===================退款状态=================== End
+[2019/1/3 22:59:04 648] [Message] [v1.0.1] ApiRefundStatusQuery jsonData=  {"refund_order_id":"150599871526439007001","timestamp":"1546527545"}
+[2019/1/3 22:59:04 649] [Message] [v1.0.1] ApiRefundStatusQuery httppara=  merchant_id=1000000011&data=01276a91e917c8c9c38d377857a9395e9f4a4c2924858a3237d9bbbaf2cdb6cc3c9c4946037b7a821694f69f0941ef4768f938f1e752f35ab7c5b25c8030a2cc0d1f363a46472c3502e270225b4ac947
+[2019/1/3 22:59:04 912] [Message] [v1.0.1] ApiRefundStatusQuery Result=  {"code":1,"msg":"查询成功","data":"01276a91e917c8c9c38d377857a9395e9f4a4c2924858a3237d9bbbaf2cdb6cc0b5b591faa17a83a126b8ef755f7fa3df3bd491ab843d3fa98bc9a2d0d8f65994afb025757e2ea02c7261c166ca469afab85d2db1376ced4a9ffcbe29c71e38b"}
+[2019/1/3 22:59:04 913] [Message] [v1.0.1] inResult=  查询成功
+[2019/1/3 22:59:07 692] [Message] [v1.0.1] ===================退款状态=================== Start
+[2019/1/3 22:59:07 696] [Message] [v1.0.1] ApiGet_all_RefundStatus Send =  key=cdd58f8a641da56b9fb85bb79f34ccb2
+[2019/1/3 22:59:07 798] [Message] [v1.0.1] Result =  {"code":1,"msg":"退款状态","data":{"1":"待处理","2":"处理中","3":"退款成功","4":"退款失败"}}
+[2019/1/3 22:59:07 799] [Message] [v1.0.1] inResult=  退款状态
+[2019/1/3 22:59:07 800] [Message] [v1.0.1] ===================退款状态=================== End
+[2019/1/3 22:59:07 800] [Message] [v1.0.1] ApiRefundStatusQuery jsonData=  {"refund_order_id":"150599871526439007001","timestamp":"1546527548"}
+[2019/1/3 22:59:07 801] [Message] [v1.0.1] ApiRefundStatusQuery httppara=  merchant_id=1000000011&data=01276a91e917c8c9c38d377857a9395e9f4a4c2924858a3237d9bbbaf2cdb6cc3c9c4946037b7a821694f69f0941ef4768f938f1e752f35ab7c5b25c8030a2cc484e8940e7cb16f728f3508f91aa0fb5
+[2019/1/3 22:59:07 909] [Message] [v1.0.1] ApiRefundStatusQuery Result=  {"code":1,"msg":"查询成功","data":"01276a91e917c8c9c38d377857a9395e9f4a4c2924858a3237d9bbbaf2cdb6cc0b5b591faa17a83a126b8ef755f7fa3df3bd491ab843d3fa98bc9a2d0d8f6599a899fc2ba8f6e55f61d25508c5edb302"}
+[2019/1/3 22:59:07 911] [Message] [v1.0.1] inResult=  查询成功
+[2019/1/3 23:01:12 777] [Message] [v1.0.1] ===================用户登陆=================== Start
+[2019/1/3 23:01:12 778] [Message] [v1.0.1] Login Send =  username=gongweiwei&password=flying123456
+[2019/1/3 23:01:12 995] [Message] [v1.0.1] Result =  {"code":1,"msg":"登录成功","data":{"token":"d39f634d4e636f0cff10e79a4f2f695c","info":{"app_type":"api","id":"1000000006","agent_id":"10000006","store_id":"1000000004","merchant_id":"1000000011","user_type":"2","type":"2","username":"gongweiwei","open_id":"","timestamp":1546527678}}}
+[2019/1/3 23:01:13 107] [Message] [v1.0.1] ===================用户登陆=================== End
+[2019/1/3 23:01:13 110] [Message] [v1.0.1] ===================用户信息=================== Start
+[2019/1/3 23:01:13 111] [Message] [v1.0.1] GetUserInfo Send =  key=d39f634d4e636f0cff10e79a4f2f695c
+[2019/1/3 23:01:13 240] [Message] [v1.0.1] Result =  {"code":1,"msg":"用户信息","data":{"id":"1000000006","agent_id":"10000006","merchant_id":"1000000011","store_id":"1000000004","username":"gongweiwei","phone":"18698865001","open_id":"","type":"2","time_create":"1545978861","time_update":"1545984048","status":"1","user_type":"2","agent":{"id":"10000006","pid":"00000000","name":"坤银润和","number":"100100100","address":"沈阳市长江街17号801","principal_name":"贡伟伟","principal_phone":"18698865001","contact_name":"贡伟伟","contact_phone":"2147483647","contact_email":"116053030@qq.com","time_create":"1545972935","time_update":"0","status":"1"},"merchant":{"id":"1000000011","agent_id":"10000006","name":"测试","short_name":"","number":"110110110","principal_name":"贡伟伟","principal_phone":"18698865001","contact_name":"测试","contact_phone":"18698865001","contact_email":"116053030@qq.com","address":"沈阳市","time_create":"1545977701","time_update":"0","status":"1"},"store":{"id":"1000000004","merchant_id":"1000000011","name":"001","number":"001001","principal_name":"贡伟伟","principal_phone":"贡伟伟","address":"皇姑","time_create":"1545978805","time_update":"0","status":"1"}}}
+[2019/1/3 23:01:13 252] [Message] [v1.0.1] data =  {
+  "id": "1000000006",
+  "agent_id": "10000006",
+  "merchant_id": "1000000011",
+  "store_id": "1000000004",
+  "username": "gongweiwei",
+  "phone": "18698865001",
+  "open_id": "",
+  "type": "2",
+  "time_create": "1545978861",
+  "time_update": "1545984048",
+  "status": "1",
+  "user_type": "2",
+  "agent": {
+    "id": "10000006",
+    "pid": "00000000",
+    "name": "坤银润和",
+    "number": "100100100",
+    "address": "沈阳市长江街17号801",
+    "principal_name": "贡伟伟",
+    "principal_phone": "18698865001",
+    "contact_name": "贡伟伟",
+    "contact_phone": "2147483647",
+    "contact_email": "116053030@qq.com",
+    "time_create": "1545972935",
+    "time_update": "0",
+    "status": "1"
+  },
+  "merchant": {
+    "id": "1000000011",
+    "agent_id": "10000006",
+    "name": "测试",
+    "short_name": "",
+    "number": "110110110",
+    "principal_name": "贡伟伟",
+    "principal_phone": "18698865001",
+    "contact_name": "测试",
+    "contact_phone": "18698865001",
+    "contact_email": "116053030@qq.com",
+    "address": "沈阳市",
+    "time_create": "1545977701",
+    "time_update": "0",
+    "status": "1"
+  },
+  "store": {
+    "id": "1000000004",
+    "merchant_id": "1000000011",
+    "name": "001",
+    "number": "001001",
+    "principal_name": "贡伟伟",
+    "principal_phone": "贡伟伟",
+    "address": "皇姑",
+    "time_create": "1545978805",
+    "time_update": "0",
+    "status": "1"
+  }
+}
+[2019/1/3 23:01:13 253] [Message] [v1.0.1] agent =  {
+  "id": "10000006",
+  "pid": "00000000",
+  "name": "坤银润和",
+  "number": "100100100",
+  "address": "沈阳市长江街17号801",
+  "principal_name": "贡伟伟",
+  "principal_phone": "18698865001",
+  "contact_name": "贡伟伟",
+  "contact_phone": "2147483647",
+  "contact_email": "116053030@qq.com",
+  "time_create": "1545972935",
+  "time_update": "0",
+  "status": "1"
+}
+[2019/1/3 23:01:13 254] [Message] [v1.0.1] merchant =  {
+  "id": "1000000011",
+  "agent_id": "10000006",
+  "name": "测试",
+  "short_name": "",
+  "number": "110110110",
+  "principal_name": "贡伟伟",
+  "principal_phone": "18698865001",
+  "contact_name": "测试",
+  "contact_phone": "18698865001",
+  "contact_email": "116053030@qq.com",
+  "address": "沈阳市",
+  "time_create": "1545977701",
+  "time_update": "0",
+  "status": "1"
+}
+[2019/1/3 23:01:13 255] [Message] [v1.0.1] store =  {
+  "id": "1000000004",
+  "merchant_id": "1000000011",
+  "name": "001",
+  "number": "001001",
+  "principal_name": "贡伟伟",
+  "principal_phone": "贡伟伟",
+  "address": "皇姑",
+  "time_create": "1545978805",
+  "time_update": "0",
+  "status": "1"
+}
+[2019/1/3 23:01:13 256] [Message] [v1.0.1] userinfo.id =  1000000006
+[2019/1/3 23:01:13 267] [Message] [v1.0.1] userinfo.agent_id =  10000006
+[2019/1/3 23:01:13 268] [Message] [v1.0.1] userinfo.merchant_id =  1000000011
+[2019/1/3 23:01:13 268] [Message] [v1.0.1] userinfo.store_id =  1000000004
+[2019/1/3 23:01:13 269] [Message] [v1.0.1] userinfo.username =  gongweiwei
+[2019/1/3 23:01:13 270] [Message] [v1.0.1] userinfo.phone =  18698865001
+[2019/1/3 23:01:13 271] [Message] [v1.0.1] userinfo.open_id =  
+[2019/1/3 23:01:13 272] [Message] [v1.0.1] userinfo.type =  2
+[2019/1/3 23:01:13 273] [Message] [v1.0.1] userinfo.status =  1
+[2019/1/3 23:01:13 273] [Message] [v1.0.1] agentinfo.id =  10000006
+[2019/1/3 23:01:13 274] [Message] [v1.0.1] agentinfo.pid =  00000000
+[2019/1/3 23:01:13 275] [Message] [v1.0.1] agentinfo.name =  坤银润和
+[2019/1/3 23:01:13 276] [Message] [v1.0.1] agentinfo.number =  100100100
+[2019/1/3 23:01:13 276] [Message] [v1.0.1] agentinfo.address =  沈阳市长江街17号801
+[2019/1/3 23:01:13 277] [Message] [v1.0.1] agentinfo.principal_name =  贡伟伟
+[2019/1/3 23:01:13 277] [Message] [v1.0.1] agentinfo.principal_phone =  18698865001
+[2019/1/3 23:01:13 278] [Message] [v1.0.1] agentinfo.contact_name =  贡伟伟
+[2019/1/3 23:01:13 279] [Message] [v1.0.1] agentinfo.contact_phone =  2147483647
+[2019/1/3 23:01:13 279] [Message] [v1.0.1] agentinfo.contact_email =  116053030@qq.com
+[2019/1/3 23:01:13 280] [Message] [v1.0.1] agentinfo.status =  1
+[2019/1/3 23:01:13 280] [Message] [v1.0.1] merchantinfo.id =  1000000011
+[2019/1/3 23:01:13 281] [Message] [v1.0.1] merchantinfo.agent_id =  10000006
+[2019/1/3 23:01:13 281] [Message] [v1.0.1] merchantinfo.name =  测试
+[2019/1/3 23:01:13 282] [Message] [v1.0.1] merchantinfo.short_name =  
+[2019/1/3 23:01:13 283] [Message] [v1.0.1] merchantinfo.number =  110110110
+[2019/1/3 23:01:13 283] [Message] [v1.0.1] merchantinfo.principal_name =  贡伟伟
+[2019/1/3 23:01:13 284] [Message] [v1.0.1] merchantinfo.principal_phone =  18698865001
+[2019/1/3 23:01:13 284] [Message] [v1.0.1] merchantinfo.contact_name =  测试
+[2019/1/3 23:01:13 285] [Message] [v1.0.1] merchantinfo.contact_phone =  18698865001
+[2019/1/3 23:01:13 286] [Message] [v1.0.1] merchantinfo.contact_email =  116053030@qq.com
+[2019/1/3 23:01:13 286] [Message] [v1.0.1] merchantinfo.address =  沈阳市
+[2019/1/3 23:01:13 287] [Message] [v1.0.1] merchantinfo.status =  1
+[2019/1/3 23:01:13 287] [Message] [v1.0.1] storeinfo.id =  1000000004
+[2019/1/3 23:01:13 288] [Message] [v1.0.1] storeinfo.merchant_id =  1000000011
+[2019/1/3 23:01:13 288] [Message] [v1.0.1] storeinfo.name =  001
+[2019/1/3 23:01:13 289] [Message] [v1.0.1] storeinfo.number =  001001
+[2019/1/3 23:01:13 290] [Message] [v1.0.1] storeinfo.principal_name =  贡伟伟
+[2019/1/3 23:01:13 290] [Message] [v1.0.1] storeinfo.principal_phone =  贡伟伟
+[2019/1/3 23:01:13 291] [Message] [v1.0.1] storeinfo.address =  皇姑
+[2019/1/3 23:01:13 291] [Message] [v1.0.1] storeinfo.status =  1
+[2019/1/3 23:01:13 292] [Message] [v1.0.1] ===================用户信息=================== End
+[2019/1/3 23:01:13 298] [Message] [v1.0.1] ===================门店列表=================== Start
+[2019/1/3 23:01:13 298] [Message] [v1.0.1] GetStoreList Send =  key=d39f634d4e636f0cff10e79a4f2f695c
+[2019/1/3 23:01:13 414] [Message] [v1.0.1] Result =  {"code":1,"msg":"店铺列表","data":{"list":[{"id":"1000000004","merchant_id":"1000000011","name":"001","number":"001001","principal_name":"贡伟伟","principal_phone":"贡伟伟","address":"皇姑","time_create":"1545978805","time_update":"0","status":"1"}]}}
+[2019/1/3 23:01:13 419] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000004",
+    "merchant_id": "1000000011",
+    "name": "001",
+    "number": "001001",
+    "principal_name": "贡伟伟",
+    "principal_phone": "贡伟伟",
+    "address": "皇姑",
+    "time_create": "1545978805",
+    "time_update": "0",
+    "status": "1"
+  }
+]
+[2019/1/3 23:01:13 427] [Message] [v1.0.1] storelist[1].id =  1000000004
+[2019/1/3 23:01:13 428] [Message] [v1.0.1] storelist[1].merchant_id =  1000000011
+[2019/1/3 23:01:13 429] [Message] [v1.0.1] storelist[1].name =  001
+[2019/1/3 23:01:13 430] [Message] [v1.0.1] storelist[1].number =  001001
+[2019/1/3 23:01:13 431] [Message] [v1.0.1] storelist[1].principal_name =  贡伟伟
+[2019/1/3 23:01:13 432] [Message] [v1.0.1] storelist[1].principal_phone =  贡伟伟
+[2019/1/3 23:01:13 433] [Message] [v1.0.1] storelist[1].address =  皇姑
+[2019/1/3 23:01:13 433] [Message] [v1.0.1] storelist[1].status =  1
+[2019/1/3 23:01:13 464] [Message] [v1.0.1] ===================门店列表=================== End
+[2019/1/3 23:01:13 465] [Message] [v1.0.1] ===================店员列表=================== Start
+[2019/1/3 23:01:13 466] [Message] [v1.0.1] GetUserList Send =  key=d39f634d4e636f0cff10e79a4f2f695c&store_id=1000000004
+[2019/1/3 23:01:13 571] [Message] [v1.0.1] Result =  {"code":1,"msg":"店员列表","data":{"list":[{"id":"1000000009","username":"lxj","phone":"18642002258"},{"id":"1000000008","username":"text","phone":"18698865001"},{"id":"1000000007","username":"gongxue","phone":"18698865001"},{"id":"1000000006","username":"gongweiwei","phone":"18698865001"}]}}
+[2019/1/3 23:01:13 573] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000009",
+    "username": "lxj",
+    "phone": "18642002258"
+  },
+  {
+    "id": "1000000008",
+    "username": "text",
+    "phone": "18698865001"
+  },
+  {
+    "id": "1000000007",
+    "username": "gongxue",
+    "phone": "18698865001"
+  },
+  {
+    "id": "1000000006",
+    "username": "gongweiwei",
+    "phone": "18698865001"
+  }
+]
+[2019/1/3 23:01:13 575] [Message] [v1.0.1] userlist[1].id =  1000000009
+[2019/1/3 23:01:13 578] [Message] [v1.0.1] userlist[1].username =  lxj
+[2019/1/3 23:01:13 580] [Message] [v1.0.1] userlist[1].phone =  18642002258
+[2019/1/3 23:01:13 582] [Message] [v1.0.1] userlist[2].id =  1000000008
+[2019/1/3 23:01:13 584] [Message] [v1.0.1] userlist[2].username =  text
+[2019/1/3 23:01:13 586] [Message] [v1.0.1] userlist[2].phone =  18698865001
+[2019/1/3 23:01:13 588] [Message] [v1.0.1] userlist[3].id =  1000000007
+[2019/1/3 23:01:13 590] [Message] [v1.0.1] userlist[3].username =  gongxue
+[2019/1/3 23:01:13 592] [Message] [v1.0.1] userlist[3].phone =  18698865001
+[2019/1/3 23:01:13 594] [Message] [v1.0.1] userlist[4].id =  1000000006
+[2019/1/3 23:01:13 596] [Message] [v1.0.1] userlist[4].username =  gongweiwei
+[2019/1/3 23:01:13 599] [Message] [v1.0.1] userlist[4].phone =  18698865001
+[2019/1/3 23:01:13 627] [Message] [v1.0.1] ===================店员列表=================== End
+[2019/1/3 23:01:13 629] [Message] [v1.0.1] ===================设备列表=================== Start
+[2019/1/3 23:01:13 630] [Message] [v1.0.1] GetDeviceList Send =  key=d39f634d4e636f0cff10e79a4f2f695c&store_id=1000000004
+[2019/1/3 23:01:13 738] [Message] [v1.0.1] Result =  {"code":1,"msg":"设备列表","data":{"list":[{"id":"1000000008","name":"00100103","number":"01010103","type":"2"},{"id":"1000000007","name":"00100102","number":"01010102","type":"1"},{"id":"1000000006","name":"00100101","number":"01010101","type":"2"}]}}
+[2019/1/3 23:01:13 740] [Message] [v1.0.1] list =  [
+  {
+    "id": "1000000008",
+    "name": "00100103",
+    "number": "01010103",
+    "type": "2"
+  },
+  {
+    "id": "1000000007",
+    "name": "00100102",
+    "number": "01010102",
+    "type": "1"
+  },
+  {
+    "id": "1000000006",
+    "name": "00100101",
+    "number": "01010101",
+    "type": "2"
+  }
+]
+[2019/1/3 23:01:13 743] [Message] [v1.0.1] devicelist[1].id =  1000000008
+[2019/1/3 23:01:13 745] [Message] [v1.0.1] devicelist[1].name =  00100103
+[2019/1/3 23:01:13 747] [Message] [v1.0.1] devicelist[1].number =  01010103
+[2019/1/3 23:01:13 749] [Message] [v1.0.1] devicelist[1].type =  2
+[2019/1/3 23:01:13 751] [Message] [v1.0.1] devicelist[2].id =  1000000007
+[2019/1/3 23:01:13 753] [Message] [v1.0.1] devicelist[2].name =  00100102
+[2019/1/3 23:01:13 755] [Message] [v1.0.1] devicelist[2].number =  01010102
+[2019/1/3 23:01:13 757] [Message] [v1.0.1] devicelist[2].type =  1
+[2019/1/3 23:01:13 760] [Message] [v1.0.1] devicelist[3].id =  1000000006
+[2019/1/3 23:01:13 762] [Message] [v1.0.1] devicelist[3].name =  00100101
+[2019/1/3 23:01:13 764] [Message] [v1.0.1] devicelist[3].number =  01010101
+[2019/1/3 23:01:13 766] [Message] [v1.0.1] devicelist[3].type =  2
+[2019/1/3 23:01:13 801] [Message] [v1.0.1] ===================设备列表=================== End
+[2019/1/3 23:01:13 803] [Message] [v1.0.1] ===================交易类型列表=================== Start
+[2019/1/3 23:01:13 804] [Message] [v1.0.1] Get_all_paymentList Send =  key=d39f634d4e636f0cff10e79a4f2f695c
+[2019/1/3 23:01:13 917] [Message] [v1.0.1] Result =  {"code":1,"msg":"交易类型","data":{"qrcode":"扫码支付","barcode":"条码支付","weixin_public":"微信公众号支付"}}
+[2019/1/3 23:01:13 919] [Message] [v1.0.1] data =  {
+  "qrcode": "扫码支付",
+  "barcode": "条码支付",
+  "weixin_public": "微信公众号支付"
+}
+[2019/1/3 23:01:14 013] [Message] [v1.0.1] ===================交易类型列表=================== End
+[2019/1/3 23:01:14 014] [Message] [v1.0.1] ===================交易方式列表=================== Start
+[2019/1/3 23:01:14 015] [Message] [v1.0.1] Get_all_payment_channel =  key=d39f634d4e636f0cff10e79a4f2f695c
+[2019/1/3 23:01:14 124] [Message] [v1.0.1] Result =  {"code":1,"msg":"支付方式","data":{"weixin":"微信","alipay":"支付宝","unionpay":"银联","xt":"新天","xz_weixin":"现在微信","xz_alipay":"现在支付宝","sf_weixin":"上福微信","sf_alipay":"上福支付宝"}}
+[2019/1/3 23:01:14 126] [Message] [v1.0.1] data =  {
+  "weixin": "微信",
+  "alipay": "支付宝",
+  "unionpay": "银联",
+  "xt": "新天",
+  "xz_weixin": "现在微信",
+  "xz_alipay": "现在支付宝",
+  "sf_weixin": "上福微信",
+  "sf_alipay": "上福支付宝"
+}
+[2019/1/3 23:01:14 128] [Message] [v1.0.1] ===================交易方式列表=================== End
+[2019/1/3 23:01:14 131] [Message] [v1.0.1] ===================订单状态=================== Start
+[2019/1/3 23:01:14 134] [Message] [v1.0.1] ApiGet_all_OrderStatus Send =  key=d39f634d4e636f0cff10e79a4f2f695c
+[2019/1/3 23:01:14 266] [Message] [v1.0.1] Result =  {"code":1,"msg":"订单状态","data":{"1":"待支付","2":"处理中","3":"支付成功","4":"支付失败","5":"交易撤销","6":"交易关闭","7":"转入退款"}}
+[2019/1/3 23:01:14 266] [Message] [v1.0.1] inResult=  订单状态
+[2019/1/3 23:01:14 267] [Message] [v1.0.1] ===================订单状态=================== End
+[2019/1/3 23:01:14 268] [Message] [v1.0.1] ===================退款状态=================== Start
+[2019/1/3 23:01:14 269] [Message] [v1.0.1] ApiGet_all_RefundStatus Send =  key=d39f634d4e636f0cff10e79a4f2f695c
+[2019/1/3 23:01:14 374] [Message] [v1.0.1] Result =  {"code":1,"msg":"退款状态","data":{"1":"待处理","2":"处理中","3":"退款成功","4":"退款失败"}}
+[2019/1/3 23:01:14 376] [Message] [v1.0.1] inResult=  退款状态
+[2019/1/3 23:01:14 378] [Message] [v1.0.1] ===================退款状态=================== End
+[2019/1/3 23:01:18 528] [Message] [v1.0.1] ===================交易查询=================== Start
+[2019/1/3 23:01:18 531] [Message] [v1.0.1] GetOrder_List Send =  key=d39f634d4e636f0cff10e79a4f2f695c&page=5&current=1&time_type=1&time_start=2019-1-3 0:00:00&time_end=2019-1-3 23:59:59&channel=&payment=&order_id=&store_id=1000000004&operator_id=1000000006&device_id=1000000006&merchant_id=1000000011&status=&export=0
+[2019/1/3 23:01:18 654] [Message] [v1.0.1] Result =  {"code":1,"msg":"订单列表","data":{"list":[{"id":"850","order_id":"150599852413169006001","out_order_id":"2019010317401302816513","out_username":null,"out_user_id":null,"agent_id":"10000006","merchant_id":"1000000011","channel":"xt","payment":"barcode","store_id":"1000000004","store_name":"001","operator_id":"1000000006","operator_name":"gongweiwei","device_id":"1000000006","device_name":"00100101","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"150599852413169006001","subject":"150599852413169006001","time_create":"2019-01-03 17:40:13","time_update":"2019-01-03 17:40:13","status":"3","profit_status":"1","remark":"支付成功","_status":"支付成功","payment_name":"条码支付","channel_name":"新天"},{"id":"840","order_id":"990599850644019006001","out_order_id":"4200000215201901038658772251","out_username":null,"out_user_id":"oTTz7wddJAg5Jege3uOd","agent_id":"10000006","merchant_id":"1000000011","channel":"weixin","payment":"barcode","store_id":"1000000004","store_name":"001","operator_id":"1000000006","operator_name":"gongweiwei","device_id":"1000000006","device_name":"00100101","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"990599850644019006001","subject":"990599850644019006001","time_create":"2019-01-03 17:10:44","time_update":"2019-01-03 17:10:45","status":"3","profit_status":"1","remark":"支付成功","_status":"支付成功","payment_name":"条码支付","channel_name":"微信"},{"id":"838","order_id":"390599850281514006001","out_order_id":"","out_username":null,"out_user_id":null,"agent_id":"10000006","merchant_id":"1000000011","channel":"xt","payment":"barcode","store_id":"1000000004","store_name":"001","operator_id":"1000000006","operator_name":"gongweiwei","device_id":"1000000006","device_name":"00100101","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"390599850281514006001","subject":"390599850281514006001","time_create":"2019-01-03 17:04:41","time_update":"2019-01-03 17:05:43","status":"2","profit_status":"1","remark":"支付处理中","_status":"处理中","payment_name":"条码支付","channel_name":"新天"},{"id":"837","order_id":"930599849674342006001","out_order_id":"2019010322001461870576237060","out_username":"mng***@163.com","out_user_id":"2088002092561876","agent_id":"10000006","merchant_id":"1000000011","channel":"alipay","payment":"barcode","store_id":"1000000004","store_name":"001","operator_id":"1000000006","operator_name":"gongweiwei","device_id":"1000000006","device_name":"00100101","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"930599849674342006001","subject":"930599849674342006001","time_create":"2019-01-03 16:54:34","time_update":"2019-01-03 16:54:36","status":"3","profit_status":"1","remark":"支付成功","_status":"支付成功","payment_name":"条码支付","channel_name":"支付宝"},{"id":"836","order_id":"830599849610727006001","out_order_id":"2019010322001461870576069632","out_username":"mng***@163.com","out_user_id":"2088002092561876","agent_id":"10000006","merchant_id":"1000000011","channel":"alipay","payment":"barcode","store_id":"1000000004","store_name":"001","operator_id":"1000000006","operator_name":"gongweiwei","device_id":"1000000006","device_name":"00100101","amount":"0.01","actual_amount":"0.01","refund_amount":"0.00","body":"830599849610727006001","subject":"830599849610727006001","time_create":"2019-01-03 16:53:30","time_update":"2019-01-03 16:53:32","status":"3","profit_status":"1","remark":"支付成功","_status":"支付成功","payment_name":"条码支付","channel_name":"支付宝"}],"total":"9","sum_amount":"0.09","sum_actual_amount":"0.09","sum_refund_amount":"0.00"}}
+[2019/1/3 23:01:18 656] [Message] [v1.0.1] data =  {
+  "list": [
+    {
+      "id": "850",
+      "order_id": "150599852413169006001",
+      "out_order_id": "2019010317401302816513",
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000006",
+      "merchant_id": "1000000011",
+      "channel": "xt",
+      "payment": "barcode",
+      "store_id": "1000000004",
+      "store_name": "001",
+      "operator_id": "1000000006",
+      "operator_name": "gongweiwei",
+      "device_id": "1000000006",
+      "device_name": "00100101",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "150599852413169006001",
+      "subject": "150599852413169006001",
+      "time_create": "2019-01-03 17:40:13",
+      "time_update": "2019-01-03 17:40:13",
+      "status": "3",
+      "profit_status": "1",
+      "remark": "支付成功",
+      "_status": "支付成功",
+      "payment_name": "条码支付",
+      "channel_name": "新天"
+    },
+    {
+      "id": "840",
+      "order_id": "990599850644019006001",
+      "out_order_id": "4200000215201901038658772251",
+      "out_username": null,
+      "out_user_id": "oTTz7wddJAg5Jege3uOd",
+      "agent_id": "10000006",
+      "merchant_id": "1000000011",
+      "channel": "weixin",
+      "payment": "barcode",
+      "store_id": "1000000004",
+      "store_name": "001",
+      "operator_id": "1000000006",
+      "operator_name": "gongweiwei",
+      "device_id": "1000000006",
+      "device_name": "00100101",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "990599850644019006001",
+      "subject": "990599850644019006001",
+      "time_create": "2019-01-03 17:10:44",
+      "time_update": "2019-01-03 17:10:45",
+      "status": "3",
+      "profit_status": "1",
+      "remark": "支付成功",
+      "_status": "支付成功",
+      "payment_name": "条码支付",
+      "channel_name": "微信"
+    },
+    {
+      "id": "838",
+      "order_id": "390599850281514006001",
+      "out_order_id": "",
+      "out_username": null,
+      "out_user_id": null,
+      "agent_id": "10000006",
+      "merchant_id": "1000000011",
+      "channel": "xt",
+      "payment": "barcode",
+      "store_id": "1000000004",
+      "store_name": "001",
+      "operator_id": "1000000006",
+      "operator_name": "gongweiwei",
+      "device_id": "1000000006",
+      "device_name": "00100101",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "390599850281514006001",
+      "subject": "390599850281514006001",
+      "time_create": "2019-01-03 17:04:41",
+      "time_update": "2019-01-03 17:05:43",
+      "status": "2",
+      "profit_status": "1",
+      "remark": "支付处理中",
+      "_status": "处理中",
+      "payment_name": "条码支付",
+      "channel_name": "新天"
+    },
+    {
+      "id": "837",
+      "order_id": "930599849674342006001",
+      "out_order_id": "2019010322001461870576237060",
+      "out_username": "mng***@163.com",
+      "out_user_id": "2088002092561876",
+      "agent_id": "10000006",
+      "merchant_id": "1000000011",
+      "channel": "alipay",
+      "payment": "barcode",
+      "store_id": "1000000004",
+      "store_name": "001",
+      "operator_id": "1000000006",
+      "operator_name": "gongweiwei",
+      "device_id": "1000000006",
+      "device_name": "00100101",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "930599849674342006001",
+      "subject": "930599849674342006001",
+      "time_create": "2019-01-03 16:54:34",
+      "time_update": "2019-01-03 16:54:36",
+      "status": "3",
+      "profit_status": "1",
+      "remark": "支付成功",
+      "_status": "支付成功",
+      "payment_name": "条码支付",
+      "channel_name": "支付宝"
+    },
+    {
+      "id": "836",
+      "order_id": "830599849610727006001",
+      "out_order_id": "2019010322001461870576069632",
+      "out_username": "mng***@163.com",
+      "out_user_id": "2088002092561876",
+      "agent_id": "10000006",
+      "merchant_id": "1000000011",
+      "channel": "alipay",
+      "payment": "barcode",
+      "store_id": "1000000004",
+      "store_name": "001",
+      "operator_id": "1000000006",
+      "operator_name": "gongweiwei",
+      "device_id": "1000000006",
+      "device_name": "00100101",
+      "amount": "0.01",
+      "actual_amount": "0.01",
+      "refund_amount": "0.00",
+      "body": "830599849610727006001",
+      "subject": "830599849610727006001",
+      "time_create": "2019-01-03 16:53:30",
+      "time_update": "2019-01-03 16:53:32",
+      "status": "3",
+      "profit_status": "1",
+      "remark": "支付成功",
+      "_status": "支付成功",
+      "payment_name": "条码支付",
+      "channel_name": "支付宝"
+    }
+  ],
+  "total": "9",
+  "sum_amount": "0.09",
+  "sum_actual_amount": "0.09",
+  "sum_refund_amount": "0.00"
+}
+[2019/1/3 23:01:18 662] [Message] [v1.0.1] ===================交易查询=================== End
+[2019/1/3 23:01:26 538] [Message] [v1.0.1] ===================交易查询=================== Start
+[2019/1/3 23:01:26 539] [Message] [v1.0.1] GetOrder_List Send =  key=d39f634d4e636f0cff10e79a4f2f695c&page=5&current=1&time_type=1&time_start=2019-1-3 0:00:00&time_end=2019-1-3 23:59:59&channel=&payment=&order_id=&store_id=1000000004&operator_id=1000000007&device_id=1000000006&merchant_id=1000000011&status=&export=0
+[2019/1/3 23:01:26 660] [Message] [v1.0.1] Result =  {"code":1,"msg":"订单列表","data":{"list":[{"id":"854","order_id":"700599871472654007001","out_order_id":"4200000231201901032943500213","out_username":null,"out_user_id":"oTTz7wVpdTJew9ICg9Um","agent_id":"10000006","merchant_id":"1000000011","channel":"weixin","payment":"barcode","store_id":"1000000004","store_name":"001","operator_id":"1000000007","operator_name":"gongxue","device_id":"1000000006","device_name":"00100101","amount":"0.03","actual_amount":"0.03","refund_amount":"0.00","body":"700599871472654007001","subject":"700599871472654007001","time_create":"2019-01-03 22:57:52","time_update":"2019-01-03 22:57:58","status":"3","profit_status":"1","remark":"支付成功","_status":"支付成功","payment_name":"条码支付","channel_name":"微信"},{"id":"853","order_id":"490599871437555007001","out_order_id":"4200000218201901032122461781","out_username":null,"out_user_id":"oTTz7wVpdTJew9ICg9Um","agent_id":"10000006","merchant_id":"1000000011","channel":"weixin","payment":"barcode","store_id":"1000000004","store_name":"001","operator_id":"1000000007","operator_name":"gongxue","device_id":"1000000006","device_name":"00100101","amount":"0.02","actual_amount":"0.02","refund_amount":"0.00","body":"490599871437555007001","subject":"490599871437555007001","time_create":"2019-01-03 22:57:17","time_update":"2019-01-03 22:57:23","status":"3","profit_status":"1","remark":"支付成功","_status":"支付成功","payment_name":"条码支付","channel_name":"微信"}],"total":"2","sum_amount":"0.05","sum_actual_amount":"0.05","sum_refund_amount":"0.00"}}
+[2019/1/3 23:01:26 661] [Message] [v1.0.1] data =  {
+  "list": [
+    {
+      "id": "854",
+      "order_id": "700599871472654007001",
+      "out_order_id": "4200000231201901032943500213",
+      "out_username": null,
+      "out_user_id": "oTTz7wVpdTJew9ICg9Um",
+      "agent_id": "10000006",
+      "merchant_id": "1000000011",
+      "channel": "weixin",
+      "payment": "barcode",
+      "store_id": "1000000004",
+      "store_name": "001",
+      "operator_id": "1000000007",
+      "operator_name": "gongxue",
+      "device_id": "1000000006",
+      "device_name": "00100101",
+      "amount": "0.03",
+      "actual_amount": "0.03",
+      "refund_amount": "0.00",
+      "body": "700599871472654007001",
+      "subject": "700599871472654007001",
+      "time_create": "2019-01-03 22:57:52",
+      "time_update": "2019-01-03 22:57:58",
+      "status": "3",
+      "profit_status": "1",
+      "remark": "支付成功",
+      "_status": "支付成功",
+      "payment_name": "条码支付",
+      "channel_name": "微信"
+    },
+    {
+      "id": "853",
+      "order_id": "490599871437555007001",
+      "out_order_id": "4200000218201901032122461781",
+      "out_username": null,
+      "out_user_id": "oTTz7wVpdTJew9ICg9Um",
+      "agent_id": "10000006",
+      "merchant_id": "1000000011",
+      "channel": "weixin",
+      "payment": "barcode",
+      "store_id": "1000000004",
+      "store_name": "001",
+      "operator_id": "1000000007",
+      "operator_name": "gongxue",
+      "device_id": "1000000006",
+      "device_name": "00100101",
+      "amount": "0.02",
+      "actual_amount": "0.02",
+      "refund_amount": "0.00",
+      "body": "490599871437555007001",
+      "subject": "490599871437555007001",
+      "time_create": "2019-01-03 22:57:17",
+      "time_update": "2019-01-03 22:57:23",
+      "status": "3",
+      "profit_status": "1",
+      "remark": "支付成功",
+      "_status": "支付成功",
+      "payment_name": "条码支付",
+      "channel_name": "微信"
+    }
+  ],
+  "total": "2",
+  "sum_amount": "0.05",
+  "sum_actual_amount": "0.05",
+  "sum_refund_amount": "0.00"
+}
+[2019/1/3 23:01:26 662] [Message] [v1.0.1] ===================交易查询=================== End
+[2019/1/3 23:02:25 341] [Message] [v1.0.1] ApiAddRefund jsonData=  {"order_id":"490599871437555007001","refund_amount":"0.03","operator_id":"1000000006","timestamp":"1546527744"}
+[2019/1/3 23:02:57 367] [Message] [v1.0.1] ApiAddRefund httppara=  merchant_id=1000000011&data=1f03a3d946146c2dd2cd64231a86615600f037e1d7ecb6f95a8033d09b37fb9e46d755a0a1239687b1f783e22ee27d5eca0f4a822c470b778d295072c88b10637b2417c4fdb44b6f165239bacc310fc64abf119621162ba7dd5d3a4ef05893dc8c39223ec42058bd711dbe3e2a01e2ac
+[2019/1/3 23:03:10 400] [Message] [v1.0.1] ApiAddRefund Result=  {"code":0,"msg":"可退款金额不足","data":[]}

@@ -410,7 +410,7 @@ namespace UBPayApp
             }
             else
             {
-                btPreviousPage.IsEnabled = false;
+                //btPreviousPage.IsEnabled = false;
                 return;
             }
 

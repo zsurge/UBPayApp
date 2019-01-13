@@ -280,7 +280,8 @@ namespace UBPayApp
             bool ret = PayApi.ApiVerifyKey(tKeyBoxInputID.Text, Var.ltoken, out result);
 
             if(ret)
-            {
+            {                
+                ParmIni.IniWriteValue("UserKey", "key", tKeyBoxInputID.Text.Trim());
                 MessageBox.Show(result, "系统提示", MessageBoxButton.OK, MessageBoxImage.Asterisk);
             }
             else
@@ -293,7 +294,7 @@ namespace UBPayApp
         {
             ParmIni = new IniFile(System.AppDomain.CurrentDomain.BaseDirectory + @"/Parm.ini");
 
-            tKeyBoxInputID.Text = ParmIni.IniReadValue("UserKey", "key");
+            //tKeyBoxInputID.Text = ParmIni.IniReadValue("UserKey", "key");
 
             string stemp = ParmIni.IniReadValue("Init", "store_id");
             int iPos = 0;
