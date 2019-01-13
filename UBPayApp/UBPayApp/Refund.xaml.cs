@@ -88,6 +88,7 @@ namespace UBPayApp
         private void GetRefundStatus(object obj)
         {
             string refund_order_id = obj as string;
+            MediaPlayer media = new MediaPlayer();
 
             string msg = string.Empty;
             string tmp = string.Empty;
@@ -102,15 +103,16 @@ namespace UBPayApp
 
             while (close_Flag)
             {
-
-                if (status.Contains("退款成功") || status.Contains("退款失败"))
-                {
-                    execute_Flag = true;
-                    break;
-                }
+                Thread.Sleep(5000);
 
                 if (payInterface.ApiRefundStatusQuery(refund_order_id, Var.merchant_id, out result) == false)
                 {
+                    if (Var.sound == 1)
+                    {
+                        media.Open(new Uri("./prompt/查询订单状态失败，请手工查询.mp3", UriKind.Relative));
+                        media.Play();
+                    }
+
                     execute_Flag = true;
                     MessageBox.Show("查询退款状态失败，请手工查询", "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
@@ -126,7 +128,25 @@ namespace UBPayApp
                     lab_Refund_Status.Content = status;
                 }));
 
-                Thread.Sleep(5000);
+
+                if (status.Contains("退款成功") || status.Contains("退款失败"))
+                {
+                    execute_Flag = true;
+                    if (Var.sound == 1)
+                    {
+                        if (status.Contains("退款成功"))
+                        {
+                            media.Open(new Uri("./prompt/退款成功.mp3", UriKind.Relative));
+                        }
+                        else
+                        {
+                            media.Open(new Uri("./prompt/退款失败.mp3", UriKind.Relative));
+                        }
+
+                        media.Play();
+                    }
+                    break;
+                }
             }
 
             execute_Flag = true;

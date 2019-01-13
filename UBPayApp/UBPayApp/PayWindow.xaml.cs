@@ -267,6 +267,14 @@ namespace UBPayApp
                 Pay_Status.Content = "交易失败，请重试";                
             }
         }
+        
+
+        //private void PlayVoice(string uriString, UriKind uriKind)
+        //{
+        //    media.Open(new Uri(uriString, uriKind));
+
+        //    media.Play();
+        //}
 
         private void GetPayMentStatus(object obj)
         {
@@ -274,6 +282,8 @@ namespace UBPayApp
             string msg = string.Empty;
             string tmp = string.Empty;
             string status = string.Empty;
+
+            MediaPlayer media = new MediaPlayer();
             //int i = 3;
 
             //Dictionary<string, string> describe = new Dictionary<string, string>();
@@ -284,14 +294,16 @@ namespace UBPayApp
 
             while (close_Flag)
             {
-                if (status.Contains("支付成功") || status.Contains("支付失败"))
-                {
-                    execute_Flag = true;
-                    break;
-                }
+                Thread.Sleep(5000);
 
                 if (payInterface.ApiOrderStatusQuery(order_id, Var.merchant_id, out result) == false)
                 {
+                    if (Var.sound == 1)
+                    {                        
+                        media.Open(new Uri("./prompt/查询订单状态失败，请手工查询.mp3", UriKind.Relative));
+                        media.Play();
+                    }
+                    execute_Flag = true;
                     MessageBox.Show("查询订单状态失败，请手工查询", "错误提示", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
@@ -305,8 +317,35 @@ namespace UBPayApp
                 {
                     Pay_Status.Content = status;
                 }));
+                
 
-                Thread.Sleep(5000);
+                if (status.Contains("支付成功") || status.Contains("支付失败"))
+                {
+                    execute_Flag = true;
+                    if (Var.sound == 1)
+                    {
+                        if (status.Contains("支付成功"))
+                        {
+                            //PlayVoice("./prompt/支付成功.mp3", UriKind.Relative);   
+                            //MyPlay.Source = new Uri("./prompt/支付成功.mp3", UriKind.Relative);
+                            //MyPlay.Play();
+
+                            media.Open(new Uri("./prompt/支付成功.mp3", UriKind.Relative));
+                        }
+                        else
+                        {
+                            //PlayVoice("./prompt/支付失败.mp3", UriKind.Relative);
+                            //MyPlay.Source = new Uri("./prompt/支付失败.mp3", UriKind.Relative);
+                            //MyPlay.Play();
+
+                            media.Open(new Uri("./prompt/支付失败.mp3", UriKind.Relative));
+                        }
+
+                        media.Play();
+                    }
+
+                    break;
+                }
             }
 
             execute_Flag = true;

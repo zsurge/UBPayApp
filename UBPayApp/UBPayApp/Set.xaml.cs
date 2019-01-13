@@ -426,7 +426,25 @@ namespace UBPayApp
                 radioButton5.IsChecked = true;
             }
 
+        }
 
+        private void PlayVoice_Checked(object sender, RoutedEventArgs e)
+        {
+            switch (((RadioButton)sender).Name)
+            {
+                case "rBSoundStart":
+                    Var.sound = 1;
+                    ParmIni.IniWriteValue("Init", "sound", Var.sound.ToString());
+                    break;
+                case "rBSoundClose":
+                    Var.sound = 0;
+                    ParmIni.IniWriteValue("Init", "sound", Var.sound.ToString());
+                    break;
+                default:
+                    Var.sound = 1;
+                    ParmIni.IniWriteValue("Init", "sound", Var.sound.ToString());                    
+                    break;
+            }
         }
     }
 }
